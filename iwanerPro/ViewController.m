@@ -16,8 +16,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor grayColor];
+    
+    
+    
+    
+    UIButton*button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(150, 300, 100, 60);
+    [button setTitle:@"按钮" forState:UIControlStateNormal];
+    button.backgroundColor = [UIColor redColor];
+    [button addTarget:self action:@selector(gotoClink:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+    
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+
+- (void)gotoClink:(UIButton *)sender
+{
+    
 }
 
 - (void)didReceiveMemoryWarning {
