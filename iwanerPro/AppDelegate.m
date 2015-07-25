@@ -22,7 +22,7 @@
 //    [NSThread sleepForTimeInterval:1];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    NSLog(@"dadadadad======%@",NSStringFromCGRect(self.window.frame));
+//    NSLog(@"dadadadad======%@",NSStringFromCGRect(self.window.frame));
     self.window.backgroundColor = [UIColor whiteColor];
 
     
@@ -93,15 +93,11 @@
 {
     
     
-    if (viewController == _navi) {
-        UIViewController *asd = [[UIViewController alloc] init];
-        asd.view.backgroundColor = [UIColor greenColor];
-        [_navi presentViewController:asd animated:YES completion:^{
-    
-        }];
+    if (viewController == _navi)
+    {
+        [_publicViewController showPublicContentController];
     }
 
-//    NSLog(@"dd====%@",viewController);
     return YES;
 }
 

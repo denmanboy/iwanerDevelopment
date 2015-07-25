@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "PublicContentViewController.h"
 @interface PublicViewController : UIViewController
-
+- (void)showPublicContentController;
 @end

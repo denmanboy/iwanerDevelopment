@@ -13,6 +13,7 @@
 #import "PublicViewController.h"
 #import "FriendsViewController.h"
 #import "IwanViewController.h"
+#import "PublicContentViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate,UITabBarControllerDelegate>
 

@@ -16,8 +16,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+ 
 }
+
+
+- (void)showPublicContentController
+{
+    PublicContentViewController *contectController = [[PublicContentViewController alloc] init];
+    [self.navigationController presentViewController:contectController animated:YES completion:^{
+        
+    }];
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

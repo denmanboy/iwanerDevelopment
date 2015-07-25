@@ -54,6 +54,7 @@
 		4A4E72B81B6341F8002384A8 /* IwanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E72B71B6341F8002384A8 /* IwanViewController.m */; };
 		4A4E72BB1B634FA9002384A8 /* PublicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E72BA1B634FA9002384A8 /* PublicViewController.m */; };
 		4A4E72BD1B636270002384A8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E72BC1B636270002384A8 /* Default-568h@2x.png */; };
+		4A4E72C01B63667D002384A8 /* PublicContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E72BF1B63667D002384A8 /* PublicContentViewController.m */; };
 		4AF971951B5E7BAB0090EACA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF971941B5E7BAB0090EACA /* main.m */; };
 		4AF971981B5E7BAB0090EACA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF971971B5E7BAB0090EACA /* AppDelegate.m */; };
 		4AF971A01B5E7BAB0090EACA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF9719F1B5E7BAB0090EACA /* Images.xcassets */; };
@@ -124,6 +125,8 @@
 		4A4E72B91B634FA9002384A8 /* PublicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicViewController.h; sourceTree = "<group>"; };
 		4A4E72BA1B634FA9002384A8 /* PublicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicViewController.m; sourceTree = "<group>"; };
 		4A4E72BC1B636270002384A8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4A4E72BE1B63667D002384A8 /* PublicContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicContentViewController.h; sourceTree = "<group>"; };
+		4A4E72BF1B63667D002384A8 /* PublicContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicContentViewController.m; sourceTree = "<group>"; };
 		4AF9718F1B5E7BAB0090EACA /* iwanerPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iwanerPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AF971931B5E7BAB0090EACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AF971941B5E7BAB0090EACA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -243,6 +246,8 @@
 				4A4E72B11B6341A0002384A8 /* FindViewController.m */,
 				4A4E72AD1B634194002384A8 /* MeViewController.h */,
 				4A4E72AE1B634194002384A8 /* MeViewController.m */,
+				4A4E72BE1B63667D002384A8 /* PublicContentViewController.h */,
+				4A4E72BF1B63667D002384A8 /* PublicContentViewController.m */,
 				4A4E72BC1B636270002384A8 /* Default-568h@2x.png */,
 				4AF9719F1B5E7BAB0090EACA /* Images.xcassets */,
 				4A4E71F81B61A703002384A8 /* resources */,
@@ -420,6 +425,7 @@
 				4A4E72B51B6341DC002384A8 /* FriendsViewController.m in Sources */,
 				4AF971981B5E7BAB0090EACA /* AppDelegate.m in Sources */,
 				4AF971951B5E7BAB0090EACA /* main.m in Sources */,
+				4A4E72C01B63667D002384A8 /* PublicContentViewController.m in Sources */,
 				4A4E72B21B6341A0002384A8 /* FindViewController.m in Sources */,
 				4A4E72AF1B634194002384A8 /* MeViewController.m in Sources */,
 				4A4E724C1B61A79B002384A8 /* MainViewController.m in Sources */,
