@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MeViewController : UIViewController
-
+@interface MeViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@property (nonatomic,strong) UITableView *myTableView;
+@property (nonatomic,strong) NSMutableArray *itemTextArray,*itemImageArray;
+@property (nonatomic,strong) UIImageView *redMessageSign;
 @end

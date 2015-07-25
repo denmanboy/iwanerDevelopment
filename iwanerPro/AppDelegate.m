@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
 //    [NSThread sleepForTimeInterval:1];
     
@@ -25,7 +25,7 @@
 //    NSLog(@"dadadadad======%@",NSStringFromCGRect(self.window.frame));
     self.window.backgroundColor = [UIColor whiteColor];
 
-    
+
     UITabBarController *tabBarController = [[UITabBarController alloc]init];
     
     tabBarController.delegate = self;
