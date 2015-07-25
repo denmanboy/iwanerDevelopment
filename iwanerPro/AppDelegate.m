@@ -71,7 +71,7 @@
     _meViewController.tabBarItem.title = @"我";
     _meViewController.tabBarItem.image = [UIImage imageNamed:@"导航-我-灰"];
     _meViewController.tabBarItem.selectedImage = [UIImage imageNamed:@"导航-我-红"];
-    _meViewController.tabBarItem.badgeValue = @"12";
+    _meViewController.tabBarItem.badgeValue = @"1";
     _meViewController.tabBarItem.image = [_meViewController.tabBarItem.image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     _meViewController.tabBarItem.selectedImage = [_meViewController.tabBarItem.selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     

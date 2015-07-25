@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+//    UIImage *backHeadImage  = [UIImage imageNamed:@"hongzi"];
+//    UIImageView *headImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, , <#CGFloat height#>)]
 }
 
 - (void)didReceiveMemoryWarning {
