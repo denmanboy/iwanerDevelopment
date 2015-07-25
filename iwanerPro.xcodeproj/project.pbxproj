@@ -7,12 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A4E72221B61A703002384A8 /* 导航-发布-灰.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E71FA1B61A703002384A8 /* 导航-发布-灰.pdf */; };
+		4A4E72231B61A703002384A8 /* 导航-发布-灰.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E71FB1B61A703002384A8 /* 导航-发布-灰.png */; };
+		4A4E72241B61A703002384A8 /* 导航-发布-灰@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E71FC1B61A703002384A8 /* 导航-发布-灰@2x.png */; };
+		4A4E72251B61A703002384A8 /* 导航-发布-灰@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E71FD1B61A703002384A8 /* 导航-发布-灰@3x.png */; };
+		4A4E72261B61A703002384A8 /* 导航-发布-黑.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E71FE1B61A703002384A8 /* 导航-发布-黑.pdf */; };
+		4A4E72271B61A703002384A8 /* 导航-发布-黑.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E71FF1B61A703002384A8 /* 导航-发布-黑.png */; };
+		4A4E72281B61A703002384A8 /* 导航-发布-黑@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E72001B61A703002384A8 /* 导航-发布-黑@2x.png */; };
+		4A4E72291B61A703002384A8 /* 导航-发布-黑@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E72011B61A703002384A8 /* 导航-发布-黑@3x.png */; };
+		4A4E722A1B61A703002384A8 /* 导航-我-灰.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E72021B61A703002384A8 /* 导航-我-灰.pdf */; };
+		4A4E722B1B61A703002384A8 /* 导航-我-灰.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E72031B61A703002384A8 /* 导航-我-灰.png */; };
+		4A4E722C1B61A703002384A8 /* 导航-我-灰@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E72041B61A703002384A8 /* 导航-我-灰@2x.png */; };
+		4A4E722D1B61A703002384A8 /* 导航-我-灰@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E72051B61A703002384A8 /* 导航-我-灰@3x.png */; };
+		4A4E722E1B61A703002384A8 /* 导航-我-红.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E72061B61A703002384A8 /* 导航-我-红.pdf */; };
+		4A4E722F1B61A703002384A8 /* 导航-我-红.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E72071B61A703002384A8 /* 导航-我-红.png */; };
+		4A4E72301B61A703002384A8 /* 导航-我-红@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E72081B61A703002384A8 /* 导航-我-红@2x.png */; };
+		4A4E72311B61A703002384A8 /* 导航-我-红@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E72091B61A703002384A8 /* 导航-我-红@3x.png */; };
+		4A4E72321B61A703002384A8 /* 导航-爱玩-灰.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E720A1B61A703002384A8 /* 导航-爱玩-灰.pdf */; };
+		4A4E72331B61A703002384A8 /* 导航-爱玩-灰.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E720B1B61A703002384A8 /* 导航-爱玩-灰.png */; };
+		4A4E72341B61A703002384A8 /* 导航-爱玩-灰@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E720C1B61A703002384A8 /* 导航-爱玩-灰@2x.png */; };
+		4A4E72351B61A703002384A8 /* 导航-爱玩-灰@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E720D1B61A703002384A8 /* 导航-爱玩-灰@3x.png */; };
+		4A4E72361B61A703002384A8 /* 导航-爱玩-红.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E720E1B61A703002384A8 /* 导航-爱玩-红.pdf */; };
+		4A4E72371B61A703002384A8 /* 导航-爱玩-红.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E720F1B61A703002384A8 /* 导航-爱玩-红.png */; };
+		4A4E72381B61A703002384A8 /* 导航-爱玩-红@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E72101B61A703002384A8 /* 导航-爱玩-红@2x.png */; };
+		4A4E72391B61A703002384A8 /* 导航-爱玩-红@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E72111B61A703002384A8 /* 导航-爱玩-红@3x.png */; };
+		4A4E723A1B61A703002384A8 /* 导航-玩友圈-灰.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E72121B61A703002384A8 /* 导航-玩友圈-灰.pdf */; };
+		4A4E723B1B61A703002384A8 /* 导航-玩友圈-灰.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E72131B61A703002384A8 /* 导航-玩友圈-灰.png */; };
+		4A4E723C1B61A703002384A8 /* 导航-玩友圈-灰@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E72141B61A703002384A8 /* 导航-玩友圈-灰@2x.png */; };
+		4A4E723D1B61A703002384A8 /* 导航-玩友圈-灰@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E72151B61A703002384A8 /* 导航-玩友圈-灰@3x.png */; };
+		4A4E723E1B61A703002384A8 /* 导航-玩友圈-红.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E72161B61A703002384A8 /* 导航-玩友圈-红.pdf */; };
+		4A4E723F1B61A703002384A8 /* 导航-玩友圈-红.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E72171B61A703002384A8 /* 导航-玩友圈-红.png */; };
+		4A4E72401B61A703002384A8 /* 导航-玩友圈-红@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E72181B61A703002384A8 /* 导航-玩友圈-红@2x.png */; };
+		4A4E72411B61A703002384A8 /* 导航-玩友圈-红@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E72191B61A703002384A8 /* 导航-玩友圈-红@3x.png */; };
+		4A4E72421B61A703002384A8 /* 导航-看见-灰.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E721A1B61A703002384A8 /* 导航-看见-灰.pdf */; };
+		4A4E72431B61A703002384A8 /* 导航-看见-灰.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E721B1B61A703002384A8 /* 导航-看见-灰.png */; };
+		4A4E72441B61A703002384A8 /* 导航-看见-灰@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E721C1B61A703002384A8 /* 导航-看见-灰@2x.png */; };
+		4A4E72451B61A703002384A8 /* 导航-看见-灰@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E721D1B61A703002384A8 /* 导航-看见-灰@3x.png */; };
+		4A4E72461B61A703002384A8 /* 导航-看见-红.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E721E1B61A703002384A8 /* 导航-看见-红.pdf */; };
+		4A4E72471B61A703002384A8 /* 导航-看见-红.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E721F1B61A703002384A8 /* 导航-看见-红.png */; };
+		4A4E72481B61A703002384A8 /* 导航-看见-红@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E72201B61A703002384A8 /* 导航-看见-红@2x.png */; };
+		4A4E72491B61A703002384A8 /* 导航-看见-红@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E72211B61A703002384A8 /* 导航-看见-红@3x.png */; };
+		4A4E724C1B61A79B002384A8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E724B1B61A79B002384A8 /* MainViewController.m */; };
+		4A4E72AF1B634194002384A8 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E72AE1B634194002384A8 /* MeViewController.m */; };
+		4A4E72B21B6341A0002384A8 /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E72B11B6341A0002384A8 /* FindViewController.m */; };
+		4A4E72B51B6341DC002384A8 /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E72B41B6341DC002384A8 /* FriendsViewController.m */; };
+		4A4E72B81B6341F8002384A8 /* IwanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E72B71B6341F8002384A8 /* IwanViewController.m */; };
+		4A4E72BB1B634FA9002384A8 /* PublicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E72BA1B634FA9002384A8 /* PublicViewController.m */; };
+		4A4E72BD1B636270002384A8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E72BC1B636270002384A8 /* Default-568h@2x.png */; };
 		4AF971951B5E7BAB0090EACA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF971941B5E7BAB0090EACA /* main.m */; };
 		4AF971981B5E7BAB0090EACA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF971971B5E7BAB0090EACA /* AppDelegate.m */; };
-		4AF9719B1B5E7BAB0090EACA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF9719A1B5E7BAB0090EACA /* ViewController.m */; };
-		4AF9719E1B5E7BAB0090EACA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AF9719C1B5E7BAB0090EACA /* Main.storyboard */; };
 		4AF971A01B5E7BAB0090EACA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF9719F1B5E7BAB0090EACA /* Images.xcassets */; };
-		4AF971A31B5E7BAB0090EACA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AF971A11B5E7BAB0090EACA /* LaunchScreen.xib */; };
 		4AF971AF1B5E7BAB0090EACA /* iwanerProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF971AE1B5E7BAB0090EACA /* iwanerProTests.m */; };
 /* End PBXBuildFile section */
 
@@ -27,16 +71,65 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A4E71FA1B61A703002384A8 /* 导航-发布-灰.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "导航-发布-灰.pdf"; sourceTree = "<group>"; };
+		4A4E71FB1B61A703002384A8 /* 导航-发布-灰.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-发布-灰.png"; sourceTree = "<group>"; };
+		4A4E71FC1B61A703002384A8 /* 导航-发布-灰@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-发布-灰@2x.png"; sourceTree = "<group>"; };
+		4A4E71FD1B61A703002384A8 /* 导航-发布-灰@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-发布-灰@3x.png"; sourceTree = "<group>"; };
+		4A4E71FE1B61A703002384A8 /* 导航-发布-黑.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "导航-发布-黑.pdf"; sourceTree = "<group>"; };
+		4A4E71FF1B61A703002384A8 /* 导航-发布-黑.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-发布-黑.png"; sourceTree = "<group>"; };
+		4A4E72001B61A703002384A8 /* 导航-发布-黑@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-发布-黑@2x.png"; sourceTree = "<group>"; };
+		4A4E72011B61A703002384A8 /* 导航-发布-黑@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-发布-黑@3x.png"; sourceTree = "<group>"; };
+		4A4E72021B61A703002384A8 /* 导航-我-灰.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "导航-我-灰.pdf"; sourceTree = "<group>"; };
+		4A4E72031B61A703002384A8 /* 导航-我-灰.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-我-灰.png"; sourceTree = "<group>"; };
+		4A4E72041B61A703002384A8 /* 导航-我-灰@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-我-灰@2x.png"; sourceTree = "<group>"; };
+		4A4E72051B61A703002384A8 /* 导航-我-灰@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-我-灰@3x.png"; sourceTree = "<group>"; };
+		4A4E72061B61A703002384A8 /* 导航-我-红.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "导航-我-红.pdf"; sourceTree = "<group>"; };
+		4A4E72071B61A703002384A8 /* 导航-我-红.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-我-红.png"; sourceTree = "<group>"; };
+		4A4E72081B61A703002384A8 /* 导航-我-红@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-我-红@2x.png"; sourceTree = "<group>"; };
+		4A4E72091B61A703002384A8 /* 导航-我-红@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-我-红@3x.png"; sourceTree = "<group>"; };
+		4A4E720A1B61A703002384A8 /* 导航-爱玩-灰.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "导航-爱玩-灰.pdf"; sourceTree = "<group>"; };
+		4A4E720B1B61A703002384A8 /* 导航-爱玩-灰.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-爱玩-灰.png"; sourceTree = "<group>"; };
+		4A4E720C1B61A703002384A8 /* 导航-爱玩-灰@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-爱玩-灰@2x.png"; sourceTree = "<group>"; };
+		4A4E720D1B61A703002384A8 /* 导航-爱玩-灰@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-爱玩-灰@3x.png"; sourceTree = "<group>"; };
+		4A4E720E1B61A703002384A8 /* 导航-爱玩-红.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "导航-爱玩-红.pdf"; sourceTree = "<group>"; };
+		4A4E720F1B61A703002384A8 /* 导航-爱玩-红.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-爱玩-红.png"; sourceTree = "<group>"; };
+		4A4E72101B61A703002384A8 /* 导航-爱玩-红@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-爱玩-红@2x.png"; sourceTree = "<group>"; };
+		4A4E72111B61A703002384A8 /* 导航-爱玩-红@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-爱玩-红@3x.png"; sourceTree = "<group>"; };
+		4A4E72121B61A703002384A8 /* 导航-玩友圈-灰.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "导航-玩友圈-灰.pdf"; sourceTree = "<group>"; };
+		4A4E72131B61A703002384A8 /* 导航-玩友圈-灰.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-玩友圈-灰.png"; sourceTree = "<group>"; };
+		4A4E72141B61A703002384A8 /* 导航-玩友圈-灰@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-玩友圈-灰@2x.png"; sourceTree = "<group>"; };
+		4A4E72151B61A703002384A8 /* 导航-玩友圈-灰@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-玩友圈-灰@3x.png"; sourceTree = "<group>"; };
+		4A4E72161B61A703002384A8 /* 导航-玩友圈-红.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "导航-玩友圈-红.pdf"; sourceTree = "<group>"; };
+		4A4E72171B61A703002384A8 /* 导航-玩友圈-红.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-玩友圈-红.png"; sourceTree = "<group>"; };
+		4A4E72181B61A703002384A8 /* 导航-玩友圈-红@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-玩友圈-红@2x.png"; sourceTree = "<group>"; };
+		4A4E72191B61A703002384A8 /* 导航-玩友圈-红@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-玩友圈-红@3x.png"; sourceTree = "<group>"; };
+		4A4E721A1B61A703002384A8 /* 导航-看见-灰.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "导航-看见-灰.pdf"; sourceTree = "<group>"; };
+		4A4E721B1B61A703002384A8 /* 导航-看见-灰.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-看见-灰.png"; sourceTree = "<group>"; };
+		4A4E721C1B61A703002384A8 /* 导航-看见-灰@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-看见-灰@2x.png"; sourceTree = "<group>"; };
+		4A4E721D1B61A703002384A8 /* 导航-看见-灰@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-看见-灰@3x.png"; sourceTree = "<group>"; };
+		4A4E721E1B61A703002384A8 /* 导航-看见-红.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "导航-看见-红.pdf"; sourceTree = "<group>"; };
+		4A4E721F1B61A703002384A8 /* 导航-看见-红.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-看见-红.png"; sourceTree = "<group>"; };
+		4A4E72201B61A703002384A8 /* 导航-看见-红@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-看见-红@2x.png"; sourceTree = "<group>"; };
+		4A4E72211B61A703002384A8 /* 导航-看见-红@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-看见-红@3x.png"; sourceTree = "<group>"; };
+		4A4E724A1B61A79B002384A8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		4A4E724B1B61A79B002384A8 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		4A4E72AD1B634194002384A8 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		4A4E72AE1B634194002384A8 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		4A4E72B01B6341A0002384A8 /* FindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindViewController.h; sourceTree = "<group>"; };
+		4A4E72B11B6341A0002384A8 /* FindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindViewController.m; sourceTree = "<group>"; };
+		4A4E72B31B6341DC002384A8 /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
+		4A4E72B41B6341DC002384A8 /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
+		4A4E72B61B6341F8002384A8 /* IwanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IwanViewController.h; sourceTree = "<group>"; };
+		4A4E72B71B6341F8002384A8 /* IwanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IwanViewController.m; sourceTree = "<group>"; };
+		4A4E72B91B634FA9002384A8 /* PublicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicViewController.h; sourceTree = "<group>"; };
+		4A4E72BA1B634FA9002384A8 /* PublicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicViewController.m; sourceTree = "<group>"; };
+		4A4E72BC1B636270002384A8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4AF9718F1B5E7BAB0090EACA /* iwanerPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iwanerPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AF971931B5E7BAB0090EACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AF971941B5E7BAB0090EACA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4AF971961B5E7BAB0090EACA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4AF971971B5E7BAB0090EACA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4AF971991B5E7BAB0090EACA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4AF9719A1B5E7BAB0090EACA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4AF9719D1B5E7BAB0090EACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4AF9719F1B5E7BAB0090EACA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4AF971A21B5E7BAB0090EACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4AF971A81B5E7BAB0090EACA /* iwanerProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iwanerProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AF971AD1B5E7BAB0090EACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AF971AE1B5E7BAB0090EACA /* iwanerProTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iwanerProTests.m; sourceTree = "<group>"; };
@@ -60,6 +153,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A4E71F81B61A703002384A8 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				4A4E71F91B61A703002384A8 /* 导航图类 */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		4A4E71F91B61A703002384A8 /* 导航图类 */ = {
+			isa = PBXGroup;
+			children = (
+				4A4E71FA1B61A703002384A8 /* 导航-发布-灰.pdf */,
+				4A4E71FB1B61A703002384A8 /* 导航-发布-灰.png */,
+				4A4E71FC1B61A703002384A8 /* 导航-发布-灰@2x.png */,
+				4A4E71FD1B61A703002384A8 /* 导航-发布-灰@3x.png */,
+				4A4E71FE1B61A703002384A8 /* 导航-发布-黑.pdf */,
+				4A4E71FF1B61A703002384A8 /* 导航-发布-黑.png */,
+				4A4E72001B61A703002384A8 /* 导航-发布-黑@2x.png */,
+				4A4E72011B61A703002384A8 /* 导航-发布-黑@3x.png */,
+				4A4E72021B61A703002384A8 /* 导航-我-灰.pdf */,
+				4A4E72031B61A703002384A8 /* 导航-我-灰.png */,
+				4A4E72041B61A703002384A8 /* 导航-我-灰@2x.png */,
+				4A4E72051B61A703002384A8 /* 导航-我-灰@3x.png */,
+				4A4E72061B61A703002384A8 /* 导航-我-红.pdf */,
+				4A4E72071B61A703002384A8 /* 导航-我-红.png */,
+				4A4E72081B61A703002384A8 /* 导航-我-红@2x.png */,
+				4A4E72091B61A703002384A8 /* 导航-我-红@3x.png */,
+				4A4E720A1B61A703002384A8 /* 导航-爱玩-灰.pdf */,
+				4A4E720B1B61A703002384A8 /* 导航-爱玩-灰.png */,
+				4A4E720C1B61A703002384A8 /* 导航-爱玩-灰@2x.png */,
+				4A4E720D1B61A703002384A8 /* 导航-爱玩-灰@3x.png */,
+				4A4E720E1B61A703002384A8 /* 导航-爱玩-红.pdf */,
+				4A4E720F1B61A703002384A8 /* 导航-爱玩-红.png */,
+				4A4E72101B61A703002384A8 /* 导航-爱玩-红@2x.png */,
+				4A4E72111B61A703002384A8 /* 导航-爱玩-红@3x.png */,
+				4A4E72121B61A703002384A8 /* 导航-玩友圈-灰.pdf */,
+				4A4E72131B61A703002384A8 /* 导航-玩友圈-灰.png */,
+				4A4E72141B61A703002384A8 /* 导航-玩友圈-灰@2x.png */,
+				4A4E72151B61A703002384A8 /* 导航-玩友圈-灰@3x.png */,
+				4A4E72161B61A703002384A8 /* 导航-玩友圈-红.pdf */,
+				4A4E72171B61A703002384A8 /* 导航-玩友圈-红.png */,
+				4A4E72181B61A703002384A8 /* 导航-玩友圈-红@2x.png */,
+				4A4E72191B61A703002384A8 /* 导航-玩友圈-红@3x.png */,
+				4A4E721A1B61A703002384A8 /* 导航-看见-灰.pdf */,
+				4A4E721B1B61A703002384A8 /* 导航-看见-灰.png */,
+				4A4E721C1B61A703002384A8 /* 导航-看见-灰@2x.png */,
+				4A4E721D1B61A703002384A8 /* 导航-看见-灰@3x.png */,
+				4A4E721E1B61A703002384A8 /* 导航-看见-红.pdf */,
+				4A4E721F1B61A703002384A8 /* 导航-看见-红.png */,
+				4A4E72201B61A703002384A8 /* 导航-看见-红@2x.png */,
+				4A4E72211B61A703002384A8 /* 导航-看见-红@3x.png */,
+			);
+			path = "导航图类";
+			sourceTree = "<group>";
+		};
 		4AF971861B5E7BAB0090EACA = {
 			isa = PBXGroup;
 			children = (
@@ -83,11 +231,21 @@
 			children = (
 				4AF971961B5E7BAB0090EACA /* AppDelegate.h */,
 				4AF971971B5E7BAB0090EACA /* AppDelegate.m */,
-				4AF971991B5E7BAB0090EACA /* ViewController.h */,
-				4AF9719A1B5E7BAB0090EACA /* ViewController.m */,
-				4AF9719C1B5E7BAB0090EACA /* Main.storyboard */,
+				4A4E724A1B61A79B002384A8 /* MainViewController.h */,
+				4A4E724B1B61A79B002384A8 /* MainViewController.m */,
+				4A4E72B61B6341F8002384A8 /* IwanViewController.h */,
+				4A4E72B71B6341F8002384A8 /* IwanViewController.m */,
+				4A4E72B31B6341DC002384A8 /* FriendsViewController.h */,
+				4A4E72B41B6341DC002384A8 /* FriendsViewController.m */,
+				4A4E72B91B634FA9002384A8 /* PublicViewController.h */,
+				4A4E72BA1B634FA9002384A8 /* PublicViewController.m */,
+				4A4E72B01B6341A0002384A8 /* FindViewController.h */,
+				4A4E72B11B6341A0002384A8 /* FindViewController.m */,
+				4A4E72AD1B634194002384A8 /* MeViewController.h */,
+				4A4E72AE1B634194002384A8 /* MeViewController.m */,
+				4A4E72BC1B636270002384A8 /* Default-568h@2x.png */,
 				4AF9719F1B5E7BAB0090EACA /* Images.xcassets */,
-				4AF971A11B5E7BAB0090EACA /* LaunchScreen.xib */,
+				4A4E71F81B61A703002384A8 /* resources */,
 				4AF971921B5E7BAB0090EACA /* Supporting Files */,
 			);
 			path = iwanerPro;
@@ -199,9 +357,48 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AF9719E1B5E7BAB0090EACA /* Main.storyboard in Resources */,
-				4AF971A31B5E7BAB0090EACA /* LaunchScreen.xib in Resources */,
+				4A4E72401B61A703002384A8 /* 导航-玩友圈-红@2x.png in Resources */,
+				4A4E72461B61A703002384A8 /* 导航-看见-红.pdf in Resources */,
+				4A4E72371B61A703002384A8 /* 导航-爱玩-红.png in Resources */,
+				4A4E72331B61A703002384A8 /* 导航-爱玩-灰.png in Resources */,
+				4A4E72291B61A703002384A8 /* 导航-发布-黑@3x.png in Resources */,
+				4A4E72BD1B636270002384A8 /* Default-568h@2x.png in Resources */,
+				4A4E72261B61A703002384A8 /* 导航-发布-黑.pdf in Resources */,
+				4A4E723C1B61A703002384A8 /* 导航-玩友圈-灰@2x.png in Resources */,
+				4A4E72451B61A703002384A8 /* 导航-看见-灰@3x.png in Resources */,
+				4A4E723F1B61A703002384A8 /* 导航-玩友圈-红.png in Resources */,
+				4A4E72421B61A703002384A8 /* 导航-看见-灰.pdf in Resources */,
+				4A4E72391B61A703002384A8 /* 导航-爱玩-红@3x.png in Resources */,
+				4A4E72351B61A703002384A8 /* 导航-爱玩-灰@3x.png in Resources */,
+				4A4E722A1B61A703002384A8 /* 导航-我-灰.pdf in Resources */,
+				4A4E722E1B61A703002384A8 /* 导航-我-红.pdf in Resources */,
+				4A4E72381B61A703002384A8 /* 导航-爱玩-红@2x.png in Resources */,
 				4AF971A01B5E7BAB0090EACA /* Images.xcassets in Resources */,
+				4A4E72431B61A703002384A8 /* 导航-看见-灰.png in Resources */,
+				4A4E722D1B61A703002384A8 /* 导航-我-灰@3x.png in Resources */,
+				4A4E72221B61A703002384A8 /* 导航-发布-灰.pdf in Resources */,
+				4A4E72321B61A703002384A8 /* 导航-爱玩-灰.pdf in Resources */,
+				4A4E72251B61A703002384A8 /* 导航-发布-灰@3x.png in Resources */,
+				4A4E72281B61A703002384A8 /* 导航-发布-黑@2x.png in Resources */,
+				4A4E723E1B61A703002384A8 /* 导航-玩友圈-红.pdf in Resources */,
+				4A4E72311B61A703002384A8 /* 导航-我-红@3x.png in Resources */,
+				4A4E72361B61A703002384A8 /* 导航-爱玩-红.pdf in Resources */,
+				4A4E72471B61A703002384A8 /* 导航-看见-红.png in Resources */,
+				4A4E722B1B61A703002384A8 /* 导航-我-灰.png in Resources */,
+				4A4E723B1B61A703002384A8 /* 导航-玩友圈-灰.png in Resources */,
+				4A4E72411B61A703002384A8 /* 导航-玩友圈-红@3x.png in Resources */,
+				4A4E723A1B61A703002384A8 /* 导航-玩友圈-灰.pdf in Resources */,
+				4A4E72341B61A703002384A8 /* 导航-爱玩-灰@2x.png in Resources */,
+				4A4E72491B61A703002384A8 /* 导航-看见-红@3x.png in Resources */,
+				4A4E72231B61A703002384A8 /* 导航-发布-灰.png in Resources */,
+				4A4E72241B61A703002384A8 /* 导航-发布-灰@2x.png in Resources */,
+				4A4E72481B61A703002384A8 /* 导航-看见-红@2x.png in Resources */,
+				4A4E72271B61A703002384A8 /* 导航-发布-黑.png in Resources */,
+				4A4E72441B61A703002384A8 /* 导航-看见-灰@2x.png in Resources */,
+				4A4E722F1B61A703002384A8 /* 导航-我-红.png in Resources */,
+				4A4E722C1B61A703002384A8 /* 导航-我-灰@2x.png in Resources */,
+				4A4E72301B61A703002384A8 /* 导航-我-红@2x.png in Resources */,
+				4A4E723D1B61A703002384A8 /* 导航-玩友圈-灰@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +416,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AF9719B1B5E7BAB0090EACA /* ViewController.m in Sources */,
+				4A4E72B81B6341F8002384A8 /* IwanViewController.m in Sources */,
+				4A4E72B51B6341DC002384A8 /* FriendsViewController.m in Sources */,
 				4AF971981B5E7BAB0090EACA /* AppDelegate.m in Sources */,
 				4AF971951B5E7BAB0090EACA /* main.m in Sources */,
+				4A4E72B21B6341A0002384A8 /* FindViewController.m in Sources */,
+				4A4E72AF1B634194002384A8 /* MeViewController.m in Sources */,
+				4A4E724C1B61A79B002384A8 /* MainViewController.m in Sources */,
+				4A4E72BB1B634FA9002384A8 /* PublicViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,25 +444,6 @@
 			targetProxy = 4AF971A91B5E7BAB0090EACA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		4AF9719C1B5E7BAB0090EACA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4AF9719D1B5E7BAB0090EACA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4AF971A11B5E7BAB0090EACA /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4AF971A21B5E7BAB0090EACA /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4AF971B01B5E7BAB0090EACA /* Debug */ = {
@@ -350,6 +533,7 @@
 				INFOPLIST_FILE = iwanerPro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -360,6 +544,7 @@
 				INFOPLIST_FILE = iwanerPro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -416,6 +601,7 @@
 				4AF971B41B5E7BAB0090EACA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4AF971B51B5E7BAB0090EACA /* Build configuration list for PBXNativeTarget "iwanerProTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +610,7 @@
 				4AF971B71B5E7BAB0090EACA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

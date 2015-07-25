@@ -8,9 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#import "MeViewController.h"
+#import "FindViewController.h"
+#import "PublicViewController.h"
+#import "FriendsViewController.h"
+#import "IwanViewController.h"
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate,UITabBarControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic,strong) MeViewController *meViewController;
+@property (nonatomic,strong) FindViewController *findViewController;
+@property (nonatomic,strong) PublicViewController *publicViewController;
+@property (nonatomic,strong) FriendsViewController *friendsViewController;
+@property (nonatomic,strong) IwanViewController *iwanViewController;
+@property (nonatomic,strong) UINavigationController *navi;
 
 
 @end
