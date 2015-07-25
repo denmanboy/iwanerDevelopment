@@ -150,10 +150,64 @@
 
 
 
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 0) {
+     
+        switch (indexPath.row) {
+            case 0:
+            {
+                MyMessageViewController *control = [[MyMessageViewController alloc] init];
+                [self.navigationController pushViewController:control animated:YES];
+            }
+                break;
+            case 1:
+            {
+                MyItemViewController *control = [[MyItemViewController alloc] init];
+                [self.navigationController pushViewController:control animated:YES];
+            }
+                break;
+            case 2:
+            {
+                MyLookViewController *control = [[MyLookViewController alloc] init];
+                [self.navigationController pushViewController:control animated:YES];
+            }
+                break;
+            case 3:
+            {
+                MyCollectViewController *control = [[MyCollectViewController alloc] init];
+                [self.navigationController pushViewController:control animated:YES];
+            }
+                break;
+                
+            default:
+                break;
+        }
+    }else if (indexPath.section == 1)
+    {
+        if (indexPath.row == 0) {
+            SettingViewController *control = [[SettingViewController alloc] init];
+            [self.navigationController pushViewController:control animated:YES];
+        }
+    }
+        
+    
+}
 //- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
 //    
 //}
+
+
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
+    //    self.navigationController.navigationBar.barTintColor = COLOR_WITH_RGB(248, 56, 52);
+    
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

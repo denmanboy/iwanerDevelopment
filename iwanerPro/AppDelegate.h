@@ -23,7 +23,7 @@
 @property (nonatomic,strong) PublicViewController *publicViewController;
 @property (nonatomic,strong) FriendsViewController *friendsViewController;
 @property (nonatomic,strong) IwanViewController *iwanViewController;
-@property (nonatomic,strong) UINavigationController *navi;
+@property (nonatomic,strong) BSNavgationController *iwanNavi,*friendsNavi,*publicNavi,*findNavi,*meNavi;
 
 
 @end

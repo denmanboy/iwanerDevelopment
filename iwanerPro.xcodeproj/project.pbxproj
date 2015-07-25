@@ -177,6 +177,13 @@
 		4A4E74C01B63EECB002384A8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4E74BF1B63EECB002384A8 /* CFNetwork.framework */; };
 		4A4E74C21B63EEE3002384A8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4E74C11B63EEE3002384A8 /* SystemConfiguration.framework */; };
 		4A4E74C51B63F12F002384A8 /* HttpEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E74C41B63F12F002384A8 /* HttpEngine.m */; };
+		4A4E74CB1B64156A002384A8 /* BSNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E74C81B64156A002384A8 /* BSNavgationController.m */; };
+		4A4E74CC1B64156A002384A8 /* BSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E74CA1B64156A002384A8 /* BSViewController.m */; };
+		4A4E74CF1B6417B6002384A8 /* MyMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E74CE1B6417B6002384A8 /* MyMessageViewController.m */; };
+		4A4E74D21B641FF6002384A8 /* MyItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E74D11B641FF6002384A8 /* MyItemViewController.m */; };
+		4A4E74D51B642028002384A8 /* MyLookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E74D41B642028002384A8 /* MyLookViewController.m */; };
+		4A4E74D81B64204B002384A8 /* MyCollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E74D71B64204B002384A8 /* MyCollectViewController.m */; };
+		4A4E74DB1B64236A002384A8 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E74DA1B64236A002384A8 /* SettingViewController.m */; };
 		4AF971951B5E7BAB0090EACA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF971941B5E7BAB0090EACA /* main.m */; };
 		4AF971981B5E7BAB0090EACA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF971971B5E7BAB0090EACA /* AppDelegate.m */; };
 		4AF971A01B5E7BAB0090EACA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF9719F1B5E7BAB0090EACA /* Images.xcassets */; };
@@ -469,6 +476,20 @@
 		4A4E74C11B63EEE3002384A8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4A4E74C31B63F12F002384A8 /* HttpEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpEngine.h; sourceTree = "<group>"; };
 		4A4E74C41B63F12F002384A8 /* HttpEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpEngine.m; sourceTree = "<group>"; };
+		4A4E74C71B64156A002384A8 /* BSNavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSNavgationController.h; sourceTree = "<group>"; };
+		4A4E74C81B64156A002384A8 /* BSNavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSNavgationController.m; sourceTree = "<group>"; };
+		4A4E74C91B64156A002384A8 /* BSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSViewController.h; sourceTree = "<group>"; };
+		4A4E74CA1B64156A002384A8 /* BSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSViewController.m; sourceTree = "<group>"; };
+		4A4E74CD1B6417B6002384A8 /* MyMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMessageViewController.h; sourceTree = "<group>"; };
+		4A4E74CE1B6417B6002384A8 /* MyMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMessageViewController.m; sourceTree = "<group>"; };
+		4A4E74D01B641FF6002384A8 /* MyItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyItemViewController.h; sourceTree = "<group>"; };
+		4A4E74D11B641FF6002384A8 /* MyItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyItemViewController.m; sourceTree = "<group>"; };
+		4A4E74D31B642028002384A8 /* MyLookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLookViewController.h; sourceTree = "<group>"; };
+		4A4E74D41B642028002384A8 /* MyLookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLookViewController.m; sourceTree = "<group>"; };
+		4A4E74D61B64204B002384A8 /* MyCollectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectViewController.h; sourceTree = "<group>"; };
+		4A4E74D71B64204B002384A8 /* MyCollectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectViewController.m; sourceTree = "<group>"; };
+		4A4E74D91B64236A002384A8 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		4A4E74DA1B64236A002384A8 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		4AF9718F1B5E7BAB0090EACA /* iwanerPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iwanerPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AF971931B5E7BAB0090EACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AF971941B5E7BAB0090EACA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -926,6 +947,17 @@
 			path = FXBlurView;
 			sourceTree = "<group>";
 		};
+		4A4E74C61B64156A002384A8 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				4A4E74C71B64156A002384A8 /* BSNavgationController.h */,
+				4A4E74C81B64156A002384A8 /* BSNavgationController.m */,
+				4A4E74C91B64156A002384A8 /* BSViewController.h */,
+				4A4E74CA1B64156A002384A8 /* BSViewController.m */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
 		4AF971861B5E7BAB0090EACA = {
 			isa = PBXGroup;
 			children = (
@@ -966,12 +998,23 @@
 				4A4E72BA1B634FA9002384A8 /* PublicViewController.m */,
 				4A4E72B01B6341A0002384A8 /* FindViewController.h */,
 				4A4E72B11B6341A0002384A8 /* FindViewController.m */,
-				4A4E72AD1B634194002384A8 /* MeViewController.h */,
-				4A4E72AE1B634194002384A8 /* MeViewController.m */,
 				4A4E72BE1B63667D002384A8 /* PublicContentViewController.h */,
 				4A4E72BF1B63667D002384A8 /* PublicContentViewController.m */,
+				4A4E72AD1B634194002384A8 /* MeViewController.h */,
+				4A4E72AE1B634194002384A8 /* MeViewController.m */,
+				4A4E74CD1B6417B6002384A8 /* MyMessageViewController.h */,
+				4A4E74CE1B6417B6002384A8 /* MyMessageViewController.m */,
+				4A4E74D01B641FF6002384A8 /* MyItemViewController.h */,
+				4A4E74D11B641FF6002384A8 /* MyItemViewController.m */,
+				4A4E74D31B642028002384A8 /* MyLookViewController.h */,
+				4A4E74D41B642028002384A8 /* MyLookViewController.m */,
+				4A4E74D61B64204B002384A8 /* MyCollectViewController.h */,
+				4A4E74D71B64204B002384A8 /* MyCollectViewController.m */,
+				4A4E74D91B64236A002384A8 /* SettingViewController.h */,
+				4A4E74DA1B64236A002384A8 /* SettingViewController.m */,
 				4A4E74C31B63F12F002384A8 /* HttpEngine.h */,
 				4A4E74C41B63F12F002384A8 /* HttpEngine.m */,
+				4A4E74C61B64156A002384A8 /* BaseClass */,
 				4A4E72FA1B63E9DD002384A8 /* hongzi.png */,
 				4A4E72BC1B636270002384A8 /* Default-568h@2x.png */,
 				4AF9719F1B5E7BAB0090EACA /* Images.xcassets */,
@@ -1183,6 +1226,7 @@
 				4A4E74BA1B63ECE8002384A8 /* FXBlurView.m in Sources */,
 				4A4E74B41B63EC97002384A8 /* UIView+WebCacheOperation.m in Sources */,
 				4A4E73BA1B63EC1D002384A8 /* UIDevice+Resolutions.m in Sources */,
+				4A4E74D21B641FF6002384A8 /* MyItemViewController.m in Sources */,
 				4A4E74AD1B63EC97002384A8 /* SDWebImagePrefetcher.m in Sources */,
 				4A4E74801B63EC97002384A8 /* MASViewAttribute.m in Sources */,
 				4A4E746E1B63EC97002384A8 /* SBJsonWriter.m in Sources */,
@@ -1192,7 +1236,9 @@
 				4A4E749F1B63EC97002384A8 /* NSString+MKNetworkKitAdditions.m in Sources */,
 				4A4E74AF1B63EC97002384A8 /* UIImage+GIF.m in Sources */,
 				4A4E74AC1B63EC97002384A8 /* SDWebImageManager.m in Sources */,
+				4A4E74D51B642028002384A8 /* MyLookViewController.m in Sources */,
 				4A4E74861B63EC97002384A8 /* MBProgressHUD.m in Sources */,
+				4A4E74CF1B6417B6002384A8 /* MyMessageViewController.m in Sources */,
 				4A4E74A71B63EC97002384A8 /* SDImageCache.m in Sources */,
 				4A4E74B31B63EC97002384A8 /* UIImageView+WebCache.m in Sources */,
 				4A4E74A61B63EC97002384A8 /* NSData+ImageContentType.m in Sources */,
@@ -1232,6 +1278,7 @@
 				4A4E74951B63EC97002384A8 /* MJRefreshStateHeader.m in Sources */,
 				4A4E73171B63EB58002384A8 /* NSMutableDictionary+turnNil.m in Sources */,
 				4A4E731C1B63EB58002384A8 /* UIImage+Extend.m in Sources */,
+				4A4E74D81B64204B002384A8 /* MyCollectViewController.m in Sources */,
 				4A4E746A1B63EC97002384A8 /* NSString+SBJSON.m in Sources */,
 				4A4E74991B63EC97002384A8 /* UIScrollView+MJRefresh.m in Sources */,
 				4A4E72C01B63667D002384A8 /* PublicContentViewController.m in Sources */,
@@ -1243,10 +1290,12 @@
 				4A4E747D1B63EC97002384A8 /* MASConstraint.m in Sources */,
 				4A4E74751B63EC97002384A8 /* read_handle_client.c in Sources */,
 				4A4E74A51B63EC97002384A8 /* MKAnnotationView+WebCache.m in Sources */,
+				4A4E74CC1B64156A002384A8 /* BSViewController.m in Sources */,
 				4A4E748E1B63EC97002384A8 /* MJRefreshAutoNormalFooter.m in Sources */,
 				4A4E72B21B6341A0002384A8 /* FindViewController.m in Sources */,
 				4A4E73151B63EB58002384A8 /* NSDataAdditions.m in Sources */,
 				4A4E74A41B63EC97002384A8 /* Reachability.m in Sources */,
+				4A4E74DB1B64236A002384A8 /* SettingViewController.m in Sources */,
 				4A4E749C1B63EC97002384A8 /* NSData+MKBase64.m in Sources */,
 				4A4E749A1B63EC97002384A8 /* UIView+MJExtension.m in Sources */,
 				4A4E748A1B63EC97002384A8 /* MJRefreshComponent.m in Sources */,
@@ -1264,6 +1313,7 @@
 				4A4E748F1B63EC97002384A8 /* MJRefreshAutoStateFooter.m in Sources */,
 				4A4E72AF1B634194002384A8 /* MeViewController.m in Sources */,
 				4A4E747E1B63EC97002384A8 /* MASConstraintMaker.m in Sources */,
+				4A4E74CB1B64156A002384A8 /* BSNavgationController.m in Sources */,
 				4A4E747F1B63EC97002384A8 /* MASLayoutConstraint.m in Sources */,
 				4A4E74AB1B63EC97002384A8 /* SDWebImageDownloaderOperation.m in Sources */,
 				4A4E74921B63EC97002384A8 /* MJRefreshBackStateFooter.m in Sources */,

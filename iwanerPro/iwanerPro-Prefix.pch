@@ -17,7 +17,7 @@
 
 #import "LYBAdditons.h"
 #import "SynthesizeSingleton.h"
-
+#import "BSNavgationController.h"
 #import "HttpEngine.h"
 #import "SBJSON.h"
 #import "JSON.h"

@@ -37,6 +37,8 @@
     _iwanViewController.tabBarItem.image = [_iwanViewController.tabBarItem.image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     _iwanViewController.tabBarItem.selectedImage = [_iwanViewController.tabBarItem.selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
+    _iwanNavi = [[BSNavgationController alloc] initWithRootViewController:_iwanViewController];
+    
     
     _friendsViewController = [[FriendsViewController alloc] init];
     _friendsViewController.tabBarItem.title = @"朋友圈";
@@ -44,7 +46,7 @@
     _friendsViewController.tabBarItem.selectedImage = [UIImage imageNamed:@"导航-玩友圈-红"];
     _friendsViewController.tabBarItem.image = [_friendsViewController.tabBarItem.image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     _friendsViewController.tabBarItem.selectedImage = [_friendsViewController.tabBarItem.selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    
+    _friendsNavi = [[BSNavgationController alloc] initWithRootViewController:_friendsViewController];
     
     
     _publicViewController = [[PublicViewController alloc] init];
@@ -54,8 +56,7 @@
     _publicViewController.tabBarItem.image = [_publicViewController.tabBarItem.image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     _publicViewController.tabBarItem.selectedImage = [_publicViewController.tabBarItem.selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     _publicViewController.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0,-6, 0);    //调整位置
-    
-    _navi = [[UINavigationController alloc]initWithRootViewController:_publicViewController];
+    _publicNavi = [[BSNavgationController alloc]initWithRootViewController:_publicViewController];
     
     
     
@@ -65,6 +66,7 @@
     _findViewController.tabBarItem.selectedImage = [UIImage imageNamed:@"导航-看见-红"];
     _findViewController.tabBarItem.image = [_findViewController.tabBarItem.image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     _findViewController.tabBarItem.selectedImage = [_findViewController.tabBarItem.selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    _findNavi = [[BSNavgationController alloc]initWithRootViewController:_findViewController];
     
     
     _meViewController = [[MeViewController alloc] init];
@@ -74,6 +76,17 @@
     _meViewController.tabBarItem.badgeValue = @"1";
     _meViewController.tabBarItem.image = [_meViewController.tabBarItem.image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     _meViewController.tabBarItem.selectedImage = [_meViewController.tabBarItem.selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    _meNavi = [[BSNavgationController alloc]initWithRootViewController:_meViewController];
+    _meNavi.navigationBarHidden = YES;
+    [_meNavi.navigationBar setTranslucent:NO];
+    
+      _meNavi.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont boldSystemFontOfSize:20]};
+    _meNavi.navigationBar.barTintColor = COLOR_WITH_RGB(248, 56, 52);
+    [_meNavi.navigationBar setTintColor:[UIColor whiteColor]];
+
+    
+    
+    
     
     //自定义UITabBar的字体颜色
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor grayColor],NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
@@ -81,7 +94,8 @@
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor redColor],
         NSForegroundColorAttributeName, nil]forState:UIControlStateSelected];
 
-    tabBarController.viewControllers = @[_iwanViewController,_friendsViewController,_navi,_findViewController,_meViewController];
+    tabBarController.viewControllers = @[_iwanNavi,_friendsNavi,_publicNavi,_findNavi,_meNavi];
+    
     
     self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];    
@@ -93,8 +107,10 @@
 {
     
     
-    if (viewController == _navi)
+    if (viewController == _publicNavi)
     {
+        UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStyleDone target:nil action:nil];
+        _meNavi.navigationItem.backBarButtonItem = barButtonItem;
         [_publicViewController showPublicContentController];
     }
 
