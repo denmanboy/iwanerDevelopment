@@ -184,6 +184,30 @@
 		4A4E74D51B642028002384A8 /* MyLookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E74D41B642028002384A8 /* MyLookViewController.m */; };
 		4A4E74D81B64204B002384A8 /* MyCollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E74D71B64204B002384A8 /* MyCollectViewController.m */; };
 		4A4E74DB1B64236A002384A8 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E74DA1B64236A002384A8 /* SettingViewController.m */; };
+		4AA8AEC11B653416005AABDA /* 图标-列表右箭头.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEA91B653416005AABDA /* 图标-列表右箭头.pdf */; };
+		4AA8AEC21B653416005AABDA /* 图标-列表右箭头.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEAA1B653416005AABDA /* 图标-列表右箭头.png */; };
+		4AA8AEC31B653416005AABDA /* 图标-列表右箭头@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEAB1B653416005AABDA /* 图标-列表右箭头@2x.png */; };
+		4AA8AEC41B653416005AABDA /* 图标-列表右箭头@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEAC1B653416005AABDA /* 图标-列表右箭头@3x.png */; };
+		4AA8AEC51B653416005AABDA /* 图标-发布主题-地图.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEAD1B653416005AABDA /* 图标-发布主题-地图.pdf */; };
+		4AA8AEC61B653416005AABDA /* 图标-发布主题-地图.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEAE1B653416005AABDA /* 图标-发布主题-地图.png */; };
+		4AA8AEC71B653416005AABDA /* 图标-发布主题-地图@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEAF1B653416005AABDA /* 图标-发布主题-地图@2x.png */; };
+		4AA8AEC81B653416005AABDA /* 图标-发布主题-地图@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEB01B653416005AABDA /* 图标-发布主题-地图@3x.png */; };
+		4AA8AEC91B653416005AABDA /* 按钮-天机图片-按下@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEB11B653416005AABDA /* 按钮-天机图片-按下@3x.png */; };
+		4AA8AECA1B653416005AABDA /* 按钮-添加图片-按下.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEB21B653416005AABDA /* 按钮-添加图片-按下.pdf */; };
+		4AA8AECB1B653416005AABDA /* 按钮-添加图片-按下.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEB31B653416005AABDA /* 按钮-添加图片-按下.png */; };
+		4AA8AECC1B653416005AABDA /* 按钮-添加图片-按下@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEB41B653416005AABDA /* 按钮-添加图片-按下@2x.png */; };
+		4AA8AECD1B653416005AABDA /* 按钮-添加图片.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEB51B653416005AABDA /* 按钮-添加图片.pdf */; };
+		4AA8AECE1B653416005AABDA /* 按钮-添加图片.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEB61B653416005AABDA /* 按钮-添加图片.png */; };
+		4AA8AECF1B653416005AABDA /* 按钮-添加图片@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEB71B653416005AABDA /* 按钮-添加图片@2x.png */; };
+		4AA8AED01B653416005AABDA /* 按钮-添加图片@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEB81B653416005AABDA /* 按钮-添加图片@3x.png */; };
+		4AA8AED11B653416005AABDA /* 按钮-滑块-公开.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEB91B653416005AABDA /* 按钮-滑块-公开.pdf */; };
+		4AA8AED21B653416005AABDA /* 按钮-滑块-公开.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEBA1B653416005AABDA /* 按钮-滑块-公开.png */; };
+		4AA8AED31B653416005AABDA /* 按钮-滑块-公开@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEBB1B653416005AABDA /* 按钮-滑块-公开@2x.png */; };
+		4AA8AED41B653416005AABDA /* 按钮-滑块-公开@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEBC1B653416005AABDA /* 按钮-滑块-公开@3x.png */; };
+		4AA8AED51B653416005AABDA /* 按钮-滑块-玩友.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEBD1B653416005AABDA /* 按钮-滑块-玩友.pdf */; };
+		4AA8AED61B653416005AABDA /* 按钮-滑块-玩友.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEBE1B653416005AABDA /* 按钮-滑块-玩友.png */; };
+		4AA8AED71B653416005AABDA /* 按钮-滑块-玩友@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEBF1B653416005AABDA /* 按钮-滑块-玩友@2x.png */; };
+		4AA8AED81B653416005AABDA /* 按钮-滑块-玩友@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEC01B653416005AABDA /* 按钮-滑块-玩友@3x.png */; };
 		4AF971951B5E7BAB0090EACA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF971941B5E7BAB0090EACA /* main.m */; };
 		4AF971981B5E7BAB0090EACA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF971971B5E7BAB0090EACA /* AppDelegate.m */; };
 		4AF971A01B5E7BAB0090EACA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF9719F1B5E7BAB0090EACA /* Images.xcassets */; };
@@ -490,6 +514,30 @@
 		4A4E74D71B64204B002384A8 /* MyCollectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectViewController.m; sourceTree = "<group>"; };
 		4A4E74D91B64236A002384A8 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		4A4E74DA1B64236A002384A8 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		4AA8AEA91B653416005AABDA /* 图标-列表右箭头.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-列表右箭头.pdf"; sourceTree = "<group>"; };
+		4AA8AEAA1B653416005AABDA /* 图标-列表右箭头.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-列表右箭头.png"; sourceTree = "<group>"; };
+		4AA8AEAB1B653416005AABDA /* 图标-列表右箭头@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-列表右箭头@2x.png"; sourceTree = "<group>"; };
+		4AA8AEAC1B653416005AABDA /* 图标-列表右箭头@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-列表右箭头@3x.png"; sourceTree = "<group>"; };
+		4AA8AEAD1B653416005AABDA /* 图标-发布主题-地图.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-发布主题-地图.pdf"; sourceTree = "<group>"; };
+		4AA8AEAE1B653416005AABDA /* 图标-发布主题-地图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-发布主题-地图.png"; sourceTree = "<group>"; };
+		4AA8AEAF1B653416005AABDA /* 图标-发布主题-地图@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-发布主题-地图@2x.png"; sourceTree = "<group>"; };
+		4AA8AEB01B653416005AABDA /* 图标-发布主题-地图@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-发布主题-地图@3x.png"; sourceTree = "<group>"; };
+		4AA8AEB11B653416005AABDA /* 按钮-天机图片-按下@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-天机图片-按下@3x.png"; sourceTree = "<group>"; };
+		4AA8AEB21B653416005AABDA /* 按钮-添加图片-按下.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-添加图片-按下.pdf"; sourceTree = "<group>"; };
+		4AA8AEB31B653416005AABDA /* 按钮-添加图片-按下.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-添加图片-按下.png"; sourceTree = "<group>"; };
+		4AA8AEB41B653416005AABDA /* 按钮-添加图片-按下@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-添加图片-按下@2x.png"; sourceTree = "<group>"; };
+		4AA8AEB51B653416005AABDA /* 按钮-添加图片.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-添加图片.pdf"; sourceTree = "<group>"; };
+		4AA8AEB61B653416005AABDA /* 按钮-添加图片.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-添加图片.png"; sourceTree = "<group>"; };
+		4AA8AEB71B653416005AABDA /* 按钮-添加图片@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-添加图片@2x.png"; sourceTree = "<group>"; };
+		4AA8AEB81B653416005AABDA /* 按钮-添加图片@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-添加图片@3x.png"; sourceTree = "<group>"; };
+		4AA8AEB91B653416005AABDA /* 按钮-滑块-公开.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-滑块-公开.pdf"; sourceTree = "<group>"; };
+		4AA8AEBA1B653416005AABDA /* 按钮-滑块-公开.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-滑块-公开.png"; sourceTree = "<group>"; };
+		4AA8AEBB1B653416005AABDA /* 按钮-滑块-公开@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-滑块-公开@2x.png"; sourceTree = "<group>"; };
+		4AA8AEBC1B653416005AABDA /* 按钮-滑块-公开@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-滑块-公开@3x.png"; sourceTree = "<group>"; };
+		4AA8AEBD1B653416005AABDA /* 按钮-滑块-玩友.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-滑块-玩友.pdf"; sourceTree = "<group>"; };
+		4AA8AEBE1B653416005AABDA /* 按钮-滑块-玩友.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-滑块-玩友.png"; sourceTree = "<group>"; };
+		4AA8AEBF1B653416005AABDA /* 按钮-滑块-玩友@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-滑块-玩友@2x.png"; sourceTree = "<group>"; };
+		4AA8AEC01B653416005AABDA /* 按钮-滑块-玩友@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-滑块-玩友@3x.png"; sourceTree = "<group>"; };
 		4AF9718F1B5E7BAB0090EACA /* iwanerPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iwanerPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AF971931B5E7BAB0090EACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AF971941B5E7BAB0090EACA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -526,6 +574,7 @@
 		4A4E71F81B61A703002384A8 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				4AA8AEA81B653416005AABDA /* 发布主题 */,
 				4A4E72C11B63E87C002384A8 /* 我 */,
 				4A4E71F91B61A703002384A8 /* 导航图类 */,
 			);
@@ -958,6 +1007,37 @@
 			path = BaseClass;
 			sourceTree = "<group>";
 		};
+		4AA8AEA81B653416005AABDA /* 发布主题 */ = {
+			isa = PBXGroup;
+			children = (
+				4AA8AEA91B653416005AABDA /* 图标-列表右箭头.pdf */,
+				4AA8AEAA1B653416005AABDA /* 图标-列表右箭头.png */,
+				4AA8AEAB1B653416005AABDA /* 图标-列表右箭头@2x.png */,
+				4AA8AEAC1B653416005AABDA /* 图标-列表右箭头@3x.png */,
+				4AA8AEAD1B653416005AABDA /* 图标-发布主题-地图.pdf */,
+				4AA8AEAE1B653416005AABDA /* 图标-发布主题-地图.png */,
+				4AA8AEAF1B653416005AABDA /* 图标-发布主题-地图@2x.png */,
+				4AA8AEB01B653416005AABDA /* 图标-发布主题-地图@3x.png */,
+				4AA8AEB11B653416005AABDA /* 按钮-天机图片-按下@3x.png */,
+				4AA8AEB21B653416005AABDA /* 按钮-添加图片-按下.pdf */,
+				4AA8AEB31B653416005AABDA /* 按钮-添加图片-按下.png */,
+				4AA8AEB41B653416005AABDA /* 按钮-添加图片-按下@2x.png */,
+				4AA8AEB51B653416005AABDA /* 按钮-添加图片.pdf */,
+				4AA8AEB61B653416005AABDA /* 按钮-添加图片.png */,
+				4AA8AEB71B653416005AABDA /* 按钮-添加图片@2x.png */,
+				4AA8AEB81B653416005AABDA /* 按钮-添加图片@3x.png */,
+				4AA8AEB91B653416005AABDA /* 按钮-滑块-公开.pdf */,
+				4AA8AEBA1B653416005AABDA /* 按钮-滑块-公开.png */,
+				4AA8AEBB1B653416005AABDA /* 按钮-滑块-公开@2x.png */,
+				4AA8AEBC1B653416005AABDA /* 按钮-滑块-公开@3x.png */,
+				4AA8AEBD1B653416005AABDA /* 按钮-滑块-玩友.pdf */,
+				4AA8AEBE1B653416005AABDA /* 按钮-滑块-玩友.png */,
+				4AA8AEBF1B653416005AABDA /* 按钮-滑块-玩友@2x.png */,
+				4AA8AEC01B653416005AABDA /* 按钮-滑块-玩友@3x.png */,
+			);
+			path = "发布主题";
+			sourceTree = "<group>";
+		};
 		4AF971861B5E7BAB0090EACA = {
 			isa = PBXGroup;
 			children = (
@@ -1132,14 +1212,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A4E72401B61A703002384A8 /* 导航-玩友圈-红@2x.png in Resources */,
+				4AA8AECE1B653416005AABDA /* 按钮-添加图片.png in Resources */,
 				4A4E72461B61A703002384A8 /* 导航-看见-红.pdf in Resources */,
+				4AA8AEC71B653416005AABDA /* 图标-发布主题-地图@2x.png in Resources */,
 				4A4E72371B61A703002384A8 /* 导航-爱玩-红.png in Resources */,
 				4A4E72F41B63E87D002384A8 /* 图标-我-更换头像@2x.png in Resources */,
 				4A4E72331B61A703002384A8 /* 导航-爱玩-灰.png in Resources */,
+				4AA8AECB1B653416005AABDA /* 按钮-添加图片-按下.png in Resources */,
 				4A4E72E21B63E87D002384A8 /* 图标-我-我的主题.pdf in Resources */,
 				4A4E72EE1B63E87D002384A8 /* 图标-我-我的看见.pdf in Resources */,
 				4A4E72291B61A703002384A8 /* 导航-发布-黑@3x.png in Resources */,
 				4A4E72BD1B636270002384A8 /* Default-568h@2x.png in Resources */,
+				4AA8AEC91B653416005AABDA /* 按钮-天机图片-按下@3x.png in Resources */,
 				4A4E72261B61A703002384A8 /* 导航-发布-黑.pdf in Resources */,
 				4A4E72F31B63E87D002384A8 /* 图标-我-更换头像.png in Resources */,
 				4A4E72F11B63E87D002384A8 /* 图标-我-我的看见@3x.png in Resources */,
@@ -1156,26 +1240,32 @@
 				4A4E72391B61A703002384A8 /* 导航-爱玩-红@3x.png in Resources */,
 				4A4E72351B61A703002384A8 /* 导航-爱玩-灰@3x.png in Resources */,
 				4A4E722A1B61A703002384A8 /* 导航-我-灰.pdf in Resources */,
+				4AA8AEC61B653416005AABDA /* 图标-发布主题-地图.png in Resources */,
 				4A4E722E1B61A703002384A8 /* 导航-我-红.pdf in Resources */,
 				4A4E72381B61A703002384A8 /* 导航-爱玩-红@2x.png in Resources */,
 				4A4E72EB1B63E87D002384A8 /* 图标-我-我的消息.png in Resources */,
 				4A4E72F51B63E87D002384A8 /* 图标-我-更换头像@3x.png in Resources */,
+				4AA8AEC31B653416005AABDA /* 图标-列表右箭头@2x.png in Resources */,
 				4AF971A01B5E7BAB0090EACA /* Images.xcassets in Resources */,
 				4A4E72E61B63E87D002384A8 /* 图标-我-我的收藏.pdf in Resources */,
 				4A4E72431B61A703002384A8 /* 导航-看见-灰.png in Resources */,
 				4A4E722D1B61A703002384A8 /* 导航-我-灰@3x.png in Resources */,
+				4AA8AED51B653416005AABDA /* 按钮-滑块-玩友.pdf in Resources */,
 				4A4E72E51B63E87D002384A8 /* 图标-我-我的主题@3x.png in Resources */,
 				4A4E72221B61A703002384A8 /* 导航-发布-灰.pdf in Resources */,
 				4A4E72EA1B63E87D002384A8 /* 图标-我-我的消息.pdf in Resources */,
 				4A4E72321B61A703002384A8 /* 导航-爱玩-灰.pdf in Resources */,
 				4A4E72251B61A703002384A8 /* 导航-发布-灰@3x.png in Resources */,
 				4A4E72281B61A703002384A8 /* 导航-发布-黑@2x.png in Resources */,
+				4AA8AED81B653416005AABDA /* 按钮-滑块-玩友@3x.png in Resources */,
 				4A4E723E1B61A703002384A8 /* 导航-玩友圈-红.pdf in Resources */,
 				4A4E72F01B63E87D002384A8 /* 图标-我-我的看见@2x.png in Resources */,
 				4A4E72311B61A703002384A8 /* 导航-我-红@3x.png in Resources */,
+				4AA8AED61B653416005AABDA /* 按钮-滑块-玩友.png in Resources */,
 				4A4E72DF1B63E87D002384A8 /* 图标-我-位置.png in Resources */,
 				4A4E74851B63EC97002384A8 /* LICENSE in Resources */,
 				4A4E72E11B63E87D002384A8 /* 图标-我-位置@3x.png in Resources */,
+				4AA8AEC11B653416005AABDA /* 图标-列表右箭头.pdf in Resources */,
 				4A4E72EC1B63E87D002384A8 /* 图标-我-我的消息@2x.png in Resources */,
 				4A4E72361B61A703002384A8 /* 导航-爱玩-红.pdf in Resources */,
 				4A4E72471B61A703002384A8 /* 导航-看见-红.png in Resources */,
@@ -1185,23 +1275,37 @@
 				4A4E72FB1B63E9DD002384A8 /* hongzi.png in Resources */,
 				4A4E72EF1B63E87D002384A8 /* 图标-我-我的看见.png in Resources */,
 				4A4E72411B61A703002384A8 /* 导航-玩友圈-红@3x.png in Resources */,
+				4AA8AEC51B653416005AABDA /* 图标-发布主题-地图.pdf in Resources */,
+				4AA8AEC81B653416005AABDA /* 图标-发布主题-地图@3x.png in Resources */,
+				4AA8AECF1B653416005AABDA /* 按钮-添加图片@2x.png in Resources */,
 				4A4E723A1B61A703002384A8 /* 导航-玩友圈-灰.pdf in Resources */,
+				4AA8AECC1B653416005AABDA /* 按钮-添加图片-按下@2x.png in Resources */,
 				4A4E72341B61A703002384A8 /* 导航-爱玩-灰@2x.png in Resources */,
 				4A4E72F21B63E87D002384A8 /* 图标-我-更换头像.pdf in Resources */,
 				4A4E72491B61A703002384A8 /* 导航-看见-红@3x.png in Resources */,
+				4AA8AED31B653416005AABDA /* 按钮-滑块-公开@2x.png in Resources */,
 				4A4E72231B61A703002384A8 /* 导航-发布-灰.png in Resources */,
 				4A4E72F91B63E87D002384A8 /* 图标-我-设置@3x.png in Resources */,
 				4A4E72241B61A703002384A8 /* 导航-发布-灰@2x.png in Resources */,
+				4AA8AEC21B653416005AABDA /* 图标-列表右箭头.png in Resources */,
+				4AA8AED11B653416005AABDA /* 按钮-滑块-公开.pdf in Resources */,
 				4A4E72E71B63E87D002384A8 /* 图标-我-我的收藏.png in Resources */,
 				4A4E72481B61A703002384A8 /* 导航-看见-红@2x.png in Resources */,
+				4AA8AED41B653416005AABDA /* 按钮-滑块-公开@3x.png in Resources */,
+				4AA8AECA1B653416005AABDA /* 按钮-添加图片-按下.pdf in Resources */,
 				4A4E72271B61A703002384A8 /* 导航-发布-黑.png in Resources */,
+				4AA8AEC41B653416005AABDA /* 图标-列表右箭头@3x.png in Resources */,
+				4AA8AED21B653416005AABDA /* 按钮-滑块-公开.png in Resources */,
 				4A4E72DE1B63E87D002384A8 /* 图标-我-位置.pdf in Resources */,
 				4A4E72ED1B63E87D002384A8 /* 图标-我-我的消息@3x.png in Resources */,
 				4A4E72441B61A703002384A8 /* 导航-看见-灰@2x.png in Resources */,
 				4A4E722F1B61A703002384A8 /* 导航-我-红.png in Resources */,
 				4A4E72E41B63E87D002384A8 /* 图标-我-我的主题@2x.png in Resources */,
+				4AA8AED71B653416005AABDA /* 按钮-滑块-玩友@2x.png in Resources */,
 				4A4E722C1B61A703002384A8 /* 导航-我-灰@2x.png in Resources */,
+				4AA8AED01B653416005AABDA /* 按钮-添加图片@3x.png in Resources */,
 				4A4E72E81B63E87D002384A8 /* 图标-我-我的收藏@2x.png in Resources */,
+				4AA8AECD1B653416005AABDA /* 按钮-添加图片.pdf in Resources */,
 				4A4E72301B61A703002384A8 /* 导航-我-红@2x.png in Resources */,
 				4A4E723D1B61A703002384A8 /* 导航-玩友圈-灰@3x.png in Resources */,
 			);
