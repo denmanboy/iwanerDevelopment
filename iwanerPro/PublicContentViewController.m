@@ -104,6 +104,42 @@
     _itemTimeBack.backgroundColor = [UIColor whiteColor];
     [self.backScrollView addSubview:_itemTimeBack];
     
+    UILabel *itemTip = [[UILabel alloc] initWithFrame:CGRectMake(10, 7, 80, 30)];
+    itemTip.backgroundColor = [UIColor clearColor];
+    itemTip.text = @"主题标题";
+    itemTip.textColor = COLOR_WITH_ARGB(90, 95, 109, 1);
+    itemTip.font = [UIFont boldSystemFontOfSize:15];
+    [_itemTimeBack addSubview:itemTip];
+    
+    
+    UILabel *itemTip2 = [[UILabel alloc] initWithFrame:CGRectMake(76, 7, 100, 30)];
+    itemTip2.backgroundColor = [UIColor clearColor];
+    itemTip2.text = @"(必填)";
+    itemTip2.textColor = [UIColor grayColor];
+    itemTip2.font = [UIFont systemFontOfSize:13];
+    [_itemTimeBack addSubview:itemTip2];
+    
+    UIView *line1 = [[UIView alloc] initWithFrame:CGRectMake(20, 74.5, SCREEN_WIDTH - 20, 1)];
+    line1.backgroundColor = COLOR_WITH_RGB(235, 235, 241);
+    [_itemTimeBack addSubview:line1];
+    
+    
+    UILabel *itemtimeTip = [[UILabel alloc] initWithFrame:CGRectMake(10, 83, 80, 30)];
+    itemtimeTip.backgroundColor = [UIColor clearColor];
+    itemtimeTip.text = @"主题时间";
+    itemtimeTip.textColor = COLOR_WITH_ARGB(90, 95, 109, 1);
+    itemtimeTip.font = [UIFont boldSystemFontOfSize:15];
+    [_itemTimeBack addSubview:itemtimeTip];
+    
+    
+    UILabel *itemtimeTip2 = [[UILabel alloc] initWithFrame:CGRectMake(76, 83, 100, 30)];
+    itemtimeTip2.backgroundColor = [UIColor clearColor];
+    itemtimeTip2.text = @"(必填)";
+    itemtimeTip2.textColor = [UIColor grayColor];
+    itemtimeTip2.font = [UIFont systemFontOfSize:13];
+    [_itemTimeBack addSubview:itemtimeTip2];
+    
+    
     
     _mapBack = [[UIView alloc] initWithFrame:CGRectMake(0, 282, SCREEN_WIDTH, 364)];
     _mapBack.backgroundColor = [UIColor whiteColor];
@@ -111,9 +147,41 @@
     
    
     
+    
+    UILabel *mapTip = [[UILabel alloc] initWithFrame:CGRectMake(10, 7, 80, 30)];
+    mapTip.backgroundColor = [UIColor clearColor];
+    mapTip.text = @"主题地址";
+    mapTip.textColor = COLOR_WITH_ARGB(90, 95, 109, 1);
+    mapTip.font = [UIFont boldSystemFontOfSize:15];
+    [_mapBack addSubview:mapTip];
+    
+    
+    UILabel *mapTip2 = [[UILabel alloc] initWithFrame:CGRectMake(76, 7, 100, 30)];
+    mapTip2.backgroundColor = [UIColor clearColor];
+    mapTip2.text = @"(必填)";
+    mapTip2.textColor = [UIColor grayColor];
+    mapTip2.font = [UIFont systemFontOfSize:13];
+    [_mapBack addSubview:mapTip2];
+    
+    
+    
     _detailBack = [[UIView alloc] initWithFrame:CGRectMake(0, 656, SCREEN_WIDTH, 160)];
     _detailBack.backgroundColor = [UIColor whiteColor];
     [self.backScrollView addSubview:_detailBack];
+    
+    
+    
+    
+//    UILabel *buChong = [[UILabel] i]
+    
+    UILabel *buChong = [[UILabel alloc] initWithFrame:CGRectMake(10, 7, 280, 30)];
+    buChong.backgroundColor = [UIColor clearColor];
+    buChong.text = @"在这里补充说些什么...";
+    buChong.textColor = [UIColor grayColor];
+    buChong.font = [UIFont systemFontOfSize:15];
+    [_detailBack addSubview:buChong];
+    
+    
     
     _competenceBack = [[UIView alloc] initWithFrame:CGRectMake(0, 826, SCREEN_WIDTH, 43)];
     _competenceBack.backgroundColor = [UIColor whiteColor];
