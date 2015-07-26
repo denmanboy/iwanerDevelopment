@@ -50,13 +50,25 @@
     
     
     _publicViewController = [[PublicViewController alloc] init];
-    _publicViewController.tabBarItem.image = [UIImage imageNamed:@"导航-发布-灰"];
+//    _publicViewController.tabBarItem.image = [UIImage imageNamed:@"导航-发布-灰"];
     _publicViewController.tabBarItem.title = nil;
-    _publicViewController.tabBarItem.selectedImage = [UIImage imageNamed:@"导航-发布-黑"];
-    _publicViewController.tabBarItem.image = [_publicViewController.tabBarItem.image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    _publicViewController.tabBarItem.selectedImage = [_publicViewController.tabBarItem.selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    _publicViewController.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0,-6, 0);    //调整位置
+
+//    _publicViewController.tabBarItem.selectedImage = [UIImage imageNamed:@"导航-发布-黑"];
+//    _publicViewController.tabBarItem.image = [_publicViewController.tabBarItem.image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//    _publicViewController.tabBarItem.selectedImage = [_publicViewController.tabBarItem.selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//    _publicViewController.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0,-6, 0);    //调整位置
     _publicNavi = [[BSNavgationController alloc]initWithRootViewController:_publicViewController];
+    _publicNavi.tabBarItem.enabled = NO;
+    
+    
+    UIButton *publicBt = [UIButton buttonWithType:UIButtonTypeCustom];
+    publicBt.frame = CGRectMake(SCREEN_WIDTH/2 - SCREEN_WIDTH/10, 0, SCREEN_WIDTH/5, 50);
+    [publicBt setImage:[UIImage imageNamed:@"导航-发布-灰"] forState:UIControlStateNormal];
+    [publicBt setImage:[UIImage imageNamed:@"导航-发布-黑"] forState:UIControlStateHighlighted];
+    [publicBt addTarget:self action:@selector(gotoPublic) forControlEvents:UIControlEventTouchUpInside];
+    publicBt.backgroundColor = [UIColor clearColor];
+    [tabBarController.tabBar addSubview:publicBt];
+    
     
     
     
@@ -106,17 +118,19 @@
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
 {
     
-    
-    if (viewController == _publicNavi)
-    {
-        UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStyleDone target:nil action:nil];
-        _meNavi.navigationItem.backBarButtonItem = barButtonItem;
-        [_publicViewController showPublicContentController];
-    }
 
     return YES;
 }
 
+
+- (void)gotoPublic
+{
+    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStyleDone target:nil action:nil];
+    _meNavi.navigationItem.backBarButtonItem = barButtonItem;
+    [_publicViewController showPublicContentController];
+
+    
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

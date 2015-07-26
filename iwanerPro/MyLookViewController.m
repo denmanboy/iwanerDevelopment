@@ -34,8 +34,15 @@
 {
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden = NO;
+    self.tabBarController.tabBar.hidden = YES;
     //    self.navigationController.navigationBar.barTintColor = COLOR_WITH_RGB(248, 56, 52);
     
+}
+
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    self.tabBarController.tabBar.hidden = NO;
 }
 
 /*
