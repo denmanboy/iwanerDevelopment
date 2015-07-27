@@ -172,6 +172,7 @@
     
     
     
+    
 //    UILabel *buChong = [[UILabel] i]
     
     UILabel *buChong = [[UILabel alloc] initWithFrame:CGRectMake(10, 7, 280, 30)];
@@ -211,9 +212,40 @@
     _publicBt.frame = CGRectMake(20, 882, SCREEN_WIDTH - 40, 45);
     [self.backScrollView  addSubview:_publicBt];
     
+    
+    _itemTextField = [[UITextField alloc] initWithFrame:CGRectMake(20, 36, SCREEN_WIDTH - 40, 30)];
+    _itemTextField.backgroundColor = [UIColor clearColor];
+    _itemTextField.placeholder = @"输入一个标题(不少于5个字)";
+    _itemTextField.returnKeyType = UIReturnKeyDone;
+    _itemTextField.delegate = self;
+    _itemTextField.font = [UIFont systemFontOfSize:13];
+    [_itemTimeBack addSubview:_itemTextField];
+    
+    
+    self.view.userInteractionEnabled = YES;
+    
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(fingerTapped:)];
+    
+    [self.view addGestureRecognizer:singleTap];
+    
+    
+
 //    _detailBack
 //    _mapBack
     // Do any additional setup after loading the view.
+}
+
+//
+-(void)fingerTapped:(UITapGestureRecognizer *)gestureRecognizer
+{
+     [_itemTextField resignFirstResponder];
+}
+
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    [textField resignFirstResponder];
+    return YES;
 }
 
 

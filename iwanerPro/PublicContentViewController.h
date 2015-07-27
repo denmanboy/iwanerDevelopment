@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PublicContentViewController : UIViewController
+@interface PublicContentViewController : UIViewController<UITextFieldDelegate>
 
 @property (nonatomic,strong) UIScrollView *backScrollView;
 @property (nonatomic,strong) UIView *upPhotoesBack;
@@ -17,5 +17,10 @@
 @property (nonatomic,strong) UIView *detailBack;
 @property (nonatomic,strong) UIView *competenceBack;
 @property (nonatomic,strong) UIButton *publicBt;
+
+@property (nonatomic,strong) UITextField *itemTextField;
+
+
+
 
 @end

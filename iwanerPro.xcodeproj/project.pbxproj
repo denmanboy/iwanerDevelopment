@@ -53,7 +53,6 @@
 		4A4E72B51B6341DC002384A8 /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E72B41B6341DC002384A8 /* FriendsViewController.m */; };
 		4A4E72B81B6341F8002384A8 /* IwanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E72B71B6341F8002384A8 /* IwanViewController.m */; };
 		4A4E72BB1B634FA9002384A8 /* PublicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E72BA1B634FA9002384A8 /* PublicViewController.m */; };
-		4A4E72BD1B636270002384A8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E72BC1B636270002384A8 /* Default-568h@2x.png */; };
 		4A4E72C01B63667D002384A8 /* PublicContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E72BF1B63667D002384A8 /* PublicContentViewController.m */; };
 		4A4E72DE1B63E87D002384A8 /* 图标-我-位置.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E72C21B63E87D002384A8 /* 图标-我-位置.pdf */; };
 		4A4E72DF1B63E87D002384A8 /* 图标-我-位置.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E72C31B63E87D002384A8 /* 图标-我-位置.png */; };
@@ -184,6 +183,7 @@
 		4A4E74D51B642028002384A8 /* MyLookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E74D41B642028002384A8 /* MyLookViewController.m */; };
 		4A4E74D81B64204B002384A8 /* MyCollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E74D71B64204B002384A8 /* MyCollectViewController.m */; };
 		4A4E74DB1B64236A002384A8 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E74DA1B64236A002384A8 /* SettingViewController.m */; };
+		4A6A9CC31B6673D1008A5232 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A6A9CC21B6673D1008A5232 /* Default-568h@2x.png */; };
 		4AA8AEC11B653416005AABDA /* 图标-列表右箭头.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEA91B653416005AABDA /* 图标-列表右箭头.pdf */; };
 		4AA8AEC21B653416005AABDA /* 图标-列表右箭头.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEAA1B653416005AABDA /* 图标-列表右箭头.png */; };
 		4AA8AEC31B653416005AABDA /* 图标-列表右箭头@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEAB1B653416005AABDA /* 图标-列表右箭头@2x.png */; };
@@ -277,7 +277,6 @@
 		4A4E72B71B6341F8002384A8 /* IwanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IwanViewController.m; sourceTree = "<group>"; };
 		4A4E72B91B634FA9002384A8 /* PublicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicViewController.h; sourceTree = "<group>"; };
 		4A4E72BA1B634FA9002384A8 /* PublicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicViewController.m; sourceTree = "<group>"; };
-		4A4E72BC1B636270002384A8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4A4E72BE1B63667D002384A8 /* PublicContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicContentViewController.h; sourceTree = "<group>"; };
 		4A4E72BF1B63667D002384A8 /* PublicContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicContentViewController.m; sourceTree = "<group>"; };
 		4A4E72C21B63E87D002384A8 /* 图标-我-位置.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-我-位置.pdf"; sourceTree = "<group>"; };
@@ -514,6 +513,7 @@
 		4A4E74D71B64204B002384A8 /* MyCollectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectViewController.m; sourceTree = "<group>"; };
 		4A4E74D91B64236A002384A8 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		4A4E74DA1B64236A002384A8 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		4A6A9CC21B6673D1008A5232 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4AA8AEA91B653416005AABDA /* 图标-列表右箭头.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-列表右箭头.pdf"; sourceTree = "<group>"; };
 		4AA8AEAA1B653416005AABDA /* 图标-列表右箭头.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-列表右箭头.png"; sourceTree = "<group>"; };
 		4AA8AEAB1B653416005AABDA /* 图标-列表右箭头@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-列表右箭头@2x.png"; sourceTree = "<group>"; };
@@ -1003,6 +1003,7 @@
 				4A4E74C81B64156A002384A8 /* BSNavgationController.m */,
 				4A4E74C91B64156A002384A8 /* BSViewController.h */,
 				4A4E74CA1B64156A002384A8 /* BSViewController.m */,
+				4A6A9CC21B6673D1008A5232 /* Default-568h@2x.png */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -1096,7 +1097,6 @@
 				4A4E74C41B63F12F002384A8 /* HttpEngine.m */,
 				4A4E74C61B64156A002384A8 /* BaseClass */,
 				4A4E72FA1B63E9DD002384A8 /* hongzi.png */,
-				4A4E72BC1B636270002384A8 /* Default-568h@2x.png */,
 				4AF9719F1B5E7BAB0090EACA /* Images.xcassets */,
 				4A4E71F81B61A703002384A8 /* resources */,
 				4AF971921B5E7BAB0090EACA /* Supporting Files */,
@@ -1222,7 +1222,6 @@
 				4A4E72E21B63E87D002384A8 /* 图标-我-我的主题.pdf in Resources */,
 				4A4E72EE1B63E87D002384A8 /* 图标-我-我的看见.pdf in Resources */,
 				4A4E72291B61A703002384A8 /* 导航-发布-黑@3x.png in Resources */,
-				4A4E72BD1B636270002384A8 /* Default-568h@2x.png in Resources */,
 				4AA8AEC91B653416005AABDA /* 按钮-天机图片-按下@3x.png in Resources */,
 				4A4E72261B61A703002384A8 /* 导航-发布-黑.pdf in Resources */,
 				4A4E72F31B63E87D002384A8 /* 图标-我-更换头像.png in Resources */,
@@ -1249,6 +1248,7 @@
 				4AF971A01B5E7BAB0090EACA /* Images.xcassets in Resources */,
 				4A4E72E61B63E87D002384A8 /* 图标-我-我的收藏.pdf in Resources */,
 				4A4E72431B61A703002384A8 /* 导航-看见-灰.png in Resources */,
+				4A6A9CC31B6673D1008A5232 /* Default-568h@2x.png in Resources */,
 				4A4E722D1B61A703002384A8 /* 导航-我-灰@3x.png in Resources */,
 				4AA8AED51B653416005AABDA /* 按钮-滑块-玩友.pdf in Resources */,
 				4A4E72E51B63E87D002384A8 /* 图标-我-我的主题@3x.png in Resources */,
