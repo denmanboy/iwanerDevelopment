@@ -42,8 +42,8 @@
 
 //当前设备的版本号
 #define currentDeviceVersion [[[UIDevice currentDevice] systemVersion] doubleValue]
-
-
+/**若引用*/
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self
 // 设置COLOR
 #define COLOR_WITH_ARGB(R,G,B,A)            [UIColor colorWithRed:R / 255.0 green:G / 255.0 blue:B / 255.0 alpha:A]
 #define COLOR_WITH_RGB(R,G,B)               [UIColor colorWithRed:R / 255.0 green:G / 255.0 blue:B / 255.0 alpha:1]
