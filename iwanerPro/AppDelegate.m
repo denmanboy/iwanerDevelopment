@@ -16,20 +16,29 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
+    
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
-//    [NSThread sleepForTimeInterval:1];
+    //    [NSThread sleepForTimeInterval:1];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    NSLog(@"dadadadad======%@",NSStringFromCGRect(self.window.frame));
+    //    NSLog(@"dadadadad======%@",NSStringFromCGRect(self.window.frame));
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    _loginViewController = [[LoginViewController alloc]init];
+    _loginViewController.delegate = self;
+    _loginNav = [[BSNavgationController alloc]initWithRootViewController:_loginViewController];
+    self.window.rootViewController = _loginNav;
+    
+    [self.window makeKeyAndVisible];
+    return YES;
+}
 
-
+- (void)loginauthenticationSuccess {
+    
     UITabBarController *tabBarController = [[UITabBarController alloc]init];
     
     tabBarController.delegate = self;
-    
     _iwanViewController = [[IwanViewController alloc] init];
     _iwanViewController.tabBarItem.title = @"爱玩";
     _iwanViewController.tabBarItem.image = [UIImage imageNamed:@"导航-爱玩-灰"];
@@ -50,13 +59,13 @@
     
     
     _publicViewController = [[PublicViewController alloc] init];
-//    _publicViewController.tabBarItem.image = [UIImage imageNamed:@"导航-发布-灰"];
+    //    _publicViewController.tabBarItem.image = [UIImage imageNamed:@"导航-发布-灰"];
     _publicViewController.tabBarItem.title = nil;
-
-//    _publicViewController.tabBarItem.selectedImage = [UIImage imageNamed:@"导航-发布-黑"];
-//    _publicViewController.tabBarItem.image = [_publicViewController.tabBarItem.image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-//    _publicViewController.tabBarItem.selectedImage = [_publicViewController.tabBarItem.selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-//    _publicViewController.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0,-6, 0);    //调整位置
+    
+    //    _publicViewController.tabBarItem.selectedImage = [UIImage imageNamed:@"导航-发布-黑"];
+    //    _publicViewController.tabBarItem.image = [_publicViewController.tabBarItem.image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    //    _publicViewController.tabBarItem.selectedImage = [_publicViewController.tabBarItem.selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    //    _publicViewController.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0,-6, 0);    //调整位置
     _publicNavi = [[BSNavgationController alloc]initWithRootViewController:_publicViewController];
     _publicNavi.tabBarItem.enabled = NO;
     
@@ -92,10 +101,10 @@
     _meNavi.navigationBarHidden = YES;
     [_meNavi.navigationBar setTranslucent:NO];
     
-      _meNavi.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont boldSystemFontOfSize:20]};
+    _meNavi.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont boldSystemFontOfSize:20]};
     _meNavi.navigationBar.barTintColor = COLOR_WITH_RGB(248, 56, 52);
     [_meNavi.navigationBar setTintColor:[UIColor whiteColor]];
-
+    
     
     
     
@@ -104,21 +113,22 @@
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor grayColor],NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
     
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor redColor],
-        NSForegroundColorAttributeName, nil]forState:UIControlStateSelected];
-
+                                                       NSForegroundColorAttributeName, nil]forState:UIControlStateSelected];
+    
     tabBarController.viewControllers = @[_iwanNavi,_friendsNavi,_publicNavi,_findNavi,_meNavi];
     
     
+    
     self.window.rootViewController = tabBarController;
-    [self.window makeKeyAndVisible];    
-    return YES;
+    
+    
 }
 
 
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
 {
     
-
+    
     return YES;
 }
 
@@ -128,7 +138,7 @@
     UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStyleDone target:nil action:nil];
     _meNavi.navigationItem.backBarButtonItem = barButtonItem;
     [_publicViewController showPublicContentController];
-
+    
     
 }
 

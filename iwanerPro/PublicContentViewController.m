@@ -20,7 +20,7 @@
     
     [super viewDidLoad];
     
-    
+    _selectTimeInputStatus = SelectTimeInputStatusNone;
     self.view.backgroundColor = COLOR_WITH_RGB(235, 235, 241);
     self.view.userInteractionEnabled = YES;
     
@@ -29,10 +29,6 @@
     UIView *locationNaViView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 60)];
     locationNaViView.backgroundColor = COLOR_WITH_RGB(248, 56, 52);
     [self.view addSubview:locationNaViView];
-    
-    
-  
-    
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame =CGRectMake(0, 15, 60, 40);
@@ -44,8 +40,6 @@
     [button setTitleColor:COLOR_WITH_RGB(218, 218, 218) forState:UIControlStateHighlighted];
     [button addTarget:self action:@selector(gotoBack) forControlEvents:UIControlEventTouchUpInside];
     [locationNaViView addSubview:button];
-    
-    
     
     
     UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(SCREEN_WIDTH/2 - 80, 15, 160, 40)];
@@ -62,10 +56,6 @@
     _backScrollView.backgroundColor = COLOR_WITH_RGB(235, 235, 241);
     _backScrollView.contentSize = CGSizeMake(SCREEN_WIDTH, 940);
     [self.view addSubview:_backScrollView];
-    
-    
-
-    
     
     
     _upPhotoesBack = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 112)];
@@ -85,7 +75,7 @@
     upPhotoTip2.backgroundColor = [UIColor clearColor];
     upPhotoTip2.text = @"(必填)";
     upPhotoTip2.textColor = [UIColor grayColor];
-    upPhotoTip2.font = [UIFont systemFontOfSize:13];
+    upPhotoTip2.font = [UIFont systemFontOfSize:11];
     [_upPhotoesBack addSubview:upPhotoTip2];
     
     
@@ -112,14 +102,33 @@
     [_itemTimeBack addSubview:itemTip];
     
     
+    
+    _itemTextField = [[UITextField alloc] initWithFrame:CGRectMake(17, 36, SCREEN_WIDTH - 40, 30)];
+    _itemTextField.backgroundColor = [UIColor clearColor];
+    _itemTextField.placeholder = @"输入一个标题(不少于5个字)";
+    UIColor *color = [UIColor grayColor];
+    _itemTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"输入一个标题(不少于5个字)" attributes:@{NSForegroundColorAttributeName: color}];
+    _itemTextField.returnKeyType = UIReturnKeyDone;
+    _itemTextField.delegate = self;
+    [_itemTextField addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
+    _itemTextField.font = [UIFont systemFontOfSize:12];
+    [_itemTimeBack addSubview:_itemTextField];
+    
+    
+    self.view.userInteractionEnabled = YES;
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(fingerTapped:)];
+    [self.view addGestureRecognizer:singleTap];
+    
+    
+    
     UILabel *itemTip2 = [[UILabel alloc] initWithFrame:CGRectMake(76, 7, 100, 30)];
     itemTip2.backgroundColor = [UIColor clearColor];
     itemTip2.text = @"(必填)";
     itemTip2.textColor = [UIColor grayColor];
-    itemTip2.font = [UIFont systemFontOfSize:13];
+    itemTip2.font = [UIFont systemFontOfSize:11];
     [_itemTimeBack addSubview:itemTip2];
     
-    UIView *line1 = [[UIView alloc] initWithFrame:CGRectMake(20, 74.5, SCREEN_WIDTH - 20, 1)];
+    UIView *line1 = [[UIView alloc] initWithFrame:CGRectMake(17, 74.5, SCREEN_WIDTH - 20, 1)];
     line1.backgroundColor = COLOR_WITH_RGB(235, 235, 241);
     [_itemTimeBack addSubview:line1];
     
@@ -136,16 +145,89 @@
     itemtimeTip2.backgroundColor = [UIColor clearColor];
     itemtimeTip2.text = @"(必填)";
     itemtimeTip2.textColor = [UIColor grayColor];
-    itemtimeTip2.font = [UIFont systemFontOfSize:13];
+    itemtimeTip2.font = [UIFont systemFontOfSize:11];
     [_itemTimeBack addSubview:itemtimeTip2];
     
     
+    
+    _startTimeBt = [UILabelButton buttonWithType:UIButtonTypeCustom];
+    _startTimeBt.frame = CGRectMake(17, 110, 130, 25);
+    [_startTimeBt addLabelInsertButton];
+
+    _startTimeBt.backgroundColor = [UIColor clearColor];
+    _startTimeBt.label.font = [UIFont systemFontOfSize:12];
+    _startTimeBt.label.textColor = [UIColor grayColor];
+    _startTimeBt.label.text = @"开始时间";
+    _startTimeBt.label.textAlignment = NSTextAlignmentLeft;
+    [_startTimeBt addTarget:self action:@selector(selectStartTime) forControlEvents:UIControlEventTouchUpInside];
+    [_itemTimeBack addSubview:_startTimeBt];
+    
+    
+    UIView *lineV = [[UIView alloc] initWithFrame:CGRectMake(150, 112, 2, 16)];
+    lineV.backgroundColor = COLOR_WITH_RGB(167, 170, 179);
+    [_itemTimeBack addSubview:lineV];
+    
+    
+    _endTimeBt = [UILabelButton buttonWithType:UIButtonTypeCustom];
+    _endTimeBt.frame = CGRectMake(170, 110, 130, 25);
+    [_endTimeBt addLabelInsertButton];
+    _endTimeBt.backgroundColor = [UIColor clearColor];
+    _endTimeBt.label.font = [UIFont systemFontOfSize:12];
+    _endTimeBt.label.textColor = [UIColor grayColor];
+    _endTimeBt.label.text = @"结束时间";
+    _endTimeBt.label.textAlignment = NSTextAlignmentLeft;
+    [_endTimeBt addTarget:self action:@selector(selectEndTime) forControlEvents:UIControlEventTouchUpInside];
+    [_itemTimeBack addSubview:_endTimeBt];
+    
+
+    _dateBackView = [[UIView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, 236)];
+    _dateBackView.backgroundColor = COLOR_WITH_RGB(235, 235, 241);
+    _dateBackView.userInteractionEnabled = YES;
+    [self.view addSubview:_dateBackView];
+    
+    
+    NSDate *localeDate = [NSDate date];
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSDateComponents *offsetComponents = [[NSDateComponents alloc] init];
+    [offsetComponents setYear:0];
+    [offsetComponents setMonth:0];
+    [offsetComponents setDay:5];
+    [offsetComponents setHour:20];
+    [offsetComponents setMinute:0];
+    [offsetComponents setSecond:0];
+    
+    NSDate *maxDate = [calendar dateByAddingComponents:offsetComponents toDate:localeDate options:NSCalendarWrapComponents];
+    
+//    NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
+    _datePicker = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, 216)];
+    _datePicker.backgroundColor = [UIColor groupTableViewBackgroundColor];
+//    _datePicker.locale = locale;
+    _datePicker.locale = [NSLocale systemLocale];
+    _datePicker.minimumDate = localeDate;
+    _datePicker.maximumDate = maxDate;
+    [_datePicker addTarget:self action:@selector(dateChanged:) forControlEvents:UIControlEventValueChanged];
+    [_dateBackView addSubview:_datePicker];
+    
+    
+    UIButton *finishPickDateBt = [UIButton buttonWithType:UIButtonTypeCustom];
+    [finishPickDateBt setTitle:@"完成" forState:UIControlStateNormal];
+    finishPickDateBt.frame = CGRectMake(SCREEN_WIDTH - 60, 0, 60, 20);
+    finishPickDateBt.titleLabel.font = [UIFont systemFontOfSize:14];
+    [finishPickDateBt setTitleColor:COLOR_WITH_RGB(248, 56, 52) forState:UIControlStateNormal];
+    [finishPickDateBt addTarget:self action:@selector(gotoFinishPickerDate) forControlEvents:UIControlEventTouchUpInside];
+    [_datePicker addSubview:finishPickDateBt];
     
     _mapBack = [[UIView alloc] initWithFrame:CGRectMake(0, 282, SCREEN_WIDTH, 364)];
     _mapBack.backgroundColor = [UIColor whiteColor];
     [self.backScrollView addSubview:_mapBack];
     
    
+    _addreddTextView = [[UITextView alloc] initWithFrame:CGRectMake(10, 40, SCREEN_WIDTH - 30, 46)];
+    _addreddTextView.backgroundColor = [UIColor clearColor];
+    _addreddTextView.delegate = self;
+    _addreddTextView.scrollEnabled = NO;
+    _addreddTextView.font = [UIFont systemFontOfSize:14];
+    [_mapBack addSubview:_addreddTextView];
     
     
     UILabel *mapTip = [[UILabel alloc] initWithFrame:CGRectMake(10, 7, 80, 30)];
@@ -155,24 +237,68 @@
     mapTip.font = [UIFont boldSystemFontOfSize:15];
     [_mapBack addSubview:mapTip];
     
+
+    
     
     UILabel *mapTip2 = [[UILabel alloc] initWithFrame:CGRectMake(76, 7, 100, 30)];
     mapTip2.backgroundColor = [UIColor clearColor];
     mapTip2.text = @"(必填)";
     mapTip2.textColor = [UIColor grayColor];
-    mapTip2.font = [UIFont systemFontOfSize:13];
+    mapTip2.font = [UIFont systemFontOfSize:11];
     [_mapBack addSubview:mapTip2];
     
+    
+    
+    UILabel *costMoney = [[UILabel alloc] initWithFrame:CGRectMake(10, 270, 40, 30)];
+    costMoney.backgroundColor = [UIColor clearColor];
+    costMoney.text = @"费用";
+    costMoney.textColor = COLOR_WITH_ARGB(90, 95, 109, 1);
+    costMoney.font = [UIFont boldSystemFontOfSize:15];
+    [_mapBack addSubview:costMoney];
+    
+    UILabel *labelPerPeople = [[UILabel alloc] initWithFrame:CGRectMake(50, 270, 60, 30)];
+    labelPerPeople.text = @"人均￥";
+    labelPerPeople.font = [UIFont systemFontOfSize:14];
+    labelPerPeople.backgroundColor = [UIColor clearColor];
+    labelPerPeople.textColor = [UIColor grayColor];
+    [_mapBack addSubview:labelPerPeople];
+    
+    
+//    _perMoneyTextField  
+    
+    
+    
+    _perMoneyTextField = [[UITextField alloc] initWithFrame:CGRectMake(110, 270, 100, 30)];
+    _perMoneyTextField.backgroundColor = [UIColor clearColor];
+    _perMoneyTextField.returnKeyType = UIReturnKeyDone;
+    _perMoneyTextField.delegate = self;
+    _perMoneyTextField.borderStyle = UITextBorderStyleLine;
+    _perMoneyTextField.keyboardType = UIKeyboardTypeNumberPad;
+    [_perMoneyTextField addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
+    _perMoneyTextField.font = [UIFont systemFontOfSize:12];
+    [_mapBack addSubview:_perMoneyTextField];
+    
+    
+    
+    UILabel *PerPeopleTip = [[UILabel alloc] initWithFrame:CGRectMake(215, 270, 115, 30)];
+    PerPeopleTip.text = @"* “0”代表免费";
+    PerPeopleTip.font = [UIFont systemFontOfSize:14];
+    PerPeopleTip.backgroundColor = [UIColor clearColor];
+    PerPeopleTip.textColor = [UIColor grayColor];
+    [_mapBack addSubview:PerPeopleTip];
+    
+   
+    
+    UIView *line2 = [[UIView alloc] initWithFrame:CGRectMake(17, 315, SCREEN_WIDTH - 17, 1)];
+    line2.backgroundColor = COLOR_WITH_RGB(235, 235, 241);
+    [_mapBack addSubview:line2];
     
     
     _detailBack = [[UIView alloc] initWithFrame:CGRectMake(0, 656, SCREEN_WIDTH, 160)];
     _detailBack.backgroundColor = [UIColor whiteColor];
     [self.backScrollView addSubview:_detailBack];
     
-    
-    
-    
-    
+
 //    UILabel *buChong = [[UILabel] i]
     
     UILabel *buChong = [[UILabel alloc] initWithFrame:CGRectMake(10, 7, 280, 30)];
@@ -213,32 +339,91 @@
     [self.backScrollView  addSubview:_publicBt];
     
     
-    _itemTextField = [[UITextField alloc] initWithFrame:CGRectMake(20, 36, SCREEN_WIDTH - 40, 30)];
-    _itemTextField.backgroundColor = [UIColor clearColor];
-    _itemTextField.placeholder = @"输入一个标题(不少于5个字)";
-    _itemTextField.returnKeyType = UIReturnKeyDone;
-    _itemTextField.delegate = self;
-    _itemTextField.font = [UIFont systemFontOfSize:13];
-    [_itemTimeBack addSubview:_itemTextField];
-    
-    
-    self.view.userInteractionEnabled = YES;
-    
-    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(fingerTapped:)];
-    
-    [self.view addGestureRecognizer:singleTap];
-    
-    
-
+    _textNumTip = [[UILabel alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - 100, 140, 90, 20)];
+    _textNumTip.text = @"0/200";
+    _textNumTip.textAlignment = NSTextAlignmentRight;
+    _textNumTip.textColor = [UIColor grayColor];
+    _textNumTip.font = [UIFont boldSystemFontOfSize:14];
+    [_detailBack addSubview:_textNumTip];
+ 
 //    _detailBack
 //    _mapBack
     // Do any additional setup after loading the view.
 }
 
+
+
+
+
+-(void)gotoFinishPickerDate
+{
+    [UIView animateWithDuration:0.2 animations:^{
+            _dateBackView.frame = CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, _dateBackView.frame.size.height);
+    } completion:^(BOOL finished) {
+        
+    }];
+}
+
+
+- (void)dateChanged:(id)sender
+{
+    UIDatePicker *picker = (UIDatePicker *)sender;
+    NSDate *date = picker.date;
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy年MM月dd日 HH:mm"];
+    NSString *dateStr = [formatter stringFromDate:date];
+    if (_selectTimeInputStatus == SelectTimeInputStatusStartTime)
+    {
+        _startTimeBt.label.text = dateStr;
+    }else if (_selectTimeInputStatus == SelectTimeInputStatusEndTime)
+    {
+        _endTimeBt.label.text = dateStr;
+    }
+
+    
+}
+
+
+- (void)selectStartTime
+{
+    _selectTimeInputStatus = SelectTimeInputStatusStartTime;
+    [UIView animateWithDuration:0.2 animations:^{
+        _dateBackView.frame = CGRectMake(0, SCREEN_HEIGHT - 236, SCREEN_WIDTH, _dateBackView.frame.size.height);
+    } completion:^(BOOL finished) {
+        
+    }];
+}
+
+- (void)selectEndTime
+{
+    _selectTimeInputStatus = SelectTimeInputStatusEndTime;
+    [UIView animateWithDuration:0.2 animations:^{
+        _dateBackView.frame = CGRectMake(0, SCREEN_HEIGHT - 236, SCREEN_WIDTH, _dateBackView.frame.size.height);
+    } completion:^(BOOL finished) {
+        
+    }];
+}
+
+- (void)textFieldDidChange:(UITextField *)textField
+{
+    if (textField == self.itemTextField) {
+        if (textField.text.length > 20) {
+            textField.text = [textField.text substringToIndex:20];
+        }
+    }
+}
+
+
 //
 -(void)fingerTapped:(UITapGestureRecognizer *)gestureRecognizer
 {
      [_itemTextField resignFirstResponder];
+    [_addreddTextView resignFirstResponder];
+    [UIView animateWithDuration:0.2 animations:^{
+        _dateBackView.frame = CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, _dateBackView.frame.size.height);
+    } completion:^(BOOL finished) {
+        
+    }];
 }
 
 

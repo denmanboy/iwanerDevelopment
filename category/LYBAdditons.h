@@ -17,3 +17,4 @@
 #import "NSString+MD5.h"
 #import "NSString+JSON.h"
 #import "UIDevice+Resolutions.h"
+#import "UILabelButton.h"

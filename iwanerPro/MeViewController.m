@@ -7,8 +7,16 @@
 //
 
 #import "MeViewController.h"
+#import "MyInfoViewController.h"
 
 @interface MeViewController ()
+
+/**头像*/
+@property(nonatomic,strong)UIButton *headBtn;
+/**昵称*/
+@property(nonatomic,strong)UILabel *nickNameLabel;
+/**地点*/
+@property(nonatomic,strong)UILabel *addressLabel;
 
 @end
 
@@ -19,23 +27,97 @@
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = COLOR_WITH_RGB(235, 235, 241);
-    
+    WS(weakSelf);
+    self.automaticallyAdjustsScrollViewInsets =  NO;
     UIImage *backHeadImage  = [UIImage imageNamed:@"hongzi"];
     UIImageView *backHeadImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 200)];
     backHeadImageView.image = backHeadImage;
-    [self.view addSubview:backHeadImageView];
-    
-    _myTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 200, SCREEN_WIDTH, SCREEN_HEIGHT - 200 - 44) style:UITableViewStyleGrouped];
+    backHeadImageView.userInteractionEnabled = YES;
+    _myTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 44) style:UITableViewStyleGrouped];
     _myTableView.dataSource = self;
     _myTableView.delegate = self;
+    _myTableView.tableHeaderView = backHeadImageView;
     [self.view addSubview:_myTableView];
+    
+    /*********************个人信息*************************/
+    self.headBtn = ({
+        UIButton  *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.layer.cornerRadius = 40;
+        button.layer.masksToBounds= YES;
+        [button setImage:[UIImage imageNamed:@"Default-568h"] forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(gotoMyInfo) forControlEvents:UIControlEventTouchUpInside];
+        [backHeadImageView addSubview:button];
+        [button mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.width.equalTo(@80);
+            make.height.equalTo(@80);
+            make.centerX.equalTo(backHeadImageView);
+            make.centerY.equalTo(backHeadImageView).offset(-20);
+            
+        }];
+    
+        button;
+
+    });
+    self.nickNameLabel = ({
+    
+        UILabel *lable = [UILabel new];
+        lable.text = @"酥酥的小饼干";
+        lable.backgroundColor = [UIColor clearColor];
+        lable.textColor = [UIColor whiteColor];
+        lable.textAlignment = NSTextAlignmentCenter;
+        [backHeadImageView addSubview:lable];
+        [lable mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerX.equalTo(weakSelf.headBtn);
+            make.top.equalTo(weakSelf.headBtn.mas_bottom).offset(10);
+            
+        }];
+        lable;
+        
+    });
+    self.addressLabel = ({
+        UILabel *label = [UILabel new];
+        label.textAlignment = NSTextAlignmentCenter;
+        label.text = @"北京朝阳";
+        label.textColor = COLOR_WITH_RGB(238, 236, 240);
+        label.font = [UIFont systemFontOfSize:13];
+        label.backgroundColor = [UIColor clearColor];
+        [backHeadImageView addSubview:label];
+        [label mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+            make.centerX.equalTo(weakSelf.nickNameLabel);
+            make.top.equalTo(weakSelf.nickNameLabel.mas_bottom).offset(5);
+            
+        }];
+        
+        label;
+        
+    });
+    
+    UIImageView *imageView = [UIImageView new];
+    imageView.image = [UIImage imageNamed:@"图标-主题详情-地点@3x"];
+    [backHeadImageView addSubview:imageView];
+    [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(weakSelf.addressLabel);
+        make.right.equalTo(weakSelf.addressLabel.mas_left).offset(-2);
+    }];
+    
+    /*********************个人信息*************************/
+    
 
     _itemImageArray = [[NSMutableArray alloc] initWithObjects:@"图标-我-我的消息",@"图标-我-我的主题",@"图标-我-我的看见",@"图标-我-我的收藏", nil];
     _itemTextArray = [[NSMutableArray alloc] initWithObjects:@"我的消息",@"我的主题",@"我的看见",@"我的收藏", nil];
-
     
 }
 
+#pragma mark - 头像点击的回调
+- (void)gotoMyInfo
+{
+
+    MyInfoViewController *myCtrl = [[MyInfoViewController alloc]init];
+    myCtrl.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:myCtrl animated:YES];
+
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -43,7 +125,7 @@
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
     if (cell) {
         
-        
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         
         if (indexPath.section == 0) {

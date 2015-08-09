@@ -8,7 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PublicContentViewController : UIViewController<UITextFieldDelegate>
+
+typedef NS_ENUM(NSInteger, SelectTimeInputStatus) {
+    SelectTimeInputStatusNone = 1,
+    SelectTimeInputStatusStartTime,
+    SelectTimeInputStatusEndTime,
+};
+
+@interface PublicContentViewController : UIViewController<UITextFieldDelegate,UITextViewDelegate>
 
 @property (nonatomic,strong) UIScrollView *backScrollView;
 @property (nonatomic,strong) UIView *upPhotoesBack;
@@ -18,9 +25,14 @@
 @property (nonatomic,strong) UIView *competenceBack;
 @property (nonatomic,strong) UIButton *publicBt;
 
-@property (nonatomic,strong) UITextField *itemTextField;
+@property (nonatomic,strong) UITextField *itemTextField,*perMoneyTextField;
+@property (nonatomic,strong) UITextView *addreddTextView;
 
+@property (nonatomic,strong) UILabelButton *startTimeBt,*endTimeBt;
+@property (nonatomic,strong) UIDatePicker *datePicker;
+@property (nonatomic,strong) UIView *dateBackView;
 
-
+@property (nonatomic) SelectTimeInputStatus selectTimeInputStatus;
+@property (nonatomic,strong) UILabel *textNumTip;
 
 @end

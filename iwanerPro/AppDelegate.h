@@ -14,8 +14,9 @@
 #import "FriendsViewController.h"
 #import "IwanViewController.h"
 #import "PublicContentViewController.h"
+#import "LoginViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate,UITabBarControllerDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate,UITabBarControllerDelegate,LoginViewControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic,strong) MeViewController *meViewController;
@@ -23,8 +24,10 @@
 @property (nonatomic,strong) PublicViewController *publicViewController;
 @property (nonatomic,strong) FriendsViewController *friendsViewController;
 @property (nonatomic,strong) IwanViewController *iwanViewController;
-@property (nonatomic,strong) BSNavgationController *iwanNavi,*friendsNavi,*publicNavi,*findNavi,*meNavi;
+@property (nonatomic,strong) BSNavgationController *loginNav,*iwanNavi,*friendsNavi,*publicNavi,*findNavi,*meNavi;
 
+@property(nonatomic,strong)LoginViewController  *loginViewController;
 
 @end
+
 
