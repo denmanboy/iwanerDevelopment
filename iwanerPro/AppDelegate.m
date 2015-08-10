@@ -79,8 +79,6 @@
     [tabBarController.tabBar addSubview:publicBt];
     
     
-    
-    
     _findViewController = [[FindViewController alloc] init];
     _findViewController.tabBarItem.title = @"看见";
     _findViewController.tabBarItem.image = [UIImage imageNamed:@"导航-看见-灰"];
@@ -94,7 +92,7 @@
     _meViewController.tabBarItem.title = @"我";
     _meViewController.tabBarItem.image = [UIImage imageNamed:@"导航-我-灰"];
     _meViewController.tabBarItem.selectedImage = [UIImage imageNamed:@"导航-我-红"];
-    _meViewController.tabBarItem.badgeValue = @"1";
+//    _meViewController.tabBarItem.badgeValue = @"1";
     _meViewController.tabBarItem.image = [_meViewController.tabBarItem.image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     _meViewController.tabBarItem.selectedImage = [_meViewController.tabBarItem.selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     _meNavi = [[BSNavgationController alloc]initWithRootViewController:_meViewController];

@@ -24,6 +24,9 @@
     self.view.backgroundColor = COLOR_WITH_RGB(235, 235, 241);
     self.view.userInteractionEnabled = YES;
     
+    _mapView.showsUserLocation = YES;
+    [_mapView setUserTrackingMode: MAUserTrackingModeFollow animated:YES];
+    
     NSLog(@"dadadddd=====%@",NSStringFromCGRect(    self.view.frame));
     
     UIView *locationNaViView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 60)];
@@ -353,6 +356,14 @@
 
 
 
+-(void)mapView:(MAMapView *)mapView didUpdateUserLocation:(MAUserLocation *)userLocation
+updatingLocation:(BOOL)updatingLocation
+{
+    if(updatingLocation) {
+        //取出当前位置的坐标
+        NSLog(@"latitude : %f,longitude: %f",userLocation.coordinate.latitude,userLocation.coordinate.longitude);
+    }
+}
 
 
 -(void)gotoFinishPickerDate
@@ -427,13 +438,26 @@
 }
 
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
     
     [textField resignFirstResponder];
     return YES;
 }
 
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    
+    [MAMapServices sharedServices].apiKey = @"f193d563a78f484b022ac21c84395656";
+    
+    _mapView = [[MAMapView alloc] initWithFrame:CGRectMake(0, 60, SCREEN_WIDTH, 200)];
+    _mapView.delegate = self;
+    [_mapBack addSubview:_mapView];
+    
+    
+}
 
 - (void)gotoUphotoes
 {

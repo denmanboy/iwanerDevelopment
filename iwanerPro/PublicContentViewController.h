@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import <MAMapKit/MAMapKit.h>
+
 
 typedef NS_ENUM(NSInteger, SelectTimeInputStatus) {
     SelectTimeInputStatusNone = 1,
@@ -15,7 +17,7 @@ typedef NS_ENUM(NSInteger, SelectTimeInputStatus) {
     SelectTimeInputStatusEndTime,
 };
 
-@interface PublicContentViewController : UIViewController<UITextFieldDelegate,UITextViewDelegate>
+@interface PublicContentViewController : UIViewController<UITextFieldDelegate,UITextViewDelegate,MAMapViewDelegate>
 
 @property (nonatomic,strong) UIScrollView *backScrollView;
 @property (nonatomic,strong) UIView *upPhotoesBack;
@@ -34,5 +36,7 @@ typedef NS_ENUM(NSInteger, SelectTimeInputStatus) {
 
 @property (nonatomic) SelectTimeInputStatus selectTimeInputStatus;
 @property (nonatomic,strong) UILabel *textNumTip;
+
+@property (nonatomic,strong) MAMapView *mapView;
 
 @end
