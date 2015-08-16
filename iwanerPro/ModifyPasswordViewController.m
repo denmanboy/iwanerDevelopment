@@ -27,6 +27,7 @@
     self.title = @"修改密码";
     self.view.backgroundColor = COLOR_WITH_RGB(233, 234, 241);
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"提交" style:UIBarButtonItemStylePlain target:self action:@selector(gotoCommit)];
+     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"按钮-返回-灰"] style:UIBarButtonItemStylePlain target:self action:@selector(gotoBack)];
     [self configurationUI];
   
 
@@ -99,6 +100,20 @@
 
 
 }
+//返回
+- (void)gotoBack
+{
+    UIViewController *topCtrl = self.navigationController.topViewController;
+    if (topCtrl == self) {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+    else {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+    
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2827D44A1B808325009B7360 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2827D4491B808325009B7360 /* MAMapKit.framework */; };
+		2827D44D1B8085F3009B7360 /* MyLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2827D44C1B8085F3009B7360 /* MyLocationViewController.m */; };
+		2827D4541B808605009B7360 /* MyHobbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2827D44F1B808605009B7360 /* MyHobbyViewController.m */; };
+		2827D4551B808605009B7360 /* MySelectHeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2827D4511B808605009B7360 /* MySelectHeadViewController.m */; };
+		2827D4561B808605009B7360 /* MyPersonalityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2827D4531B808605009B7360 /* MyPersonalityViewController.m */; };
 		4A0B0A7D1B685474005A184B /* UILabelButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B0A7C1B685474005A184B /* UILabelButton.m */; };
 		4A4E72221B61A703002384A8 /* 导航-发布-灰.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E71FA1B61A703002384A8 /* 导航-发布-灰.pdf */; };
 		4A4E72231B61A703002384A8 /* 导航-发布-灰.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E71FB1B61A703002384A8 /* 导航-发布-灰.png */; };
@@ -287,7 +292,6 @@
 		4A7991BE1B77641A009EAF36 /* MyCollectDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7991B41B77641A009EAF36 /* MyCollectDetailViewController.m */; };
 		4A7991BF1B77641A009EAF36 /* ContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7991B61B77641A009EAF36 /* ContactUsViewController.m */; };
 		4A7991C01B77641A009EAF36 /* ModifyPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7991B81B77641A009EAF36 /* ModifyPasswordViewController.m */; };
-		4A7991C21B777D2A009EAF36 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7991C11B777D2A009EAF36 /* MAMapKit.framework */; };
 		4A7991C41B777DA4009EAF36 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4A7991C31B777DA4009EAF36 /* AMap.bundle */; };
 		4A7991C61B777DD4009EAF36 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7991C51B777DD4009EAF36 /* QuartzCore.framework */; };
 		4A7991C81B777E13009EAF36 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7991C71B777E13009EAF36 /* OpenGLES.framework */; };
@@ -352,6 +356,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2827D4491B808325009B7360 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
+		2827D44B1B8085F3009B7360 /* MyLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocationViewController.h; sourceTree = "<group>"; };
+		2827D44C1B8085F3009B7360 /* MyLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocationViewController.m; sourceTree = "<group>"; };
+		2827D44E1B808605009B7360 /* MyHobbyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHobbyViewController.h; sourceTree = "<group>"; };
+		2827D44F1B808605009B7360 /* MyHobbyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHobbyViewController.m; sourceTree = "<group>"; };
+		2827D4501B808605009B7360 /* MySelectHeadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySelectHeadViewController.h; sourceTree = "<group>"; };
+		2827D4511B808605009B7360 /* MySelectHeadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySelectHeadViewController.m; sourceTree = "<group>"; };
+		2827D4521B808605009B7360 /* MyPersonalityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPersonalityViewController.h; sourceTree = "<group>"; };
+		2827D4531B808605009B7360 /* MyPersonalityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPersonalityViewController.m; sourceTree = "<group>"; };
 		4A0B0A7B1B685474005A184B /* UILabelButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelButton.h; sourceTree = "<group>"; };
 		4A0B0A7C1B685474005A184B /* UILabelButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelButton.m; sourceTree = "<group>"; };
 		4A4E71FA1B61A703002384A8 /* 导航-发布-灰.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "导航-发布-灰.pdf"; sourceTree = "<group>"; };
@@ -764,7 +777,6 @@
 		4A7991B61B77641A009EAF36 /* ContactUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactUsViewController.m; sourceTree = "<group>"; };
 		4A7991B71B77641A009EAF36 /* ModifyPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyPasswordViewController.h; sourceTree = "<group>"; };
 		4A7991B81B77641A009EAF36 /* ModifyPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyPasswordViewController.m; sourceTree = "<group>"; };
-		4A7991C11B777D2A009EAF36 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = "../../高德地图/MAMapKit.framework"; sourceTree = "<group>"; };
 		4A7991C31B777DA4009EAF36 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
 		4A7991C51B777DD4009EAF36 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4A7991C71B777E13009EAF36 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -850,8 +862,8 @@
 				4A7991CC1B777E36009EAF36 /* CoreTelephony.framework in Frameworks */,
 				4A7991CA1B777E1C009EAF36 /* CoreLocation.framework in Frameworks */,
 				4A7991C81B777E13009EAF36 /* OpenGLES.framework in Frameworks */,
+				2827D44A1B808325009B7360 /* MAMapKit.framework in Frameworks */,
 				4A7991C61B777DD4009EAF36 /* QuartzCore.framework in Frameworks */,
-				4A7991C21B777D2A009EAF36 /* MAMapKit.framework in Frameworks */,
 				4A4E74C01B63EECB002384A8 /* CFNetwork.framework in Frameworks */,
 				4A4E74BE1B63EEBA002384A8 /* Security.framework in Frameworks */,
 				4A4E74BC1B63EEAC002384A8 /* ImageIO.framework in Frameworks */,
@@ -1509,6 +1521,7 @@
 		4AF971861B5E7BAB0090EACA = {
 			isa = PBXGroup;
 			children = (
+				2827D4491B808325009B7360 /* MAMapKit.framework */,
 				4A7991CF1B777E89009EAF36 /* libstdc++.6.0.9.dylib */,
 				4A7991CD1B777E75009EAF36 /* libz.dylib */,
 				4A7991CB1B777E36009EAF36 /* CoreTelephony.framework */,
@@ -1516,7 +1529,6 @@
 				4A7991C71B777E13009EAF36 /* OpenGLES.framework */,
 				4A7991C51B777DD4009EAF36 /* QuartzCore.framework */,
 				4A7991C31B777DA4009EAF36 /* AMap.bundle */,
-				4A7991C11B777D2A009EAF36 /* MAMapKit.framework */,
 				4A4E74C11B63EEE3002384A8 /* SystemConfiguration.framework */,
 				4A4E74BF1B63EECB002384A8 /* CFNetwork.framework */,
 				4A4E74BD1B63EEBA002384A8 /* Security.framework */,
@@ -1558,6 +1570,14 @@
 				4A4E72BF1B63667D002384A8 /* PublicContentViewController.m */,
 				4A4E72AD1B634194002384A8 /* MeViewController.h */,
 				4A4E72AE1B634194002384A8 /* MeViewController.m */,
+				2827D44B1B8085F3009B7360 /* MyLocationViewController.h */,
+				2827D44C1B8085F3009B7360 /* MyLocationViewController.m */,
+				2827D44E1B808605009B7360 /* MyHobbyViewController.h */,
+				2827D44F1B808605009B7360 /* MyHobbyViewController.m */,
+				2827D4501B808605009B7360 /* MySelectHeadViewController.h */,
+				2827D4511B808605009B7360 /* MySelectHeadViewController.m */,
+				2827D4521B808605009B7360 /* MyPersonalityViewController.h */,
+				2827D4531B808605009B7360 /* MyPersonalityViewController.m */,
 				4A4E74CD1B6417B6002384A8 /* MyMessageViewController.h */,
 				4A4E74CE1B6417B6002384A8 /* MyMessageViewController.m */,
 				4A4E74D01B641FF6002384A8 /* MyItemViewController.h */,
@@ -1921,6 +1941,7 @@
 				4A7991BB1B77641A009EAF36 /* MyMessageData.m in Sources */,
 				4A4E74AC1B63EC97002384A8 /* SDWebImageManager.m in Sources */,
 				4A4E74D51B642028002384A8 /* MyLookViewController.m in Sources */,
+				2827D44D1B8085F3009B7360 /* MyLocationViewController.m in Sources */,
 				4A4E74861B63EC97002384A8 /* MBProgressHUD.m in Sources */,
 				4A4E74CF1B6417B6002384A8 /* MyMessageViewController.m in Sources */,
 				4A4E74A71B63EC97002384A8 /* SDImageCache.m in Sources */,
@@ -1956,6 +1977,7 @@
 				4AF971981B5E7BAB0090EACA /* AppDelegate.m in Sources */,
 				4A4E74A21B63EC97002384A8 /* MKNetworkEngine.m in Sources */,
 				4A4E74871B63EC97002384A8 /* README.mdown in Sources */,
+				2827D4541B808605009B7360 /* MyHobbyViewController.m in Sources */,
 				4A7C5C411B80746C00F30879 /* CTAssetsPickerController.m in Sources */,
 				4A7C5C461B80746C00F30879 /* CTAssetsToolBarButtonItem.m in Sources */,
 				4AF971951B5E7BAB0090EACA /* main.m in Sources */,
@@ -2011,6 +2033,7 @@
 				4A7991A71B77613A009EAF36 /* SKTagButton.m in Sources */,
 				4A4E74A11B63EC97002384A8 /* UIImageView+MKNetworkKitAdditions.m in Sources */,
 				4A4E749D1B63EC97002384A8 /* NSDate+RFC1123.m in Sources */,
+				2827D4561B808605009B7360 /* MyPersonalityViewController.m in Sources */,
 				4A7991BC1B77641A009EAF36 /* MyItemCell.m in Sources */,
 				4A7C5C431B80746C00F30879 /* CTAssetsPreviewCollectionView.m in Sources */,
 				4A7C5C401B80746C00F30879 /* CTAssetsPickerCollectionView.m in Sources */,
@@ -2032,6 +2055,7 @@
 				4A4E74AB1B63EC97002384A8 /* SDWebImageDownloaderOperation.m in Sources */,
 				4A4E74921B63EC97002384A8 /* MJRefreshBackStateFooter.m in Sources */,
 				4A4E724C1B61A79B002384A8 /* MainViewController.m in Sources */,
+				2827D4551B808605009B7360 /* MySelectHeadViewController.m in Sources */,
 				4A4E749B1B63EC97002384A8 /* NSAlert+MKNetworkKitAdditions.m in Sources */,
 				4A4E731A1B63EB58002384A8 /* NSString+MD5.m in Sources */,
 				4A7991BD1B77641A009EAF36 /* MyLookCell.m in Sources */,
@@ -2154,7 +2178,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Xinle Tao";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/liyuanbo/Desktop/高德地图",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iwanerPro/iwanerPro-Prefix.pch";
@@ -2176,7 +2200,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Xinle Tao";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/liyuanbo/Desktop/高德地图",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iwanerPro/iwanerPro-Prefix.pch";

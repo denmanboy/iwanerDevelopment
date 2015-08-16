@@ -26,6 +26,7 @@
     
     self.view.backgroundColor = COLOR_WITH_RGB(235, 235, 241);
     self.title = @"我的收藏";
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"按钮-返回-灰"] style:UIBarButtonItemStylePlain target:self action:@selector(gotoBack)];
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.tableView = ({
         UITableView *talbleView = [[UITableView  alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 64) style:UITableViewStylePlain];
@@ -94,6 +95,20 @@
     MyCollectDetailViewController *collectDetailCtrl = [[MyCollectDetailViewController alloc]init];
     collectDetailCtrl.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:collectDetailCtrl animated:NO];
+    
+}
+
+
+//返回
+- (void)gotoBack
+{
+    UIViewController *topCtrl = self.navigationController.topViewController;
+    if (topCtrl == self) {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+    else {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
     
 }
 
