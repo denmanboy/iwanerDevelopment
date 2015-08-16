@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2827D44A1B808325009B7360 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2827D4491B808325009B7360 /* MAMapKit.framework */; };
 		2827D44D1B8085F3009B7360 /* MyLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2827D44C1B8085F3009B7360 /* MyLocationViewController.m */; };
 		2827D4541B808605009B7360 /* MyHobbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2827D44F1B808605009B7360 /* MyHobbyViewController.m */; };
 		2827D4551B808605009B7360 /* MySelectHeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2827D4511B808605009B7360 /* MySelectHeadViewController.m */; };
@@ -356,7 +355,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2827D4491B808325009B7360 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
 		2827D44B1B8085F3009B7360 /* MyLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocationViewController.h; sourceTree = "<group>"; };
 		2827D44C1B8085F3009B7360 /* MyLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocationViewController.m; sourceTree = "<group>"; };
 		2827D44E1B808605009B7360 /* MyHobbyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHobbyViewController.h; sourceTree = "<group>"; };
@@ -862,7 +860,6 @@
 				4A7991CC1B777E36009EAF36 /* CoreTelephony.framework in Frameworks */,
 				4A7991CA1B777E1C009EAF36 /* CoreLocation.framework in Frameworks */,
 				4A7991C81B777E13009EAF36 /* OpenGLES.framework in Frameworks */,
-				2827D44A1B808325009B7360 /* MAMapKit.framework in Frameworks */,
 				4A7991C61B777DD4009EAF36 /* QuartzCore.framework in Frameworks */,
 				4A4E74C01B63EECB002384A8 /* CFNetwork.framework in Frameworks */,
 				4A4E74BE1B63EEBA002384A8 /* Security.framework in Frameworks */,
@@ -1521,7 +1518,6 @@
 		4AF971861B5E7BAB0090EACA = {
 			isa = PBXGroup;
 			children = (
-				2827D4491B808325009B7360 /* MAMapKit.framework */,
 				4A7991CF1B777E89009EAF36 /* libstdc++.6.0.9.dylib */,
 				4A7991CD1B777E75009EAF36 /* libz.dylib */,
 				4A7991CB1B777E36009EAF36 /* CoreTelephony.framework */,
