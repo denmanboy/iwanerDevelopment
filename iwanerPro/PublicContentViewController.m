@@ -527,6 +527,7 @@ updatingLocation:(BOOL)updatingLocation
 
 - (void)assetsPickerController:(CTAssetsPickerController *)assetsPickerController didFinishPickingAssets:(NSArray *)assets assetsType:(CTAssetsPickerControllerAssetsType)assetsType
 {
+//  选择
     NSLog(@"%@", NSStringFromSelector(@selector(assetsPickerController:didFinishPickingAssets:assetsType:)));
     switch (assetsType) {
         case CTAssetsPickerControllerAssetsTypePhoto:{
