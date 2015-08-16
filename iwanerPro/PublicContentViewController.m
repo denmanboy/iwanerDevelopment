@@ -478,7 +478,36 @@ updatingLocation:(BOOL)updatingLocation
 //    assetsPickerController.delegate = self;
 //    assetsPickerController.enableMaximumCount = 9;
 //    [self presentViewController:assetsPickerController animated:YES completion:NULL];
+    
 }
+
+
+
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    switch (buttonIndex) {
+        case 0:
+        {
+            
+        }
+            break;
+        case 1:
+        {
+            
+        }
+            break;
+        case 2:
+        {
+            
+        }
+            break;
+        default:
+            break;
+    }
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
