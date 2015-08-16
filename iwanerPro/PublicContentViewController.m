@@ -464,7 +464,7 @@ updatingLocation:(BOOL)updatingLocation
 {
     
     UIActionSheet *actionSheet = [[UIActionSheet alloc]
-                                    initWithTitle:@"title,nil时不显示"
+                                    initWithTitle:nil
                                     delegate:self
                                     cancelButtonTitle:@"取消"
                                     destructiveButtonTitle:@"拍照"

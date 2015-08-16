@@ -287,7 +287,6 @@
 		4A7991BE1B77641A009EAF36 /* MyCollectDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7991B41B77641A009EAF36 /* MyCollectDetailViewController.m */; };
 		4A7991BF1B77641A009EAF36 /* ContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7991B61B77641A009EAF36 /* ContactUsViewController.m */; };
 		4A7991C01B77641A009EAF36 /* ModifyPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7991B81B77641A009EAF36 /* ModifyPasswordViewController.m */; };
-		4A7991C21B777D2A009EAF36 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7991C11B777D2A009EAF36 /* MAMapKit.framework */; };
 		4A7991C41B777DA4009EAF36 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4A7991C31B777DA4009EAF36 /* AMap.bundle */; };
 		4A7991C61B777DD4009EAF36 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7991C51B777DD4009EAF36 /* QuartzCore.framework */; };
 		4A7991C81B777E13009EAF36 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7991C71B777E13009EAF36 /* OpenGLES.framework */; };
@@ -311,6 +310,7 @@
 		4A7C5C471B80746C00F30879 /* CTAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7C5C351B80746C00F30879 /* CTAssetsViewController.m */; };
 		4A7C5C481B80746C00F30879 /* CTAssetsViewToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7C5C371B80746C00F30879 /* CTAssetsViewToolBar.m */; };
 		4A7C5C491B80746C00F30879 /* CTAssetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7C5C391B80746C00F30879 /* CTAssetView.m */; };
+		4A7C5C4C1B80860E00F30879 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7C5C4A1B8085DF00F30879 /* MAMapKit.framework */; };
 		4AA8AEC11B653416005AABDA /* 图标-列表右箭头.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEA91B653416005AABDA /* 图标-列表右箭头.pdf */; };
 		4AA8AEC21B653416005AABDA /* 图标-列表右箭头.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEAA1B653416005AABDA /* 图标-列表右箭头.png */; };
 		4AA8AEC31B653416005AABDA /* 图标-列表右箭头@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEAB1B653416005AABDA /* 图标-列表右箭头@2x.png */; };
@@ -764,7 +764,6 @@
 		4A7991B61B77641A009EAF36 /* ContactUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactUsViewController.m; sourceTree = "<group>"; };
 		4A7991B71B77641A009EAF36 /* ModifyPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyPasswordViewController.h; sourceTree = "<group>"; };
 		4A7991B81B77641A009EAF36 /* ModifyPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyPasswordViewController.m; sourceTree = "<group>"; };
-		4A7991C11B777D2A009EAF36 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = "../../高德地图/MAMapKit.framework"; sourceTree = "<group>"; };
 		4A7991C31B777DA4009EAF36 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
 		4A7991C51B777DD4009EAF36 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4A7991C71B777E13009EAF36 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -804,6 +803,7 @@
 		4A7C5C371B80746C00F30879 /* CTAssetsViewToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTAssetsViewToolBar.m; sourceTree = "<group>"; };
 		4A7C5C381B80746C00F30879 /* CTAssetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTAssetView.h; sourceTree = "<group>"; };
 		4A7C5C391B80746C00F30879 /* CTAssetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTAssetView.m; sourceTree = "<group>"; };
+		4A7C5C4A1B8085DF00F30879 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
 		4AA8AEA91B653416005AABDA /* 图标-列表右箭头.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-列表右箭头.pdf"; sourceTree = "<group>"; };
 		4AA8AEAA1B653416005AABDA /* 图标-列表右箭头.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-列表右箭头.png"; sourceTree = "<group>"; };
 		4AA8AEAB1B653416005AABDA /* 图标-列表右箭头@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-列表右箭头@2x.png"; sourceTree = "<group>"; };
@@ -844,6 +844,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A7C5C4C1B80860E00F30879 /* MAMapKit.framework in Frameworks */,
 				4A7991D01B777E89009EAF36 /* libstdc++.6.0.9.dylib in Frameworks */,
 				4A7991CE1B777E75009EAF36 /* libz.dylib in Frameworks */,
 				4A4E74C21B63EEE3002384A8 /* SystemConfiguration.framework in Frameworks */,
@@ -851,7 +852,6 @@
 				4A7991CA1B777E1C009EAF36 /* CoreLocation.framework in Frameworks */,
 				4A7991C81B777E13009EAF36 /* OpenGLES.framework in Frameworks */,
 				4A7991C61B777DD4009EAF36 /* QuartzCore.framework in Frameworks */,
-				4A7991C21B777D2A009EAF36 /* MAMapKit.framework in Frameworks */,
 				4A4E74C01B63EECB002384A8 /* CFNetwork.framework in Frameworks */,
 				4A4E74BE1B63EEBA002384A8 /* Security.framework in Frameworks */,
 				4A4E74BC1B63EEAC002384A8 /* ImageIO.framework in Frameworks */,
@@ -1510,13 +1510,13 @@
 			isa = PBXGroup;
 			children = (
 				4A7991CF1B777E89009EAF36 /* libstdc++.6.0.9.dylib */,
+				4A7C5C4A1B8085DF00F30879 /* MAMapKit.framework */,
 				4A7991CD1B777E75009EAF36 /* libz.dylib */,
 				4A7991CB1B777E36009EAF36 /* CoreTelephony.framework */,
 				4A7991C91B777E1C009EAF36 /* CoreLocation.framework */,
 				4A7991C71B777E13009EAF36 /* OpenGLES.framework */,
 				4A7991C51B777DD4009EAF36 /* QuartzCore.framework */,
 				4A7991C31B777DA4009EAF36 /* AMap.bundle */,
-				4A7991C11B777D2A009EAF36 /* MAMapKit.framework */,
 				4A4E74C11B63EEE3002384A8 /* SystemConfiguration.framework */,
 				4A4E74BF1B63EECB002384A8 /* CFNetwork.framework */,
 				4A4E74BD1B63EEBA002384A8 /* Security.framework */,
@@ -2154,7 +2154,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Xinle Tao";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/iwanerPro",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iwanerPro/iwanerPro-Prefix.pch";
@@ -2176,7 +2176,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Xinle Tao";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/iwanerPro",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iwanerPro/iwanerPro-Prefix.pch";
