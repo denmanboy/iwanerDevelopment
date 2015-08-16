@@ -7,8 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "UMSocial.h"
 
-@interface AppDelegate ()
+@interface AppDelegate ()<WXApiDelegate>
 
 @end
 
@@ -20,6 +21,19 @@
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
     //    [NSThread sleepForTimeInterval:1];
+    
+    
+    [UMSocialData setAppKey:@"507fcab25270157b37000010"];
+    
+    [UMSocialQQHandler setQQWithAppId:@"100424468" appKey:@"c7394704798a158208a74ab60104f0ba" url:@"http://www.umeng.com/social"];
+    
+    [UMSocialSinaHandler openSSOWithRedirectURL:@"http://sns.whalecloud.com/sina2/callback"];
+    
+    [UMSocialWechatHandler setWXAppId:@"wxd930ea5d5a258f4f" appSecret:@"db426a9829e4b49a0dcac7b4162da6b6" url:@"http://www.umeng.com/social"];
+    
+    [WXApi registerApp:@"wxd930ea5d5a258f4f" withDescription:@"aiwaner"];
+
+    
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     //    NSLog(@"dadadadad======%@",NSStringFromCGRect(self.window.frame));
@@ -160,6 +174,16 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    
+    return  [TencentOAuth HandleOpenURL:url]||[WXApi handleOpenURL:url delegate:self]||[UMSocialSnsService handleOpenURL:url];
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    return  [TencentOAuth HandleOpenURL:url]||[WXApi handleOpenURL:url delegate:self]||[UMSocialSnsService handleOpenURL:url];
 }
 
 @end
