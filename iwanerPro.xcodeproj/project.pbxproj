@@ -2154,7 +2154,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Xinle Tao";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/liyuanbo/Desktop/高德地图",
+					"$(SRCROOT)/iwanerPro",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iwanerPro/iwanerPro-Prefix.pch";
@@ -2176,7 +2176,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Xinle Tao";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/liyuanbo/Desktop/高德地图",
+					"$(SRCROOT)/iwanerPro",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iwanerPro/iwanerPro-Prefix.pch";

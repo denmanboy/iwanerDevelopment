@@ -462,10 +462,22 @@ updatingLocation:(BOOL)updatingLocation
 
 - (void)gotoUphotoes
 {
-    CTAssetsPickerController *assetsPickerController = [[CTAssetsPickerController alloc] initWithAssetsType:CTAssetsPickerControllerAssetsTypeAllAsset];
-    assetsPickerController.delegate = self;
-    assetsPickerController.enableMaximumCount = 9;
-    [self presentViewController:assetsPickerController animated:YES completion:NULL];
+    
+    UIActionSheet *actionSheet = [[UIActionSheet alloc]
+                                    initWithTitle:@"title,nil时不显示"
+                                    delegate:self
+                                    cancelButtonTitle:@"取消"
+                                    destructiveButtonTitle:@"拍照"
+                                    otherButtonTitles:@"从相册选取",nil];
+    actionSheet.actionSheetStyle = UIActionSheetStyleBlackOpaque;
+    [actionSheet showInView:self.view];
+    
+    
+    
+//    CTAssetsPickerController *assetsPickerController = [[CTAssetsPickerController alloc] initWithAssetsType:CTAssetsPickerControllerAssetsTypeAllAsset];
+//    assetsPickerController.delegate = self;
+//    assetsPickerController.enableMaximumCount = 9;
+//    [self presentViewController:assetsPickerController animated:YES completion:NULL];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -484,18 +496,8 @@ updatingLocation:(BOOL)updatingLocation
 
 
 
-
-
-
-
-//- (void)clickOpenAlbumButton:(UIButton *)button{
-//    CTAssetsPickerController *assetsPickerController = [[CTAssetsPickerController alloc] initWithAssetsType:CTAssetsPickerControllerAssetsTypeAllAsset];
-//    assetsPickerController.delegate = self;
-//    assetsPickerController.enableMaximumCount = 9;
-//    [self presentViewController:assetsPickerController animated:YES completion:NULL];
-//}
-
-- (void)assetsPickerController:(CTAssetsPickerController *)assetsPickerController didFinishPickingAssets:(NSArray *)assets assetsType:(CTAssetsPickerControllerAssetsType)assetsType{
+- (void)assetsPickerController:(CTAssetsPickerController *)assetsPickerController didFinishPickingAssets:(NSArray *)assets assetsType:(CTAssetsPickerControllerAssetsType)assetsType
+{
     NSLog(@"%@", NSStringFromSelector(@selector(assetsPickerController:didFinishPickingAssets:assetsType:)));
     switch (assetsType) {
         case CTAssetsPickerControllerAssetsTypePhoto:{
