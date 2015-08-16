@@ -338,7 +338,6 @@
 		4AF971981B5E7BAB0090EACA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF971971B5E7BAB0090EACA /* AppDelegate.m */; };
 		4AF971A01B5E7BAB0090EACA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF9719F1B5E7BAB0090EACA /* Images.xcassets */; };
 		4AF971AF1B5E7BAB0090EACA /* iwanerProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF971AE1B5E7BAB0090EACA /* iwanerProTests.m */; };
-		8BD5DFD11B80846C0038B8B5 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD5DFD01B80846C0038B8B5 /* MAMapKit.framework */; };
 		8BD5DFD41B8086580038B8B5 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD5DFD31B8086580038B8B5 /* libiconv.dylib */; };
 		8BD5DFD61B8086620038B8B5 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD5DFD51B8086620038B8B5 /* libsqlite3.dylib */; };
 		8BD5DFD81B8086790038B8B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD5DFD71B8086790038B8B5 /* CoreGraphics.framework */; };
@@ -863,7 +862,6 @@
 		4AF971A81B5E7BAB0090EACA /* iwanerProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iwanerProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AF971AD1B5E7BAB0090EACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AF971AE1B5E7BAB0090EACA /* iwanerProTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iwanerProTests.m; sourceTree = "<group>"; };
-		8BD5DFD01B80846C0038B8B5 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
 		8BD5DFD31B8086580038B8B5 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		8BD5DFD51B8086620038B8B5 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		8BD5DFD71B8086790038B8B5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -937,7 +935,6 @@
 				8BD5E01A1B8087370038B8B5 /* libUMSocial_Sdk_Comment_4.2.3.a in Frameworks */,
 				4A7991C81B777E13009EAF36 /* OpenGLES.framework in Frameworks */,
 				8BD5E0261B8087370038B8B5 /* libSocialLine.a in Frameworks */,
-				8BD5DFD11B80846C0038B8B5 /* MAMapKit.framework in Frameworks */,
 				8BD5E02B1B8087370038B8B5 /* libSocialTumblr.a in Frameworks */,
 				4A7991C61B777DD4009EAF36 /* QuartzCore.framework in Frameworks */,
 				8BD5E02D1B8087370038B8B5 /* libWeChatSDK.a in Frameworks */,
@@ -1614,7 +1611,6 @@
 				4A7991C71B777E13009EAF36 /* OpenGLES.framework */,
 				4A7991C51B777DD4009EAF36 /* QuartzCore.framework */,
 				4A7991C31B777DA4009EAF36 /* AMap.bundle */,
-				8BD5DFD01B80846C0038B8B5 /* MAMapKit.framework */,
 				4A4E74C11B63EEE3002384A8 /* SystemConfiguration.framework */,
 				4A4E74BF1B63EECB002384A8 /* CFNetwork.framework */,
 				4A4E74BD1B63EEBA002384A8 /* Security.framework */,
