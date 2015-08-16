@@ -287,7 +287,6 @@
 		4A7991BE1B77641A009EAF36 /* MyCollectDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7991B41B77641A009EAF36 /* MyCollectDetailViewController.m */; };
 		4A7991BF1B77641A009EAF36 /* ContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7991B61B77641A009EAF36 /* ContactUsViewController.m */; };
 		4A7991C01B77641A009EAF36 /* ModifyPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7991B81B77641A009EAF36 /* ModifyPasswordViewController.m */; };
-		4A7991C41B777DA4009EAF36 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4A7991C31B777DA4009EAF36 /* AMap.bundle */; };
 		4A7991C61B777DD4009EAF36 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7991C51B777DD4009EAF36 /* QuartzCore.framework */; };
 		4A7991C81B777E13009EAF36 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7991C71B777E13009EAF36 /* OpenGLES.framework */; };
 		4A7991CA1B777E1C009EAF36 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7991C91B777E1C009EAF36 /* CoreLocation.framework */; };
@@ -790,7 +789,6 @@
 		4A7991B61B77641A009EAF36 /* ContactUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactUsViewController.m; sourceTree = "<group>"; };
 		4A7991B71B77641A009EAF36 /* ModifyPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyPasswordViewController.h; sourceTree = "<group>"; };
 		4A7991B81B77641A009EAF36 /* ModifyPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyPasswordViewController.m; sourceTree = "<group>"; };
-		4A7991C31B777DA4009EAF36 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
 		4A7991C51B777DD4009EAF36 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4A7991C71B777E13009EAF36 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		4A7991C91B777E1C009EAF36 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -1610,7 +1608,6 @@
 				4A7991C91B777E1C009EAF36 /* CoreLocation.framework */,
 				4A7991C71B777E13009EAF36 /* OpenGLES.framework */,
 				4A7991C51B777DD4009EAF36 /* QuartzCore.framework */,
-				4A7991C31B777DA4009EAF36 /* AMap.bundle */,
 				4A4E74C11B63EEE3002384A8 /* SystemConfiguration.framework */,
 				4A4E74BF1B63EECB002384A8 /* CFNetwork.framework */,
 				4A4E74BD1B63EEBA002384A8 /* Security.framework */,
@@ -2141,7 +2138,6 @@
 				4A7991771B7760B7009EAF36 /* 登录注册_按钮-第三方-QQ@3x.png in Resources */,
 				4A4E722C1B61A703002384A8 /* 导航-我-灰@2x.png in Resources */,
 				4AA8AED01B653416005AABDA /* 按钮-添加图片@3x.png in Resources */,
-				4A7991C41B777DA4009EAF36 /* AMap.bundle in Resources */,
 				4A4E72E81B63E87D002384A8 /* 图标-我-我的收藏@2x.png in Resources */,
 				4AA8AECD1B653416005AABDA /* 按钮-添加图片.pdf in Resources */,
 				4A4E72301B61A703002384A8 /* 导航-我-红@2x.png in Resources */,
@@ -2428,7 +2424,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Xinle Tao";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/liyuanbo/Desktop/高德地图",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Vendors/UMengSocial/umeng_ios_social_sdk_4.2.3_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 				);
@@ -2464,7 +2459,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Xinle Tao";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/liyuanbo/Desktop/高德地图",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Vendors/UMengSocial/umeng_ios_social_sdk_4.2.3_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 				);
