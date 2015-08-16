@@ -132,6 +132,7 @@
     }];
     
     SKTag *tag = [[SKTag alloc]init];
+    tag.enable = YES;
     tag.bgImg = [[UIImage getPathImageWithName:@"登录注册_标签-添加"]stretchableImageWithLeftCapWidth:5 topCapHeight:0];
     tag.padding = UIEdgeInsetsMake(10, 10, 10, 10);
     [_tagView2 addTag:tag];
@@ -160,7 +161,7 @@
         NSLog(@"hahah");
         
 //        [weakSelfTagView2 removeTagAtIndex:index];
-//        
+        
 //        SKTag *tag = [[SKTag alloc]initWithText:[weakSelf.arr2 objectAtIndex:index]];
 //        tag.padding = UIEdgeInsetsMake(10, 10, 10, 10);
 //        tag.fontSize = 15;
@@ -171,12 +172,13 @@
 //        [weakSelf.arr1 addObject:[weakSelf.arr2 objectAtIndex:index]];
 //        [weakSelf.arr2 removeObjectAtIndex:index];
         
-//        if (index == weakSelf.arr2.count) {
-//            UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"" message:@"" delegate:weakSelf cancelButtonTitle:@"" otherButtonTitles:@"", nil];
-//            alertView.alertViewStyle = UIAlertViewStylePlainTextInput;
-//            [alertView show];
-//            
-//        }
+        if (index == weakSelf.arr2.count) {
+            UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"添加自定义标记" message:@"" delegate:weakSelf cancelButtonTitle:@"取消" otherButtonTitles:@"添加", nil];
+            
+            alertView.alertViewStyle = UIAlertViewStylePlainTextInput;
+            [alertView show];
+            
+        }
         
     };
 

@@ -362,7 +362,7 @@
                                 </mask>
                             </variation>
                         </textField>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgB-4K-zT2">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgB-4K-zT2" customClass="JKCountDownButton">
                             <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                             <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
@@ -370,7 +370,7 @@
                                 <constraint firstAttribute="width" constant="84" id="pF7-52-jxu"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                            <state key="normal" title="重新获取(59)">
+                            <state key="normal" title="点击获取">
                                 <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>

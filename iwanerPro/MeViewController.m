@@ -30,8 +30,23 @@
     WS(weakSelf);
     self.automaticallyAdjustsScrollViewInsets =  NO;
     UIImage *backHeadImage  = [UIImage imageNamed:@"hongzi"];
+    
+    
+    //高斯模糊
+    CIContext *context = [CIContext contextWithOptions:nil];
+    CIImage *inputImage = [[CIImage alloc] initWithImage:backHeadImage];
+    // create gaussian blur filter
+    CIFilter *filter = [CIFilter filterWithName:@"CIGaussianBlur"];
+    [filter setValue:inputImage forKey:kCIInputImageKey];
+    [filter setValue:[NSNumber numberWithFloat:7.0] forKey:@"inputRadius"];
+    // blur image
+    CIImage *result = [filter valueForKey:kCIOutputImageKey];
+    CGImageRef cgImage = [context createCGImage:result fromRect:[result extent]];
+    UIImage *image = [UIImage imageWithCGImage:cgImage];
+    CGImageRelease(cgImage);
+
     UIImageView *backHeadImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 200)];
-    backHeadImageView.image = backHeadImage;
+    backHeadImageView.image = image;
     backHeadImageView.userInteractionEnabled = YES;
     _myTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 44) style:UITableViewStyleGrouped];
     _myTableView.dataSource = self;
@@ -59,7 +74,6 @@
 
     });
     self.nickNameLabel = ({
-    
         UILabel *lable = [UILabel new];
         lable.text = @"酥酥的小饼干";
         lable.backgroundColor = [UIColor clearColor];
@@ -141,10 +155,7 @@
                 _redMessageSign.image = [UIImage getPathImageWithName:@"导航-爱玩-红"];
                 _redMessageSign.layer.cornerRadius = 4;
                 [cell.contentView addSubview:_redMessageSign];
-                
-                
-                
-                
+            
                 i = 2;
             }
             else if (indexPath.row == 1)
@@ -165,6 +176,7 @@
             [cell.contentView addSubview:imageViewSign];
             
             UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(50, 10.5, 160, 22)];
+            label.font = [UIFont boldSystemFontOfSize:15];
             [cell.contentView addSubview:label];
             label.text = [_itemTextArray objectAtIndex:indexPath.row];
             
@@ -172,17 +184,14 @@
             
             
         }
-        else
-        {
+        else{
 
             UIImage *image = [UIImage getPathImageWithName:@"图标-我-设置"];
-            
             UIImageView *imageViewSign = [[UIImageView alloc] initWithFrame:CGRectMake(19, 12, image.size.width, image.size.height)];
             imageViewSign.image = image;
             [cell.contentView addSubview:imageViewSign];
-            
-            
             UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(50, 10.5, 160, 22)];
+            label.font = [UIFont boldSystemFontOfSize:15];
             [cell.contentView addSubview:label];
             label.text = @"设置";
             

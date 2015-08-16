@@ -10,8 +10,9 @@
 #import "LoginViewController.h"
 #import "FindPwdViewController.h"
 #import "AppDelegate.h"
+#import "UMSocial.h"
 
-@interface LoginEnterViewController ()
+@interface LoginEnterViewController ()<UMSocialUIDelegate,WXApiDelegate>
 
 @end
 
@@ -43,13 +44,78 @@
 }
 - (IBAction)wechatLogin:(id)sender {
     
+    UMSocialSnsPlatform *snsPlatform = [UMSocialSnsPlatformManager getSocialPlatformWithName:UMShareToWechatSession];
+    
+    NSLog(@"%@",[UMSocialAccountManager socialAccountDictionary]);
+    
+    snsPlatform.loginClickHandler(self,[UMSocialControllerService defaultControllerService],YES,^(UMSocialResponseEntity *response){
+        
+        if (response.responseCode == UMSResponseCodeSuccess) {
+            
+            UMSocialAccountEntity *snsAccount = [[UMSocialAccountManager socialAccountDictionary]valueForKey:UMShareToWechatSession];
+            
+            NSLog(@"username is %@, uid is %@, token is %@ url is %@",snsAccount.userName,snsAccount.usid,snsAccount.accessToken,snsAccount.iconURL);
+            
+        }
+        
+    });
+    
+    
 }
 - (IBAction)qqLogin:(id)sender {
+    
+    UMSocialSnsPlatform *snsPlatform = [UMSocialSnsPlatformManager getSocialPlatformWithName:UMShareToQQ];
+    
+    
+    
+    snsPlatform.loginClickHandler(self,[UMSocialControllerService defaultControllerService],YES,^(UMSocialResponseEntity *response){
+        
+        NSLog(@"response is %@",response);
+        
+        [[UMSocialDataService defaultDataService]
+         requestSocialAccountWithCompletion:^(UMSocialResponseEntity *response) {
+             NSLog(@"QQUserInfo name = %@",response.data);
+         }];
+    });
+
+    
     
 }
 - (IBAction)weiboLogin:(id)sender {
     
+    UMSocialSnsPlatform *snsPlatform = [UMSocialSnsPlatformManager getSocialPlatformWithName:UMShareToSina];
+    
+    snsPlatform.loginClickHandler(self,[UMSocialControllerService defaultControllerService],YES,^(UMSocialResponseEntity *response){
+        
+        //          获取微博用户名、uid、token等
+        
+        if (response.responseCode == UMSResponseCodeSuccess) {
+            NSLog(@"++++++%@",[UMSocialAccountManager socialAccountDictionary]);
+            
+            
+            UMSocialAccountEntity *snsAccount = [[UMSocialAccountManager socialAccountDictionary] valueForKey:UMShareToSina];
+            
+            NSLog(@"username is %@, uid is %@, token is %@ url is %@",snsAccount.userName,snsAccount.usid,snsAccount.accessToken,snsAccount.iconURL);
+            
+        }});
+    
+
+    
 }
+
+//实现授权回调
+-(void)didFinishGetUMSocialDataInViewController:(UMSocialResponseEntity *)response
+{
+    if (response.viewControllerType == UMSViewControllerOauth) {
+        
+        NSLog(@"didFinishOauthAndGetAccount response is %@",response);
+        
+    }
+    
+    NSLog(@"%@",response);
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

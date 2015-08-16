@@ -10,6 +10,7 @@
 #import "PrefectInfoViewController.h"
 #import "LoginEnterViewController.h"
 #import "LoginViewController.h"
+#import "JKCountDownButton.h"
 
 @interface RegistViewController ()
 
@@ -29,7 +30,20 @@
 - (IBAction)clickBackBtn:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
-- (IBAction)regetAuthcodeBtn:(id)sender {
+- (IBAction)regetAuthcodeBtn:(JKCountDownButton *)sender {
+    
+    sender.enabled = NO;
+    [sender startWithSecond:60];
+    
+    [sender didChange:^NSString *(JKCountDownButton *countDownButton,int second) {
+        NSString *title = [NSString stringWithFormat:@"剩余%d秒",second];
+        return title;
+    }];
+    [sender didFinished:^NSString *(JKCountDownButton *countDownButton, int second) {
+        countDownButton.enabled = YES;
+        return @"点击重新获取";
+        
+    }];
     
 }
 - (IBAction)clickFinishBtn:(id)sender {

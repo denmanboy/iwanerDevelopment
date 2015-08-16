@@ -528,7 +528,7 @@
     self.title = @"主题详情";
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"..." style:UIBarButtonItemStylePlain target:self action:@selector(gotoEdit)];
-    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"按钮-返回-灰"] style:UIBarButtonItemStylePlain target:self action:@selector(gotoBack)];
     self.actionSheet = ({
         
         UIActionSheet *actionSheet
@@ -711,6 +711,19 @@
     }
     
     
+    
+}
+
+//返回
+- (void)gotoBack
+{
+    UIViewController *topCtrl = self.navigationController.topViewController;
+    if (topCtrl == self) {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+    else {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
     
 }
 - (void)didReceiveMemoryWarning {
