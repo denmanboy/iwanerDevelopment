@@ -12,6 +12,8 @@
 		2827D4551B808605009B7360 /* MySelectHeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2827D4511B808605009B7360 /* MySelectHeadViewController.m */; };
 		2827D4561B808605009B7360 /* MyPersonalityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2827D4531B808605009B7360 /* MyPersonalityViewController.m */; };
 		4A0B0A7D1B685474005A184B /* UILabelButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B0A7C1B685474005A184B /* UILabelButton.m */; };
+		4A0F80891B80935500813BA6 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7C5C4A1B8085DF00F30879 /* MAMapKit.framework */; };
+		4A0F808B1B80936600813BA6 /* AMap.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0F808A1B80936600813BA6 /* AMap.bundle */; };
 		4A4E72221B61A703002384A8 /* 导航-发布-灰.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E71FA1B61A703002384A8 /* 导航-发布-灰.pdf */; };
 		4A4E72231B61A703002384A8 /* 导航-发布-灰.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E71FB1B61A703002384A8 /* 导航-发布-灰.png */; };
 		4A4E72241B61A703002384A8 /* 导航-发布-灰@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E71FC1B61A703002384A8 /* 导航-发布-灰@2x.png */; };
@@ -313,7 +315,6 @@
 		4A7C5C471B80746C00F30879 /* CTAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7C5C351B80746C00F30879 /* CTAssetsViewController.m */; };
 		4A7C5C481B80746C00F30879 /* CTAssetsViewToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7C5C371B80746C00F30879 /* CTAssetsViewToolBar.m */; };
 		4A7C5C491B80746C00F30879 /* CTAssetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7C5C391B80746C00F30879 /* CTAssetView.m */; };
-		4A7C5C4C1B80860E00F30879 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7C5C4A1B8085DF00F30879 /* MAMapKit.framework */; };
 		4AA8AEC11B653416005AABDA /* 图标-列表右箭头.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEA91B653416005AABDA /* 图标-列表右箭头.pdf */; };
 		4AA8AEC21B653416005AABDA /* 图标-列表右箭头.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEAA1B653416005AABDA /* 图标-列表右箭头.png */; };
 		4AA8AEC31B653416005AABDA /* 图标-列表右箭头@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEAB1B653416005AABDA /* 图标-列表右箭头@2x.png */; };
@@ -392,6 +393,7 @@
 		2827D4531B808605009B7360 /* MyPersonalityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPersonalityViewController.m; sourceTree = "<group>"; };
 		4A0B0A7B1B685474005A184B /* UILabelButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelButton.h; sourceTree = "<group>"; };
 		4A0B0A7C1B685474005A184B /* UILabelButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelButton.m; sourceTree = "<group>"; };
+		4A0F808A1B80936600813BA6 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
 		4A4E71FA1B61A703002384A8 /* 导航-发布-灰.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "导航-发布-灰.pdf"; sourceTree = "<group>"; };
 		4A4E71FB1B61A703002384A8 /* 导航-发布-灰.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-发布-灰.png"; sourceTree = "<group>"; };
 		4A4E71FC1B61A703002384A8 /* 导航-发布-灰@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-发布-灰@2x.png"; sourceTree = "<group>"; };
@@ -931,6 +933,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A0F808B1B80936600813BA6 /* AMap.bundle in Frameworks */,
+				4A0F80891B80935500813BA6 /* MAMapKit.framework in Frameworks */,
 				8BD5E0251B8087370038B8B5 /* libSocialLaiWang.a in Frameworks */,
 				8BD5DFD81B8086790038B8B5 /* CoreGraphics.framework in Frameworks */,
 				8BD5DFD61B8086620038B8B5 /* libsqlite3.dylib in Frameworks */,
@@ -1613,6 +1617,7 @@
 		4AF971861B5E7BAB0090EACA = {
 			isa = PBXGroup;
 			children = (
+				4A0F808A1B80936600813BA6 /* AMap.bundle */,
 				8BD5DFD71B8086790038B8B5 /* CoreGraphics.framework */,
 				8BD5DFD51B8086620038B8B5 /* libsqlite3.dylib */,
 				8BD5DFD31B8086580038B8B5 /* libiconv.dylib */,
