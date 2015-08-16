@@ -314,6 +314,7 @@
 		4A7C5C471B80746C00F30879 /* CTAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7C5C351B80746C00F30879 /* CTAssetsViewController.m */; };
 		4A7C5C481B80746C00F30879 /* CTAssetsViewToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7C5C371B80746C00F30879 /* CTAssetsViewToolBar.m */; };
 		4A7C5C491B80746C00F30879 /* CTAssetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7C5C391B80746C00F30879 /* CTAssetView.m */; };
+		4A7C5C4C1B80860E00F30879 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7C5C4A1B8085DF00F30879 /* MAMapKit.framework */; };
 		4AA8AEC11B653416005AABDA /* 图标-列表右箭头.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEA91B653416005AABDA /* 图标-列表右箭头.pdf */; };
 		4AA8AEC21B653416005AABDA /* 图标-列表右箭头.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEAA1B653416005AABDA /* 图标-列表右箭头.png */; };
 		4AA8AEC31B653416005AABDA /* 图标-列表右箭头@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEAB1B653416005AABDA /* 图标-列表右箭头@2x.png */; };
@@ -814,6 +815,7 @@
 		4A7C5C371B80746C00F30879 /* CTAssetsViewToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTAssetsViewToolBar.m; sourceTree = "<group>"; };
 		4A7C5C381B80746C00F30879 /* CTAssetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTAssetView.h; sourceTree = "<group>"; };
 		4A7C5C391B80746C00F30879 /* CTAssetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTAssetView.m; sourceTree = "<group>"; };
+		4A7C5C4A1B8085DF00F30879 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
 		4AA8AEA91B653416005AABDA /* 图标-列表右箭头.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-列表右箭头.pdf"; sourceTree = "<group>"; };
 		4AA8AEAA1B653416005AABDA /* 图标-列表右箭头.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-列表右箭头.png"; sourceTree = "<group>"; };
 		4AA8AEAB1B653416005AABDA /* 图标-列表右箭头@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-列表右箭头@2x.png"; sourceTree = "<group>"; };
@@ -854,6 +856,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A7C5C4C1B80860E00F30879 /* MAMapKit.framework in Frameworks */,
 				4A7991D01B777E89009EAF36 /* libstdc++.6.0.9.dylib in Frameworks */,
 				4A7991CE1B777E75009EAF36 /* libz.dylib in Frameworks */,
 				4A4E74C21B63EEE3002384A8 /* SystemConfiguration.framework in Frameworks */,
@@ -1519,6 +1522,7 @@
 			isa = PBXGroup;
 			children = (
 				4A7991CF1B777E89009EAF36 /* libstdc++.6.0.9.dylib */,
+				4A7C5C4A1B8085DF00F30879 /* MAMapKit.framework */,
 				4A7991CD1B777E75009EAF36 /* libz.dylib */,
 				4A7991CB1B777E36009EAF36 /* CoreTelephony.framework */,
 				4A7991C91B777E1C009EAF36 /* CoreLocation.framework */,

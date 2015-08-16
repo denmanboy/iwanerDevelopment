@@ -19,7 +19,7 @@ typedef NS_ENUM(NSInteger, SelectTimeInputStatus) {
     SelectTimeInputStatusEndTime,
 };
 
-@interface PublicContentViewController : UIViewController<UITextFieldDelegate,UITextViewDelegate,MAMapViewDelegate,CTAssetsPickerControllerDelegate>
+@interface PublicContentViewController : UIViewController<UITextFieldDelegate,UITextViewDelegate,MAMapViewDelegate,CTAssetsPickerControllerDelegate,UINavigationControllerDelegate,UIActionSheetDelegate>
 
 @property (nonatomic,strong) UIScrollView *backScrollView;
 @property (nonatomic,strong) UIView *upPhotoesBack;
