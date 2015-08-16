@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "CTAssetsPickerController.h"
+
 #import <MAMapKit/MAMapKit.h>
 
 
@@ -17,7 +19,7 @@ typedef NS_ENUM(NSInteger, SelectTimeInputStatus) {
     SelectTimeInputStatusEndTime,
 };
 
-@interface PublicContentViewController : UIViewController<UITextFieldDelegate,UITextViewDelegate,MAMapViewDelegate>
+@interface PublicContentViewController : UIViewController<UITextFieldDelegate,UITextViewDelegate,MAMapViewDelegate,CTAssetsPickerControllerDelegate>
 
 @property (nonatomic,strong) UIScrollView *backScrollView;
 @property (nonatomic,strong) UIView *upPhotoesBack;

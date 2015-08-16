@@ -8,6 +8,7 @@
 
 #import "PublicContentViewController.h"
 
+
 @interface PublicContentViewController ()
 
 @end
@@ -461,7 +462,10 @@ updatingLocation:(BOOL)updatingLocation
 
 - (void)gotoUphotoes
 {
-    
+    CTAssetsPickerController *assetsPickerController = [[CTAssetsPickerController alloc] initWithAssetsType:CTAssetsPickerControllerAssetsTypeAllAsset];
+    assetsPickerController.delegate = self;
+    assetsPickerController.enableMaximumCount = 9;
+    [self presentViewController:assetsPickerController animated:YES completion:NULL];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -477,6 +481,62 @@ updatingLocation:(BOOL)updatingLocation
         
     }];
 }
+
+
+
+
+
+
+
+//- (void)clickOpenAlbumButton:(UIButton *)button{
+//    CTAssetsPickerController *assetsPickerController = [[CTAssetsPickerController alloc] initWithAssetsType:CTAssetsPickerControllerAssetsTypeAllAsset];
+//    assetsPickerController.delegate = self;
+//    assetsPickerController.enableMaximumCount = 9;
+//    [self presentViewController:assetsPickerController animated:YES completion:NULL];
+//}
+
+- (void)assetsPickerController:(CTAssetsPickerController *)assetsPickerController didFinishPickingAssets:(NSArray *)assets assetsType:(CTAssetsPickerControllerAssetsType)assetsType{
+    NSLog(@"%@", NSStringFromSelector(@selector(assetsPickerController:didFinishPickingAssets:assetsType:)));
+    switch (assetsType) {
+        case CTAssetsPickerControllerAssetsTypePhoto:{
+            
+        }
+            break;
+        case CTAssetsPickerControllerAssetsTypeVideo:{
+            
+        }
+            break;
+        case CTAssetsPickerControllerAssetsTypeAllAsset:{
+            
+        }
+            break;
+        default:
+            break;
+    }
+}
+
+- (void)assetsPickerController:(CTAssetsPickerController *)assetsPickerController didDeselectAsset:(ALAsset *)asset{
+    NSLog(@"%@", NSStringFromSelector(@selector(assetsPickerController:didDeselectAsset:)));
+}
+
+- (void)assetsPickerController:(CTAssetsPickerController *)assetsPickerController didSelectAsset:(ALAsset *)asset{
+    NSLog(@"%@", NSStringFromSelector(@selector(assetsPickerController:didSelectAsset:)));
+}
+
+- (void)assetsPickerController:(CTAssetsPickerController *)assetsPickerController didSelectCountReachedEnableMaximumCount:(NSUInteger)enableMaximumCount{
+    NSLog(@"%@", NSStringFromSelector(@selector(assetsPickerController:didSelectCountReachedEnableMaximumCount:)));
+}
+
+- (void)assetsPickerController:(CTAssetsPickerController *)assetsPickerController didSelectCountUnderEnableMinimumCount:(NSUInteger)enableMinimumCount{
+    NSLog(@"%@", NSStringFromSelector(@selector(assetsPickerController:didSelectCountUnderEnableMinimumCount:)));
+}
+
+- (void)assetsPickerControllerDidCancel:(CTAssetsPickerController *)assetsPickerController{
+    NSLog(@"%@", NSStringFromSelector(@selector(assetsPickerControllerDidCancel:)));
+}
+
+
+
 
 /*
 #pragma mark - Navigation
