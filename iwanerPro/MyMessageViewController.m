@@ -26,6 +26,7 @@
     self.view.backgroundColor = COLOR_WITH_RGB(235, 235, 241);
     self.title = @"我的消息";
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"清空" style:UIBarButtonItemStylePlain target:self action:@selector(clearAll)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"按钮-返回-灰"] style:UIBarButtonItemStylePlain target:self action:@selector(gotoBack)];
     //适配
     [self autoFit];
     self.tableView  = ({
@@ -154,6 +155,20 @@
     
     
 }
+
+//返回
+- (void)gotoBack
+{
+    UIViewController *topCtrl = self.navigationController.topViewController;
+    if (topCtrl == self) {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+    else {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+    
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

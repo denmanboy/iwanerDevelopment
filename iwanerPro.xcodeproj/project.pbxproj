@@ -11,6 +11,250 @@
 		2827D4541B808605009B7360 /* MyHobbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2827D44F1B808605009B7360 /* MyHobbyViewController.m */; };
 		2827D4551B808605009B7360 /* MySelectHeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2827D4511B808605009B7360 /* MySelectHeadViewController.m */; };
 		2827D4561B808605009B7360 /* MyPersonalityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2827D4531B808605009B7360 /* MyPersonalityViewController.m */; };
+		2827D54D1B8096BE009B7360 /* 分享-QQ.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4591B8096BE009B7360 /* 分享-QQ.pdf */; };
+		2827D54E1B8096BE009B7360 /* 分享-QQ.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D45A1B8096BE009B7360 /* 分享-QQ.png */; };
+		2827D54F1B8096BE009B7360 /* 分享-QQ@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D45B1B8096BE009B7360 /* 分享-QQ@2x.png */; };
+		2827D5501B8096BE009B7360 /* 分享-QQ@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D45C1B8096BE009B7360 /* 分享-QQ@3x.png */; };
+		2827D5511B8096BE009B7360 /* 分享-微信.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D45D1B8096BE009B7360 /* 分享-微信.pdf */; };
+		2827D5521B8096BE009B7360 /* 分享-微信.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D45E1B8096BE009B7360 /* 分享-微信.png */; };
+		2827D5531B8096BE009B7360 /* 分享-微信@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D45F1B8096BE009B7360 /* 分享-微信@2x.png */; };
+		2827D5541B8096BE009B7360 /* 分享-微信@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4601B8096BE009B7360 /* 分享-微信@3x.png */; };
+		2827D5551B8096BE009B7360 /* 分享-朋友圈.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4611B8096BE009B7360 /* 分享-朋友圈.pdf */; };
+		2827D5561B8096BE009B7360 /* 分享-朋友圈.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4621B8096BE009B7360 /* 分享-朋友圈.png */; };
+		2827D5571B8096BE009B7360 /* 分享-朋友圈@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4631B8096BE009B7360 /* 分享-朋友圈@2x.png */; };
+		2827D5581B8096BE009B7360 /* 分享-朋友圈@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4641B8096BE009B7360 /* 分享-朋友圈@3x.png */; };
+		2827D5591B8096BE009B7360 /* 图标-主题详情-地点.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4651B8096BE009B7360 /* 图标-主题详情-地点.pdf */; };
+		2827D55A1B8096BE009B7360 /* 图标-主题详情-地点.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4661B8096BE009B7360 /* 图标-主题详情-地点.png */; };
+		2827D55B1B8096BE009B7360 /* 图标-主题详情-地点@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4671B8096BE009B7360 /* 图标-主题详情-地点@2x.png */; };
+		2827D55C1B8096BE009B7360 /* 图标-主题详情-地点@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4681B8096BE009B7360 /* 图标-主题详情-地点@3x.png */; };
+		2827D55D1B8096BE009B7360 /* 图标-主题详情-时间.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4691B8096BE009B7360 /* 图标-主题详情-时间.pdf */; };
+		2827D55E1B8096BE009B7360 /* 图标-主题详情-时间.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D46A1B8096BE009B7360 /* 图标-主题详情-时间.png */; };
+		2827D55F1B8096BE009B7360 /* 图标-主题详情-时间@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D46B1B8096BE009B7360 /* 图标-主题详情-时间@2x.png */; };
+		2827D5601B8096BE009B7360 /* 图标-主题详情-时间@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D46C1B8096BE009B7360 /* 图标-主题详情-时间@3x.png */; };
+		2827D5611B8096BE009B7360 /* 图标-主题详情-消费方式.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D46D1B8096BE009B7360 /* 图标-主题详情-消费方式.pdf */; };
+		2827D5621B8096BE009B7360 /* 图标-主题详情-消费方式.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D46E1B8096BE009B7360 /* 图标-主题详情-消费方式.png */; };
+		2827D5631B8096BE009B7360 /* 图标-主题详情-消费方式@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D46F1B8096BE009B7360 /* 图标-主题详情-消费方式@2x.png */; };
+		2827D5641B8096BE009B7360 /* 图标-主题详情-消费方式@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4701B8096BE009B7360 /* 图标-主题详情-消费方式@3x.png */; };
+		2827D5651B8096BE009B7360 /* 图标-主题详情-花费.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4711B8096BE009B7360 /* 图标-主题详情-花费.pdf */; };
+		2827D5661B8096BE009B7360 /* 图标-主题详情-花费.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4721B8096BE009B7360 /* 图标-主题详情-花费.png */; };
+		2827D5671B8096BE009B7360 /* 图标-主题详情-花费@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4731B8096BE009B7360 /* 图标-主题详情-花费@2x.png */; };
+		2827D5681B8096BE009B7360 /* 图标-主题详情-花费@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4741B8096BE009B7360 /* 图标-主题详情-花费@3x.png */; };
+		2827D5691B8096BE009B7360 /* 图标-主题详情-补充详情.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4751B8096BE009B7360 /* 图标-主题详情-补充详情.pdf */; };
+		2827D56A1B8096BE009B7360 /* 图标-主题详情-补充详情.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4761B8096BE009B7360 /* 图标-主题详情-补充详情.png */; };
+		2827D56B1B8096BE009B7360 /* 图标-主题详情-补充详情@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4771B8096BE009B7360 /* 图标-主题详情-补充详情@2x.png */; };
+		2827D56C1B8096BE009B7360 /* 图标-主题详情-补充详情@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4781B8096BE009B7360 /* 图标-主题详情-补充详情@3x.png */; };
+		2827D56D1B8096BE009B7360 /* 图标-主题详情-赞.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4791B8096BE009B7360 /* 图标-主题详情-赞.pdf */; };
+		2827D56E1B8096BE009B7360 /* 图标-主题详情-赞.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D47A1B8096BE009B7360 /* 图标-主题详情-赞.png */; };
+		2827D56F1B8096BE009B7360 /* 图标-主题详情-赞@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D47B1B8096BE009B7360 /* 图标-主题详情-赞@2x.png */; };
+		2827D5701B8096BE009B7360 /* 图标-主题详情-赞@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D47C1B8096BE009B7360 /* 图标-主题详情-赞@3x.png */; };
+		2827D5711B8096BE009B7360 /* 图标-列表右箭头.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D47D1B8096BE009B7360 /* 图标-列表右箭头.pdf */; };
+		2827D5721B8096BE009B7360 /* 图标-列表右箭头.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D47E1B8096BE009B7360 /* 图标-列表右箭头.png */; };
+		2827D5731B8096BE009B7360 /* 图标-列表右箭头@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D47F1B8096BE009B7360 /* 图标-列表右箭头@2x.png */; };
+		2827D5741B8096BE009B7360 /* 图标-列表右箭头@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4801B8096BE009B7360 /* 图标-列表右箭头@3x.png */; };
+		2827D5751B8096BE009B7360 /* 图标-发布主题-地图.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4811B8096BE009B7360 /* 图标-发布主题-地图.pdf */; };
+		2827D5761B8096BE009B7360 /* 图标-发布主题-地图.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4821B8096BE009B7360 /* 图标-发布主题-地图.png */; };
+		2827D5771B8096BE009B7360 /* 图标-发布主题-地图@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4831B8096BE009B7360 /* 图标-发布主题-地图@2x.png */; };
+		2827D5781B8096BE009B7360 /* 图标-发布主题-地图@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4841B8096BE009B7360 /* 图标-发布主题-地图@3x.png */; };
+		2827D5791B8096BE009B7360 /* 图标-我-位置.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4851B8096BE009B7360 /* 图标-我-位置.pdf */; };
+		2827D57A1B8096BE009B7360 /* 图标-我-位置.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4861B8096BE009B7360 /* 图标-我-位置.png */; };
+		2827D57B1B8096BE009B7360 /* 图标-我-位置@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4871B8096BE009B7360 /* 图标-我-位置@2x.png */; };
+		2827D57C1B8096BE009B7360 /* 图标-我-位置@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4881B8096BE009B7360 /* 图标-我-位置@3x.png */; };
+		2827D57D1B8096BE009B7360 /* 图标-我-我的主题.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4891B8096BE009B7360 /* 图标-我-我的主题.pdf */; };
+		2827D57E1B8096BE009B7360 /* 图标-我-我的主题.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D48A1B8096BE009B7360 /* 图标-我-我的主题.png */; };
+		2827D57F1B8096BE009B7360 /* 图标-我-我的主题@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D48B1B8096BE009B7360 /* 图标-我-我的主题@2x.png */; };
+		2827D5801B8096BE009B7360 /* 图标-我-我的主题@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D48C1B8096BE009B7360 /* 图标-我-我的主题@3x.png */; };
+		2827D5811B8096BE009B7360 /* 图标-我-我的收藏.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D48D1B8096BE009B7360 /* 图标-我-我的收藏.pdf */; };
+		2827D5821B8096BE009B7360 /* 图标-我-我的收藏.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D48E1B8096BE009B7360 /* 图标-我-我的收藏.png */; };
+		2827D5831B8096BE009B7360 /* 图标-我-我的收藏@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D48F1B8096BE009B7360 /* 图标-我-我的收藏@2x.png */; };
+		2827D5841B8096BE009B7360 /* 图标-我-我的收藏@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4901B8096BE009B7360 /* 图标-我-我的收藏@3x.png */; };
+		2827D5851B8096BE009B7360 /* 图标-我-我的消息.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4911B8096BE009B7360 /* 图标-我-我的消息.pdf */; };
+		2827D5861B8096BE009B7360 /* 图标-我-我的消息.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4921B8096BE009B7360 /* 图标-我-我的消息.png */; };
+		2827D5871B8096BE009B7360 /* 图标-我-我的消息@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4931B8096BE009B7360 /* 图标-我-我的消息@2x.png */; };
+		2827D5881B8096BE009B7360 /* 图标-我-我的消息@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4941B8096BE009B7360 /* 图标-我-我的消息@3x.png */; };
+		2827D5891B8096BE009B7360 /* 图标-我-我的看见.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4951B8096BE009B7360 /* 图标-我-我的看见.pdf */; };
+		2827D58A1B8096BE009B7360 /* 图标-我-我的看见.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4961B8096BE009B7360 /* 图标-我-我的看见.png */; };
+		2827D58B1B8096BE009B7360 /* 图标-我-我的看见@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4971B8096BE009B7360 /* 图标-我-我的看见@2x.png */; };
+		2827D58C1B8096BE009B7360 /* 图标-我-我的看见@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4981B8096BE009B7360 /* 图标-我-我的看见@3x.png */; };
+		2827D58D1B8096BE009B7360 /* 图标-我-更换头像.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4991B8096BE009B7360 /* 图标-我-更换头像.pdf */; };
+		2827D58E1B8096BE009B7360 /* 图标-我-更换头像.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D49A1B8096BE009B7360 /* 图标-我-更换头像.png */; };
+		2827D58F1B8096BE009B7360 /* 图标-我-更换头像@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D49B1B8096BE009B7360 /* 图标-我-更换头像@2x.png */; };
+		2827D5901B8096BE009B7360 /* 图标-我-更换头像@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D49C1B8096BE009B7360 /* 图标-我-更换头像@3x.png */; };
+		2827D5911B8096BE009B7360 /* 图标-我-设置.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D49D1B8096BE009B7360 /* 图标-我-设置.pdf */; };
+		2827D5921B8096BE009B7360 /* 图标-我-设置.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D49E1B8096BE009B7360 /* 图标-我-设置.png */; };
+		2827D5931B8096BE009B7360 /* 图标-我-设置@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D49F1B8096BE009B7360 /* 图标-我-设置@2x.png */; };
+		2827D5941B8096BE009B7360 /* 图标-我-设置@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4A01B8096BE009B7360 /* 图标-我-设置@3x.png */; };
+		2827D5951B8096BE009B7360 /* 图标-爱玩-地点.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4A11B8096BE009B7360 /* 图标-爱玩-地点.pdf */; };
+		2827D5961B8096BE009B7360 /* 图标-爱玩-地点.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4A21B8096BE009B7360 /* 图标-爱玩-地点.png */; };
+		2827D5971B8096BE009B7360 /* 图标-爱玩-地点@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4A31B8096BE009B7360 /* 图标-爱玩-地点@2x.png */; };
+		2827D5981B8096BE009B7360 /* 图标-爱玩-地点@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4A41B8096BE009B7360 /* 图标-爱玩-地点@3x.png */; };
+		2827D5991B8096BE009B7360 /* 图标-爱玩-女.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4A51B8096BE009B7360 /* 图标-爱玩-女.pdf */; };
+		2827D59A1B8096BE009B7360 /* 图标-爱玩-女.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4A61B8096BE009B7360 /* 图标-爱玩-女.png */; };
+		2827D59B1B8096BE009B7360 /* 图标-爱玩-女@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4A71B8096BE009B7360 /* 图标-爱玩-女@2x.png */; };
+		2827D59C1B8096BE009B7360 /* 图标-爱玩-女@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4A81B8096BE009B7360 /* 图标-爱玩-女@3x.png */; };
+		2827D59D1B8096BE009B7360 /* 图标-爱玩-时间.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4A91B8096BE009B7360 /* 图标-爱玩-时间.pdf */; };
+		2827D59E1B8096BE009B7360 /* 图标-爱玩-时间.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4AA1B8096BE009B7360 /* 图标-爱玩-时间.png */; };
+		2827D59F1B8096BE009B7360 /* 图标-爱玩-时间@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4AB1B8096BE009B7360 /* 图标-爱玩-时间@2x.png */; };
+		2827D5A01B8096BE009B7360 /* 图标-爱玩-时间@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4AC1B8096BE009B7360 /* 图标-爱玩-时间@3x.png */; };
+		2827D5A11B8096BE009B7360 /* 图标-爱玩-男.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4AD1B8096BE009B7360 /* 图标-爱玩-男.pdf */; };
+		2827D5A21B8096BE009B7360 /* 图标-爱玩-男.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4AE1B8096BE009B7360 /* 图标-爱玩-男.png */; };
+		2827D5A31B8096BE009B7360 /* 图标-爱玩-男@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4AF1B8096BE009B7360 /* 图标-爱玩-男@2x.png */; };
+		2827D5A41B8096BE009B7360 /* 图标-爱玩-男@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4B01B8096BE009B7360 /* 图标-爱玩-男@3x.png */; };
+		2827D5A51B8096BE009B7360 /* 图标-玩友圈-为空.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4B11B8096BE009B7360 /* 图标-玩友圈-为空.pdf */; };
+		2827D5A61B8096BE009B7360 /* 图标-玩友圈-为空.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4B21B8096BE009B7360 /* 图标-玩友圈-为空.png */; };
+		2827D5A71B8096BE009B7360 /* 图标-玩友圈-为空@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4B31B8096BE009B7360 /* 图标-玩友圈-为空@2x.png */; };
+		2827D5A81B8096BE009B7360 /* 图标-玩友圈-为空@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4B41B8096BE009B7360 /* 图标-玩友圈-为空@3x.png */; };
+		2827D5A91B8096BE009B7360 /* 图标-玩友圈-位置.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4B51B8096BE009B7360 /* 图标-玩友圈-位置.pdf */; };
+		2827D5AA1B8096BE009B7360 /* 图标-玩友圈-位置.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4B61B8096BE009B7360 /* 图标-玩友圈-位置.png */; };
+		2827D5AB1B8096BE009B7360 /* 图标-玩友圈-位置@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4B71B8096BE009B7360 /* 图标-玩友圈-位置@2x.png */; };
+		2827D5AC1B8096BE009B7360 /* 图标-玩友圈-位置@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4B81B8096BE009B7360 /* 图标-玩友圈-位置@3x.png */; };
+		2827D5AD1B8096BE009B7360 /* 图标-玩友圈-标签.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4B91B8096BE009B7360 /* 图标-玩友圈-标签.pdf */; };
+		2827D5AE1B8096BE009B7360 /* 图标-玩友圈-标签.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4BA1B8096BE009B7360 /* 图标-玩友圈-标签.png */; };
+		2827D5AF1B8096BE009B7360 /* 图标-玩友圈-标签@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4BB1B8096BE009B7360 /* 图标-玩友圈-标签@2x.png */; };
+		2827D5B01B8096BE009B7360 /* 图标-玩友圈-标签@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4BC1B8096BE009B7360 /* 图标-玩友圈-标签@3x.png */; };
+		2827D5B11B8096BE009B7360 /* 图标-详细资料-位置.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4BD1B8096BE009B7360 /* 图标-详细资料-位置.pdf */; };
+		2827D5B21B8096BE009B7360 /* 图标-详细资料-位置.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4BE1B8096BE009B7360 /* 图标-详细资料-位置.png */; };
+		2827D5B31B8096BE009B7360 /* 图标-详细资料-位置@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4BF1B8096BE009B7360 /* 图标-详细资料-位置@2x.png */; };
+		2827D5B41B8096BE009B7360 /* 图标-详细资料-位置@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4C01B8096BE009B7360 /* 图标-详细资料-位置@3x.png */; };
+		2827D5B51B8096BE009B7360 /* 图标-详细资料-女.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4C11B8096BE009B7360 /* 图标-详细资料-女.pdf */; };
+		2827D5B61B8096BE009B7360 /* 图标-详细资料-女.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4C21B8096BE009B7360 /* 图标-详细资料-女.png */; };
+		2827D5B71B8096BE009B7360 /* 图标-详细资料-女@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4C31B8096BE009B7360 /* 图标-详细资料-女@2x.png */; };
+		2827D5B81B8096BE009B7360 /* 图标-详细资料-女@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4C41B8096BE009B7360 /* 图标-详细资料-女@3x.png */; };
+		2827D5B91B8096BE009B7360 /* 图标-详细资料-标签.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4C51B8096BE009B7360 /* 图标-详细资料-标签.pdf */; };
+		2827D5BA1B8096BE009B7360 /* 图标-详细资料-标签.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4C61B8096BE009B7360 /* 图标-详细资料-标签.png */; };
+		2827D5BB1B8096BE009B7360 /* 图标-详细资料-标签@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4C71B8096BE009B7360 /* 图标-详细资料-标签@2x.png */; };
+		2827D5BC1B8096BE009B7360 /* 图标-详细资料-标签@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4C81B8096BE009B7360 /* 图标-详细资料-标签@3x.png */; };
+		2827D5BD1B8096BE009B7360 /* 图标-详细资料-爱好.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4C91B8096BE009B7360 /* 图标-详细资料-爱好.pdf */; };
+		2827D5BE1B8096BE009B7360 /* 图标-详细资料-爱好.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4CA1B8096BE009B7360 /* 图标-详细资料-爱好.png */; };
+		2827D5BF1B8096BE009B7360 /* 图标-详细资料-爱好@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4CB1B8096BE009B7360 /* 图标-详细资料-爱好@2x.png */; };
+		2827D5C01B8096BE009B7360 /* 图标-详细资料-爱好@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4CC1B8096BE009B7360 /* 图标-详细资料-爱好@3x.png */; };
+		2827D5C11B8096BE009B7360 /* 图标-详细资料-男.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4CD1B8096BE009B7360 /* 图标-详细资料-男.pdf */; };
+		2827D5C21B8096BE009B7360 /* 图标-详细资料-男.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4CE1B8096BE009B7360 /* 图标-详细资料-男.png */; };
+		2827D5C31B8096BE009B7360 /* 图标-详细资料-男@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4CF1B8096BE009B7360 /* 图标-详细资料-男@2x.png */; };
+		2827D5C41B8096BE009B7360 /* 图标-详细资料-男@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4D01B8096BE009B7360 /* 图标-详细资料-男@3x.png */; };
+		2827D5C51B8096BE009B7360 /* 图标-详细资料-行业.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4D11B8096BE009B7360 /* 图标-详细资料-行业.pdf */; };
+		2827D5C61B8096BE009B7360 /* 图标-详细资料-行业.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4D21B8096BE009B7360 /* 图标-详细资料-行业.png */; };
+		2827D5C71B8096BE009B7360 /* 图标-详细资料-行业@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4D31B8096BE009B7360 /* 图标-详细资料-行业@2x.png */; };
+		2827D5C81B8096BE009B7360 /* 图标-详细资料-行业@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4D41B8096BE009B7360 /* 图标-详细资料-行业@3x.png */; };
+		2827D5C91B8096BE009B7360 /* 按钮-主题详情-留言.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4D51B8096BE009B7360 /* 按钮-主题详情-留言.pdf */; };
+		2827D5CA1B8096BE009B7360 /* 按钮-主题详情-留言.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4D61B8096BE009B7360 /* 按钮-主题详情-留言.png */; };
+		2827D5CB1B8096BE009B7360 /* 按钮-主题详情-留言@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4D71B8096BE009B7360 /* 按钮-主题详情-留言@2x.png */; };
+		2827D5CC1B8096BE009B7360 /* 按钮-主题详情-留言@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4D81B8096BE009B7360 /* 按钮-主题详情-留言@3x.png */; };
+		2827D5CD1B8096BE009B7360 /* 按钮-主题详情-赞-白.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4D91B8096BE009B7360 /* 按钮-主题详情-赞-白.pdf */; };
+		2827D5CE1B8096BE009B7360 /* 按钮-主题详情-赞-白.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4DA1B8096BE009B7360 /* 按钮-主题详情-赞-白.png */; };
+		2827D5CF1B8096BE009B7360 /* 按钮-主题详情-赞-白@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4DB1B8096BE009B7360 /* 按钮-主题详情-赞-白@2x.png */; };
+		2827D5D01B8096BE009B7360 /* 按钮-主题详情-赞-白@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4DC1B8096BE009B7360 /* 按钮-主题详情-赞-白@3x.png */; };
+		2827D5D11B8096BE009B7360 /* 按钮-主题详情-赞-红.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4DD1B8096BE009B7360 /* 按钮-主题详情-赞-红.pdf */; };
+		2827D5D21B8096BE009B7360 /* 按钮-主题详情-赞-红.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4DE1B8096BE009B7360 /* 按钮-主题详情-赞-红.png */; };
+		2827D5D31B8096BE009B7360 /* 按钮-主题详情-赞-红@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4DF1B8096BE009B7360 /* 按钮-主题详情-赞-红@2x.png */; };
+		2827D5D41B8096BE009B7360 /* 按钮-主题详情-赞-红@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4E01B8096BE009B7360 /* 按钮-主题详情-赞-红@3x.png */; };
+		2827D5D51B8096BE009B7360 /* 按钮-天机图片-按下.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4E11B8096BE009B7360 /* 按钮-天机图片-按下.pdf */; };
+		2827D5D61B8096BE009B7360 /* 按钮-天机图片-按下.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4E21B8096BE009B7360 /* 按钮-天机图片-按下.png */; };
+		2827D5D71B8096BE009B7360 /* 按钮-天机图片-按下@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4E31B8096BE009B7360 /* 按钮-天机图片-按下@2x.png */; };
+		2827D5D81B8096BE009B7360 /* 按钮-天机图片-按下@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4E41B8096BE009B7360 /* 按钮-天机图片-按下@3x.png */; };
+		2827D5D91B8096BE009B7360 /* 按钮-天机图片.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4E51B8096BE009B7360 /* 按钮-天机图片.pdf */; };
+		2827D5DA1B8096BE009B7360 /* 按钮-天机图片.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4E61B8096BE009B7360 /* 按钮-天机图片.png */; };
+		2827D5DB1B8096BE009B7360 /* 按钮-天机图片@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4E71B8096BE009B7360 /* 按钮-天机图片@2x.png */; };
+		2827D5DC1B8096BE009B7360 /* 按钮-天机图片@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4E81B8096BE009B7360 /* 按钮-天机图片@3x.png */; };
+		2827D5DD1B8096BE009B7360 /* 按钮-我的主题-删除-按下.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4E91B8096BE009B7360 /* 按钮-我的主题-删除-按下.pdf */; };
+		2827D5DE1B8096BE009B7360 /* 按钮-我的主题-删除-按下.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4EA1B8096BE009B7360 /* 按钮-我的主题-删除-按下.png */; };
+		2827D5DF1B8096BE009B7360 /* 按钮-我的主题-删除-按下@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4EB1B8096BE009B7360 /* 按钮-我的主题-删除-按下@2x.png */; };
+		2827D5E01B8096BE009B7360 /* 按钮-我的主题-删除-按下@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4EC1B8096BE009B7360 /* 按钮-我的主题-删除-按下@3x.png */; };
+		2827D5E11B8096BE009B7360 /* 按钮-我的主题-删除.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4ED1B8096BE009B7360 /* 按钮-我的主题-删除.pdf */; };
+		2827D5E21B8096BE009B7360 /* 按钮-我的主题-删除.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4EE1B8096BE009B7360 /* 按钮-我的主题-删除.png */; };
+		2827D5E31B8096BE009B7360 /* 按钮-我的主题-删除@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4EF1B8096BE009B7360 /* 按钮-我的主题-删除@2x.png */; };
+		2827D5E41B8096BE009B7360 /* 按钮-我的主题-删除@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4F01B8096BE009B7360 /* 按钮-我的主题-删除@3x.png */; };
+		2827D5E51B8096BE009B7360 /* 按钮-我的消息-同意-按下.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4F11B8096BE009B7360 /* 按钮-我的消息-同意-按下.pdf */; };
+		2827D5E61B8096BE009B7360 /* 按钮-我的消息-同意-按下.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4F21B8096BE009B7360 /* 按钮-我的消息-同意-按下.png */; };
+		2827D5E71B8096BE009B7360 /* 按钮-我的消息-同意-按下@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4F31B8096BE009B7360 /* 按钮-我的消息-同意-按下@2x.png */; };
+		2827D5E81B8096BE009B7360 /* 按钮-我的消息-同意-按下@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4F41B8096BE009B7360 /* 按钮-我的消息-同意-按下@3x.png */; };
+		2827D5E91B8096BE009B7360 /* 按钮-我的消息-同意.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4F51B8096BE009B7360 /* 按钮-我的消息-同意.pdf */; };
+		2827D5EA1B8096BE009B7360 /* 按钮-我的消息-同意.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4F61B8096BE009B7360 /* 按钮-我的消息-同意.png */; };
+		2827D5EB1B8096BE009B7360 /* 按钮-我的消息-同意@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4F71B8096BE009B7360 /* 按钮-我的消息-同意@2x.png */; };
+		2827D5EC1B8096BE009B7360 /* 按钮-我的消息-同意@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4F81B8096BE009B7360 /* 按钮-我的消息-同意@3x.png */; };
+		2827D5ED1B8096BE009B7360 /* 按钮-我的消息-已添加.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4F91B8096BE009B7360 /* 按钮-我的消息-已添加.pdf */; };
+		2827D5EE1B8096BE009B7360 /* 按钮-我的消息-已添加.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4FA1B8096BE009B7360 /* 按钮-我的消息-已添加.png */; };
+		2827D5EF1B8096BE009B7360 /* 按钮-我的消息-已添加@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4FB1B8096BE009B7360 /* 按钮-我的消息-已添加@2x.png */; };
+		2827D5F01B8096BE009B7360 /* 按钮-我的消息-已添加@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4FC1B8096BE009B7360 /* 按钮-我的消息-已添加@3x.png */; };
+		2827D5F11B8096BE009B7360 /* 按钮-搜索-灰.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4FD1B8096BE009B7360 /* 按钮-搜索-灰.pdf */; };
+		2827D5F21B8096BE009B7360 /* 按钮-搜索-灰.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4FE1B8096BE009B7360 /* 按钮-搜索-灰.png */; };
+		2827D5F31B8096BE009B7360 /* 按钮-搜索-灰@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D4FF1B8096BE009B7360 /* 按钮-搜索-灰@2x.png */; };
+		2827D5F41B8096BE009B7360 /* 按钮-搜索-灰@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5001B8096BE009B7360 /* 按钮-搜索-灰@3x.png */; };
+		2827D5F51B8096BE009B7360 /* 按钮-搜索-白.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5011B8096BE009B7360 /* 按钮-搜索-白.pdf */; };
+		2827D5F61B8096BE009B7360 /* 按钮-搜索-白.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5021B8096BE009B7360 /* 按钮-搜索-白.png */; };
+		2827D5F71B8096BE009B7360 /* 按钮-搜索-白@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5031B8096BE009B7360 /* 按钮-搜索-白@2x.png */; };
+		2827D5F81B8096BE009B7360 /* 按钮-搜索-白@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5041B8096BE009B7360 /* 按钮-搜索-白@3x.png */; };
+		2827D5F91B8096BE009B7360 /* 按钮-更多-灰.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5051B8096BE009B7360 /* 按钮-更多-灰.pdf */; };
+		2827D5FA1B8096BE009B7360 /* 按钮-更多-灰.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5061B8096BE009B7360 /* 按钮-更多-灰.png */; };
+		2827D5FB1B8096BE009B7360 /* 按钮-更多-灰@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5071B8096BE009B7360 /* 按钮-更多-灰@2x.png */; };
+		2827D5FC1B8096BE009B7360 /* 按钮-更多-灰@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5081B8096BE009B7360 /* 按钮-更多-灰@3x.png */; };
+		2827D5FD1B8096BE009B7360 /* 按钮-更多-白.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5091B8096BE009B7360 /* 按钮-更多-白.pdf */; };
+		2827D5FE1B8096BE009B7360 /* 按钮-更多-白.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D50A1B8096BE009B7360 /* 按钮-更多-白.png */; };
+		2827D5FF1B8096BE009B7360 /* 按钮-更多-白@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D50B1B8096BE009B7360 /* 按钮-更多-白@2x.png */; };
+		2827D6001B8096BE009B7360 /* 按钮-更多-白@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D50C1B8096BE009B7360 /* 按钮-更多-白@3x.png */; };
+		2827D6011B8096BE009B7360 /* 按钮-滑块-公开.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D50D1B8096BE009B7360 /* 按钮-滑块-公开.pdf */; };
+		2827D6021B8096BE009B7360 /* 按钮-滑块-公开.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D50E1B8096BE009B7360 /* 按钮-滑块-公开.png */; };
+		2827D6031B8096BE009B7360 /* 按钮-滑块-公开@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D50F1B8096BE009B7360 /* 按钮-滑块-公开@2x.png */; };
+		2827D6041B8096BE009B7360 /* 按钮-滑块-公开@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5101B8096BE009B7360 /* 按钮-滑块-公开@3x.png */; };
+		2827D6051B8096BE009B7360 /* 按钮-滑块-玩友.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5111B8096BE009B7360 /* 按钮-滑块-玩友.pdf */; };
+		2827D6061B8096BE009B7360 /* 按钮-滑块-玩友.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5121B8096BE009B7360 /* 按钮-滑块-玩友.png */; };
+		2827D6071B8096BE009B7360 /* 按钮-滑块-玩友@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5131B8096BE009B7360 /* 按钮-滑块-玩友@2x.png */; };
+		2827D6081B8096BE009B7360 /* 按钮-滑块-玩友@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5141B8096BE009B7360 /* 按钮-滑块-玩友@3x.png */; };
+		2827D6091B8096BE009B7360 /* 按钮-爱玩-赞-灰.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5151B8096BE009B7360 /* 按钮-爱玩-赞-灰.pdf */; };
+		2827D60A1B8096BE009B7360 /* 按钮-爱玩-赞-灰.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5161B8096BE009B7360 /* 按钮-爱玩-赞-灰.png */; };
+		2827D60B1B8096BE009B7360 /* 按钮-爱玩-赞-灰@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5171B8096BE009B7360 /* 按钮-爱玩-赞-灰@2x.png */; };
+		2827D60C1B8096BE009B7360 /* 按钮-爱玩-赞-灰@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5181B8096BE009B7360 /* 按钮-爱玩-赞-灰@3x.png */; };
+		2827D60D1B8096BE009B7360 /* 按钮-爱玩-赞-红.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5191B8096BE009B7360 /* 按钮-爱玩-赞-红.pdf */; };
+		2827D60E1B8096BE009B7360 /* 按钮-爱玩-赞-红.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D51A1B8096BE009B7360 /* 按钮-爱玩-赞-红.png */; };
+		2827D60F1B8096BE009B7360 /* 按钮-爱玩-赞-红@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D51B1B8096BE009B7360 /* 按钮-爱玩-赞-红@2x.png */; };
+		2827D6101B8096BE009B7360 /* 按钮-爱玩-赞-红@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D51C1B8096BE009B7360 /* 按钮-爱玩-赞-红@3x.png */; };
+		2827D6111B8096BE009B7360 /* 按钮-玩友圈-添加玩友-灰.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D51D1B8096BE009B7360 /* 按钮-玩友圈-添加玩友-灰.pdf */; };
+		2827D6121B8096BE009B7360 /* 按钮-玩友圈-添加玩友-灰.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D51E1B8096BE009B7360 /* 按钮-玩友圈-添加玩友-灰.png */; };
+		2827D6131B8096BE009B7360 /* 按钮-玩友圈-添加玩友-灰@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D51F1B8096BE009B7360 /* 按钮-玩友圈-添加玩友-灰@2x.png */; };
+		2827D6141B8096BE009B7360 /* 按钮-玩友圈-添加玩友-灰@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5201B8096BE009B7360 /* 按钮-玩友圈-添加玩友-灰@3x.png */; };
+		2827D6151B8096BE009B7360 /* 按钮-玩友圈-添加玩友-白.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5211B8096BE009B7360 /* 按钮-玩友圈-添加玩友-白.pdf */; };
+		2827D6161B8096BE009B7360 /* 按钮-玩友圈-添加玩友-白.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5221B8096BE009B7360 /* 按钮-玩友圈-添加玩友-白.png */; };
+		2827D6171B8096BE009B7360 /* 按钮-玩友圈-添加玩友-白@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5231B8096BE009B7360 /* 按钮-玩友圈-添加玩友-白@2x.png */; };
+		2827D6181B8096BE009B7360 /* 按钮-玩友圈-添加玩友-白@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5241B8096BE009B7360 /* 按钮-玩友圈-添加玩友-白@3x.png */; };
+		2827D6191B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-添加.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5251B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-添加.pdf */; };
+		2827D61A1B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-添加.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5261B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-添加.png */; };
+		2827D61B1B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-添加@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5271B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-添加@2x.png */; };
+		2827D61C1B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-添加@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5281B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-添加@3x.png */; };
+		2827D61D1B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-选中.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5291B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-选中.pdf */; };
+		2827D61E1B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D52A1B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-选中.png */; };
+		2827D61F1B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-选中@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D52B1B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-选中@2x.png */; };
+		2827D6201B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-选中@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D52C1B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-选中@3x.png */; };
+		2827D6211B8096BE009B7360 /* 按钮-输入框-提交-按下.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D52D1B8096BE009B7360 /* 按钮-输入框-提交-按下.pdf */; };
+		2827D6221B8096BE009B7360 /* 按钮-输入框-提交-按下.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D52E1B8096BE009B7360 /* 按钮-输入框-提交-按下.png */; };
+		2827D6231B8096BE009B7360 /* 按钮-输入框-提交-按下@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D52F1B8096BE009B7360 /* 按钮-输入框-提交-按下@2x.png */; };
+		2827D6241B8096BE009B7360 /* 按钮-输入框-提交-按下@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5301B8096BE009B7360 /* 按钮-输入框-提交-按下@3x.png */; };
+		2827D6251B8096BE009B7360 /* 按钮-输入框-提交.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5311B8096BE009B7360 /* 按钮-输入框-提交.pdf */; };
+		2827D6261B8096BE009B7360 /* 按钮-输入框-提交.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5321B8096BE009B7360 /* 按钮-输入框-提交.png */; };
+		2827D6271B8096BE009B7360 /* 按钮-输入框-提交@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5331B8096BE009B7360 /* 按钮-输入框-提交@2x.png */; };
+		2827D6281B8096BE009B7360 /* 按钮-输入框-提交@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5341B8096BE009B7360 /* 按钮-输入框-提交@3x.png */; };
+		2827D6291B8096BE009B7360 /* 按钮-返回-灰.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5351B8096BE009B7360 /* 按钮-返回-灰.pdf */; };
+		2827D62A1B8096BE009B7360 /* 按钮-返回-灰.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5361B8096BE009B7360 /* 按钮-返回-灰.png */; };
+		2827D62B1B8096BE009B7360 /* 按钮-返回-灰@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5371B8096BE009B7360 /* 按钮-返回-灰@2x.png */; };
+		2827D62C1B8096BE009B7360 /* 按钮-返回-灰@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5381B8096BE009B7360 /* 按钮-返回-灰@3x.png */; };
+		2827D62D1B8096BE009B7360 /* 按钮-返回-白.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5391B8096BE009B7360 /* 按钮-返回-白.pdf */; };
+		2827D62E1B8096BE009B7360 /* 按钮-返回-白.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D53A1B8096BE009B7360 /* 按钮-返回-白.png */; };
+		2827D62F1B8096BE009B7360 /* 按钮-返回-白@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D53B1B8096BE009B7360 /* 按钮-返回-白@2x.png */; };
+		2827D6301B8096BE009B7360 /* 按钮-返回-白@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D53C1B8096BE009B7360 /* 按钮-返回-白@3x.png */; };
+		2827D6311B8096BE009B7360 /* 爱玩状态-正报名.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D53D1B8096BE009B7360 /* 爱玩状态-正报名.pdf */; };
+		2827D6321B8096BE009B7360 /* 爱玩状态-正报名.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D53E1B8096BE009B7360 /* 爱玩状态-正报名.png */; };
+		2827D6331B8096BE009B7360 /* 爱玩状态-正报名@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D53F1B8096BE009B7360 /* 爱玩状态-正报名@2x.png */; };
+		2827D6341B8096BE009B7360 /* 爱玩状态-正报名@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5401B8096BE009B7360 /* 爱玩状态-正报名@3x.png */; };
+		2827D6351B8096BE009B7360 /* 详细资料-标签背景.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5411B8096BE009B7360 /* 详细资料-标签背景.pdf */; };
+		2827D6361B8096BE009B7360 /* 详细资料-标签背景.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5421B8096BE009B7360 /* 详细资料-标签背景.png */; };
+		2827D6371B8096BE009B7360 /* 详细资料-标签背景@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5431B8096BE009B7360 /* 详细资料-标签背景@2x.png */; };
+		2827D6381B8096BE009B7360 /* 详细资料-标签背景@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5441B8096BE009B7360 /* 详细资料-标签背景@3x.png */; };
+		2827D6391B8096BE009B7360 /* 邀请玩友-QQ.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5451B8096BE009B7360 /* 邀请玩友-QQ.pdf */; };
+		2827D63A1B8096BE009B7360 /* 邀请玩友-QQ.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5461B8096BE009B7360 /* 邀请玩友-QQ.png */; };
+		2827D63B1B8096BE009B7360 /* 邀请玩友-QQ@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5471B8096BE009B7360 /* 邀请玩友-QQ@2x.png */; };
+		2827D63C1B8096BE009B7360 /* 邀请玩友-QQ@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5481B8096BE009B7360 /* 邀请玩友-QQ@3x.png */; };
+		2827D63D1B8096BE009B7360 /* 邀请玩友-微信.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2827D5491B8096BE009B7360 /* 邀请玩友-微信.pdf */; };
+		2827D63E1B8096BE009B7360 /* 邀请玩友-微信.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D54A1B8096BE009B7360 /* 邀请玩友-微信.png */; };
+		2827D63F1B8096BE009B7360 /* 邀请玩友-微信@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D54B1B8096BE009B7360 /* 邀请玩友-微信@2x.png */; };
+		2827D6401B8096BE009B7360 /* 邀请玩友-微信@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D54C1B8096BE009B7360 /* 邀请玩友-微信@3x.png */; };
 		4A0B0A7D1B685474005A184B /* UILabelButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B0A7C1B685474005A184B /* UILabelButton.m */; };
 		4A0F80891B80935500813BA6 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7C5C4A1B8085DF00F30879 /* MAMapKit.framework */; };
 		4A0F808B1B80936600813BA6 /* AMap.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0F808A1B80936600813BA6 /* AMap.bundle */; };
@@ -391,6 +635,250 @@
 		2827D4511B808605009B7360 /* MySelectHeadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySelectHeadViewController.m; sourceTree = "<group>"; };
 		2827D4521B808605009B7360 /* MyPersonalityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPersonalityViewController.h; sourceTree = "<group>"; };
 		2827D4531B808605009B7360 /* MyPersonalityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPersonalityViewController.m; sourceTree = "<group>"; };
+		2827D4591B8096BE009B7360 /* 分享-QQ.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "分享-QQ.pdf"; sourceTree = "<group>"; };
+		2827D45A1B8096BE009B7360 /* 分享-QQ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "分享-QQ.png"; sourceTree = "<group>"; };
+		2827D45B1B8096BE009B7360 /* 分享-QQ@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "分享-QQ@2x.png"; sourceTree = "<group>"; };
+		2827D45C1B8096BE009B7360 /* 分享-QQ@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "分享-QQ@3x.png"; sourceTree = "<group>"; };
+		2827D45D1B8096BE009B7360 /* 分享-微信.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "分享-微信.pdf"; sourceTree = "<group>"; };
+		2827D45E1B8096BE009B7360 /* 分享-微信.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "分享-微信.png"; sourceTree = "<group>"; };
+		2827D45F1B8096BE009B7360 /* 分享-微信@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "分享-微信@2x.png"; sourceTree = "<group>"; };
+		2827D4601B8096BE009B7360 /* 分享-微信@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "分享-微信@3x.png"; sourceTree = "<group>"; };
+		2827D4611B8096BE009B7360 /* 分享-朋友圈.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "分享-朋友圈.pdf"; sourceTree = "<group>"; };
+		2827D4621B8096BE009B7360 /* 分享-朋友圈.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "分享-朋友圈.png"; sourceTree = "<group>"; };
+		2827D4631B8096BE009B7360 /* 分享-朋友圈@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "分享-朋友圈@2x.png"; sourceTree = "<group>"; };
+		2827D4641B8096BE009B7360 /* 分享-朋友圈@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "分享-朋友圈@3x.png"; sourceTree = "<group>"; };
+		2827D4651B8096BE009B7360 /* 图标-主题详情-地点.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-主题详情-地点.pdf"; sourceTree = "<group>"; };
+		2827D4661B8096BE009B7360 /* 图标-主题详情-地点.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-主题详情-地点.png"; sourceTree = "<group>"; };
+		2827D4671B8096BE009B7360 /* 图标-主题详情-地点@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-主题详情-地点@2x.png"; sourceTree = "<group>"; };
+		2827D4681B8096BE009B7360 /* 图标-主题详情-地点@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-主题详情-地点@3x.png"; sourceTree = "<group>"; };
+		2827D4691B8096BE009B7360 /* 图标-主题详情-时间.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-主题详情-时间.pdf"; sourceTree = "<group>"; };
+		2827D46A1B8096BE009B7360 /* 图标-主题详情-时间.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-主题详情-时间.png"; sourceTree = "<group>"; };
+		2827D46B1B8096BE009B7360 /* 图标-主题详情-时间@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-主题详情-时间@2x.png"; sourceTree = "<group>"; };
+		2827D46C1B8096BE009B7360 /* 图标-主题详情-时间@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-主题详情-时间@3x.png"; sourceTree = "<group>"; };
+		2827D46D1B8096BE009B7360 /* 图标-主题详情-消费方式.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-主题详情-消费方式.pdf"; sourceTree = "<group>"; };
+		2827D46E1B8096BE009B7360 /* 图标-主题详情-消费方式.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-主题详情-消费方式.png"; sourceTree = "<group>"; };
+		2827D46F1B8096BE009B7360 /* 图标-主题详情-消费方式@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-主题详情-消费方式@2x.png"; sourceTree = "<group>"; };
+		2827D4701B8096BE009B7360 /* 图标-主题详情-消费方式@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-主题详情-消费方式@3x.png"; sourceTree = "<group>"; };
+		2827D4711B8096BE009B7360 /* 图标-主题详情-花费.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-主题详情-花费.pdf"; sourceTree = "<group>"; };
+		2827D4721B8096BE009B7360 /* 图标-主题详情-花费.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-主题详情-花费.png"; sourceTree = "<group>"; };
+		2827D4731B8096BE009B7360 /* 图标-主题详情-花费@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-主题详情-花费@2x.png"; sourceTree = "<group>"; };
+		2827D4741B8096BE009B7360 /* 图标-主题详情-花费@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-主题详情-花费@3x.png"; sourceTree = "<group>"; };
+		2827D4751B8096BE009B7360 /* 图标-主题详情-补充详情.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-主题详情-补充详情.pdf"; sourceTree = "<group>"; };
+		2827D4761B8096BE009B7360 /* 图标-主题详情-补充详情.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-主题详情-补充详情.png"; sourceTree = "<group>"; };
+		2827D4771B8096BE009B7360 /* 图标-主题详情-补充详情@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-主题详情-补充详情@2x.png"; sourceTree = "<group>"; };
+		2827D4781B8096BE009B7360 /* 图标-主题详情-补充详情@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-主题详情-补充详情@3x.png"; sourceTree = "<group>"; };
+		2827D4791B8096BE009B7360 /* 图标-主题详情-赞.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-主题详情-赞.pdf"; sourceTree = "<group>"; };
+		2827D47A1B8096BE009B7360 /* 图标-主题详情-赞.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-主题详情-赞.png"; sourceTree = "<group>"; };
+		2827D47B1B8096BE009B7360 /* 图标-主题详情-赞@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-主题详情-赞@2x.png"; sourceTree = "<group>"; };
+		2827D47C1B8096BE009B7360 /* 图标-主题详情-赞@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-主题详情-赞@3x.png"; sourceTree = "<group>"; };
+		2827D47D1B8096BE009B7360 /* 图标-列表右箭头.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-列表右箭头.pdf"; sourceTree = "<group>"; };
+		2827D47E1B8096BE009B7360 /* 图标-列表右箭头.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-列表右箭头.png"; sourceTree = "<group>"; };
+		2827D47F1B8096BE009B7360 /* 图标-列表右箭头@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-列表右箭头@2x.png"; sourceTree = "<group>"; };
+		2827D4801B8096BE009B7360 /* 图标-列表右箭头@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-列表右箭头@3x.png"; sourceTree = "<group>"; };
+		2827D4811B8096BE009B7360 /* 图标-发布主题-地图.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-发布主题-地图.pdf"; sourceTree = "<group>"; };
+		2827D4821B8096BE009B7360 /* 图标-发布主题-地图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-发布主题-地图.png"; sourceTree = "<group>"; };
+		2827D4831B8096BE009B7360 /* 图标-发布主题-地图@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-发布主题-地图@2x.png"; sourceTree = "<group>"; };
+		2827D4841B8096BE009B7360 /* 图标-发布主题-地图@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-发布主题-地图@3x.png"; sourceTree = "<group>"; };
+		2827D4851B8096BE009B7360 /* 图标-我-位置.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-我-位置.pdf"; sourceTree = "<group>"; };
+		2827D4861B8096BE009B7360 /* 图标-我-位置.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-我-位置.png"; sourceTree = "<group>"; };
+		2827D4871B8096BE009B7360 /* 图标-我-位置@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-我-位置@2x.png"; sourceTree = "<group>"; };
+		2827D4881B8096BE009B7360 /* 图标-我-位置@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-我-位置@3x.png"; sourceTree = "<group>"; };
+		2827D4891B8096BE009B7360 /* 图标-我-我的主题.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-我-我的主题.pdf"; sourceTree = "<group>"; };
+		2827D48A1B8096BE009B7360 /* 图标-我-我的主题.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-我-我的主题.png"; sourceTree = "<group>"; };
+		2827D48B1B8096BE009B7360 /* 图标-我-我的主题@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-我-我的主题@2x.png"; sourceTree = "<group>"; };
+		2827D48C1B8096BE009B7360 /* 图标-我-我的主题@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-我-我的主题@3x.png"; sourceTree = "<group>"; };
+		2827D48D1B8096BE009B7360 /* 图标-我-我的收藏.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-我-我的收藏.pdf"; sourceTree = "<group>"; };
+		2827D48E1B8096BE009B7360 /* 图标-我-我的收藏.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-我-我的收藏.png"; sourceTree = "<group>"; };
+		2827D48F1B8096BE009B7360 /* 图标-我-我的收藏@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-我-我的收藏@2x.png"; sourceTree = "<group>"; };
+		2827D4901B8096BE009B7360 /* 图标-我-我的收藏@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-我-我的收藏@3x.png"; sourceTree = "<group>"; };
+		2827D4911B8096BE009B7360 /* 图标-我-我的消息.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-我-我的消息.pdf"; sourceTree = "<group>"; };
+		2827D4921B8096BE009B7360 /* 图标-我-我的消息.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-我-我的消息.png"; sourceTree = "<group>"; };
+		2827D4931B8096BE009B7360 /* 图标-我-我的消息@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-我-我的消息@2x.png"; sourceTree = "<group>"; };
+		2827D4941B8096BE009B7360 /* 图标-我-我的消息@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-我-我的消息@3x.png"; sourceTree = "<group>"; };
+		2827D4951B8096BE009B7360 /* 图标-我-我的看见.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-我-我的看见.pdf"; sourceTree = "<group>"; };
+		2827D4961B8096BE009B7360 /* 图标-我-我的看见.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-我-我的看见.png"; sourceTree = "<group>"; };
+		2827D4971B8096BE009B7360 /* 图标-我-我的看见@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-我-我的看见@2x.png"; sourceTree = "<group>"; };
+		2827D4981B8096BE009B7360 /* 图标-我-我的看见@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-我-我的看见@3x.png"; sourceTree = "<group>"; };
+		2827D4991B8096BE009B7360 /* 图标-我-更换头像.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-我-更换头像.pdf"; sourceTree = "<group>"; };
+		2827D49A1B8096BE009B7360 /* 图标-我-更换头像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-我-更换头像.png"; sourceTree = "<group>"; };
+		2827D49B1B8096BE009B7360 /* 图标-我-更换头像@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-我-更换头像@2x.png"; sourceTree = "<group>"; };
+		2827D49C1B8096BE009B7360 /* 图标-我-更换头像@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-我-更换头像@3x.png"; sourceTree = "<group>"; };
+		2827D49D1B8096BE009B7360 /* 图标-我-设置.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-我-设置.pdf"; sourceTree = "<group>"; };
+		2827D49E1B8096BE009B7360 /* 图标-我-设置.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-我-设置.png"; sourceTree = "<group>"; };
+		2827D49F1B8096BE009B7360 /* 图标-我-设置@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-我-设置@2x.png"; sourceTree = "<group>"; };
+		2827D4A01B8096BE009B7360 /* 图标-我-设置@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-我-设置@3x.png"; sourceTree = "<group>"; };
+		2827D4A11B8096BE009B7360 /* 图标-爱玩-地点.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-爱玩-地点.pdf"; sourceTree = "<group>"; };
+		2827D4A21B8096BE009B7360 /* 图标-爱玩-地点.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-爱玩-地点.png"; sourceTree = "<group>"; };
+		2827D4A31B8096BE009B7360 /* 图标-爱玩-地点@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-爱玩-地点@2x.png"; sourceTree = "<group>"; };
+		2827D4A41B8096BE009B7360 /* 图标-爱玩-地点@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-爱玩-地点@3x.png"; sourceTree = "<group>"; };
+		2827D4A51B8096BE009B7360 /* 图标-爱玩-女.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-爱玩-女.pdf"; sourceTree = "<group>"; };
+		2827D4A61B8096BE009B7360 /* 图标-爱玩-女.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-爱玩-女.png"; sourceTree = "<group>"; };
+		2827D4A71B8096BE009B7360 /* 图标-爱玩-女@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-爱玩-女@2x.png"; sourceTree = "<group>"; };
+		2827D4A81B8096BE009B7360 /* 图标-爱玩-女@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-爱玩-女@3x.png"; sourceTree = "<group>"; };
+		2827D4A91B8096BE009B7360 /* 图标-爱玩-时间.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-爱玩-时间.pdf"; sourceTree = "<group>"; };
+		2827D4AA1B8096BE009B7360 /* 图标-爱玩-时间.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-爱玩-时间.png"; sourceTree = "<group>"; };
+		2827D4AB1B8096BE009B7360 /* 图标-爱玩-时间@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-爱玩-时间@2x.png"; sourceTree = "<group>"; };
+		2827D4AC1B8096BE009B7360 /* 图标-爱玩-时间@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-爱玩-时间@3x.png"; sourceTree = "<group>"; };
+		2827D4AD1B8096BE009B7360 /* 图标-爱玩-男.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-爱玩-男.pdf"; sourceTree = "<group>"; };
+		2827D4AE1B8096BE009B7360 /* 图标-爱玩-男.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-爱玩-男.png"; sourceTree = "<group>"; };
+		2827D4AF1B8096BE009B7360 /* 图标-爱玩-男@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-爱玩-男@2x.png"; sourceTree = "<group>"; };
+		2827D4B01B8096BE009B7360 /* 图标-爱玩-男@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-爱玩-男@3x.png"; sourceTree = "<group>"; };
+		2827D4B11B8096BE009B7360 /* 图标-玩友圈-为空.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-玩友圈-为空.pdf"; sourceTree = "<group>"; };
+		2827D4B21B8096BE009B7360 /* 图标-玩友圈-为空.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-玩友圈-为空.png"; sourceTree = "<group>"; };
+		2827D4B31B8096BE009B7360 /* 图标-玩友圈-为空@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-玩友圈-为空@2x.png"; sourceTree = "<group>"; };
+		2827D4B41B8096BE009B7360 /* 图标-玩友圈-为空@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-玩友圈-为空@3x.png"; sourceTree = "<group>"; };
+		2827D4B51B8096BE009B7360 /* 图标-玩友圈-位置.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-玩友圈-位置.pdf"; sourceTree = "<group>"; };
+		2827D4B61B8096BE009B7360 /* 图标-玩友圈-位置.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-玩友圈-位置.png"; sourceTree = "<group>"; };
+		2827D4B71B8096BE009B7360 /* 图标-玩友圈-位置@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-玩友圈-位置@2x.png"; sourceTree = "<group>"; };
+		2827D4B81B8096BE009B7360 /* 图标-玩友圈-位置@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-玩友圈-位置@3x.png"; sourceTree = "<group>"; };
+		2827D4B91B8096BE009B7360 /* 图标-玩友圈-标签.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-玩友圈-标签.pdf"; sourceTree = "<group>"; };
+		2827D4BA1B8096BE009B7360 /* 图标-玩友圈-标签.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-玩友圈-标签.png"; sourceTree = "<group>"; };
+		2827D4BB1B8096BE009B7360 /* 图标-玩友圈-标签@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-玩友圈-标签@2x.png"; sourceTree = "<group>"; };
+		2827D4BC1B8096BE009B7360 /* 图标-玩友圈-标签@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-玩友圈-标签@3x.png"; sourceTree = "<group>"; };
+		2827D4BD1B8096BE009B7360 /* 图标-详细资料-位置.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-详细资料-位置.pdf"; sourceTree = "<group>"; };
+		2827D4BE1B8096BE009B7360 /* 图标-详细资料-位置.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-详细资料-位置.png"; sourceTree = "<group>"; };
+		2827D4BF1B8096BE009B7360 /* 图标-详细资料-位置@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-详细资料-位置@2x.png"; sourceTree = "<group>"; };
+		2827D4C01B8096BE009B7360 /* 图标-详细资料-位置@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-详细资料-位置@3x.png"; sourceTree = "<group>"; };
+		2827D4C11B8096BE009B7360 /* 图标-详细资料-女.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-详细资料-女.pdf"; sourceTree = "<group>"; };
+		2827D4C21B8096BE009B7360 /* 图标-详细资料-女.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-详细资料-女.png"; sourceTree = "<group>"; };
+		2827D4C31B8096BE009B7360 /* 图标-详细资料-女@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-详细资料-女@2x.png"; sourceTree = "<group>"; };
+		2827D4C41B8096BE009B7360 /* 图标-详细资料-女@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-详细资料-女@3x.png"; sourceTree = "<group>"; };
+		2827D4C51B8096BE009B7360 /* 图标-详细资料-标签.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-详细资料-标签.pdf"; sourceTree = "<group>"; };
+		2827D4C61B8096BE009B7360 /* 图标-详细资料-标签.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-详细资料-标签.png"; sourceTree = "<group>"; };
+		2827D4C71B8096BE009B7360 /* 图标-详细资料-标签@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-详细资料-标签@2x.png"; sourceTree = "<group>"; };
+		2827D4C81B8096BE009B7360 /* 图标-详细资料-标签@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-详细资料-标签@3x.png"; sourceTree = "<group>"; };
+		2827D4C91B8096BE009B7360 /* 图标-详细资料-爱好.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-详细资料-爱好.pdf"; sourceTree = "<group>"; };
+		2827D4CA1B8096BE009B7360 /* 图标-详细资料-爱好.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-详细资料-爱好.png"; sourceTree = "<group>"; };
+		2827D4CB1B8096BE009B7360 /* 图标-详细资料-爱好@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-详细资料-爱好@2x.png"; sourceTree = "<group>"; };
+		2827D4CC1B8096BE009B7360 /* 图标-详细资料-爱好@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-详细资料-爱好@3x.png"; sourceTree = "<group>"; };
+		2827D4CD1B8096BE009B7360 /* 图标-详细资料-男.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-详细资料-男.pdf"; sourceTree = "<group>"; };
+		2827D4CE1B8096BE009B7360 /* 图标-详细资料-男.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-详细资料-男.png"; sourceTree = "<group>"; };
+		2827D4CF1B8096BE009B7360 /* 图标-详细资料-男@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-详细资料-男@2x.png"; sourceTree = "<group>"; };
+		2827D4D01B8096BE009B7360 /* 图标-详细资料-男@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-详细资料-男@3x.png"; sourceTree = "<group>"; };
+		2827D4D11B8096BE009B7360 /* 图标-详细资料-行业.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-详细资料-行业.pdf"; sourceTree = "<group>"; };
+		2827D4D21B8096BE009B7360 /* 图标-详细资料-行业.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-详细资料-行业.png"; sourceTree = "<group>"; };
+		2827D4D31B8096BE009B7360 /* 图标-详细资料-行业@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-详细资料-行业@2x.png"; sourceTree = "<group>"; };
+		2827D4D41B8096BE009B7360 /* 图标-详细资料-行业@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-详细资料-行业@3x.png"; sourceTree = "<group>"; };
+		2827D4D51B8096BE009B7360 /* 按钮-主题详情-留言.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-主题详情-留言.pdf"; sourceTree = "<group>"; };
+		2827D4D61B8096BE009B7360 /* 按钮-主题详情-留言.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-主题详情-留言.png"; sourceTree = "<group>"; };
+		2827D4D71B8096BE009B7360 /* 按钮-主题详情-留言@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-主题详情-留言@2x.png"; sourceTree = "<group>"; };
+		2827D4D81B8096BE009B7360 /* 按钮-主题详情-留言@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-主题详情-留言@3x.png"; sourceTree = "<group>"; };
+		2827D4D91B8096BE009B7360 /* 按钮-主题详情-赞-白.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-主题详情-赞-白.pdf"; sourceTree = "<group>"; };
+		2827D4DA1B8096BE009B7360 /* 按钮-主题详情-赞-白.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-主题详情-赞-白.png"; sourceTree = "<group>"; };
+		2827D4DB1B8096BE009B7360 /* 按钮-主题详情-赞-白@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-主题详情-赞-白@2x.png"; sourceTree = "<group>"; };
+		2827D4DC1B8096BE009B7360 /* 按钮-主题详情-赞-白@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-主题详情-赞-白@3x.png"; sourceTree = "<group>"; };
+		2827D4DD1B8096BE009B7360 /* 按钮-主题详情-赞-红.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-主题详情-赞-红.pdf"; sourceTree = "<group>"; };
+		2827D4DE1B8096BE009B7360 /* 按钮-主题详情-赞-红.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-主题详情-赞-红.png"; sourceTree = "<group>"; };
+		2827D4DF1B8096BE009B7360 /* 按钮-主题详情-赞-红@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-主题详情-赞-红@2x.png"; sourceTree = "<group>"; };
+		2827D4E01B8096BE009B7360 /* 按钮-主题详情-赞-红@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-主题详情-赞-红@3x.png"; sourceTree = "<group>"; };
+		2827D4E11B8096BE009B7360 /* 按钮-天机图片-按下.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-天机图片-按下.pdf"; sourceTree = "<group>"; };
+		2827D4E21B8096BE009B7360 /* 按钮-天机图片-按下.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-天机图片-按下.png"; sourceTree = "<group>"; };
+		2827D4E31B8096BE009B7360 /* 按钮-天机图片-按下@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-天机图片-按下@2x.png"; sourceTree = "<group>"; };
+		2827D4E41B8096BE009B7360 /* 按钮-天机图片-按下@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-天机图片-按下@3x.png"; sourceTree = "<group>"; };
+		2827D4E51B8096BE009B7360 /* 按钮-天机图片.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-天机图片.pdf"; sourceTree = "<group>"; };
+		2827D4E61B8096BE009B7360 /* 按钮-天机图片.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-天机图片.png"; sourceTree = "<group>"; };
+		2827D4E71B8096BE009B7360 /* 按钮-天机图片@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-天机图片@2x.png"; sourceTree = "<group>"; };
+		2827D4E81B8096BE009B7360 /* 按钮-天机图片@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-天机图片@3x.png"; sourceTree = "<group>"; };
+		2827D4E91B8096BE009B7360 /* 按钮-我的主题-删除-按下.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-我的主题-删除-按下.pdf"; sourceTree = "<group>"; };
+		2827D4EA1B8096BE009B7360 /* 按钮-我的主题-删除-按下.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-我的主题-删除-按下.png"; sourceTree = "<group>"; };
+		2827D4EB1B8096BE009B7360 /* 按钮-我的主题-删除-按下@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-我的主题-删除-按下@2x.png"; sourceTree = "<group>"; };
+		2827D4EC1B8096BE009B7360 /* 按钮-我的主题-删除-按下@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-我的主题-删除-按下@3x.png"; sourceTree = "<group>"; };
+		2827D4ED1B8096BE009B7360 /* 按钮-我的主题-删除.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-我的主题-删除.pdf"; sourceTree = "<group>"; };
+		2827D4EE1B8096BE009B7360 /* 按钮-我的主题-删除.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-我的主题-删除.png"; sourceTree = "<group>"; };
+		2827D4EF1B8096BE009B7360 /* 按钮-我的主题-删除@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-我的主题-删除@2x.png"; sourceTree = "<group>"; };
+		2827D4F01B8096BE009B7360 /* 按钮-我的主题-删除@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-我的主题-删除@3x.png"; sourceTree = "<group>"; };
+		2827D4F11B8096BE009B7360 /* 按钮-我的消息-同意-按下.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-我的消息-同意-按下.pdf"; sourceTree = "<group>"; };
+		2827D4F21B8096BE009B7360 /* 按钮-我的消息-同意-按下.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-我的消息-同意-按下.png"; sourceTree = "<group>"; };
+		2827D4F31B8096BE009B7360 /* 按钮-我的消息-同意-按下@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-我的消息-同意-按下@2x.png"; sourceTree = "<group>"; };
+		2827D4F41B8096BE009B7360 /* 按钮-我的消息-同意-按下@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-我的消息-同意-按下@3x.png"; sourceTree = "<group>"; };
+		2827D4F51B8096BE009B7360 /* 按钮-我的消息-同意.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-我的消息-同意.pdf"; sourceTree = "<group>"; };
+		2827D4F61B8096BE009B7360 /* 按钮-我的消息-同意.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-我的消息-同意.png"; sourceTree = "<group>"; };
+		2827D4F71B8096BE009B7360 /* 按钮-我的消息-同意@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-我的消息-同意@2x.png"; sourceTree = "<group>"; };
+		2827D4F81B8096BE009B7360 /* 按钮-我的消息-同意@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-我的消息-同意@3x.png"; sourceTree = "<group>"; };
+		2827D4F91B8096BE009B7360 /* 按钮-我的消息-已添加.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-我的消息-已添加.pdf"; sourceTree = "<group>"; };
+		2827D4FA1B8096BE009B7360 /* 按钮-我的消息-已添加.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-我的消息-已添加.png"; sourceTree = "<group>"; };
+		2827D4FB1B8096BE009B7360 /* 按钮-我的消息-已添加@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-我的消息-已添加@2x.png"; sourceTree = "<group>"; };
+		2827D4FC1B8096BE009B7360 /* 按钮-我的消息-已添加@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-我的消息-已添加@3x.png"; sourceTree = "<group>"; };
+		2827D4FD1B8096BE009B7360 /* 按钮-搜索-灰.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-搜索-灰.pdf"; sourceTree = "<group>"; };
+		2827D4FE1B8096BE009B7360 /* 按钮-搜索-灰.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-搜索-灰.png"; sourceTree = "<group>"; };
+		2827D4FF1B8096BE009B7360 /* 按钮-搜索-灰@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-搜索-灰@2x.png"; sourceTree = "<group>"; };
+		2827D5001B8096BE009B7360 /* 按钮-搜索-灰@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-搜索-灰@3x.png"; sourceTree = "<group>"; };
+		2827D5011B8096BE009B7360 /* 按钮-搜索-白.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-搜索-白.pdf"; sourceTree = "<group>"; };
+		2827D5021B8096BE009B7360 /* 按钮-搜索-白.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-搜索-白.png"; sourceTree = "<group>"; };
+		2827D5031B8096BE009B7360 /* 按钮-搜索-白@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-搜索-白@2x.png"; sourceTree = "<group>"; };
+		2827D5041B8096BE009B7360 /* 按钮-搜索-白@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-搜索-白@3x.png"; sourceTree = "<group>"; };
+		2827D5051B8096BE009B7360 /* 按钮-更多-灰.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-更多-灰.pdf"; sourceTree = "<group>"; };
+		2827D5061B8096BE009B7360 /* 按钮-更多-灰.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-更多-灰.png"; sourceTree = "<group>"; };
+		2827D5071B8096BE009B7360 /* 按钮-更多-灰@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-更多-灰@2x.png"; sourceTree = "<group>"; };
+		2827D5081B8096BE009B7360 /* 按钮-更多-灰@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-更多-灰@3x.png"; sourceTree = "<group>"; };
+		2827D5091B8096BE009B7360 /* 按钮-更多-白.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-更多-白.pdf"; sourceTree = "<group>"; };
+		2827D50A1B8096BE009B7360 /* 按钮-更多-白.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-更多-白.png"; sourceTree = "<group>"; };
+		2827D50B1B8096BE009B7360 /* 按钮-更多-白@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-更多-白@2x.png"; sourceTree = "<group>"; };
+		2827D50C1B8096BE009B7360 /* 按钮-更多-白@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-更多-白@3x.png"; sourceTree = "<group>"; };
+		2827D50D1B8096BE009B7360 /* 按钮-滑块-公开.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-滑块-公开.pdf"; sourceTree = "<group>"; };
+		2827D50E1B8096BE009B7360 /* 按钮-滑块-公开.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-滑块-公开.png"; sourceTree = "<group>"; };
+		2827D50F1B8096BE009B7360 /* 按钮-滑块-公开@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-滑块-公开@2x.png"; sourceTree = "<group>"; };
+		2827D5101B8096BE009B7360 /* 按钮-滑块-公开@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-滑块-公开@3x.png"; sourceTree = "<group>"; };
+		2827D5111B8096BE009B7360 /* 按钮-滑块-玩友.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-滑块-玩友.pdf"; sourceTree = "<group>"; };
+		2827D5121B8096BE009B7360 /* 按钮-滑块-玩友.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-滑块-玩友.png"; sourceTree = "<group>"; };
+		2827D5131B8096BE009B7360 /* 按钮-滑块-玩友@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-滑块-玩友@2x.png"; sourceTree = "<group>"; };
+		2827D5141B8096BE009B7360 /* 按钮-滑块-玩友@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-滑块-玩友@3x.png"; sourceTree = "<group>"; };
+		2827D5151B8096BE009B7360 /* 按钮-爱玩-赞-灰.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-爱玩-赞-灰.pdf"; sourceTree = "<group>"; };
+		2827D5161B8096BE009B7360 /* 按钮-爱玩-赞-灰.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-爱玩-赞-灰.png"; sourceTree = "<group>"; };
+		2827D5171B8096BE009B7360 /* 按钮-爱玩-赞-灰@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-爱玩-赞-灰@2x.png"; sourceTree = "<group>"; };
+		2827D5181B8096BE009B7360 /* 按钮-爱玩-赞-灰@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-爱玩-赞-灰@3x.png"; sourceTree = "<group>"; };
+		2827D5191B8096BE009B7360 /* 按钮-爱玩-赞-红.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-爱玩-赞-红.pdf"; sourceTree = "<group>"; };
+		2827D51A1B8096BE009B7360 /* 按钮-爱玩-赞-红.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-爱玩-赞-红.png"; sourceTree = "<group>"; };
+		2827D51B1B8096BE009B7360 /* 按钮-爱玩-赞-红@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-爱玩-赞-红@2x.png"; sourceTree = "<group>"; };
+		2827D51C1B8096BE009B7360 /* 按钮-爱玩-赞-红@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-爱玩-赞-红@3x.png"; sourceTree = "<group>"; };
+		2827D51D1B8096BE009B7360 /* 按钮-玩友圈-添加玩友-灰.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-玩友圈-添加玩友-灰.pdf"; sourceTree = "<group>"; };
+		2827D51E1B8096BE009B7360 /* 按钮-玩友圈-添加玩友-灰.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-玩友圈-添加玩友-灰.png"; sourceTree = "<group>"; };
+		2827D51F1B8096BE009B7360 /* 按钮-玩友圈-添加玩友-灰@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-玩友圈-添加玩友-灰@2x.png"; sourceTree = "<group>"; };
+		2827D5201B8096BE009B7360 /* 按钮-玩友圈-添加玩友-灰@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-玩友圈-添加玩友-灰@3x.png"; sourceTree = "<group>"; };
+		2827D5211B8096BE009B7360 /* 按钮-玩友圈-添加玩友-白.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-玩友圈-添加玩友-白.pdf"; sourceTree = "<group>"; };
+		2827D5221B8096BE009B7360 /* 按钮-玩友圈-添加玩友-白.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-玩友圈-添加玩友-白.png"; sourceTree = "<group>"; };
+		2827D5231B8096BE009B7360 /* 按钮-玩友圈-添加玩友-白@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-玩友圈-添加玩友-白@2x.png"; sourceTree = "<group>"; };
+		2827D5241B8096BE009B7360 /* 按钮-玩友圈-添加玩友-白@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-玩友圈-添加玩友-白@3x.png"; sourceTree = "<group>"; };
+		2827D5251B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-添加.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-玩友圈-邀请玩友-添加.pdf"; sourceTree = "<group>"; };
+		2827D5261B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-添加.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-玩友圈-邀请玩友-添加.png"; sourceTree = "<group>"; };
+		2827D5271B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-添加@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-玩友圈-邀请玩友-添加@2x.png"; sourceTree = "<group>"; };
+		2827D5281B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-添加@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-玩友圈-邀请玩友-添加@3x.png"; sourceTree = "<group>"; };
+		2827D5291B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-选中.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-玩友圈-邀请玩友-选中.pdf"; sourceTree = "<group>"; };
+		2827D52A1B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-玩友圈-邀请玩友-选中.png"; sourceTree = "<group>"; };
+		2827D52B1B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-选中@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-玩友圈-邀请玩友-选中@2x.png"; sourceTree = "<group>"; };
+		2827D52C1B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-选中@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-玩友圈-邀请玩友-选中@3x.png"; sourceTree = "<group>"; };
+		2827D52D1B8096BE009B7360 /* 按钮-输入框-提交-按下.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-输入框-提交-按下.pdf"; sourceTree = "<group>"; };
+		2827D52E1B8096BE009B7360 /* 按钮-输入框-提交-按下.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-输入框-提交-按下.png"; sourceTree = "<group>"; };
+		2827D52F1B8096BE009B7360 /* 按钮-输入框-提交-按下@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-输入框-提交-按下@2x.png"; sourceTree = "<group>"; };
+		2827D5301B8096BE009B7360 /* 按钮-输入框-提交-按下@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-输入框-提交-按下@3x.png"; sourceTree = "<group>"; };
+		2827D5311B8096BE009B7360 /* 按钮-输入框-提交.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-输入框-提交.pdf"; sourceTree = "<group>"; };
+		2827D5321B8096BE009B7360 /* 按钮-输入框-提交.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-输入框-提交.png"; sourceTree = "<group>"; };
+		2827D5331B8096BE009B7360 /* 按钮-输入框-提交@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-输入框-提交@2x.png"; sourceTree = "<group>"; };
+		2827D5341B8096BE009B7360 /* 按钮-输入框-提交@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-输入框-提交@3x.png"; sourceTree = "<group>"; };
+		2827D5351B8096BE009B7360 /* 按钮-返回-灰.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-返回-灰.pdf"; sourceTree = "<group>"; };
+		2827D5361B8096BE009B7360 /* 按钮-返回-灰.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-返回-灰.png"; sourceTree = "<group>"; };
+		2827D5371B8096BE009B7360 /* 按钮-返回-灰@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-返回-灰@2x.png"; sourceTree = "<group>"; };
+		2827D5381B8096BE009B7360 /* 按钮-返回-灰@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-返回-灰@3x.png"; sourceTree = "<group>"; };
+		2827D5391B8096BE009B7360 /* 按钮-返回-白.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "按钮-返回-白.pdf"; sourceTree = "<group>"; };
+		2827D53A1B8096BE009B7360 /* 按钮-返回-白.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-返回-白.png"; sourceTree = "<group>"; };
+		2827D53B1B8096BE009B7360 /* 按钮-返回-白@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-返回-白@2x.png"; sourceTree = "<group>"; };
+		2827D53C1B8096BE009B7360 /* 按钮-返回-白@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-返回-白@3x.png"; sourceTree = "<group>"; };
+		2827D53D1B8096BE009B7360 /* 爱玩状态-正报名.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "爱玩状态-正报名.pdf"; sourceTree = "<group>"; };
+		2827D53E1B8096BE009B7360 /* 爱玩状态-正报名.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "爱玩状态-正报名.png"; sourceTree = "<group>"; };
+		2827D53F1B8096BE009B7360 /* 爱玩状态-正报名@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "爱玩状态-正报名@2x.png"; sourceTree = "<group>"; };
+		2827D5401B8096BE009B7360 /* 爱玩状态-正报名@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "爱玩状态-正报名@3x.png"; sourceTree = "<group>"; };
+		2827D5411B8096BE009B7360 /* 详细资料-标签背景.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "详细资料-标签背景.pdf"; sourceTree = "<group>"; };
+		2827D5421B8096BE009B7360 /* 详细资料-标签背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "详细资料-标签背景.png"; sourceTree = "<group>"; };
+		2827D5431B8096BE009B7360 /* 详细资料-标签背景@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "详细资料-标签背景@2x.png"; sourceTree = "<group>"; };
+		2827D5441B8096BE009B7360 /* 详细资料-标签背景@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "详细资料-标签背景@3x.png"; sourceTree = "<group>"; };
+		2827D5451B8096BE009B7360 /* 邀请玩友-QQ.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "邀请玩友-QQ.pdf"; sourceTree = "<group>"; };
+		2827D5461B8096BE009B7360 /* 邀请玩友-QQ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "邀请玩友-QQ.png"; sourceTree = "<group>"; };
+		2827D5471B8096BE009B7360 /* 邀请玩友-QQ@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "邀请玩友-QQ@2x.png"; sourceTree = "<group>"; };
+		2827D5481B8096BE009B7360 /* 邀请玩友-QQ@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "邀请玩友-QQ@3x.png"; sourceTree = "<group>"; };
+		2827D5491B8096BE009B7360 /* 邀请玩友-微信.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "邀请玩友-微信.pdf"; sourceTree = "<group>"; };
+		2827D54A1B8096BE009B7360 /* 邀请玩友-微信.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "邀请玩友-微信.png"; sourceTree = "<group>"; };
+		2827D54B1B8096BE009B7360 /* 邀请玩友-微信@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "邀请玩友-微信@2x.png"; sourceTree = "<group>"; };
+		2827D54C1B8096BE009B7360 /* 邀请玩友-微信@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "邀请玩友-微信@3x.png"; sourceTree = "<group>"; };
 		4A0B0A7B1B685474005A184B /* UILabelButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelButton.h; sourceTree = "<group>"; };
 		4A0B0A7C1B685474005A184B /* UILabelButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelButton.m; sourceTree = "<group>"; };
 		4A0F808A1B80936600813BA6 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
@@ -973,9 +1461,261 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2827D4581B8096BE009B7360 /* 我的详情 */ = {
+			isa = PBXGroup;
+			children = (
+				2827D4591B8096BE009B7360 /* 分享-QQ.pdf */,
+				2827D45A1B8096BE009B7360 /* 分享-QQ.png */,
+				2827D45B1B8096BE009B7360 /* 分享-QQ@2x.png */,
+				2827D45C1B8096BE009B7360 /* 分享-QQ@3x.png */,
+				2827D45D1B8096BE009B7360 /* 分享-微信.pdf */,
+				2827D45E1B8096BE009B7360 /* 分享-微信.png */,
+				2827D45F1B8096BE009B7360 /* 分享-微信@2x.png */,
+				2827D4601B8096BE009B7360 /* 分享-微信@3x.png */,
+				2827D4611B8096BE009B7360 /* 分享-朋友圈.pdf */,
+				2827D4621B8096BE009B7360 /* 分享-朋友圈.png */,
+				2827D4631B8096BE009B7360 /* 分享-朋友圈@2x.png */,
+				2827D4641B8096BE009B7360 /* 分享-朋友圈@3x.png */,
+				2827D4651B8096BE009B7360 /* 图标-主题详情-地点.pdf */,
+				2827D4661B8096BE009B7360 /* 图标-主题详情-地点.png */,
+				2827D4671B8096BE009B7360 /* 图标-主题详情-地点@2x.png */,
+				2827D4681B8096BE009B7360 /* 图标-主题详情-地点@3x.png */,
+				2827D4691B8096BE009B7360 /* 图标-主题详情-时间.pdf */,
+				2827D46A1B8096BE009B7360 /* 图标-主题详情-时间.png */,
+				2827D46B1B8096BE009B7360 /* 图标-主题详情-时间@2x.png */,
+				2827D46C1B8096BE009B7360 /* 图标-主题详情-时间@3x.png */,
+				2827D46D1B8096BE009B7360 /* 图标-主题详情-消费方式.pdf */,
+				2827D46E1B8096BE009B7360 /* 图标-主题详情-消费方式.png */,
+				2827D46F1B8096BE009B7360 /* 图标-主题详情-消费方式@2x.png */,
+				2827D4701B8096BE009B7360 /* 图标-主题详情-消费方式@3x.png */,
+				2827D4711B8096BE009B7360 /* 图标-主题详情-花费.pdf */,
+				2827D4721B8096BE009B7360 /* 图标-主题详情-花费.png */,
+				2827D4731B8096BE009B7360 /* 图标-主题详情-花费@2x.png */,
+				2827D4741B8096BE009B7360 /* 图标-主题详情-花费@3x.png */,
+				2827D4751B8096BE009B7360 /* 图标-主题详情-补充详情.pdf */,
+				2827D4761B8096BE009B7360 /* 图标-主题详情-补充详情.png */,
+				2827D4771B8096BE009B7360 /* 图标-主题详情-补充详情@2x.png */,
+				2827D4781B8096BE009B7360 /* 图标-主题详情-补充详情@3x.png */,
+				2827D4791B8096BE009B7360 /* 图标-主题详情-赞.pdf */,
+				2827D47A1B8096BE009B7360 /* 图标-主题详情-赞.png */,
+				2827D47B1B8096BE009B7360 /* 图标-主题详情-赞@2x.png */,
+				2827D47C1B8096BE009B7360 /* 图标-主题详情-赞@3x.png */,
+				2827D47D1B8096BE009B7360 /* 图标-列表右箭头.pdf */,
+				2827D47E1B8096BE009B7360 /* 图标-列表右箭头.png */,
+				2827D47F1B8096BE009B7360 /* 图标-列表右箭头@2x.png */,
+				2827D4801B8096BE009B7360 /* 图标-列表右箭头@3x.png */,
+				2827D4811B8096BE009B7360 /* 图标-发布主题-地图.pdf */,
+				2827D4821B8096BE009B7360 /* 图标-发布主题-地图.png */,
+				2827D4831B8096BE009B7360 /* 图标-发布主题-地图@2x.png */,
+				2827D4841B8096BE009B7360 /* 图标-发布主题-地图@3x.png */,
+				2827D4851B8096BE009B7360 /* 图标-我-位置.pdf */,
+				2827D4861B8096BE009B7360 /* 图标-我-位置.png */,
+				2827D4871B8096BE009B7360 /* 图标-我-位置@2x.png */,
+				2827D4881B8096BE009B7360 /* 图标-我-位置@3x.png */,
+				2827D4891B8096BE009B7360 /* 图标-我-我的主题.pdf */,
+				2827D48A1B8096BE009B7360 /* 图标-我-我的主题.png */,
+				2827D48B1B8096BE009B7360 /* 图标-我-我的主题@2x.png */,
+				2827D48C1B8096BE009B7360 /* 图标-我-我的主题@3x.png */,
+				2827D48D1B8096BE009B7360 /* 图标-我-我的收藏.pdf */,
+				2827D48E1B8096BE009B7360 /* 图标-我-我的收藏.png */,
+				2827D48F1B8096BE009B7360 /* 图标-我-我的收藏@2x.png */,
+				2827D4901B8096BE009B7360 /* 图标-我-我的收藏@3x.png */,
+				2827D4911B8096BE009B7360 /* 图标-我-我的消息.pdf */,
+				2827D4921B8096BE009B7360 /* 图标-我-我的消息.png */,
+				2827D4931B8096BE009B7360 /* 图标-我-我的消息@2x.png */,
+				2827D4941B8096BE009B7360 /* 图标-我-我的消息@3x.png */,
+				2827D4951B8096BE009B7360 /* 图标-我-我的看见.pdf */,
+				2827D4961B8096BE009B7360 /* 图标-我-我的看见.png */,
+				2827D4971B8096BE009B7360 /* 图标-我-我的看见@2x.png */,
+				2827D4981B8096BE009B7360 /* 图标-我-我的看见@3x.png */,
+				2827D4991B8096BE009B7360 /* 图标-我-更换头像.pdf */,
+				2827D49A1B8096BE009B7360 /* 图标-我-更换头像.png */,
+				2827D49B1B8096BE009B7360 /* 图标-我-更换头像@2x.png */,
+				2827D49C1B8096BE009B7360 /* 图标-我-更换头像@3x.png */,
+				2827D49D1B8096BE009B7360 /* 图标-我-设置.pdf */,
+				2827D49E1B8096BE009B7360 /* 图标-我-设置.png */,
+				2827D49F1B8096BE009B7360 /* 图标-我-设置@2x.png */,
+				2827D4A01B8096BE009B7360 /* 图标-我-设置@3x.png */,
+				2827D4A11B8096BE009B7360 /* 图标-爱玩-地点.pdf */,
+				2827D4A21B8096BE009B7360 /* 图标-爱玩-地点.png */,
+				2827D4A31B8096BE009B7360 /* 图标-爱玩-地点@2x.png */,
+				2827D4A41B8096BE009B7360 /* 图标-爱玩-地点@3x.png */,
+				2827D4A51B8096BE009B7360 /* 图标-爱玩-女.pdf */,
+				2827D4A61B8096BE009B7360 /* 图标-爱玩-女.png */,
+				2827D4A71B8096BE009B7360 /* 图标-爱玩-女@2x.png */,
+				2827D4A81B8096BE009B7360 /* 图标-爱玩-女@3x.png */,
+				2827D4A91B8096BE009B7360 /* 图标-爱玩-时间.pdf */,
+				2827D4AA1B8096BE009B7360 /* 图标-爱玩-时间.png */,
+				2827D4AB1B8096BE009B7360 /* 图标-爱玩-时间@2x.png */,
+				2827D4AC1B8096BE009B7360 /* 图标-爱玩-时间@3x.png */,
+				2827D4AD1B8096BE009B7360 /* 图标-爱玩-男.pdf */,
+				2827D4AE1B8096BE009B7360 /* 图标-爱玩-男.png */,
+				2827D4AF1B8096BE009B7360 /* 图标-爱玩-男@2x.png */,
+				2827D4B01B8096BE009B7360 /* 图标-爱玩-男@3x.png */,
+				2827D4B11B8096BE009B7360 /* 图标-玩友圈-为空.pdf */,
+				2827D4B21B8096BE009B7360 /* 图标-玩友圈-为空.png */,
+				2827D4B31B8096BE009B7360 /* 图标-玩友圈-为空@2x.png */,
+				2827D4B41B8096BE009B7360 /* 图标-玩友圈-为空@3x.png */,
+				2827D4B51B8096BE009B7360 /* 图标-玩友圈-位置.pdf */,
+				2827D4B61B8096BE009B7360 /* 图标-玩友圈-位置.png */,
+				2827D4B71B8096BE009B7360 /* 图标-玩友圈-位置@2x.png */,
+				2827D4B81B8096BE009B7360 /* 图标-玩友圈-位置@3x.png */,
+				2827D4B91B8096BE009B7360 /* 图标-玩友圈-标签.pdf */,
+				2827D4BA1B8096BE009B7360 /* 图标-玩友圈-标签.png */,
+				2827D4BB1B8096BE009B7360 /* 图标-玩友圈-标签@2x.png */,
+				2827D4BC1B8096BE009B7360 /* 图标-玩友圈-标签@3x.png */,
+				2827D4BD1B8096BE009B7360 /* 图标-详细资料-位置.pdf */,
+				2827D4BE1B8096BE009B7360 /* 图标-详细资料-位置.png */,
+				2827D4BF1B8096BE009B7360 /* 图标-详细资料-位置@2x.png */,
+				2827D4C01B8096BE009B7360 /* 图标-详细资料-位置@3x.png */,
+				2827D4C11B8096BE009B7360 /* 图标-详细资料-女.pdf */,
+				2827D4C21B8096BE009B7360 /* 图标-详细资料-女.png */,
+				2827D4C31B8096BE009B7360 /* 图标-详细资料-女@2x.png */,
+				2827D4C41B8096BE009B7360 /* 图标-详细资料-女@3x.png */,
+				2827D4C51B8096BE009B7360 /* 图标-详细资料-标签.pdf */,
+				2827D4C61B8096BE009B7360 /* 图标-详细资料-标签.png */,
+				2827D4C71B8096BE009B7360 /* 图标-详细资料-标签@2x.png */,
+				2827D4C81B8096BE009B7360 /* 图标-详细资料-标签@3x.png */,
+				2827D4C91B8096BE009B7360 /* 图标-详细资料-爱好.pdf */,
+				2827D4CA1B8096BE009B7360 /* 图标-详细资料-爱好.png */,
+				2827D4CB1B8096BE009B7360 /* 图标-详细资料-爱好@2x.png */,
+				2827D4CC1B8096BE009B7360 /* 图标-详细资料-爱好@3x.png */,
+				2827D4CD1B8096BE009B7360 /* 图标-详细资料-男.pdf */,
+				2827D4CE1B8096BE009B7360 /* 图标-详细资料-男.png */,
+				2827D4CF1B8096BE009B7360 /* 图标-详细资料-男@2x.png */,
+				2827D4D01B8096BE009B7360 /* 图标-详细资料-男@3x.png */,
+				2827D4D11B8096BE009B7360 /* 图标-详细资料-行业.pdf */,
+				2827D4D21B8096BE009B7360 /* 图标-详细资料-行业.png */,
+				2827D4D31B8096BE009B7360 /* 图标-详细资料-行业@2x.png */,
+				2827D4D41B8096BE009B7360 /* 图标-详细资料-行业@3x.png */,
+				2827D4D51B8096BE009B7360 /* 按钮-主题详情-留言.pdf */,
+				2827D4D61B8096BE009B7360 /* 按钮-主题详情-留言.png */,
+				2827D4D71B8096BE009B7360 /* 按钮-主题详情-留言@2x.png */,
+				2827D4D81B8096BE009B7360 /* 按钮-主题详情-留言@3x.png */,
+				2827D4D91B8096BE009B7360 /* 按钮-主题详情-赞-白.pdf */,
+				2827D4DA1B8096BE009B7360 /* 按钮-主题详情-赞-白.png */,
+				2827D4DB1B8096BE009B7360 /* 按钮-主题详情-赞-白@2x.png */,
+				2827D4DC1B8096BE009B7360 /* 按钮-主题详情-赞-白@3x.png */,
+				2827D4DD1B8096BE009B7360 /* 按钮-主题详情-赞-红.pdf */,
+				2827D4DE1B8096BE009B7360 /* 按钮-主题详情-赞-红.png */,
+				2827D4DF1B8096BE009B7360 /* 按钮-主题详情-赞-红@2x.png */,
+				2827D4E01B8096BE009B7360 /* 按钮-主题详情-赞-红@3x.png */,
+				2827D4E11B8096BE009B7360 /* 按钮-天机图片-按下.pdf */,
+				2827D4E21B8096BE009B7360 /* 按钮-天机图片-按下.png */,
+				2827D4E31B8096BE009B7360 /* 按钮-天机图片-按下@2x.png */,
+				2827D4E41B8096BE009B7360 /* 按钮-天机图片-按下@3x.png */,
+				2827D4E51B8096BE009B7360 /* 按钮-天机图片.pdf */,
+				2827D4E61B8096BE009B7360 /* 按钮-天机图片.png */,
+				2827D4E71B8096BE009B7360 /* 按钮-天机图片@2x.png */,
+				2827D4E81B8096BE009B7360 /* 按钮-天机图片@3x.png */,
+				2827D4E91B8096BE009B7360 /* 按钮-我的主题-删除-按下.pdf */,
+				2827D4EA1B8096BE009B7360 /* 按钮-我的主题-删除-按下.png */,
+				2827D4EB1B8096BE009B7360 /* 按钮-我的主题-删除-按下@2x.png */,
+				2827D4EC1B8096BE009B7360 /* 按钮-我的主题-删除-按下@3x.png */,
+				2827D4ED1B8096BE009B7360 /* 按钮-我的主题-删除.pdf */,
+				2827D4EE1B8096BE009B7360 /* 按钮-我的主题-删除.png */,
+				2827D4EF1B8096BE009B7360 /* 按钮-我的主题-删除@2x.png */,
+				2827D4F01B8096BE009B7360 /* 按钮-我的主题-删除@3x.png */,
+				2827D4F11B8096BE009B7360 /* 按钮-我的消息-同意-按下.pdf */,
+				2827D4F21B8096BE009B7360 /* 按钮-我的消息-同意-按下.png */,
+				2827D4F31B8096BE009B7360 /* 按钮-我的消息-同意-按下@2x.png */,
+				2827D4F41B8096BE009B7360 /* 按钮-我的消息-同意-按下@3x.png */,
+				2827D4F51B8096BE009B7360 /* 按钮-我的消息-同意.pdf */,
+				2827D4F61B8096BE009B7360 /* 按钮-我的消息-同意.png */,
+				2827D4F71B8096BE009B7360 /* 按钮-我的消息-同意@2x.png */,
+				2827D4F81B8096BE009B7360 /* 按钮-我的消息-同意@3x.png */,
+				2827D4F91B8096BE009B7360 /* 按钮-我的消息-已添加.pdf */,
+				2827D4FA1B8096BE009B7360 /* 按钮-我的消息-已添加.png */,
+				2827D4FB1B8096BE009B7360 /* 按钮-我的消息-已添加@2x.png */,
+				2827D4FC1B8096BE009B7360 /* 按钮-我的消息-已添加@3x.png */,
+				2827D4FD1B8096BE009B7360 /* 按钮-搜索-灰.pdf */,
+				2827D4FE1B8096BE009B7360 /* 按钮-搜索-灰.png */,
+				2827D4FF1B8096BE009B7360 /* 按钮-搜索-灰@2x.png */,
+				2827D5001B8096BE009B7360 /* 按钮-搜索-灰@3x.png */,
+				2827D5011B8096BE009B7360 /* 按钮-搜索-白.pdf */,
+				2827D5021B8096BE009B7360 /* 按钮-搜索-白.png */,
+				2827D5031B8096BE009B7360 /* 按钮-搜索-白@2x.png */,
+				2827D5041B8096BE009B7360 /* 按钮-搜索-白@3x.png */,
+				2827D5051B8096BE009B7360 /* 按钮-更多-灰.pdf */,
+				2827D5061B8096BE009B7360 /* 按钮-更多-灰.png */,
+				2827D5071B8096BE009B7360 /* 按钮-更多-灰@2x.png */,
+				2827D5081B8096BE009B7360 /* 按钮-更多-灰@3x.png */,
+				2827D5091B8096BE009B7360 /* 按钮-更多-白.pdf */,
+				2827D50A1B8096BE009B7360 /* 按钮-更多-白.png */,
+				2827D50B1B8096BE009B7360 /* 按钮-更多-白@2x.png */,
+				2827D50C1B8096BE009B7360 /* 按钮-更多-白@3x.png */,
+				2827D50D1B8096BE009B7360 /* 按钮-滑块-公开.pdf */,
+				2827D50E1B8096BE009B7360 /* 按钮-滑块-公开.png */,
+				2827D50F1B8096BE009B7360 /* 按钮-滑块-公开@2x.png */,
+				2827D5101B8096BE009B7360 /* 按钮-滑块-公开@3x.png */,
+				2827D5111B8096BE009B7360 /* 按钮-滑块-玩友.pdf */,
+				2827D5121B8096BE009B7360 /* 按钮-滑块-玩友.png */,
+				2827D5131B8096BE009B7360 /* 按钮-滑块-玩友@2x.png */,
+				2827D5141B8096BE009B7360 /* 按钮-滑块-玩友@3x.png */,
+				2827D5151B8096BE009B7360 /* 按钮-爱玩-赞-灰.pdf */,
+				2827D5161B8096BE009B7360 /* 按钮-爱玩-赞-灰.png */,
+				2827D5171B8096BE009B7360 /* 按钮-爱玩-赞-灰@2x.png */,
+				2827D5181B8096BE009B7360 /* 按钮-爱玩-赞-灰@3x.png */,
+				2827D5191B8096BE009B7360 /* 按钮-爱玩-赞-红.pdf */,
+				2827D51A1B8096BE009B7360 /* 按钮-爱玩-赞-红.png */,
+				2827D51B1B8096BE009B7360 /* 按钮-爱玩-赞-红@2x.png */,
+				2827D51C1B8096BE009B7360 /* 按钮-爱玩-赞-红@3x.png */,
+				2827D51D1B8096BE009B7360 /* 按钮-玩友圈-添加玩友-灰.pdf */,
+				2827D51E1B8096BE009B7360 /* 按钮-玩友圈-添加玩友-灰.png */,
+				2827D51F1B8096BE009B7360 /* 按钮-玩友圈-添加玩友-灰@2x.png */,
+				2827D5201B8096BE009B7360 /* 按钮-玩友圈-添加玩友-灰@3x.png */,
+				2827D5211B8096BE009B7360 /* 按钮-玩友圈-添加玩友-白.pdf */,
+				2827D5221B8096BE009B7360 /* 按钮-玩友圈-添加玩友-白.png */,
+				2827D5231B8096BE009B7360 /* 按钮-玩友圈-添加玩友-白@2x.png */,
+				2827D5241B8096BE009B7360 /* 按钮-玩友圈-添加玩友-白@3x.png */,
+				2827D5251B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-添加.pdf */,
+				2827D5261B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-添加.png */,
+				2827D5271B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-添加@2x.png */,
+				2827D5281B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-添加@3x.png */,
+				2827D5291B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-选中.pdf */,
+				2827D52A1B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-选中.png */,
+				2827D52B1B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-选中@2x.png */,
+				2827D52C1B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-选中@3x.png */,
+				2827D52D1B8096BE009B7360 /* 按钮-输入框-提交-按下.pdf */,
+				2827D52E1B8096BE009B7360 /* 按钮-输入框-提交-按下.png */,
+				2827D52F1B8096BE009B7360 /* 按钮-输入框-提交-按下@2x.png */,
+				2827D5301B8096BE009B7360 /* 按钮-输入框-提交-按下@3x.png */,
+				2827D5311B8096BE009B7360 /* 按钮-输入框-提交.pdf */,
+				2827D5321B8096BE009B7360 /* 按钮-输入框-提交.png */,
+				2827D5331B8096BE009B7360 /* 按钮-输入框-提交@2x.png */,
+				2827D5341B8096BE009B7360 /* 按钮-输入框-提交@3x.png */,
+				2827D5351B8096BE009B7360 /* 按钮-返回-灰.pdf */,
+				2827D5361B8096BE009B7360 /* 按钮-返回-灰.png */,
+				2827D5371B8096BE009B7360 /* 按钮-返回-灰@2x.png */,
+				2827D5381B8096BE009B7360 /* 按钮-返回-灰@3x.png */,
+				2827D5391B8096BE009B7360 /* 按钮-返回-白.pdf */,
+				2827D53A1B8096BE009B7360 /* 按钮-返回-白.png */,
+				2827D53B1B8096BE009B7360 /* 按钮-返回-白@2x.png */,
+				2827D53C1B8096BE009B7360 /* 按钮-返回-白@3x.png */,
+				2827D53D1B8096BE009B7360 /* 爱玩状态-正报名.pdf */,
+				2827D53E1B8096BE009B7360 /* 爱玩状态-正报名.png */,
+				2827D53F1B8096BE009B7360 /* 爱玩状态-正报名@2x.png */,
+				2827D5401B8096BE009B7360 /* 爱玩状态-正报名@3x.png */,
+				2827D5411B8096BE009B7360 /* 详细资料-标签背景.pdf */,
+				2827D5421B8096BE009B7360 /* 详细资料-标签背景.png */,
+				2827D5431B8096BE009B7360 /* 详细资料-标签背景@2x.png */,
+				2827D5441B8096BE009B7360 /* 详细资料-标签背景@3x.png */,
+				2827D5451B8096BE009B7360 /* 邀请玩友-QQ.pdf */,
+				2827D5461B8096BE009B7360 /* 邀请玩友-QQ.png */,
+				2827D5471B8096BE009B7360 /* 邀请玩友-QQ@2x.png */,
+				2827D5481B8096BE009B7360 /* 邀请玩友-QQ@3x.png */,
+				2827D5491B8096BE009B7360 /* 邀请玩友-微信.pdf */,
+				2827D54A1B8096BE009B7360 /* 邀请玩友-微信.png */,
+				2827D54B1B8096BE009B7360 /* 邀请玩友-微信@2x.png */,
+				2827D54C1B8096BE009B7360 /* 邀请玩友-微信@3x.png */,
+			);
+			path = "我的详情";
+			sourceTree = "<group>";
+		};
 		4A4E71F81B61A703002384A8 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				2827D4581B8096BE009B7360 /* 我的详情 */,
 				4A7991081B7760B7009EAF36 /* 登录注册 */,
 				4AA8AEA81B653416005AABDA /* 发布主题 */,
 				4A4E72C11B63E87C002384A8 /* 我 */,
@@ -1979,97 +2719,207 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A7991741B7760B7009EAF36 /* 登录注册_按钮-登录@3x.png in Resources */,
+				2827D5B81B8096BE009B7360 /* 图标-详细资料-女@3x.png in Resources */,
 				4A4E72401B61A703002384A8 /* 导航-玩友圈-红@2x.png in Resources */,
 				4AA8AECE1B653416005AABDA /* 按钮-添加图片.png in Resources */,
 				4A4E72461B61A703002384A8 /* 导航-看见-红.pdf in Resources */,
+				2827D5C41B8096BE009B7360 /* 图标-详细资料-男@3x.png in Resources */,
+				2827D57F1B8096BE009B7360 /* 图标-我-我的主题@2x.png in Resources */,
 				4A79917A1B7760B7009EAF36 /* 登录注册_按钮-第三方-微信@3x.png in Resources */,
+				2827D55C1B8096BE009B7360 /* 图标-主题详情-地点@3x.png in Resources */,
 				4A79918A1B7760B7009EAF36 /* 登录注册_标签背景-行业-白.png in Resources */,
 				4A7991911B7760B7009EAF36 /* 登录注册_欢迎页文字@2x.png in Resources */,
+				2827D5581B8096BE009B7360 /* 分享-朋友圈@3x.png in Resources */,
 				4AA8AEC71B653416005AABDA /* 图标-发布主题-地图@2x.png in Resources */,
+				2827D5511B8096BE009B7360 /* 分享-微信.pdf in Resources */,
 				4A7991591B7760B7009EAF36 /* 登录注册_图标-休闲爱好@3x.png in Resources */,
+				2827D5731B8096BE009B7360 /* 图标-列表右箭头@2x.png in Resources */,
+				2827D5BE1B8096BE009B7360 /* 图标-详细资料-爱好.png in Resources */,
 				4A7991561B7760B7009EAF36 /* 登录注册_icon120@3x.png in Resources */,
 				4A7991861B7760B7009EAF36 /* 登录注册_标签背景-30-白@3x.png in Resources */,
 				4A4E72371B61A703002384A8 /* 导航-爱玩-红.png in Resources */,
+				2827D6321B8096BE009B7360 /* 爱玩状态-正报名.png in Resources */,
 				4A4E72F41B63E87D002384A8 /* 图标-我-更换头像@2x.png in Resources */,
+				2827D5B41B8096BE009B7360 /* 图标-详细资料-位置@3x.png in Resources */,
 				4A4E72331B61A703002384A8 /* 导航-爱玩-灰.png in Resources */,
+				2827D5701B8096BE009B7360 /* 图标-主题详情-赞@3x.png in Resources */,
+				2827D59A1B8096BE009B7360 /* 图标-爱玩-女.png in Resources */,
 				4AA8AECB1B653416005AABDA /* 按钮-添加图片-按下.png in Resources */,
+				2827D6231B8096BE009B7360 /* 按钮-输入框-提交-按下@2x.png in Resources */,
+				2827D5B21B8096BE009B7360 /* 图标-详细资料-位置.png in Resources */,
+				2827D62E1B8096BE009B7360 /* 按钮-返回-白.png in Resources */,
+				2827D5D31B8096BE009B7360 /* 按钮-主题详情-赞-红@2x.png in Resources */,
 				8BD5E0221B8087370038B8B5 /* UMSShareListController.xib in Resources */,
 				4A7991641B7760B7009EAF36 /* 登录注册_图标-锁头@2x.png in Resources */,
+				2827D5901B8096BE009B7360 /* 图标-我-更换头像@3x.png in Resources */,
 				4A7991011B776039009EAF36 /* LoginViewController.xib in Resources */,
+				2827D5841B8096BE009B7360 /* 图标-我-我的收藏@3x.png in Resources */,
 				4A4E72E21B63E87D002384A8 /* 图标-我-我的主题.pdf in Resources */,
+				2827D5CA1B8096BE009B7360 /* 按钮-主题详情-留言.png in Resources */,
+				2827D5A41B8096BE009B7360 /* 图标-爱玩-男@3x.png in Resources */,
 				4A7991661B7760B7009EAF36 /* 登录注册_图标-验证码.png in Resources */,
+				2827D5951B8096BE009B7360 /* 图标-爱玩-地点.pdf in Resources */,
 				4A7991631B7760B7009EAF36 /* 登录注册_图标-锁头.png in Resources */,
+				2827D5EC1B8096BE009B7360 /* 按钮-我的消息-同意@3x.png in Resources */,
+				2827D6261B8096BE009B7360 /* 按钮-输入框-提交.png in Resources */,
+				2827D5741B8096BE009B7360 /* 图标-列表右箭头@3x.png in Resources */,
 				4A4E72EE1B63E87D002384A8 /* 图标-我-我的看见.pdf in Resources */,
+				2827D6101B8096BE009B7360 /* 按钮-爱玩-赞-红@3x.png in Resources */,
 				4A4E72291B61A703002384A8 /* 导航-发布-黑@3x.png in Resources */,
 				4A7991881B7760B7009EAF36 /* 登录注册_标签背景-30-红@2x.png in Resources */,
 				4A7991931B7760B7009EAF36 /* 登录注册_欢迎页背景.png in Resources */,
+				2827D6311B8096BE009B7360 /* 爱玩状态-正报名.pdf in Resources */,
 				8BD5E01D1B8087370038B8B5 /* UMSCommentInputControlleriPad.xib in Resources */,
 				4A7990FD1B776039009EAF36 /* LeisureSportsViewController.xib in Resources */,
 				4A7991891B7760B7009EAF36 /* 登录注册_标签背景-30-红@3x.png in Resources */,
 				8BD5E0181B8087370038B8B5 /* UMSocialLocalizable.strings in Resources */,
 				4AA8AEC91B653416005AABDA /* 按钮-天机图片-按下@3x.png in Resources */,
+				2827D5881B8096BE009B7360 /* 图标-我-我的消息@3x.png in Resources */,
 				4A4E72261B61A703002384A8 /* 导航-发布-黑.pdf in Resources */,
 				4A4E72F31B63E87D002384A8 /* 图标-我-更换头像.png in Resources */,
+				2827D5521B8096BE009B7360 /* 分享-微信.png in Resources */,
 				4A7991731B7760B7009EAF36 /* 登录注册_按钮-登录@2x.png in Resources */,
+				2827D5F11B8096BE009B7360 /* 按钮-搜索-灰.pdf in Resources */,
 				4A4E72F11B63E87D002384A8 /* 图标-我-我的看见@3x.png in Resources */,
+				2827D5811B8096BE009B7360 /* 图标-我-我的收藏.pdf in Resources */,
 				4A4E72E31B63E87D002384A8 /* 图标-我-我的主题.png in Resources */,
 				4A79917E1B7760B7009EAF36 /* 登录注册_按钮-返回-白.png in Resources */,
+				2827D6061B8096BE009B7360 /* 按钮-滑块-玩友.png in Resources */,
+				2827D56D1B8096BE009B7360 /* 图标-主题详情-赞.pdf in Resources */,
 				4A4E72F61B63E87D002384A8 /* 图标-我-设置.pdf in Resources */,
 				4A4E72E01B63E87D002384A8 /* 图标-我-位置@2x.png in Resources */,
 				4A4E74961B63EC97002384A8 /* MJRefresh.bundle in Resources */,
+				2827D5A91B8096BE009B7360 /* 图标-玩友圈-位置.pdf in Resources */,
 				4A4E72E91B63E87D002384A8 /* 图标-我-我的收藏@3x.png in Resources */,
+				2827D5821B8096BE009B7360 /* 图标-我-我的收藏.png in Resources */,
+				2827D5AE1B8096BE009B7360 /* 图标-玩友圈-标签.png in Resources */,
 				4A4E723C1B61A703002384A8 /* 导航-玩友圈-灰@2x.png in Resources */,
 				4A79916A1B7760B7009EAF36 /* 登录注册_定位图标-地图标点@2x.png in Resources */,
 				4A4E72451B61A703002384A8 /* 导航-看见-灰@3x.png in Resources */,
+				2827D5F01B8096BE009B7360 /* 按钮-我的消息-已添加@3x.png in Resources */,
 				4A4E72F81B63E87D002384A8 /* 图标-我-设置@2x.png in Resources */,
+				2827D55E1B8096BE009B7360 /* 图标-主题详情-时间.png in Resources */,
 				4A79917B1B7760B7009EAF36 /* 登录注册_按钮-第三方-微博.png in Resources */,
+				2827D5591B8096BE009B7360 /* 图标-主题详情-地点.pdf in Resources */,
+				2827D5831B8096BE009B7360 /* 图标-我-我的收藏@2x.png in Resources */,
+				2827D5DD1B8096BE009B7360 /* 按钮-我的主题-删除-按下.pdf in Resources */,
+				2827D5BB1B8096BE009B7360 /* 图标-详细资料-标签@2x.png in Resources */,
+				2827D5D11B8096BE009B7360 /* 按钮-主题详情-赞-红.pdf in Resources */,
+				2827D5751B8096BE009B7360 /* 图标-发布主题-地图.pdf in Resources */,
+				2827D57E1B8096BE009B7360 /* 图标-我-我的主题.png in Resources */,
+				2827D6011B8096BE009B7360 /* 按钮-滑块-公开.pdf in Resources */,
+				2827D5EB1B8096BE009B7360 /* 按钮-我的消息-同意@2x.png in Resources */,
+				2827D5941B8096BE009B7360 /* 图标-我-设置@3x.png in Resources */,
+				2827D58C1B8096BE009B7360 /* 图标-我-我的看见@3x.png in Resources */,
 				4A7991621B7760B7009EAF36 /* 登录注册_图标-用户@3x.png in Resources */,
+				2827D5CB1B8096BE009B7360 /* 按钮-主题详情-留言@2x.png in Resources */,
+				2827D58E1B8096BE009B7360 /* 图标-我-更换头像.png in Resources */,
+				2827D5A11B8096BE009B7360 /* 图标-爱玩-男.pdf in Resources */,
 				4A7991611B7760B7009EAF36 /* 登录注册_图标-用户@2x.png in Resources */,
 				4A79915A1B7760B7009EAF36 /* 登录注册_图标-手机.png in Resources */,
+				2827D5E81B8096BE009B7360 /* 按钮-我的消息-同意-按下@3x.png in Resources */,
 				4A7991781B7760B7009EAF36 /* 登录注册_按钮-第三方-微信.png in Resources */,
+				2827D5D51B8096BE009B7360 /* 按钮-天机图片-按下.pdf in Resources */,
 				8BD5E02A1B8087370038B8B5 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				4A4E723F1B61A703002384A8 /* 导航-玩友圈-红.png in Resources */,
+				2827D5A21B8096BE009B7360 /* 图标-爱玩-男.png in Resources */,
 				4A7991601B7760B7009EAF36 /* 登录注册_图标-用户.png in Resources */,
 				4A7991801B7760B7009EAF36 /* 登录注册_按钮-返回-白@3x.png in Resources */,
+				2827D5EA1B8096BE009B7360 /* 按钮-我的消息-同意.png in Resources */,
+				2827D5F81B8096BE009B7360 /* 按钮-搜索-白@3x.png in Resources */,
+				2827D5ED1B8096BE009B7360 /* 按钮-我的消息-已添加.pdf in Resources */,
+				2827D61B1B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-添加@2x.png in Resources */,
+				2827D58F1B8096BE009B7360 /* 图标-我-更换头像@2x.png in Resources */,
+				2827D63D1B8096BE009B7360 /* 邀请玩友-微信.pdf in Resources */,
+				2827D5A81B8096BE009B7360 /* 图标-玩友圈-为空@3x.png in Resources */,
+				2827D5611B8096BE009B7360 /* 图标-主题详情-消费方式.pdf in Resources */,
 				4A4E72421B61A703002384A8 /* 导航-看见-灰.pdf in Resources */,
 				4A4E72391B61A703002384A8 /* 导航-爱玩-红@3x.png in Resources */,
 				4A4E72351B61A703002384A8 /* 导航-爱玩-灰@3x.png in Resources */,
+				2827D5A31B8096BE009B7360 /* 图标-爱玩-男@2x.png in Resources */,
+				2827D5601B8096BE009B7360 /* 图标-主题详情-时间@3x.png in Resources */,
+				2827D5C51B8096BE009B7360 /* 图标-详细资料-行业.pdf in Resources */,
 				4A7991851B7760B7009EAF36 /* 登录注册_标签背景-30-白@2x.png in Resources */,
 				8BD5E01B1B8087370038B8B5 /* UMSCommentDetailController.xib in Resources */,
+				2827D5FA1B8096BE009B7360 /* 按钮-更多-灰.png in Resources */,
+				2827D6291B8096BE009B7360 /* 按钮-返回-灰.pdf in Resources */,
 				4A4E722A1B61A703002384A8 /* 导航-我-灰.pdf in Resources */,
+				2827D5911B8096BE009B7360 /* 图标-我-设置.pdf in Resources */,
+				2827D56C1B8096BE009B7360 /* 图标-主题详情-补充详情@3x.png in Resources */,
+				2827D5571B8096BE009B7360 /* 分享-朋友圈@2x.png in Resources */,
+				2827D6381B8096BE009B7360 /* 详细资料-标签背景@3x.png in Resources */,
+				2827D6031B8096BE009B7360 /* 按钮-滑块-公开@2x.png in Resources */,
+				2827D6211B8096BE009B7360 /* 按钮-输入框-提交-按下.pdf in Resources */,
 				4A7991921B7760B7009EAF36 /* 登录注册_欢迎页文字@3x.png in Resources */,
 				4A7991721B7760B7009EAF36 /* 登录注册_按钮-登录.png in Resources */,
+				2827D5F71B8096BE009B7360 /* 按钮-搜索-白@2x.png in Resources */,
+				2827D5C61B8096BE009B7360 /* 图标-详细资料-行业.png in Resources */,
 				4A7991681B7760B7009EAF36 /* 登录注册_图标-验证码@3x.png in Resources */,
+				2827D5B31B8096BE009B7360 /* 图标-详细资料-位置@2x.png in Resources */,
+				2827D5771B8096BE009B7360 /* 图标-发布主题-地图@2x.png in Resources */,
+				2827D55B1B8096BE009B7360 /* 图标-主题详情-地点@2x.png in Resources */,
 				4A7C5C3E1B80746C00F30879 /* CTAssetsPicker.bundle in Resources */,
+				2827D61A1B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-添加.png in Resources */,
+				2827D6141B8096BE009B7360 /* 按钮-玩友圈-添加玩友-灰@3x.png in Resources */,
+				2827D57B1B8096BE009B7360 /* 图标-我-位置@2x.png in Resources */,
 				4AA8AEC61B653416005AABDA /* 图标-发布主题-地图.png in Resources */,
+				2827D5E31B8096BE009B7360 /* 按钮-我的主题-删除@2x.png in Resources */,
 				4A4E722E1B61A703002384A8 /* 导航-我-红.pdf in Resources */,
 				4A4E72381B61A703002384A8 /* 导航-爱玩-红@2x.png in Resources */,
 				4A4E72EB1B63E87D002384A8 /* 图标-我-我的消息.png in Resources */,
 				4A4E72F51B63E87D002384A8 /* 图标-我-更换头像@3x.png in Resources */,
+				2827D5AD1B8096BE009B7360 /* 图标-玩友圈-标签.pdf in Resources */,
 				4A7991791B7760B7009EAF36 /* 登录注册_按钮-第三方-微信@2x.png in Resources */,
+				2827D5B01B8096BE009B7360 /* 图标-玩友圈-标签@3x.png in Resources */,
 				4AA8AEC31B653416005AABDA /* 图标-列表右箭头@2x.png in Resources */,
 				4A79916E1B7760B7009EAF36 /* 登录注册_定位图标-小@3x.png in Resources */,
 				4AF971A01B5E7BAB0090EACA /* Images.xcassets in Resources */,
+				2827D5A61B8096BE009B7360 /* 图标-玩友圈-为空.png in Resources */,
+				2827D5B71B8096BE009B7360 /* 图标-详细资料-女@2x.png in Resources */,
 				4A4E72E61B63E87D002384A8 /* 图标-我-我的收藏.pdf in Resources */,
+				2827D6171B8096BE009B7360 /* 按钮-玩友圈-添加玩友-白@2x.png in Resources */,
 				4A4E72431B61A703002384A8 /* 导航-看见-灰.png in Resources */,
 				4A6A9CC31B6673D1008A5232 /* Default-568h@2x.png in Resources */,
+				2827D5E11B8096BE009B7360 /* 按钮-我的主题-删除.pdf in Resources */,
+				2827D5BC1B8096BE009B7360 /* 图标-详细资料-标签@3x.png in Resources */,
+				2827D62C1B8096BE009B7360 /* 按钮-返回-灰@3x.png in Resources */,
+				2827D5EE1B8096BE009B7360 /* 按钮-我的消息-已添加.png in Resources */,
+				2827D5D21B8096BE009B7360 /* 按钮-主题详情-赞-红.png in Resources */,
+				2827D60B1B8096BE009B7360 /* 按钮-爱玩-赞-灰@2x.png in Resources */,
+				2827D5FB1B8096BE009B7360 /* 按钮-更多-灰@2x.png in Resources */,
+				2827D5711B8096BE009B7360 /* 图标-列表右箭头.pdf in Resources */,
 				4A4E722D1B61A703002384A8 /* 导航-我-灰@3x.png in Resources */,
 				4AA8AED51B653416005AABDA /* 按钮-滑块-玩友.pdf in Resources */,
+				2827D5E61B8096BE009B7360 /* 按钮-我的消息-同意-按下.png in Resources */,
+				2827D62F1B8096BE009B7360 /* 按钮-返回-白@2x.png in Resources */,
+				2827D57D1B8096BE009B7360 /* 图标-我-我的主题.pdf in Resources */,
 				4A4E72E51B63E87D002384A8 /* 图标-我-我的主题@3x.png in Resources */,
+				2827D6001B8096BE009B7360 /* 按钮-更多-白@3x.png in Resources */,
+				2827D5661B8096BE009B7360 /* 图标-主题详情-花费.png in Resources */,
 				4A4E72221B61A703002384A8 /* 导航-发布-灰.pdf in Resources */,
+				2827D6081B8096BE009B7360 /* 按钮-滑块-玩友@3x.png in Resources */,
+				2827D5D61B8096BE009B7360 /* 按钮-天机图片-按下.png in Resources */,
 				4A4E72EA1B63E87D002384A8 /* 图标-我-我的消息.pdf in Resources */,
+				2827D5E71B8096BE009B7360 /* 按钮-我的消息-同意-按下@2x.png in Resources */,
 				4A7991031B776039009EAF36 /* PersonalityViewController.xib in Resources */,
+				2827D6151B8096BE009B7360 /* 按钮-玩友圈-添加玩友-白.pdf in Resources */,
+				2827D5F91B8096BE009B7360 /* 按钮-更多-灰.pdf in Resources */,
 				4A4E72321B61A703002384A8 /* 导航-爱玩-灰.pdf in Resources */,
 				4A4E72251B61A703002384A8 /* 导航-发布-灰@3x.png in Resources */,
+				2827D6051B8096BE009B7360 /* 按钮-滑块-玩友.pdf in Resources */,
 				4A4E72281B61A703002384A8 /* 导航-发布-黑@2x.png in Resources */,
 				4A7991691B7760B7009EAF36 /* 登录注册_定位图标-地图标点.png in Resources */,
 				4A79915D1B7760B7009EAF36 /* 登录注册_图标-标签.png in Resources */,
 				4A79916B1B7760B7009EAF36 /* 登录注册_定位图标-地图标点@3x.png in Resources */,
+				2827D63E1B8096BE009B7360 /* 邀请玩友-微信.png in Resources */,
+				2827D5C01B8096BE009B7360 /* 图标-详细资料-爱好@3x.png in Resources */,
 				8BD5E01E1B8087370038B8B5 /* UMShareEditViewController.xib in Resources */,
+				2827D59E1B8096BE009B7360 /* 图标-爱玩-时间.png in Resources */,
 				4A7991811B7760B7009EAF36 /* 登录注册_标签-添加.png in Resources */,
 				4A79917F1B7760B7009EAF36 /* 登录注册_按钮-返回-白@2x.png in Resources */,
 				4AA8AED81B653416005AABDA /* 按钮-滑块-玩友@3x.png in Resources */,
 				4A7991051B776039009EAF36 /* PrefectInfoViewController.xib in Resources */,
+				2827D5551B8096BE009B7360 /* 分享-朋友圈.pdf in Resources */,
 				4A4E723E1B61A703002384A8 /* 导航-玩友圈-红.pdf in Resources */,
 				4A4E72F01B63E87D002384A8 /* 图标-我-我的看见@2x.png in Resources */,
 				4A4E72311B61A703002384A8 /* 导航-我-红@3x.png in Resources */,
@@ -2077,99 +2927,233 @@
 				4A7991981B7760B7009EAF36 /* 登录注册_滑块-女@3x.png in Resources */,
 				4AA8AED61B653416005AABDA /* 按钮-滑块-玩友.png in Resources */,
 				4A4E72DF1B63E87D002384A8 /* 图标-我-位置.png in Resources */,
+				2827D62B1B8096BE009B7360 /* 按钮-返回-灰@2x.png in Resources */,
+				2827D5891B8096BE009B7360 /* 图标-我-我的看见.pdf in Resources */,
 				4A79919A1B7760B7009EAF36 /* 登录注册_滑块-男@2x.png in Resources */,
+				2827D5761B8096BE009B7360 /* 图标-发布主题-地图.png in Resources */,
 				4A4E74851B63EC97002384A8 /* LICENSE in Resources */,
+				2827D55A1B8096BE009B7360 /* 图标-主题详情-地点.png in Resources */,
 				4A7990FF1B776039009EAF36 /* LoginEnterViewController.xib in Resources */,
 				4A4E72E11B63E87D002384A8 /* 图标-我-位置@3x.png in Resources */,
+				2827D6041B8096BE009B7360 /* 按钮-滑块-公开@3x.png in Resources */,
 				4A7991751B7760B7009EAF36 /* 登录注册_按钮-第三方-QQ.png in Resources */,
+				2827D6341B8096BE009B7360 /* 爱玩状态-正报名@3x.png in Resources */,
 				4AA8AEC11B653416005AABDA /* 图标-列表右箭头.pdf in Resources */,
 				4A4E72EC1B63E87D002384A8 /* 图标-我-我的消息@2x.png in Resources */,
 				4A79919D1B7760B7009EAF36 /* 登录注册_用户-头像-默认@2x.png in Resources */,
+				2827D6351B8096BE009B7360 /* 详细资料-标签背景.pdf in Resources */,
+				2827D55D1B8096BE009B7360 /* 图标-主题详情-时间.pdf in Resources */,
+				2827D61E1B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-选中.png in Resources */,
+				2827D6241B8096BE009B7360 /* 按钮-输入框-提交-按下@3x.png in Resources */,
 				4A4E72361B61A703002384A8 /* 导航-爱玩-红.pdf in Resources */,
+				2827D5991B8096BE009B7360 /* 图标-爱玩-女.pdf in Resources */,
 				4A7991701B7760B7009EAF36 /* 登录注册_按钮-注册@2x.png in Resources */,
+				2827D6251B8096BE009B7360 /* 按钮-输入框-提交.pdf in Resources */,
+				2827D6161B8096BE009B7360 /* 按钮-玩友圈-添加玩友-白.png in Resources */,
 				4A7991961B7760B7009EAF36 /* 登录注册_滑块-女.png in Resources */,
+				2827D5BD1B8096BE009B7360 /* 图标-详细资料-爱好.pdf in Resources */,
 				4A7991671B7760B7009EAF36 /* 登录注册_图标-验证码@2x.png in Resources */,
 				4A7991901B7760B7009EAF36 /* 登录注册_欢迎页文字.png in Resources */,
+				2827D5FC1B8096BE009B7360 /* 按钮-更多-灰@3x.png in Resources */,
+				2827D54F1B8096BE009B7360 /* 分享-QQ@2x.png in Resources */,
 				4A4E72471B61A703002384A8 /* 导航-看见-红.png in Resources */,
+				2827D5641B8096BE009B7360 /* 图标-主题详情-消费方式@3x.png in Resources */,
+				2827D5E51B8096BE009B7360 /* 按钮-我的消息-同意-按下.pdf in Resources */,
 				4A7990F91B776039009EAF36 /* FindPwdDetailViewController.xib in Resources */,
+				2827D58D1B8096BE009B7360 /* 图标-我-更换头像.pdf in Resources */,
+				2827D5F61B8096BE009B7360 /* 按钮-搜索-白.png in Resources */,
 				4A4E722B1B61A703002384A8 /* 导航-我-灰.png in Resources */,
 				4A7991821B7760B7009EAF36 /* 登录注册_标签-添加@2x.png in Resources */,
 				4A7991551B7760B7009EAF36 /* 登录注册_icon120@2x.png in Resources */,
+				2827D5E41B8096BE009B7360 /* 按钮-我的主题-删除@3x.png in Resources */,
 				4A79916D1B7760B7009EAF36 /* 登录注册_定位图标-小@2x.png in Resources */,
+				2827D55F1B8096BE009B7360 /* 图标-主题详情-时间@2x.png in Resources */,
+				2827D61D1B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-选中.pdf in Resources */,
 				4A4E72F71B63E87D002384A8 /* 图标-我-设置.png in Resources */,
+				2827D5981B8096BE009B7360 /* 图标-爱玩-地点@3x.png in Resources */,
+				2827D5F31B8096BE009B7360 /* 按钮-搜索-灰@2x.png in Resources */,
+				2827D5961B8096BE009B7360 /* 图标-爱玩-地点.png in Resources */,
 				4A7991841B7760B7009EAF36 /* 登录注册_标签背景-30-白.png in Resources */,
 				4A7991581B7760B7009EAF36 /* 登录注册_图标-休闲爱好@2x.png in Resources */,
+				2827D5DC1B8096BE009B7360 /* 按钮-天机图片@3x.png in Resources */,
 				4A4E723B1B61A703002384A8 /* 导航-玩友圈-灰.png in Resources */,
+				2827D5621B8096BE009B7360 /* 图标-主题详情-消费方式.png in Resources */,
 				4A7991071B776039009EAF36 /* RegistViewController.xib in Resources */,
 				4A4E72FB1B63E9DD002384A8 /* hongzi.png in Resources */,
+				2827D5791B8096BE009B7360 /* 图标-我-位置.pdf in Resources */,
+				2827D5FF1B8096BE009B7360 /* 按钮-更多-白@2x.png in Resources */,
+				2827D5631B8096BE009B7360 /* 图标-主题详情-消费方式@2x.png in Resources */,
+				2827D5D41B8096BE009B7360 /* 按钮-主题详情-赞-红@3x.png in Resources */,
+				2827D60E1B8096BE009B7360 /* 按钮-爱玩-赞-红.png in Resources */,
+				2827D5A01B8096BE009B7360 /* 图标-爱玩-时间@3x.png in Resources */,
+				2827D57A1B8096BE009B7360 /* 图标-我-位置.png in Resources */,
+				2827D5C81B8096BE009B7360 /* 图标-详细资料-行业@3x.png in Resources */,
+				2827D5B61B8096BE009B7360 /* 图标-详细资料-女.png in Resources */,
 				4A79915B1B7760B7009EAF36 /* 登录注册_图标-手机@2x.png in Resources */,
+				2827D5DB1B8096BE009B7360 /* 按钮-天机图片@2x.png in Resources */,
+				2827D6181B8096BE009B7360 /* 按钮-玩友圈-添加玩友-白@3x.png in Resources */,
+				2827D5531B8096BE009B7360 /* 分享-微信@2x.png in Resources */,
+				2827D5D91B8096BE009B7360 /* 按钮-天机图片.pdf in Resources */,
 				4A79918B1B7760B7009EAF36 /* 登录注册_标签背景-行业-白@2x.png in Resources */,
+				2827D6281B8096BE009B7360 /* 按钮-输入框-提交@3x.png in Resources */,
 				4A4E72EF1B63E87D002384A8 /* 图标-我-我的看见.png in Resources */,
+				2827D6401B8096BE009B7360 /* 邀请玩友-微信@3x.png in Resources */,
 				4A79917D1B7760B7009EAF36 /* 登录注册_按钮-第三方-微博@3x.png in Resources */,
+				2827D60D1B8096BE009B7360 /* 按钮-爱玩-赞-红.pdf in Resources */,
 				4A7991941B7760B7009EAF36 /* 登录注册_欢迎页背景@2x.png in Resources */,
 				4A4E72411B61A703002384A8 /* 导航-玩友圈-红@3x.png in Resources */,
+				2827D5781B8096BE009B7360 /* 图标-发布主题-地图@3x.png in Resources */,
 				4AA8AEC51B653416005AABDA /* 图标-发布主题-地图.pdf in Resources */,
+				2827D5871B8096BE009B7360 /* 图标-我-我的消息@2x.png in Resources */,
+				2827D5CC1B8096BE009B7360 /* 按钮-主题详情-留言@3x.png in Resources */,
 				4A7991871B7760B7009EAF36 /* 登录注册_标签背景-30-红.png in Resources */,
 				4AA8AEC81B653416005AABDA /* 图标-发布主题-地图@3x.png in Resources */,
+				2827D5C71B8096BE009B7360 /* 图标-详细资料-行业@2x.png in Resources */,
+				2827D59F1B8096BE009B7360 /* 图标-爱玩-时间@2x.png in Resources */,
 				8BD5E0201B8087370038B8B5 /* UMSLoginViewController.xib in Resources */,
+				2827D57C1B8096BE009B7360 /* 图标-我-位置@3x.png in Resources */,
 				4A7991761B7760B7009EAF36 /* 登录注册_按钮-第三方-QQ@2x.png in Resources */,
+				2827D6391B8096BE009B7360 /* 邀请玩友-QQ.pdf in Resources */,
+				2827D5D01B8096BE009B7360 /* 按钮-主题详情-赞-白@3x.png in Resources */,
+				2827D56E1B8096BE009B7360 /* 图标-主题详情-赞.png in Resources */,
 				4AA8AECF1B653416005AABDA /* 按钮-添加图片@2x.png in Resources */,
+				2827D63F1B8096BE009B7360 /* 邀请玩友-微信@2x.png in Resources */,
 				4A7991831B7760B7009EAF36 /* 登录注册_标签-添加@3x.png in Resources */,
+				2827D5971B8096BE009B7360 /* 图标-爱玩-地点@2x.png in Resources */,
 				4A4E723A1B61A703002384A8 /* 导航-玩友圈-灰.pdf in Resources */,
+				2827D58A1B8096BE009B7360 /* 图标-我-我的看见.png in Resources */,
 				4A7991951B7760B7009EAF36 /* 登录注册_欢迎页背景@3x.png in Resources */,
+				2827D5F51B8096BE009B7360 /* 按钮-搜索-白.pdf in Resources */,
 				8BD5E0231B8087370038B8B5 /* UMSocialSDKResourcesNew.bundle in Resources */,
 				4A7991571B7760B7009EAF36 /* 登录注册_图标-休闲爱好.png in Resources */,
+				2827D5AB1B8096BE009B7360 /* 图标-玩友圈-位置@2x.png in Resources */,
+				2827D63B1B8096BE009B7360 /* 邀请玩友-QQ@2x.png in Resources */,
+				2827D5AF1B8096BE009B7360 /* 图标-玩友圈-标签@2x.png in Resources */,
+				2827D59C1B8096BE009B7360 /* 图标-爱玩-女@3x.png in Resources */,
+				2827D6071B8096BE009B7360 /* 按钮-滑块-玩友@2x.png in Resources */,
+				2827D5501B8096BE009B7360 /* 分享-QQ@3x.png in Resources */,
 				4AA8AECC1B653416005AABDA /* 按钮-添加图片-按下@2x.png in Resources */,
 				4A79919E1B7760B7009EAF36 /* 登录注册_用户-头像-默认@3x.png in Resources */,
 				4A7991711B7760B7009EAF36 /* 登录注册_按钮-注册@3x.png in Resources */,
 				4A4E72341B61A703002384A8 /* 导航-爱玩-灰@2x.png in Resources */,
+				2827D5E91B8096BE009B7360 /* 按钮-我的消息-同意.pdf in Resources */,
 				4A4E72F21B63E87D002384A8 /* 图标-我-更换头像.pdf in Resources */,
+				2827D5F21B8096BE009B7360 /* 按钮-搜索-灰.png in Resources */,
 				4A79917C1B7760B7009EAF36 /* 登录注册_按钮-第三方-微博@2x.png in Resources */,
+				2827D5C31B8096BE009B7360 /* 图标-详细资料-男@2x.png in Resources */,
 				4A79918D1B7760B7009EAF36 /* 登录注册_标签背景-行业-红.png in Resources */,
+				2827D5C21B8096BE009B7360 /* 图标-详细资料-男.png in Resources */,
 				4A79919C1B7760B7009EAF36 /* 登录注册_用户-头像-默认.png in Resources */,
+				2827D56F1B8096BE009B7360 /* 图标-主题详情-赞@2x.png in Resources */,
+				2827D59B1B8096BE009B7360 /* 图标-爱玩-女@2x.png in Resources */,
 				4A4E72491B61A703002384A8 /* 导航-看见-红@3x.png in Resources */,
+				2827D5861B8096BE009B7360 /* 图标-我-我的消息.png in Resources */,
+				2827D5691B8096BE009B7360 /* 图标-主题详情-补充详情.pdf in Resources */,
+				2827D6301B8096BE009B7360 /* 按钮-返回-白@3x.png in Resources */,
 				4AA8AED31B653416005AABDA /* 按钮-滑块-公开@2x.png in Resources */,
+				2827D5AA1B8096BE009B7360 /* 图标-玩友圈-位置.png in Resources */,
+				2827D62D1B8096BE009B7360 /* 按钮-返回-白.pdf in Resources */,
+				2827D5CF1B8096BE009B7360 /* 按钮-主题详情-赞-白@2x.png in Resources */,
+				2827D5FE1B8096BE009B7360 /* 按钮-更多-白.png in Resources */,
+				2827D5DA1B8096BE009B7360 /* 按钮-天机图片.png in Resources */,
+				2827D6111B8096BE009B7360 /* 按钮-玩友圈-添加玩友-灰.pdf in Resources */,
+				2827D5F41B8096BE009B7360 /* 按钮-搜索-灰@3x.png in Resources */,
+				2827D5DE1B8096BE009B7360 /* 按钮-我的主题-删除-按下.png in Resources */,
+				2827D5AC1B8096BE009B7360 /* 图标-玩友圈-位置@3x.png in Resources */,
 				4A79915C1B7760B7009EAF36 /* 登录注册_图标-手机@3x.png in Resources */,
 				4A7991541B7760B7009EAF36 /* 登录注册_icon120.png in Resources */,
 				4A79919B1B7760B7009EAF36 /* 登录注册_滑块-男@3x.png in Resources */,
 				4A79918F1B7760B7009EAF36 /* 登录注册_标签背景-行业-红@3x.png in Resources */,
+				2827D5DF1B8096BE009B7360 /* 按钮-我的主题-删除-按下@2x.png in Resources */,
+				2827D56A1B8096BE009B7360 /* 图标-主题详情-补充详情.png in Resources */,
+				2827D60A1B8096BE009B7360 /* 按钮-爱玩-赞-灰.png in Resources */,
 				4A7990FB1B776039009EAF36 /* FindPwdViewController.xib in Resources */,
+				2827D6221B8096BE009B7360 /* 按钮-输入框-提交-按下.png in Resources */,
+				2827D6371B8096BE009B7360 /* 详细资料-标签背景@2x.png in Resources */,
+				2827D5C91B8096BE009B7360 /* 按钮-主题详情-留言.pdf in Resources */,
+				2827D5BF1B8096BE009B7360 /* 图标-详细资料-爱好@2x.png in Resources */,
+				2827D5EF1B8096BE009B7360 /* 按钮-我的消息-已添加@2x.png in Resources */,
+				2827D59D1B8096BE009B7360 /* 图标-爱玩-时间.pdf in Resources */,
 				4A79915F1B7760B7009EAF36 /* 登录注册_图标-标签@3x.png in Resources */,
 				4A4E72231B61A703002384A8 /* 导航-发布-灰.png in Resources */,
+				2827D5E01B8096BE009B7360 /* 按钮-我的主题-删除-按下@3x.png in Resources */,
 				8BD5E0211B8087370038B8B5 /* UMSnsAccountViewController.xib in Resources */,
+				2827D5561B8096BE009B7360 /* 分享-朋友圈.png in Resources */,
 				4A79918E1B7760B7009EAF36 /* 登录注册_标签背景-行业-红@2x.png in Resources */,
 				4A4E72F91B63E87D002384A8 /* 图标-我-设置@3x.png in Resources */,
+				2827D6091B8096BE009B7360 /* 按钮-爱玩-赞-灰.pdf in Resources */,
+				2827D5CE1B8096BE009B7360 /* 按钮-主题详情-赞-白.png in Resources */,
+				2827D63A1B8096BE009B7360 /* 邀请玩友-QQ.png in Resources */,
+				2827D6191B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-添加.pdf in Resources */,
 				4A4E72241B61A703002384A8 /* 导航-发布-灰@2x.png in Resources */,
+				2827D61C1B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-添加@3x.png in Resources */,
+				2827D6021B8096BE009B7360 /* 按钮-滑块-公开.png in Resources */,
 				4AA8AEC21B653416005AABDA /* 图标-列表右箭头.png in Resources */,
 				4AA8AED11B653416005AABDA /* 按钮-滑块-公开.pdf in Resources */,
+				2827D62A1B8096BE009B7360 /* 按钮-返回-灰.png in Resources */,
 				4A4E72E71B63E87D002384A8 /* 图标-我-我的收藏.png in Resources */,
 				8BD5E01C1B8087370038B8B5 /* UMSCommentInputController.xib in Resources */,
+				2827D56B1B8096BE009B7360 /* 图标-主题详情-补充详情@2x.png in Resources */,
 				4A4E72481B61A703002384A8 /* 导航-看见-红@2x.png in Resources */,
+				2827D5931B8096BE009B7360 /* 图标-我-设置@2x.png in Resources */,
+				2827D63C1B8096BE009B7360 /* 邀请玩友-QQ@3x.png in Resources */,
 				8BD5E01F1B8087370038B8B5 /* UMShareEditViewControlleriPad.xib in Resources */,
+				2827D5681B8096BE009B7360 /* 图标-主题详情-花费@3x.png in Resources */,
+				2827D5A51B8096BE009B7360 /* 图标-玩友圈-为空.pdf in Resources */,
 				4AA8AED41B653416005AABDA /* 按钮-滑块-公开@3x.png in Resources */,
 				4A7991991B7760B7009EAF36 /* 登录注册_滑块-男.png in Resources */,
+				2827D60F1B8096BE009B7360 /* 按钮-爱玩-赞-红@2x.png in Resources */,
+				2827D60C1B8096BE009B7360 /* 按钮-爱玩-赞-灰@3x.png in Resources */,
+				2827D6361B8096BE009B7360 /* 详细资料-标签背景.png in Resources */,
+				2827D5E21B8096BE009B7360 /* 按钮-我的主题-删除.png in Resources */,
+				2827D6121B8096BE009B7360 /* 按钮-玩友圈-添加玩友-灰.png in Resources */,
+				2827D5671B8096BE009B7360 /* 图标-主题详情-花费@2x.png in Resources */,
 				4A7991971B7760B7009EAF36 /* 登录注册_滑块-女@2x.png in Resources */,
 				4AA8AECA1B653416005AABDA /* 按钮-添加图片-按下.pdf in Resources */,
+				2827D6201B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-选中@3x.png in Resources */,
 				4A79915E1B7760B7009EAF36 /* 登录注册_图标-标签@2x.png in Resources */,
+				2827D54D1B8096BE009B7360 /* 分享-QQ.pdf in Resources */,
+				2827D5651B8096BE009B7360 /* 图标-主题详情-花费.pdf in Resources */,
 				4A79916C1B7760B7009EAF36 /* 登录注册_定位图标-小.png in Resources */,
+				2827D5CD1B8096BE009B7360 /* 按钮-主题详情-赞-白.pdf in Resources */,
 				4A4E72271B61A703002384A8 /* 导航-发布-黑.png in Resources */,
 				4AA8AEC41B653416005AABDA /* 图标-列表右箭头@3x.png in Resources */,
 				4AA8AED21B653416005AABDA /* 按钮-滑块-公开.png in Resources */,
+				2827D5721B8096BE009B7360 /* 图标-列表右箭头.png in Resources */,
+				2827D5541B8096BE009B7360 /* 分享-微信@3x.png in Resources */,
 				4A79916F1B7760B7009EAF36 /* 登录注册_按钮-注册.png in Resources */,
+				2827D6331B8096BE009B7360 /* 爱玩状态-正报名@2x.png in Resources */,
 				4A4E72DE1B63E87D002384A8 /* 图标-我-位置.pdf in Resources */,
 				4A4E72ED1B63E87D002384A8 /* 图标-我-我的消息@3x.png in Resources */,
+				2827D5B51B8096BE009B7360 /* 图标-详细资料-女.pdf in Resources */,
+				2827D5D81B8096BE009B7360 /* 按钮-天机图片-按下@3x.png in Resources */,
 				4A4E72441B61A703002384A8 /* 导航-看见-灰@2x.png in Resources */,
 				4A4E722F1B61A703002384A8 /* 导航-我-红.png in Resources */,
+				2827D5C11B8096BE009B7360 /* 图标-详细资料-男.pdf in Resources */,
+				2827D6131B8096BE009B7360 /* 按钮-玩友圈-添加玩友-灰@2x.png in Resources */,
+				2827D5851B8096BE009B7360 /* 图标-我-我的消息.pdf in Resources */,
+				2827D5BA1B8096BE009B7360 /* 图标-详细资料-标签.png in Resources */,
 				4A4E72E41B63E87D002384A8 /* 图标-我-我的主题@2x.png in Resources */,
 				4AA8AED71B653416005AABDA /* 按钮-滑块-玩友@2x.png in Resources */,
+				2827D5B11B8096BE009B7360 /* 图标-详细资料-位置.pdf in Resources */,
 				4A7991651B7760B7009EAF36 /* 登录注册_图标-锁头@3x.png in Resources */,
 				4A7991771B7760B7009EAF36 /* 登录注册_按钮-第三方-QQ@3x.png in Resources */,
+				2827D5B91B8096BE009B7360 /* 图标-详细资料-标签.pdf in Resources */,
+				2827D58B1B8096BE009B7360 /* 图标-我-我的看见@2x.png in Resources */,
 				4A4E722C1B61A703002384A8 /* 导航-我-灰@2x.png in Resources */,
 				4AA8AED01B653416005AABDA /* 按钮-添加图片@3x.png in Resources */,
+				2827D5801B8096BE009B7360 /* 图标-我-我的主题@3x.png in Resources */,
+				2827D5A71B8096BE009B7360 /* 图标-玩友圈-为空@2x.png in Resources */,
+				2827D61F1B8096BE009B7360 /* 按钮-玩友圈-邀请玩友-选中@2x.png in Resources */,
+				2827D5921B8096BE009B7360 /* 图标-我-设置.png in Resources */,
 				4A4E72E81B63E87D002384A8 /* 图标-我-我的收藏@2x.png in Resources */,
 				4AA8AECD1B653416005AABDA /* 按钮-添加图片.pdf in Resources */,
 				4A4E72301B61A703002384A8 /* 导航-我-红@2x.png in Resources */,
+				2827D54E1B8096BE009B7360 /* 分享-QQ.png in Resources */,
+				2827D6271B8096BE009B7360 /* 按钮-输入框-提交@2x.png in Resources */,
 				4A4E723D1B61A703002384A8 /* 导航-玩友圈-灰@3x.png in Resources */,
+				2827D5D71B8096BE009B7360 /* 按钮-天机图片-按下@2x.png in Resources */,
+				2827D5FD1B8096BE009B7360 /* 按钮-更多-白.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
