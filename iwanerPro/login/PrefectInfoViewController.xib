@@ -92,11 +92,11 @@
                         </mask>
                         <mask key="constraints">
                             <exclude reference="jBd-ga-bKz"/>
-                            <exclude reference="Kum-h8-270"/>
-                            <exclude reference="pkX-t1-X29"/>
                             <exclude reference="CoC-CC-ZaF"/>
                             <exclude reference="FfK-t8-J1R"/>
                             <exclude reference="X0K-eg-Xzg"/>
+                            <exclude reference="Kum-h8-270"/>
+                            <exclude reference="pkX-t1-X29"/>
                         </mask>
                     </variation>
                     <variation key="widthClass=compact">
@@ -106,11 +106,11 @@
                         </mask>
                         <mask key="constraints">
                             <include reference="jBd-ga-bKz"/>
-                            <include reference="Kum-h8-270"/>
-                            <include reference="pkX-t1-X29"/>
                             <include reference="CoC-CC-ZaF"/>
                             <include reference="FfK-t8-J1R"/>
                             <include reference="X0K-eg-Xzg"/>
+                            <include reference="Kum-h8-270"/>
+                            <include reference="pkX-t1-X29"/>
                         </mask>
                     </variation>
                 </view>
