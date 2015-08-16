@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>DFB4F092-0817-467B-A5A6-F206FDE04785</string>
 	<key>IDESourceControlProjectName</key>
-	<string>iwanerPro</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>33C1084124D9AA0DA40E53D58357232EEAD887D5</key>
 		<string>https://github.com/leevaboo/iwanerDevelopment.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>iwanerPro.xcodeproj</string>
+	<string>iwanerPro.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>33C1084124D9AA0DA40E53D58357232EEAD887D5</key>

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2827D44D1B8085F3009B7360 /* MyLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2827D44C1B8085F3009B7360 /* MyLocationViewController.m */; };
+		2827D4541B808605009B7360 /* MyHobbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2827D44F1B808605009B7360 /* MyHobbyViewController.m */; };
+		2827D4551B808605009B7360 /* MySelectHeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2827D4511B808605009B7360 /* MySelectHeadViewController.m */; };
+		2827D4561B808605009B7360 /* MyPersonalityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2827D4531B808605009B7360 /* MyPersonalityViewController.m */; };
 		4A0B0A7D1B685474005A184B /* UILabelButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B0A7C1B685474005A184B /* UILabelButton.m */; };
 		4A4E72221B61A703002384A8 /* 导航-发布-灰.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E71FA1B61A703002384A8 /* 导航-发布-灰.pdf */; };
 		4A4E72231B61A703002384A8 /* 导航-发布-灰.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E71FB1B61A703002384A8 /* 导航-发布-灰.png */; };
@@ -309,6 +313,7 @@
 		4A7C5C471B80746C00F30879 /* CTAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7C5C351B80746C00F30879 /* CTAssetsViewController.m */; };
 		4A7C5C481B80746C00F30879 /* CTAssetsViewToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7C5C371B80746C00F30879 /* CTAssetsViewToolBar.m */; };
 		4A7C5C491B80746C00F30879 /* CTAssetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7C5C391B80746C00F30879 /* CTAssetView.m */; };
+		4A7C5C4C1B80860E00F30879 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7C5C4A1B8085DF00F30879 /* MAMapKit.framework */; };
 		4AA8AEC11B653416005AABDA /* 图标-列表右箭头.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEA91B653416005AABDA /* 图标-列表右箭头.pdf */; };
 		4AA8AEC21B653416005AABDA /* 图标-列表右箭头.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEAA1B653416005AABDA /* 图标-列表右箭头.png */; };
 		4AA8AEC31B653416005AABDA /* 图标-列表右箭头@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEAB1B653416005AABDA /* 图标-列表右箭头@2x.png */; };
@@ -377,6 +382,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2827D44B1B8085F3009B7360 /* MyLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocationViewController.h; sourceTree = "<group>"; };
+		2827D44C1B8085F3009B7360 /* MyLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocationViewController.m; sourceTree = "<group>"; };
+		2827D44E1B808605009B7360 /* MyHobbyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHobbyViewController.h; sourceTree = "<group>"; };
+		2827D44F1B808605009B7360 /* MyHobbyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHobbyViewController.m; sourceTree = "<group>"; };
+		2827D4501B808605009B7360 /* MySelectHeadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySelectHeadViewController.h; sourceTree = "<group>"; };
+		2827D4511B808605009B7360 /* MySelectHeadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySelectHeadViewController.m; sourceTree = "<group>"; };
+		2827D4521B808605009B7360 /* MyPersonalityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPersonalityViewController.h; sourceTree = "<group>"; };
+		2827D4531B808605009B7360 /* MyPersonalityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPersonalityViewController.m; sourceTree = "<group>"; };
 		4A0B0A7B1B685474005A184B /* UILabelButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelButton.h; sourceTree = "<group>"; };
 		4A0B0A7C1B685474005A184B /* UILabelButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelButton.m; sourceTree = "<group>"; };
 		4A4E71FA1B61A703002384A8 /* 导航-发布-灰.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "导航-发布-灰.pdf"; sourceTree = "<group>"; };
@@ -827,6 +840,7 @@
 		4A7C5C371B80746C00F30879 /* CTAssetsViewToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTAssetsViewToolBar.m; sourceTree = "<group>"; };
 		4A7C5C381B80746C00F30879 /* CTAssetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTAssetView.h; sourceTree = "<group>"; };
 		4A7C5C391B80746C00F30879 /* CTAssetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTAssetView.m; sourceTree = "<group>"; };
+		4A7C5C4A1B8085DF00F30879 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
 		4AA8AEA91B653416005AABDA /* 图标-列表右箭头.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "图标-列表右箭头.pdf"; sourceTree = "<group>"; };
 		4AA8AEAA1B653416005AABDA /* 图标-列表右箭头.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-列表右箭头.png"; sourceTree = "<group>"; };
 		4AA8AEAB1B653416005AABDA /* 图标-列表右箭头@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-列表右箭头@2x.png"; sourceTree = "<group>"; };
@@ -1603,6 +1617,7 @@
 				8BD5DFD51B8086620038B8B5 /* libsqlite3.dylib */,
 				8BD5DFD31B8086580038B8B5 /* libiconv.dylib */,
 				4A7991CF1B777E89009EAF36 /* libstdc++.6.0.9.dylib */,
+				4A7C5C4A1B8085DF00F30879 /* MAMapKit.framework */,
 				4A7991CD1B777E75009EAF36 /* libz.dylib */,
 				4A7991CB1B777E36009EAF36 /* CoreTelephony.framework */,
 				4A7991C91B777E1C009EAF36 /* CoreLocation.framework */,
@@ -1649,6 +1664,14 @@
 				4A4E72BF1B63667D002384A8 /* PublicContentViewController.m */,
 				4A4E72AD1B634194002384A8 /* MeViewController.h */,
 				4A4E72AE1B634194002384A8 /* MeViewController.m */,
+				2827D44B1B8085F3009B7360 /* MyLocationViewController.h */,
+				2827D44C1B8085F3009B7360 /* MyLocationViewController.m */,
+				2827D44E1B808605009B7360 /* MyHobbyViewController.h */,
+				2827D44F1B808605009B7360 /* MyHobbyViewController.m */,
+				2827D4501B808605009B7360 /* MySelectHeadViewController.h */,
+				2827D4511B808605009B7360 /* MySelectHeadViewController.m */,
+				2827D4521B808605009B7360 /* MyPersonalityViewController.h */,
+				2827D4531B808605009B7360 /* MyPersonalityViewController.m */,
 				4A4E74CD1B6417B6002384A8 /* MyMessageViewController.h */,
 				4A4E74CE1B6417B6002384A8 /* MyMessageViewController.m */,
 				4A4E74D01B641FF6002384A8 /* MyItemViewController.h */,
@@ -2178,6 +2201,7 @@
 				4A7991BB1B77641A009EAF36 /* MyMessageData.m in Sources */,
 				4A4E74AC1B63EC97002384A8 /* SDWebImageManager.m in Sources */,
 				4A4E74D51B642028002384A8 /* MyLookViewController.m in Sources */,
+				2827D44D1B8085F3009B7360 /* MyLocationViewController.m in Sources */,
 				4A4E74861B63EC97002384A8 /* MBProgressHUD.m in Sources */,
 				8BD5DFDB1B8087260038B8B5 /* JKCountDownButton.m in Sources */,
 				4A4E74CF1B6417B6002384A8 /* MyMessageViewController.m in Sources */,
@@ -2214,6 +2238,7 @@
 				4AF971981B5E7BAB0090EACA /* AppDelegate.m in Sources */,
 				4A4E74A21B63EC97002384A8 /* MKNetworkEngine.m in Sources */,
 				4A4E74871B63EC97002384A8 /* README.mdown in Sources */,
+				2827D4541B808605009B7360 /* MyHobbyViewController.m in Sources */,
 				4A7C5C411B80746C00F30879 /* CTAssetsPickerController.m in Sources */,
 				4A7C5C461B80746C00F30879 /* CTAssetsToolBarButtonItem.m in Sources */,
 				4AF971951B5E7BAB0090EACA /* main.m in Sources */,
@@ -2269,6 +2294,7 @@
 				4A7991A71B77613A009EAF36 /* SKTagButton.m in Sources */,
 				4A4E74A11B63EC97002384A8 /* UIImageView+MKNetworkKitAdditions.m in Sources */,
 				4A4E749D1B63EC97002384A8 /* NSDate+RFC1123.m in Sources */,
+				2827D4561B808605009B7360 /* MyPersonalityViewController.m in Sources */,
 				4A7991BC1B77641A009EAF36 /* MyItemCell.m in Sources */,
 				4A7C5C431B80746C00F30879 /* CTAssetsPreviewCollectionView.m in Sources */,
 				4A7C5C401B80746C00F30879 /* CTAssetsPickerCollectionView.m in Sources */,
@@ -2290,6 +2316,7 @@
 				4A4E74AB1B63EC97002384A8 /* SDWebImageDownloaderOperation.m in Sources */,
 				4A4E74921B63EC97002384A8 /* MJRefreshBackStateFooter.m in Sources */,
 				4A4E724C1B61A79B002384A8 /* MainViewController.m in Sources */,
+				2827D4551B808605009B7360 /* MySelectHeadViewController.m in Sources */,
 				4A4E749B1B63EC97002384A8 /* NSAlert+MKNetworkKitAdditions.m in Sources */,
 				4A4E731A1B63EB58002384A8 /* NSString+MD5.m in Sources */,
 				4A7991BD1B77641A009EAF36 /* MyLookCell.m in Sources */,

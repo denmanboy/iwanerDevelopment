@@ -30,6 +30,7 @@
     
     self.view.backgroundColor = COLOR_WITH_RGB(235, 235, 241);
     self.title = @"设置";
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"按钮-返回-灰"] style:UIBarButtonItemStylePlain target:self action:@selector(gotoBack)];
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.extendedLayoutIncludesOpaqueBars = NO;
     UIView *footerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 64 - 170)];
@@ -190,7 +191,18 @@
 
 
 }
-
+//返回
+- (void)gotoBack
+{
+    UIViewController *topCtrl = self.navigationController.topViewController;
+    if (topCtrl == self) {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+    else {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+    
+}
 
 
 
