@@ -25,8 +25,7 @@
     self.view.backgroundColor = COLOR_WITH_RGB(235, 235, 241);
     self.view.userInteractionEnabled = YES;
     
-    _mapView.showsUserLocation = YES;
-    [_mapView setUserTrackingMode: MAUserTrackingModeFollow animated:YES];
+
     
     NSLog(@"dadadddd=====%@",NSStringFromCGRect(    self.view.frame));
     
@@ -226,7 +225,7 @@
     [self.backScrollView addSubview:_mapBack];
     
    
-    _addreddTextView = [[UITextView alloc] initWithFrame:CGRectMake(10, 40, SCREEN_WIDTH - 30, 46)];
+    _addreddTextView = [[UITextView alloc] initWithFrame:CGRectMake(10, 30, SCREEN_WIDTH - 30, 46)];
     _addreddTextView.backgroundColor = [UIColor clearColor];
     _addreddTextView.delegate = self;
     _addreddTextView.scrollEnabled = NO;
@@ -356,7 +355,7 @@
 }
 
 
-
+#pragma mark - mapDelegate
 -(void)mapView:(MAMapView *)mapView didUpdateUserLocation:(MAUserLocation *)userLocation
 updatingLocation:(BOOL)updatingLocation
 {
@@ -364,6 +363,28 @@ updatingLocation:(BOOL)updatingLocation
         //取出当前位置的坐标
         NSLog(@"latitude : %f,longitude: %f",userLocation.coordinate.latitude,userLocation.coordinate.longitude);
     }
+}
+
+- (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation
+{
+    if ([annotation isKindOfClass:[ReGeocodeAnnotation class]])
+    {
+        static NSString *invertGeoIdentifier = @"invertGeoIdentifier";
+        
+        MAPinAnnotationView *poiAnnotationView = (MAPinAnnotationView*)[self.mapView dequeueReusableAnnotationViewWithIdentifier:invertGeoIdentifier];
+        if (poiAnnotationView == nil)
+        {
+            poiAnnotationView = [[MAPinAnnotationView alloc] initWithAnnotation:annotation
+                                                                 reuseIdentifier:invertGeoIdentifier];
+        }
+        
+        poiAnnotationView.animatesDrop              = YES;
+        //不生成插图编号 只生成大针
+        poiAnnotationView.canShowCallout            = NO;
+        return poiAnnotationView;
+    }
+    
+    return nil;
 }
 
 
@@ -452,12 +473,74 @@ updatingLocation:(BOOL)updatingLocation
     
     
     [MAMapServices sharedServices].apiKey = @"f193d563a78f484b022ac21c84395656";
-    
     _mapView = [[MAMapView alloc] initWithFrame:CGRectMake(0, 60, SCREEN_WIDTH, 200)];
     _mapView.delegate = self;
+    _mapView.showsUserLocation = NO;
+    [_mapView setUserTrackingMode: MAUserTrackingModeNone animated:YES];
     [_mapBack addSubview:_mapView];
+    [self initGestureRecognizer];
+}
+#pragma mark - 设置手势
+- (void)initGestureRecognizer
+{
+    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self
+                                                                                            action:@selector(handleLongPress:)];
+    longPress.minimumPressDuration = 0.5;
+    longPress.delegate = self;
+    [self.mapView addGestureRecognizer:longPress];
+}
+#pragma mark - 手势的回调
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+{   //同意触发手势
+    return YES;
+}
+
+
+/**手势触发的回调*/
+- (void)handleLongPress:(UILongPressGestureRecognizer *)longPress
+{
+    if (longPress.state == UIGestureRecognizerStateBegan)
+    {   //有触摸点转换成 地理坐标
+        CLLocationCoordinate2D coordinate = [self.mapView convertPoint:[longPress locationInView:self.mapView]
+                                                  toCoordinateFromView:self.mapView];
+        //有坐标 逆地理编码
+        [self searchReGeocodeWithCoordinate:coordinate];
+    }
+}
+/**逆地理编码*/
+- (void)searchReGeocodeWithCoordinate:(CLLocationCoordinate2D)coordinate
+{
+    AMapReGeocodeSearchRequest *regeo = [[AMapReGeocodeSearchRequest alloc] init];
     
+    regeo.location = [AMapGeoPoint locationWithLatitude:coordinate.latitude longitude:coordinate.longitude];
+    regeo.requireExtension = YES;
     
+    [self.search AMapReGoecodeSearch:regeo];
+}
+
+#pragma mark - 逆地理编码的回调
+/* 逆地理编码回调. */
+- (void)onReGeocodeSearchDone:(AMapReGeocodeSearchRequest *)request response:(AMapReGeocodeSearchResponse *)response
+{
+    if (response.regeocode != nil){
+        CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(request.location.latitude, request.location.longitude);
+        ReGeocodeAnnotation *reGeocodeAnnotation = [[ReGeocodeAnnotation alloc] initWithCoordinate:coordinate
+                                                                                         reGeocode:response.regeocode];
+        //只允许 放一个大头症
+        [self.mapView removeAnnotations:self.mapView.annotations];
+        //添加注释 产生大头针
+        [self.mapView addAnnotation:reGeocodeAnnotation];
+        [self.mapView selectAnnotation:reGeocodeAnnotation animated:YES];
+        //大头症地理位置
+        _addreddTextView.text = response.regeocode.formattedAddress;
+        
+    }
+}
+
+- (void)searchRequest:(id)request didFailWithError:(NSError *)error
+{
+    [self showAlertWith:@"提示" andMessage:@"请求失败"];
+
 }
 
 - (void)gotoUphotoes
@@ -565,7 +648,15 @@ updatingLocation:(BOOL)updatingLocation
 - (void)assetsPickerControllerDidCancel:(CTAssetsPickerController *)assetsPickerController{
     NSLog(@"%@", NSStringFromSelector(@selector(assetsPickerControllerDidCancel:)));
 }
-
+/**懒加载*/
+- (AMapSearchAPI *)search
+{
+    if (!_search) {
+        _search = [[AMapSearchAPI alloc]initWithSearchKey:@"f193d563a78f484b022ac21c84395656" Delegate:self];
+        
+    }
+    return _search;
+}
 
 
 

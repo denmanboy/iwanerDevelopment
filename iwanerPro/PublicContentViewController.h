@@ -11,7 +11,9 @@
 #import "CTAssetsPickerController.h"
 
 #import <MAMapKit/MAMapKit.h>
-
+#import <AMapSearchKit/AMapSearchAPI.h>
+#import "ReGeocodeAnnotation.h"
+#import "MANaviAnnotationView.h"
 
 typedef NS_ENUM(NSInteger, SelectTimeInputStatus) {
     SelectTimeInputStatusNone = 1,
@@ -19,7 +21,7 @@ typedef NS_ENUM(NSInteger, SelectTimeInputStatus) {
     SelectTimeInputStatusEndTime,
 };
 
-@interface PublicContentViewController : UIViewController<UITextFieldDelegate,UITextViewDelegate,MAMapViewDelegate,CTAssetsPickerControllerDelegate,UINavigationControllerDelegate,UIActionSheetDelegate>
+@interface PublicContentViewController : UIViewController<UITextFieldDelegate,UITextViewDelegate,MAMapViewDelegate,CTAssetsPickerControllerDelegate,UINavigationControllerDelegate,UIActionSheetDelegate,UIGestureRecognizerDelegate,AMapSearchDelegate>
 
 @property (nonatomic,strong) UIScrollView *backScrollView;
 @property (nonatomic,strong) UIView *upPhotoesBack;
@@ -40,5 +42,5 @@ typedef NS_ENUM(NSInteger, SelectTimeInputStatus) {
 @property (nonatomic,strong) UILabel *textNumTip;
 
 @property (nonatomic,strong) MAMapView *mapView;
-
+@property (nonatomic, strong) AMapSearchAPI *search;
 @end
