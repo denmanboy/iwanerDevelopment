@@ -255,6 +255,7 @@
 		2827D63E1B8096BE009B7360 /* 邀请玩友-微信.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D54A1B8096BE009B7360 /* 邀请玩友-微信.png */; };
 		2827D63F1B8096BE009B7360 /* 邀请玩友-微信@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D54B1B8096BE009B7360 /* 邀请玩友-微信@2x.png */; };
 		2827D6401B8096BE009B7360 /* 邀请玩友-微信@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D54C1B8096BE009B7360 /* 邀请玩友-微信@3x.png */; };
+		288F2F561B83738B000561B7 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288F2F551B83738B000561B7 /* AMapSearchKit.framework */; };
 		4A0B0A7D1B685474005A184B /* UILabelButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B0A7C1B685474005A184B /* UILabelButton.m */; };
 		4A0F80891B80935500813BA6 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7C5C4A1B8085DF00F30879 /* MAMapKit.framework */; };
 		4A0F808B1B80936600813BA6 /* AMap.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0F808A1B80936600813BA6 /* AMap.bundle */; };
@@ -879,6 +880,7 @@
 		2827D54A1B8096BE009B7360 /* 邀请玩友-微信.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "邀请玩友-微信.png"; sourceTree = "<group>"; };
 		2827D54B1B8096BE009B7360 /* 邀请玩友-微信@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "邀请玩友-微信@2x.png"; sourceTree = "<group>"; };
 		2827D54C1B8096BE009B7360 /* 邀请玩友-微信@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "邀请玩友-微信@3x.png"; sourceTree = "<group>"; };
+		288F2F551B83738B000561B7 /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapSearchKit.framework; sourceTree = "<group>"; };
 		4A0B0A7B1B685474005A184B /* UILabelButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelButton.h; sourceTree = "<group>"; };
 		4A0B0A7C1B685474005A184B /* UILabelButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelButton.m; sourceTree = "<group>"; };
 		4A0F808A1B80936600813BA6 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
@@ -1429,6 +1431,7 @@
 				8BD5DFD41B8086580038B8B5 /* libiconv.dylib in Frameworks */,
 				8BD5E0191B8087370038B8B5 /* libUMSocial_Sdk_4.2.3.a in Frameworks */,
 				8BD5E0241B8087370038B8B5 /* libSocialInstagram.a in Frameworks */,
+				288F2F561B83738B000561B7 /* AMapSearchKit.framework in Frameworks */,
 				4A7991D01B777E89009EAF36 /* libstdc++.6.0.9.dylib in Frameworks */,
 				8BD5E0271B8087370038B8B5 /* libSocialSina.a in Frameworks */,
 				4A7991CE1B777E75009EAF36 /* libz.dylib in Frameworks */,
@@ -2357,6 +2360,7 @@
 		4AF971861B5E7BAB0090EACA = {
 			isa = PBXGroup;
 			children = (
+				288F2F551B83738B000561B7 /* AMapSearchKit.framework */,
 				4A0F808A1B80936600813BA6 /* AMap.bundle */,
 				8BD5DFD71B8086790038B8B5 /* CoreGraphics.framework */,
 				8BD5DFD51B8086620038B8B5 /* libsqlite3.dylib */,
