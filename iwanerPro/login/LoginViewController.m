@@ -31,6 +31,27 @@
     [self.navigationController pushViewController:_loginEnterVC animated:YES];
 }
 - (IBAction)clickRegist:(id)sender {
+    
+    
+//    [[HttpEngine sharedHttpEngine] sendIphoneNumberVerificationCode:@"18911158938"
+//                                                onCompletionHandler:^(MKNetworkOperation *completedOperation) {
+//                                                    
+//                                                    NSDictionary *dic = [completedOperation responseJSON];
+//                                                    NSLog(@"ddd===1===%@",dic);
+//        
+//    } errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
+//        
+//        
+//        NSDictionary *dic = [completedOperation responseJSON];
+//        NSLog(@"ddd====2==%@",dic);
+//        
+//    }];
+    
+    
+
+    
+    NSLog(@"ddd===3===");
+    
     _registVC = [[RegistViewController alloc]init];
     [self.navigationController pushViewController:_registVC animated:YES];
 }

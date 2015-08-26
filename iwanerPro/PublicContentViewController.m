@@ -66,7 +66,6 @@
     _upPhotoesBack.backgroundColor = [UIColor whiteColor];
     [_backScrollView addSubview:_upPhotoesBack];
     
-    
     UILabel *upPhotoTip = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 100, 30)];
     upPhotoTip.backgroundColor = [UIColor clearColor];
     upPhotoTip.text = @"上传封面图片";
@@ -85,12 +84,18 @@
     
     UIImage *upPhotoImage = [UIImage getPathImageWithName:@"按钮-添加图片"];
     UIImage *upPhotoImageHigh = [UIImage getPathImageWithName:@"按钮-添加图片-按下"];
-    UIButton *upPhotoBt = [UIButton buttonWithType:UIButtonTypeCustom];
-    upPhotoBt.frame = CGRectMake(14, 45, upPhotoImage.size.width, upPhotoImage.size.height);
-    [upPhotoBt setImage:upPhotoImage forState:UIControlStateNormal];
-    [upPhotoBt setImage:upPhotoImageHigh forState:UIControlStateHighlighted];
-    [upPhotoBt addTarget:self action:@selector(gotoUphotoes) forControlEvents:UIControlEventTouchUpInside];
-    [_upPhotoesBack addSubview:upPhotoBt];
+    _upPhotoBt = [UIButton buttonWithType:UIButtonTypeCustom];
+    _upPhotoBt.frame = CGRectMake(14, 45, upPhotoImage.size.width, upPhotoImage.size.height);
+    [_upPhotoBt setImage:upPhotoImage forState:UIControlStateNormal];
+    [_upPhotoBt setImage:upPhotoImageHigh forState:UIControlStateHighlighted];
+    [_upPhotoBt addTarget:self action:@selector(gotoUphotoes) forControlEvents:UIControlEventTouchUpInside];
+    [_upPhotoesBack addSubview:_upPhotoBt];
+    
+    _showImageView = [UIButton buttonWithType:UIButtonTypeCustom];
+    _showImageView.frame = CGRectMake(14, 45, upPhotoImage.size.width, upPhotoImage.size.height);
+    _showImageView.backgroundColor = [UIColor redColor];
+    _showImageView.hidden = YES;
+    [_upPhotoesBack addSubview:_showImageView];
     
     
     
@@ -268,10 +273,6 @@
     [_mapBack addSubview:labelPerPeople];
     
     
-//    _perMoneyTextField  
-    
-    
-    
     _perMoneyTextField = [[UITextField alloc] initWithFrame:CGRectMake(110, 270, 100, 30)];
     _perMoneyTextField.backgroundColor = [UIColor clearColor];
     _perMoneyTextField.returnKeyType = UIReturnKeyDone;
@@ -281,7 +282,6 @@
     [_perMoneyTextField addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
     _perMoneyTextField.font = [UIFont systemFontOfSize:12];
     [_mapBack addSubview:_perMoneyTextField];
-    
     
     
     UILabel *PerPeopleTip = [[UILabel alloc] initWithFrame:CGRectMake(215, 270, 115, 30)];
@@ -302,8 +302,6 @@
     _detailBack.backgroundColor = [UIColor whiteColor];
     [self.backScrollView addSubview:_detailBack];
     
-
-//    UILabel *buChong = [[UILabel] i]
     
     UILabel *buChong = [[UILabel alloc] initWithFrame:CGRectMake(10, 7, 280, 30)];
     buChong.backgroundColor = [UIColor clearColor];
@@ -311,7 +309,6 @@
     buChong.textColor = [UIColor grayColor];
     buChong.font = [UIFont systemFontOfSize:15];
     [_detailBack addSubview:buChong];
-    
     
     
     _competenceBack = [[UIView alloc] initWithFrame:CGRectMake(0, 826, SCREEN_WIDTH, 43)];
@@ -350,9 +347,7 @@
     _textNumTip.font = [UIFont boldSystemFontOfSize:14];
     [_detailBack addSubview:_textNumTip];
  
-//    _detailBack
-//    _mapBack
-    // Do any additional setup after loading the view.
+
 }
 
 
@@ -462,49 +457,11 @@ updatingLocation:(BOOL)updatingLocation
 
 - (void)gotoUphotoes
 {
-    
-    UIActionSheet *actionSheet = [[UIActionSheet alloc]
-                                    initWithTitle:nil
-                                    delegate:self
-                                    cancelButtonTitle:@"取消"
-                                    destructiveButtonTitle:@"拍照"
-                                    otherButtonTitles:@"从相册选取",nil];
-    actionSheet.actionSheetStyle = UIActionSheetStyleBlackOpaque;
-    [actionSheet showInView:self.view];
-    
-    
-    
-//    CTAssetsPickerController *assetsPickerController = [[CTAssetsPickerController alloc] initWithAssetsType:CTAssetsPickerControllerAssetsTypeAllAsset];
-//    assetsPickerController.delegate = self;
-//    assetsPickerController.enableMaximumCount = 9;
-//    [self presentViewController:assetsPickerController animated:YES completion:NULL];
-    
-}
 
-
-
-
-- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    switch (buttonIndex) {
-        case 0:
-        {
-            
-        }
-            break;
-        case 1:
-        {
-            
-        }
-            break;
-        case 2:
-        {
-            
-        }
-            break;
-        default:
-            break;
-    }
+    CTAssetsPickerController *assetsPickerController = [[CTAssetsPickerController alloc] initWithAssetsType:CTAssetsPickerControllerAssetsTypePhoto];
+    assetsPickerController.delegate = self;
+    assetsPickerController.enableMaximumCount = 1;
+    [self presentViewController:assetsPickerController animated:YES completion:NULL];
     
 }
 
@@ -525,13 +482,28 @@ updatingLocation:(BOOL)updatingLocation
 
 
 
-- (void)assetsPickerController:(CTAssetsPickerController *)assetsPickerController didFinishPickingAssets:(NSArray *)assets assetsType:(CTAssetsPickerControllerAssetsType)assetsType
+- (void)assetsPickerController:(CTAssetsPickerController *)assetsPickerController
+        didFinishPickingAssets:(NSArray *)assets assetsType:(CTAssetsPickerControllerAssetsType)assetsType
 {
 //  选择
     NSLog(@"%@", NSStringFromSelector(@selector(assetsPickerController:didFinishPickingAssets:assetsType:)));
+    
     switch (assetsType) {
         case CTAssetsPickerControllerAssetsTypePhoto:{
-            
+            if (assets.count)
+            {
+                
+                ALAsset *asset = [assets objectAtIndex:0];
+                
+                UIImage *showImage = [UIImage imageWithCGImage:asset.defaultRepresentation.fullScreenImage];
+                [_showImageView setImage:showImage forState:UIControlStateNormal];
+                _showImageView.hidden = NO;
+                
+//                _upPhotoBt.frame = CGRectMake(84, _upPhotoBt.frame.origin.y, _upPhotoBt.frame.size.width, _upPhotoBt.frame.size.height);
+                
+                
+            }
+        
         }
             break;
         case CTAssetsPickerControllerAssetsTypeVideo:{
@@ -540,6 +512,8 @@ updatingLocation:(BOOL)updatingLocation
             break;
         case CTAssetsPickerControllerAssetsTypeAllAsset:{
             
+            
+          
         }
             break;
         default:

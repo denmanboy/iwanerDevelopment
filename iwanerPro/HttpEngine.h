@@ -7,14 +7,45 @@
 //
 
 #import "MKNetworkEngine.h"
-
+#import "IWKeyObject.h"
 @interface HttpEngine : MKNetworkEngine
 {
     Reachability* internetReach;
     NetworkStatus netStatus;
 }
 
-//+ (HttpEngine *)sharedHttpEngine;
++ (HttpEngine *)sharedHttpEngine;
+
+
+
+//手机注册
+- (MKNetworkOperation *)sendIphoneNumberVerificationCode:(NSString *)iphoneNumber
+                                     onCompletionHandler:(MKNKResponseBlock) response
+                                            errorHandler:(MKNKResponseErrorBlock) error;
+
+
+
+
+
+//手机注册
+- (MKNetworkOperation *)signInIphoneNumber:(NSString *)iphoneNumber
+                                  password:(NSString *)password
+                                verifyCode:(NSString *)verifyCode
+                                      type:(NSString *)type
+                       onCompletionHandler:(MKNKResponseBlock) response
+                              errorHandler:(MKNKResponseErrorBlock) error;
+
+
+
+
+//登录
+- (MKNetworkOperation *)loginWithPhoneNumber:(NSString *)iphoneNumber
+                                  password:(NSString *)password
+                       onCompletionHandler:(MKNKResponseBlock) response
+                              errorHandler:(MKNKResponseErrorBlock) error;
+
+
+
 //
 ////登陆
 //- (MKNetworkOperation *)loginWithUsername:(NSString *)username

@@ -19,7 +19,7 @@ typedef NS_ENUM(NSInteger, SelectTimeInputStatus) {
     SelectTimeInputStatusEndTime,
 };
 
-@interface PublicContentViewController : UIViewController<UITextFieldDelegate,UITextViewDelegate,MAMapViewDelegate,CTAssetsPickerControllerDelegate,UINavigationControllerDelegate,UIActionSheetDelegate>
+@interface PublicContentViewController : UIViewController<UITextFieldDelegate,UITextViewDelegate,MAMapViewDelegate,CTAssetsPickerControllerDelegate,UINavigationControllerDelegate>
 
 @property (nonatomic,strong) UIScrollView *backScrollView;
 @property (nonatomic,strong) UIView *upPhotoesBack;
@@ -28,6 +28,9 @@ typedef NS_ENUM(NSInteger, SelectTimeInputStatus) {
 @property (nonatomic,strong) UIView *detailBack;
 @property (nonatomic,strong) UIView *competenceBack;
 @property (nonatomic,strong) UIButton *publicBt;
+
+@property (nonatomic,strong) UIButton *showImageView;
+@property (nonatomic,strong) UIButton *upPhotoBt;
 
 @property (nonatomic,strong) UITextField *itemTextField,*perMoneyTextField;
 @property (nonatomic,strong) UITextView *addreddTextView;
@@ -40,5 +43,7 @@ typedef NS_ENUM(NSInteger, SelectTimeInputStatus) {
 @property (nonatomic,strong) UILabel *textNumTip;
 
 @property (nonatomic,strong) MAMapView *mapView;
+
+
 
 @end
