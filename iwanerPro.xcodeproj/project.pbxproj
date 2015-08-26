@@ -256,11 +256,13 @@
 		2827D63F1B8096BE009B7360 /* 邀请玩友-微信@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D54B1B8096BE009B7360 /* 邀请玩友-微信@2x.png */; };
 		2827D6401B8096BE009B7360 /* 邀请玩友-微信@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2827D54C1B8096BE009B7360 /* 邀请玩友-微信@3x.png */; };
 		288F2F561B83738B000561B7 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288F2F551B83738B000561B7 /* AMapSearchKit.framework */; };
-		288F2F5A1B837AC3000561B7 /* ReGeocodeAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 288F2F591B837AC3000561B7 /* ReGeocodeAnnotation.m */; };
-		288F2F5D1B837CED000561B7 /* MANaviAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 288F2F5C1B837CED000561B7 /* MANaviAnnotationView.m */; };
 		288F2F601B83825F000561B7 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 288F2F5F1B83825F000561B7 /* AMap.bundle */; };
 		4A0B0A7D1B685474005A184B /* UILabelButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B0A7C1B685474005A184B /* UILabelButton.m */; };
 		4A0F80891B80935500813BA6 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7C5C4A1B8085DF00F30879 /* MAMapKit.framework */; };
+		4A21C8241B8D9FC000817749 /* ReGeocodeAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A21C8231B8D9FC000817749 /* ReGeocodeAnnotation.m */; };
+		4A21C8271B8DA0A700817749 /* MANaviAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A21C8261B8DA0A700817749 /* MANaviAnnotationView.m */; };
+		4A21C8281B8DA10900817749 /* ReGeocodeAnnotation.h in Sources */ = {isa = PBXBuildFile; fileRef = 4A21C8221B8D9FC000817749 /* ReGeocodeAnnotation.h */; };
+		4A21C8291B8DA11500817749 /* MANaviAnnotationView.h in Sources */ = {isa = PBXBuildFile; fileRef = 4A21C8251B8DA0A700817749 /* MANaviAnnotationView.h */; };
 		4A4E72221B61A703002384A8 /* 导航-发布-灰.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E71FA1B61A703002384A8 /* 导航-发布-灰.pdf */; };
 		4A4E72231B61A703002384A8 /* 导航-发布-灰.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E71FB1B61A703002384A8 /* 导航-发布-灰.png */; };
 		4A4E72241B61A703002384A8 /* 导航-发布-灰@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4E71FC1B61A703002384A8 /* 导航-发布-灰@2x.png */; };
@@ -885,13 +887,13 @@
 		2827D54B1B8096BE009B7360 /* 邀请玩友-微信@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "邀请玩友-微信@2x.png"; sourceTree = "<group>"; };
 		2827D54C1B8096BE009B7360 /* 邀请玩友-微信@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "邀请玩友-微信@3x.png"; sourceTree = "<group>"; };
 		288F2F551B83738B000561B7 /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapSearchKit.framework; sourceTree = "<group>"; };
-		288F2F581B837AC3000561B7 /* ReGeocodeAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReGeocodeAnnotation.h; sourceTree = "<group>"; };
-		288F2F591B837AC3000561B7 /* ReGeocodeAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReGeocodeAnnotation.m; sourceTree = "<group>"; };
-		288F2F5B1B837CED000561B7 /* MANaviAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANaviAnnotationView.h; sourceTree = "<group>"; };
-		288F2F5C1B837CED000561B7 /* MANaviAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANaviAnnotationView.m; sourceTree = "<group>"; };
 		288F2F5F1B83825F000561B7 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AMap.bundle; path = MAMapKit.framework/Versions/2.6.0.e9e21b6/Resources/AMap.bundle; sourceTree = "<group>"; };
 		4A0B0A7B1B685474005A184B /* UILabelButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelButton.h; sourceTree = "<group>"; };
 		4A0B0A7C1B685474005A184B /* UILabelButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelButton.m; sourceTree = "<group>"; };
+		4A21C8221B8D9FC000817749 /* ReGeocodeAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReGeocodeAnnotation.h; sourceTree = "<group>"; };
+		4A21C8231B8D9FC000817749 /* ReGeocodeAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReGeocodeAnnotation.m; sourceTree = "<group>"; };
+		4A21C8251B8DA0A700817749 /* MANaviAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANaviAnnotationView.h; sourceTree = "<group>"; };
+		4A21C8261B8DA0A700817749 /* MANaviAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANaviAnnotationView.m; sourceTree = "<group>"; };
 		4A4E71FA1B61A703002384A8 /* 导航-发布-灰.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "导航-发布-灰.pdf"; sourceTree = "<group>"; };
 		4A4E71FB1B61A703002384A8 /* 导航-发布-灰.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-发布-灰.png"; sourceTree = "<group>"; };
 		4A4E71FC1B61A703002384A8 /* 导航-发布-灰@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-发布-灰@2x.png"; sourceTree = "<group>"; };
@@ -2424,8 +2426,12 @@
 				4A4E72BF1B63667D002384A8 /* PublicContentViewController.m */,
 				4AC1DE7B1B82157500C6CB14 /* LookSelectImageViewController.h */,
 				4AC1DE7C1B82157500C6CB14 /* LookSelectImageViewController.m */,
+				4A21C8221B8D9FC000817749 /* ReGeocodeAnnotation.h */,
+				4A21C8231B8D9FC000817749 /* ReGeocodeAnnotation.m */,
 				4A4E72AD1B634194002384A8 /* MeViewController.h */,
 				4A4E72AE1B634194002384A8 /* MeViewController.m */,
+				4A21C8251B8DA0A700817749 /* MANaviAnnotationView.h */,
+				4A21C8261B8DA0A700817749 /* MANaviAnnotationView.m */,
 				2827D44B1B8085F3009B7360 /* MyLocationViewController.h */,
 				2827D44C1B8085F3009B7360 /* MyLocationViewController.m */,
 				2827D44E1B808605009B7360 /* MyHobbyViewController.h */,
@@ -3191,6 +3197,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A21C8291B8DA11500817749 /* MANaviAnnotationView.h in Sources */,
+				4A21C8281B8DA10900817749 /* ReGeocodeAnnotation.h in Sources */,
 				4A4E74811B63EC97002384A8 /* MASViewConstraint.m in Sources */,
 				4A4E74A01B63EC97002384A8 /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
 				4A4E74BA1B63ECE8002384A8 /* FXBlurView.m in Sources */,
@@ -3215,7 +3223,6 @@
 				8BD5DFDB1B8087260038B8B5 /* JKCountDownButton.m in Sources */,
 				4A4E74CF1B6417B6002384A8 /* MyMessageViewController.m in Sources */,
 				4A4E74A71B63EC97002384A8 /* SDImageCache.m in Sources */,
-				288F2F5A1B837AC3000561B7 /* ReGeocodeAnnotation.m in Sources */,
 				4A7C5C3F1B80746C00F30879 /* CTAssetsPickerAssetData.m in Sources */,
 				4A4E74B31B63EC97002384A8 /* UIImageView+WebCache.m in Sources */,
 				4A7991BF1B77641A009EAF36 /* ContactUsViewController.m in Sources */,
@@ -3231,12 +3238,13 @@
 				4A4E74781B63EC97002384A8 /* send_mosq.c in Sources */,
 				4A7C5C3C1B80746C00F30879 /* CTAssetsGroupTableViewCell.m in Sources */,
 				4A0B0A7D1B685474005A184B /* UILabelButton.m in Sources */,
+				4A21C8241B8D9FC000817749 /* ReGeocodeAnnotation.m in Sources */,
 				4A4E74741B63EC97002384A8 /* read_handle.c in Sources */,
 				4A4E748D1B63EC97002384A8 /* MJRefreshAutoGifFooter.m in Sources */,
 				4A4E74891B63EC97002384A8 /* MJRefreshBackFooter.m in Sources */,
 				4A7991A61B77613A009EAF36 /* SKTag.m in Sources */,
-				288F2F5D1B837CED000561B7 /* MANaviAnnotationView.m in Sources */,
 				4A7C5C481B80746C00F30879 /* CTAssetsViewToolBar.m in Sources */,
+				4A21C8271B8DA0A700817749 /* MANaviAnnotationView.m in Sources */,
 				4A4E72B81B6341F8002384A8 /* IwanViewController.m in Sources */,
 				4A4E74C51B63F12F002384A8 /* HttpEngine.m in Sources */,
 				4A4E749E1B63EC97002384A8 /* NSDictionary+RequestEncoding.m in Sources */,
