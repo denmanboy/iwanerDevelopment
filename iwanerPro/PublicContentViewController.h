@@ -11,7 +11,9 @@
 #import "CTAssetsPickerController.h"
 
 #import <MAMapKit/MAMapKit.h>
-
+#import <AMapSearchKit/AMapSearchAPI.h>
+#import "ReGeocodeAnnotation.h"
+#import "MANaviAnnotationView.h"
 
 typedef NS_ENUM(NSInteger, SelectTimeInputStatus) {
     SelectTimeInputStatusNone = 1,

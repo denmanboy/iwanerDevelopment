@@ -16,7 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-     self.title = @"所在地方";
+    self.title = @"所在地";
+    self.view.backgroundColor = COLOR_WITH_RGB(233, 234, 241);
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"按钮-返回-灰"] style:UIBarButtonItemStylePlain target:self action:@selector(gotoBack)];
     
 
