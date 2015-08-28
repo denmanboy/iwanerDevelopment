@@ -26,6 +26,23 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)clickFinish:(id)sender {
+    
+    
+    [[HttpEngine sharedHttpEngine] complementUserInfoUsername:_userNameTextfield.text
+                                                          dis:_personalityLable.text
+                                                          sex:_userSexBtn.titleLabel.text
+                                                          img:_headImage
+                                          onCompletionHandler:^(MKNetworkOperation *completedOperation) {
+                                              
+                                          } errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
+                                              
+                                          }];
+    
+    
+    
+    
+    
+    
     [self.navigationController popViewControllerAnimated:YES];
 }
 - (IBAction)clickUserHeaderImg:(id)sender {

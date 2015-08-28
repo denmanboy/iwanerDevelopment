@@ -99,6 +99,24 @@
     
     
     
+//    if ([_userNameTextfied.text length] == 11  ) {
+//        
+//        NSString *number = @"^[0-9]*$";
+//        
+//        NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", number];
+//        BOOL isNumber = [pred evaluateWithObject:_userNameTextfied.text];
+//        
+//        
+//        
+//        
+//        if (isNumber) {
+//         
+//            
+//            
+//        }
+    
+            
+    
     [[HttpEngine sharedHttpEngine] signInIphoneNumber:_userNameTextfied.text
                                              password:[_pwdTextfield.text md5]
                                            verifyCode:_aurhcodeTextfield.text
@@ -113,8 +131,21 @@
                                               PrefectInfoViewController *prefectVC = [[PrefectInfoViewController alloc]init];
                                               [self.navigationController pushViewController:prefectVC animated:YES];
                                               
+                                          }else if ([[dic objectForKey:@"errMsg"] isEqualToString:@"fail"])
+                                          {
+                                              NSDictionary *dataDic = [[dic objectForKey:@"data"] nullTonil];
+                                              if (dataDic) {
+                                                  NSString *info = [[dataDic objectForKey:@"info"] nullTonil];
+                                                  
+                                                  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:info delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+                                                  [alert show];
+                                                  
+                                              }
+                                       
+                                              
                                           }
                                       }
+                                    
                                       NSLog(@"dic===1====%@",dic);
                                       
                                       
@@ -133,13 +164,18 @@
     
     
     
-//    
-
-    
-    
-    
-    
 }
+
+#pragma mark UIAlertDelegate
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    [alertView dismissWithClickedButtonIndex:0 animated:YES];
+}
+
+
+
+
+
 - (IBAction)usePwdLogin:(id)sender {
     
     LoginEnterViewController *loginEnterVC = [[LoginEnterViewController alloc]init];

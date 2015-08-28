@@ -17,4 +17,6 @@
 @property (strong, nonatomic) IBOutlet UIButton *mapInfoBtn;
 @property (strong, nonatomic) IBOutlet UIButton *mapImgBtn;
 
+@property (strong,nonatomic) UIImage *headImage;
+
 @end

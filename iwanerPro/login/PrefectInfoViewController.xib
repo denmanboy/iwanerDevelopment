@@ -161,7 +161,7 @@
                                 </mask>
                             </variation>
                         </imageView>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="请输入用户名" placeholder="请输入您的登录密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QWY-Ws-NMR">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入用户名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QWY-Ws-NMR">
                             <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="FJd-LG-XjZ"/>
