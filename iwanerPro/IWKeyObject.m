@@ -10,6 +10,8 @@
 
 @implementation IWKeyObject
 
+
+
 + (instancetype)keyObjectWithKey:(NSString *)key andObject:(NSString *)object
 {
     IWKeyObject *keyObject = [[IWKeyObject alloc] init];
@@ -18,5 +20,7 @@
     keyObject.object = object;
     return keyObject;
 }
+
+
 
 @end

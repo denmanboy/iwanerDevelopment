@@ -14,20 +14,71 @@
 
 @implementation FindPwdDetailViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)clickSubmitBtn:(id)sender {
+
+
+- (void)viewDidLayoutSubviews
+{
+    
+    _pwdTextfield.keyboardType = UIKeyboardTypeNamePhonePad;
+    _pwdTextfield.secureTextEntry = YES;
+    
+    
+    _affirmPwdTextfield.returnKeyType =  UIReturnKeyJoin;
+    _affirmPwdTextfield.keyboardType = UIKeyboardTypeNamePhonePad;
+    _affirmPwdTextfield.secureTextEntry = YES;
+    
 }
-- (IBAction)clickBackBtn:(id)sender {
+
+
+- (IBAction)clickSubmitBtn:(id)senderX
+{
+    
+    
+    if ([_pwdTextfield.text  length] > 0  &&  [_affirmPwdTextfield.text length] > 0) {
+        
+        
+        if ([_pwdTextfield.text isEqualToString:_affirmPwdTextfield.text]) {
+            
+            
+            
+        }else
+        {
+            
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"两次输入密码不一致" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
+            [alert show];
+            
+            
+        }
+        
+        
+        
+    }else
+    {
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"密码或验证码不能为空" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
+        [alert show];
+    }
+}
+
+
+
+- (IBAction)clickBackBtn:(id)sender
+{
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+
 
 /*
 #pragma mark - Navigation

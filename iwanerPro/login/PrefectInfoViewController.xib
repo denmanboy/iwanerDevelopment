@@ -10,6 +10,8 @@
                 <outlet property="hobbyLable" destination="x01-5E-zR4" id="zic-CD-6id"/>
                 <outlet property="mapImgBtn" destination="hqC-Mc-Mup" id="1Eq-H7-B7K"/>
                 <outlet property="mapInfoBtn" destination="G0u-3e-ElJ" id="SDF-H3-Vhr"/>
+                <outlet property="personHobby" destination="6kx-Jo-r0M" id="YdS-I5-L30"/>
+                <outlet property="personTitleBt" destination="rmR-IP-bYt" id="zgU-dk-bzF"/>
                 <outlet property="personalityLable" destination="nUv-nj-mY0" id="uje-sY-p5J"/>
                 <outlet property="userHeaderImgBtn" destination="76q-bd-rUZ" id="aVg-Xu-AHE"/>
                 <outlet property="userNameTextfield" destination="QWY-Ws-NMR" id="fwf-ZA-NsD"/>
@@ -139,7 +141,7 @@
                         <action selector="clickUserHeaderImg:" destination="-1" eventType="touchUpInside" id="uhT-4T-X6D"/>
                     </connections>
                 </button>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abF-fd-fwm">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abF-fd-fwm" customClass="UIButton">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="登录注册_图标-用户.png" translatesAutoresizingMaskIntoConstraints="NO" id="EyC-Bs-eAl">
@@ -264,7 +266,7 @@
                         </mask>
                     </variation>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rmR-IP-bYt">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rmR-IP-bYt" customClass="UIButton">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="登录注册_图标-标签.png" translatesAutoresizingMaskIntoConstraints="NO" id="YHo-1p-hX6">
@@ -305,13 +307,13 @@
                                 </mask>
                             </variation>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihh-RH-Clh">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihh-RH-Clh">
                             <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="30" id="Sra-PM-TKp"/>
                                 <constraint firstAttribute="height" constant="30" id="eFN-Lh-PaC"/>
                             </constraints>
-                            <state key="normal" title="&gt;">
+                            <state key="normal" image="图标-列表右箭头.png">
                                 <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
@@ -327,9 +329,6 @@
                                     <include reference="eFN-Lh-PaC"/>
                                 </mask>
                             </variation>
-                            <connections>
-                                <action selector="clickPersonalityLable:" destination="-1" eventType="touchUpInside" id="xxX-i0-2TV"/>
-                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -379,8 +378,11 @@
                             <include reference="qyM-p0-aHy"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <action selector="gotoSelectPersonalTitle" destination="-1" eventType="valueChanged" id="ea2-Jh-meE"/>
+                    </connections>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6kx-Jo-r0M">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6kx-Jo-r0M" customClass="UIButton">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="登录注册_图标-休闲爱好.png" translatesAutoresizingMaskIntoConstraints="NO" id="K39-j1-21Z">
@@ -421,13 +423,13 @@
                                 </mask>
                             </variation>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adf-QY-MX4">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adf-QY-MX4">
                             <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="30" id="Ova-Qf-N7a"/>
                                 <constraint firstAttribute="height" constant="30" id="tka-Oa-SUC"/>
                             </constraints>
-                            <state key="normal" title="&gt;">
+                            <state key="normal" image="图标-列表右箭头.png">
                                 <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
@@ -443,9 +445,6 @@
                                     <include reference="tka-Oa-SUC"/>
                                 </mask>
                             </variation>
-                            <connections>
-                                <action selector="clickHobbyBtn:" destination="-1" eventType="touchUpInside" id="X8S-ye-nlI"/>
-                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -495,6 +494,9 @@
                             <include reference="ipj-Zy-BjE"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <action selector="gotoSelectPersonHobby" destination="-1" eventType="valueChanged" id="Vze-ub-w5T"/>
+                    </connections>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqC-Mc-Mup">
                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -642,6 +644,7 @@
         </view>
     </objects>
     <resources>
+        <image name="图标-列表右箭头.png" width="9" height="14"/>
         <image name="登录注册_图标-休闲爱好.png" width="11" height="18"/>
         <image name="登录注册_图标-标签.png" width="13" height="13"/>
         <image name="登录注册_图标-用户.png" width="12" height="14"/>

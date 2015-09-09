@@ -12,28 +12,51 @@
 #import "AppDelegate.h"
 #import "UMSocial.h"
 
+
+
+#import "PrefectInfoViewController.h"
+
 @interface LoginEnterViewController ()<UMSocialUIDelegate,WXApiDelegate>
 
 @end
 
 @implementation LoginEnterViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-//    UIView *view;
-//    view.layer.cornerRadius
-//    [self.navigationController.navigationBar setHidden:NO];
-    // Do any additional setup after loading the view from its nib.
+
+    
+    
 }
 
 
 - (void)viewDidLayoutSubviews
 {
-    
-    
     _userNameTextFiled.keyboardType = UIKeyboardTypePhonePad;
+    _userNameTextFiled.delegate = self;
+    _userNameTextFiled.returnKeyType = UIReturnKeyDone;
     
+    _userPwdTextfield.returnKeyType =  UIReturnKeyDone;
+    _userPwdTextfield.delegate = self;
+    _userPwdTextfield.secureTextEntry = YES;
     
+}
+
+
+
+
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    
+    IWUserInfo *info = [IWUserInfo sharedIWUserInfo];
+    if (info.iphoneSizeType == IPHONE_SIZE_TYPE_4s) {
+        
+        [textField resignFirstResponder];
+        
+    }
+    return YES;
 }
 
 
@@ -47,37 +70,72 @@
 
 - (IBAction)clickLogin:(id)sender {
     
+    
+    
+    if ([_userNameTextFiled.text length] == 0 || [_userPwdTextfield.text length] == 0) {
+        
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示"
+                                                        message:@"账号或密码为空"
+                                                       delegate:self cancelButtonTitle:@"确认"
+                                              otherButtonTitles:nil, nil];
+        [alert show];
+        return;
+        
+    }
+    
+    NSString *number = @"^[0-9]*$";
+    
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", number];
+    BOOL isNumber = [pred evaluateWithObject:_userNameTextFiled.text];
+    if (isNumber == NO || [_userNameTextFiled.text length] != 11)
+    {
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示"
+                                                        message:@"请输入11位手机号"
+                                                       delegate:self cancelButtonTitle:@"确认"
+                                              otherButtonTitles:nil, nil];
+        [alert show];
+        return;
+        
+    }
+
+    
+    IWUserInfo * userInfo = [IWUserInfo sharedIWUserInfo];
+    
+    
+    [MBProgressHUD showHUDAddedTo:WINDOW animated:YES];
+    
+    
+    WS(weakSelf);
     [[HttpEngine sharedHttpEngine] loginWithPhoneNumber:_userNameTextFiled.text
                                                password:[_userPwdTextfield.text md5]
                                     onCompletionHandler:^(MKNetworkOperation *completedOperation) {
                                        
+                                        
+                                        [MBProgressHUD hideHUDForView:WINDOW animated:YES];
+                                        
+                                        
                                         NSDictionary *dic = [completedOperation responseJSON];
                                         
-                                        NSLog(@"dic=======%@",dic);
+//                                        NSLog(@"dic=======%@",dic);
+                                        
                                         
                                         NSString *errMsg = [[dic objectForKey:@"errMsg"] nullTonil];
                                         if (errMsg)
                                         {
-                                            if ([errMsg isEqualToString:@"sccuess"]) {
-                                                
-                                                
+                                            if ([errMsg isEqualToString:@"success"]) {
                                                 
                                                 NSDictionary *dataDic = [[dic objectForKey:@"data"] nullTonil];
                                                 if (dataDic)
                                                 {
                                                     
+                                                    userInfo.token = [[dataDic objectForKey:@"token"] nullTonil];
                                                     
-                                                    NSString *info = [[dataDic objectForKey:@"info"] nullTonil];
-                                                    if (info)
-                                                    {
-                                                        
-                                                        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示"
-                                                                                                        message:info
-                                                                                                       delegate:self cancelButtonTitle:@"确认"
-                                                                                              otherButtonTitles:nil, nil];
-                                                        [alert show];
-                                                        
-                                                    }
+                                                    
+
+                                                    [weakSelf loginSuccessRetureView];
+                                                    
                                                     
                                                 }
                                                 
@@ -87,7 +145,6 @@
                                                 NSDictionary *dataDic = [[dic objectForKey:@"data"] nullTonil];
                                                 if (dataDic)
                                                 {
-                                                    
                                                     
                                                     NSString *info = [[dataDic objectForKey:@"info"] nullTonil];
                                                     if (info) {
@@ -105,34 +162,194 @@
                                             }
                                             
                                         }
-                                        
-                                        
                                      
                                     
                                     } errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
                                         
                                         
                                         
+                                        [MBProgressHUD hideHUDForView:WINDOW animated:YES];
+//                                        NSDictionary *dic = [completedOperation responseJSON];
                                         
-                                        NSDictionary *dic = [completedOperation responseJSON];
                                         
-                                        NSLog(@"dic====2===%@",dic);
+                                        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示"
+                                                                                        message:@"登录异常"
+                                                                                       delegate:self cancelButtonTitle:@"确认"
+                                                                              otherButtonTitles:nil, nil];
+                                        [alert show];
+                                        
+//                                        NSLog(@"dic====2===%@",dic);
                                         
                                         
                                     }];
     
     
     
-    
-    
-    LoginViewController *loginVC = [((AppDelegate *)[[UIApplication sharedApplication] delegate]) loginViewController];
-    if (loginVC.delegate && [loginVC.delegate respondsToSelector:@selector(loginauthenticationSuccess)]) {
-        [loginVC.delegate loginauthenticationSuccess];
-    }
-    
-    
 }
 
+
+- (void)loginSuccessRetureView
+{
+    LoginViewController *loginVC = [((AppDelegate *)[[UIApplication sharedApplication] delegate]) loginViewController];
+    if (loginVC.delegate && [loginVC.delegate respondsToSelector:@selector(loginAuthenticationSuccess)]) {
+        [loginVC.delegate loginAuthenticationSuccess];
+    }
+
+}
+
+
+
+//#pragma mark ------- 测试接口：获取用户基本资料
+//- (void)userBaseInfo
+//{
+//    
+//    
+//    IWUserInfo *userInfo = [IWUserInfo sharedIWUserInfo];
+//    
+//    
+//    [[HttpEngine sharedHttpEngine]userBaseInfoOnCompletionHandler:^(MKNetworkOperation *completedOperation) {
+//        
+//        
+//        NSDictionary *dic = [completedOperation responseJSON];
+//        
+//        NSLog(@"dic=======%@",dic);
+//        
+//        NSDictionary *dataDic = [[dic objectForKey:@"data"] nullTonil];
+//        if (dataDic) {
+//            
+//            NSDictionary *userDic = [[dataDic objectForKey:@"user"] nullTonil];
+//            if (userDic) {
+//                
+//                [userInfo setValuesForKeysWithDictionary:userDic];
+//            }
+//        }
+//    
+//        
+//    } errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
+//        
+//        
+//        NSDictionary *dic = [completedOperation responseJSON];
+//        
+//        NSLog(@"dic====2===%@",dic);
+//        
+//        
+//    } ];
+//}
+//
+//
+//
+//#pragma mark ------- 测试接口：获取用户详细资料
+//- (void)useDetailInfo
+//{
+//    [[HttpEngine sharedHttpEngine] userDetailInfoOnCompletionHandler:^(MKNetworkOperation *completedOperation) {
+//        
+//        
+//        NSDictionary *dic = [completedOperation responseJSON];
+//        
+//        NSLog(@"dic=========detail====%@",dic);
+//        
+//    } errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
+//        
+//        NSDictionary *dic = [completedOperation responseJSON];
+//        
+//        NSLog(@"dic=========detail2====%@",dic);
+//
+//        
+//        
+//    }];
+//    
+//    
+//}
+//
+//
+//#pragma mark ------- 测试接口：发送验证码
+//- (void)sendMessage
+//{
+//    
+//    [[HttpEngine sharedHttpEngine] sendIphoneNumberVerificationCode:@"18911158938" onCompletionHandler:^(MKNetworkOperation *completedOperation) {
+//        
+//        NSDictionary *dic = [completedOperation responseJSON];
+//        NSLog(@"dic===1====%@",dic);
+//        
+//    } errorHandler:^(MKNetworkOperation *completedOperation, NSError *error)
+//     {
+//         NSDictionary *dic = [completedOperation responseJSON];
+//         NSLog(@"dic===2====%@",dic);
+//     }];
+//
+//    
+//}
+//
+//
+//#pragma mark ------- 测试接口：忘记密码
+//- (void)forgetPassword
+//{
+//    
+//    IWUserInfo *userInfo = [IWUserInfo sharedIWUserInfo];
+//    
+//    [[HttpEngine sharedHttpEngine] forgetMyPasswordWithOldPassword:userInfo.password
+//                                                          username:@"18911158938"
+//                                                        verifycode:@"263894"
+//                                               onCompletionHandler:^(MKNetworkOperation *completedOperation) {
+//                                                   
+//                                                   NSDictionary *dic = [completedOperation responseJSON];
+//                                                   
+//                                                   NSLog(@"dic=========forget====%@",dic);
+//                                                   
+//                                               } errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
+//                                                  
+//                                                   
+//                                                   NSDictionary *dic = [completedOperation responseJSON];
+//                                                   
+//                                                   NSLog(@"dic=========forgets====%@",dic);
+//                                                   
+//                                                   
+//                                               }];
+//    
+//}
+//
+//#pragma mark ------- 测试接口：修改密码
+//- (void)modifyOldPassword
+//{
+//    IWUserInfo *usetInfo = [IWUserInfo sharedIWUserInfo];
+//
+//    [[HttpEngine sharedHttpEngine] modifyUserPasswordWithOldPassword:usetInfo.password
+//                                                 onCompletionHandler:^(MKNetworkOperation *completedOperation) {
+//                                                     
+//                                                     NSDictionary *dic = [completedOperation responseJSON];
+//                                                        NSLog(@"dic=========modify====%@",dic);
+//                                                     
+//                                                     
+//                                                 } errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
+//                                                     
+//                                                     
+//                                                     NSDictionary *dic = [completedOperation responseJSON];
+//                                                    NSLog(@"dic=========modify====%@",dic);
+//                                                     
+//                                                 }];
+//
+//}
+//
+//
+//
+//#pragma mark ------- 测试接口：退出登录
+//- (void)logoutForUser
+//{
+//    
+//    [[HttpEngine sharedHttpEngine] logoutOnCompletionHandler:^(MKNetworkOperation *completedOperation) {
+//        
+//        NSDictionary *dic = [completedOperation responseJSON];
+//        NSLog(@"dic===out====%@",dic);
+//        
+//    } errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
+//        
+//        
+//        NSDictionary *dic = [completedOperation responseJSON];
+//        NSLog(@"dic==out2=====%@",dic);
+//        
+//    }];
+//    
+//}
 
 
 
@@ -143,7 +360,10 @@
 
 
 
-- (IBAction)clickFindPwd:(id)sender {
+
+
+- (IBAction)clickFindPwd:(id)sender
+{
     FindPwdViewController *findPwdVC = [[FindPwdViewController alloc]init];
     [self.navigationController pushViewController:findPwdVC animated:YES];
     
@@ -151,9 +371,9 @@
 
 
 
-
-
-- (IBAction)wechatLogin:(id)sender {
+#pragma mark 微信登陆
+- (IBAction)wechatLogin:(id)sender
+{
     
     UMSocialSnsPlatform *snsPlatform = [UMSocialSnsPlatformManager getSocialPlatformWithName:UMShareToWechatSession];
     
@@ -176,8 +396,9 @@
 
 
 
-
-- (IBAction)qqLogin:(id)sender {
+#pragma mark qq登陆
+- (IBAction)qqLogin:(id)sender
+{
     
     UMSocialSnsPlatform *snsPlatform = [UMSocialSnsPlatformManager getSocialPlatformWithName:UMShareToQQ];
     
@@ -195,8 +416,9 @@
 
 }
 
-
-- (IBAction)weiboLogin:(id)sender {
+#pragma mark 微博登陆
+- (IBAction)weiboLogin:(id)sender
+{
     
     UMSocialSnsPlatform *snsPlatform = [UMSocialSnsPlatformManager getSocialPlatformWithName:UMShareToSina];
     
@@ -236,6 +458,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
 
 /*
 #pragma mark - Navigation

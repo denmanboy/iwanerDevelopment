@@ -137,135 +137,131 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(HttpEngine)
 - (MKNetworkOperation *)loginWithPhoneNumber:(NSString *)iphoneNumber
                                     password:(NSString *)password
                          onCompletionHandler:(MKNKResponseBlock) response
-                                errorHandler:(MKNKResponseErrorBlock) error
-{
+                                errorHandler:(MKNKResponseErrorBlock) error{
     
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];
     NSMutableArray *apiArray = [NSMutableArray array];
-
     //系统级参数
     [dic setValueReal:Systerm_AppKey forKey:@"app_key"];
     [dic setValueReal:Systerm_Version forKey:@"v"];
     [dic setValueReal:Systerm_Clinet forKey:@"client"];
-    
     //api级参数
     [dic setValueReal:@"api" forKey:@"c"];
     [dic setValueReal:@"login" forKey:@"a"];
     [dic setValueReal:password forKey:@"password"];
     [dic setValueReal:iphoneNumber forKey:@"username"];
-    
-    //api级别参数加上数据对象，与系统级别数据对象参与排序，加密
     IWKeyObject *keyObject1 = [IWKeyObject keyObjectWithKey:@"c" andObject:@"api"];
     IWKeyObject *keyObject2 = [IWKeyObject keyObjectWithKey:@"a" andObject:@"login"];
     IWKeyObject *keyObject3 = [IWKeyObject keyObjectWithKey:@"password" andObject:password];
     IWKeyObject *keyObject4 = [IWKeyObject keyObjectWithKey:@"username" andObject:iphoneNumber];
-    
     [apiArray addObject:keyObject1];
     [apiArray addObject:keyObject2];
     [apiArray addObject:keyObject3];
     [apiArray addObject:keyObject4];
     
+    IWUserInfo *userInfo = [IWUserInfo sharedIWUserInfo];
+    userInfo.password = password;
     
     //过去最后的加密sign值
-    NSString *paramsStr = [self signValue:apiArray forGET:@"POST"];
+    NSString *paramsStr = [self signValue:apiArray forGET:@"GET"];
     [dic setValueReal:paramsStr forKey:@"sign"];
-    
-    
     MKNetworkOperation *op = [self operationWithPath:nil params:dic httpMethod:@"GET"];
-    
     [op addCompletionHandler:response errorHandler:error];
     [self enqueueOperation:op];
-    
     return op;
     
 }
-
 
 
 //4_完善资料
 - (MKNetworkOperation *)complementUserInfoUsername:(NSString *)nickname
                                                dis:(NSString *)dis
                                                sex:(NSString *)sex
-                                             img:(UIImage *)img
+                                          industry:(NSString *)industry
+                                             hobby:(NSString *)hobby
+                                               img:(UIImage *)img
+                                             label:(NSString *)label
+                                           address:(NSString *)address
                                onCompletionHandler:(MKNKResponseBlock) response
-                                      errorHandler:(MKNKResponseErrorBlock) error
-{
-    
-    NSData *data = UIImageJPEGRepresentation(img, 0.1);
-    if (data == nil) {
-        data = UIImagePNGRepresentation(img);
-    }
-    
+                                      errorHandler:(MKNKResponseErrorBlock) error{
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];
     NSMutableArray *apiArray = [NSMutableArray array];
-    
     //系统级参数
     [dic setValueReal:Systerm_AppKey forKey:@"app_key"];
     [dic setValueReal:Systerm_Version forKey:@"v"];
     [dic setValueReal:Systerm_Clinet forKey:@"client"];
-    
     //api级参数
+    IWUserInfo *useInfo =  [IWUserInfo sharedIWUserInfo];
     [dic setValueReal:@"api" forKey:@"c"];
     [dic setValueReal:@"upuserinfo" forKey:@"a"];
     [dic setValueReal:dis forKey:@"dis"];
     [dic setValueReal:sex forKey:@"sex"];
-    [dic setValueReal:data forKey:@"img"];
-    
+    [dic setValueReal:nickname forKey:@"nicname"];
+    [dic setValueReal:industry forKey:@"industry"];
+    [dic setValueReal:hobby forKey:@"hobby"];
+    [dic setValueReal:label forKey:@"label"];
+    [dic setValueReal:address forKey:@"address"];
+    [dic setValueReal:useInfo.token forKey:@"token"];
     IWKeyObject *keyObject1 = [IWKeyObject keyObjectWithKey:@"c" andObject:@"api"];
     IWKeyObject *keyObject2 = [IWKeyObject keyObjectWithKey:@"a" andObject:@"upuserinfo"];
-    IWKeyObject *keyObject3 = [IWKeyObject keyObjectWithKey:@"dis" andObject:dis];
-    IWKeyObject *keyObject4 = [IWKeyObject keyObjectWithKey:@"sex" andObject:sex];
-    
+    IWKeyObject *keyObject3 = [IWKeyObject keyObjectWithKey:@"nicname" andObject:nickname];
+    IWKeyObject *keyObject4 = [IWKeyObject keyObjectWithKey:@"dis" andObject:dis];
+    IWKeyObject *keyObject5 = [IWKeyObject keyObjectWithKey:@"sex" andObject:sex];
+    IWKeyObject *keyObject6 = [IWKeyObject keyObjectWithKey:@"industry" andObject:industry];
+    IWKeyObject *keyObject7 = [IWKeyObject keyObjectWithKey:@"hobby" andObject:hobby];
+    IWKeyObject *keyObject8 = [IWKeyObject keyObjectWithKey:@"label" andObject:label];
+    IWKeyObject *keyObject9 = [IWKeyObject keyObjectWithKey:@"address" andObject:address];
+    IWKeyObject *keyObject10 = [IWKeyObject keyObjectWithKey:@"token" andObject:useInfo.token];
     [apiArray addObject:keyObject1];
     [apiArray addObject:keyObject2];
     [apiArray addObject:keyObject3];
     [apiArray addObject:keyObject4];
-    
-    
+    [apiArray addObject:keyObject5];
+    [apiArray addObject:keyObject6];
+    [apiArray addObject:keyObject7];
+    [apiArray addObject:keyObject8];
+    [apiArray addObject:keyObject9];
+    [apiArray addObject:keyObject10];
     //过去最后的加密sign值
     NSString *paramsStr = [self signValue:apiArray forGET:@"POST"];
     [dic setValueReal:paramsStr forKey:@"sign"];
-    
     MKNetworkOperation *op = [self operationWithPath:nil params:dic httpMethod:@"POST"];
+    NSString* path =  [[NSBundle mainBundle] pathForResource:@"man"ofType:@"jpg"];
+    [op addFile:path forKey:@"img"];
     [op addCompletionHandler:response errorHandler:error];
     [self enqueueOperation:op];
-    
     return op;
     
 }
+
+
+
 
 
 //5_退出登录
 - (MKNetworkOperation *)logoutOnCompletionHandler:(MKNKResponseBlock) response
-                                     errorHandler:(MKNKResponseErrorBlock) error
-{
+                                     errorHandler:(MKNKResponseErrorBlock) error{
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];
     NSMutableArray *apiArray = [NSMutableArray array];
-    
     //系统级参数
     [dic setValueReal:Systerm_AppKey forKey:@"app_key"];
     [dic setValueReal:Systerm_Version forKey:@"v"];
     [dic setValueReal:Systerm_Clinet forKey:@"client"];
-    
+    IWUserInfo *useInfo =  [IWUserInfo sharedIWUserInfo];
     //api级参数
     [dic setValueReal:@"api" forKey:@"c"];
     [dic setValueReal:@"logout" forKey:@"a"];
-    [dic setValueReal:@"token" forKey:@"token"];
-    
-    
+    [dic setValueReal:useInfo.token forKey:@"token"];
     IWKeyObject *keyObject1 = [IWKeyObject keyObjectWithKey:@"c" andObject:@"api"];
     IWKeyObject *keyObject2 = [IWKeyObject keyObjectWithKey:@"a" andObject:@"logout"];
-    IWKeyObject *keyObject3 = [IWKeyObject keyObjectWithKey:@"token" andObject:@"token"];
-    
+    IWKeyObject *keyObject3 = [IWKeyObject keyObjectWithKey:@"token" andObject:useInfo.token];
     [apiArray addObject:keyObject1];
     [apiArray addObject:keyObject2];
     [apiArray addObject:keyObject3];
-    
     //过去最后的加密sign值
-    NSString *paramsStr = [self signValue:apiArray forGET:@"POST"];
+    NSString *paramsStr = [self signValue:apiArray forGET:@"GET"];
     [dic setValueReal:paramsStr forKey:@"sign"];
-    
-    MKNetworkOperation *op = [self operationWithPath:nil params:dic httpMethod:@"POST"];
+    MKNetworkOperation *op = [self operationWithPath:nil params:dic httpMethod:@"GET"];
     [op addCompletionHandler:response errorHandler:error];
     [self enqueueOperation:op];
     
@@ -273,36 +269,30 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(HttpEngine)
 }
 
 
+
 //6_获取用户基本信息
 - (MKNetworkOperation *)userBaseInfoOnCompletionHandler:(MKNKResponseBlock) response
-                                           errorHandler:(MKNKResponseErrorBlock) error
-{
+                                           errorHandler:(MKNKResponseErrorBlock) error{
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];
     NSMutableArray *apiArray = [NSMutableArray array];
-    
     //系统级参数
     [dic setValueReal:Systerm_AppKey forKey:@"app_key"];
     [dic setValueReal:Systerm_Version forKey:@"v"];
     [dic setValueReal:Systerm_Clinet forKey:@"client"];
-    
+    IWUserInfo *useInfo =  [IWUserInfo sharedIWUserInfo];
     //api级参数
     [dic setValueReal:@"api" forKey:@"c"];
     [dic setValueReal:@"userbaseinfo" forKey:@"a"];
-    [dic setValueReal:@"token" forKey:@"token"];
-    
-    
+    [dic setValueReal:useInfo.token forKey:@"token"];
     IWKeyObject *keyObject1 = [IWKeyObject keyObjectWithKey:@"c" andObject:@"api"];
     IWKeyObject *keyObject2 = [IWKeyObject keyObjectWithKey:@"a" andObject:@"userbaseinfo"];
-    IWKeyObject *keyObject3 = [IWKeyObject keyObjectWithKey:@"token" andObject:@"token"];
-    
+    IWKeyObject *keyObject3 = [IWKeyObject keyObjectWithKey:@"token" andObject:useInfo.token];
     [apiArray addObject:keyObject1];
     [apiArray addObject:keyObject2];
     [apiArray addObject:keyObject3];
-    
     //过去最后的加密sign值
     NSString *paramsStr = [self signValue:apiArray forGET:@"GET"];
     [dic setValueReal:paramsStr forKey:@"sign"];
-    
     MKNetworkOperation *op = [self operationWithPath:nil params:dic httpMethod:@"GET"];
     [op addCompletionHandler:response errorHandler:error];
     [self enqueueOperation:op];
@@ -327,15 +317,16 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(HttpEngine)
     [dic setValueReal:Systerm_Clinet forKey:@"client"];
     
     //api级参数
+    IWUserInfo *useInfo =  [IWUserInfo sharedIWUserInfo];
     [dic setValueReal:@"api" forKey:@"c"];
     [dic setValueReal:@"changepwd" forKey:@"a"];
-    [dic setValueReal:@"token" forKey:@"token"];
+    [dic setValueReal:useInfo.token forKey:@"token"];
     [dic setValueReal:password forKey:@"password"];
     
     
     IWKeyObject *keyObject1 = [IWKeyObject keyObjectWithKey:@"c" andObject:@"api"];
     IWKeyObject *keyObject2 = [IWKeyObject keyObjectWithKey:@"a" andObject:@"changepwd"];
-    IWKeyObject *keyObject3 = [IWKeyObject keyObjectWithKey:@"token" andObject:@"token"];
+    IWKeyObject *keyObject3 = [IWKeyObject keyObjectWithKey:@"token" andObject:useInfo.token];
     IWKeyObject *keyObject4 = [IWKeyObject keyObjectWithKey:@"password" andObject:password];
     
     [apiArray addObject:keyObject1];
@@ -422,14 +413,16 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(HttpEngine)
     [dic setValueReal:Systerm_Clinet forKey:@"client"];
     
     //api级参数
+    IWUserInfo *useInfo =  [IWUserInfo sharedIWUserInfo];
     [dic setValueReal:@"api" forKey:@"c"];
     [dic setValueReal:@"userdetail" forKey:@"a"];
-    [dic setValueReal:@"token" forKey:@"token"];
+    [dic setValueReal:useInfo.token forKey:@"token"];
+    
     
     
     IWKeyObject *keyObject1 = [IWKeyObject keyObjectWithKey:@"c" andObject:@"api"];
     IWKeyObject *keyObject2 = [IWKeyObject keyObjectWithKey:@"a" andObject:@"userdetail"];
-    IWKeyObject *keyObject3 = [IWKeyObject keyObjectWithKey:@"token" andObject:@"token"];
+    IWKeyObject *keyObject3 = [IWKeyObject keyObjectWithKey:@"token" andObject:useInfo.token];
     
     [apiArray addObject:keyObject1];
     [apiArray addObject:keyObject2];
@@ -470,9 +463,10 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(HttpEngine)
     [dic setValueReal:Systerm_Clinet forKey:@"client"];
     
     //api级参数
+    IWUserInfo *useInfo =  [IWUserInfo sharedIWUserInfo];
     [dic setValueReal:@"api" forKey:@"c"];
     [dic setValueReal:@"gettopiclist" forKey:@"a"];
-    [dic setValueReal:@"token" forKey:@"token"];
+    [dic setValueReal:useInfo.token forKey:@"token"];
     [dic setValueReal:p forKey:@"p"];
     [dic setValueReal:pagenum forKey:@"pagenum"];
     [dic setValueReal:looknum forKey:@"looknum"];
@@ -484,7 +478,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(HttpEngine)
     
     IWKeyObject *keyObject1 = [IWKeyObject keyObjectWithKey:@"c" andObject:@"api"];
     IWKeyObject *keyObject2 = [IWKeyObject keyObjectWithKey:@"a" andObject:@"gettopiclist"];
-    IWKeyObject *keyObject3 = [IWKeyObject keyObjectWithKey:@"token" andObject:@"token"];
+    IWKeyObject *keyObject3 = [IWKeyObject keyObjectWithKey:@"token" andObject:useInfo.token];
     IWKeyObject *keyObject4 = [IWKeyObject keyObjectWithKey:@"p" andObject:p];
     IWKeyObject *keyObject5 = [IWKeyObject keyObjectWithKey:@"pagenum" andObject:pagenum];
     IWKeyObject *keyObject6 = [IWKeyObject keyObjectWithKey:@"looknum" andObject:looknum];
@@ -541,9 +535,10 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(HttpEngine)
     [dic setValueReal:Systerm_Clinet forKey:@"client"];
     
     //api级参数
+    IWUserInfo *useInfo =  [IWUserInfo sharedIWUserInfo];
     [dic setValueReal:@"api" forKey:@"c"];
     [dic setValueReal:@"adddiary" forKey:@"a"];
-    [dic setValueReal:@"token" forKey:@"token"];
+    [dic setValueReal:useInfo.token forKey:@"token"];
     [dic setValueReal:content forKey:@"content"];
     [dic setValueReal:data forKey:@"uploadFile"];
     
@@ -551,7 +546,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(HttpEngine)
     
     IWKeyObject *keyObject1 = [IWKeyObject keyObjectWithKey:@"c" andObject:@"api"];
     IWKeyObject *keyObject2 = [IWKeyObject keyObjectWithKey:@"a" andObject:@"adddiary"];
-    IWKeyObject *keyObject3 = [IWKeyObject keyObjectWithKey:@"token" andObject:@"token"];
+    IWKeyObject *keyObject3 = [IWKeyObject keyObjectWithKey:@"token" andObject:useInfo.token];
     IWKeyObject *keyObject4 = [IWKeyObject keyObjectWithKey:@"content" andObject:content];
     
     [apiArray addObject:keyObject1];
@@ -586,15 +581,16 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(HttpEngine)
     [dic setValueReal:Systerm_Clinet forKey:@"client"];
     
     //api级参数
+    IWUserInfo *useInfo =  [IWUserInfo sharedIWUserInfo];
     [dic setValueReal:@"api" forKey:@"c"];
     [dic setValueReal:@"getusertopic" forKey:@"a"];
-    [dic setValueReal:@"token" forKey:@"token"];
+    [dic setValueReal:useInfo.token forKey:@"token"];
     
     
     
     IWKeyObject *keyObject1 = [IWKeyObject keyObjectWithKey:@"c" andObject:@"api"];
     IWKeyObject *keyObject2 = [IWKeyObject keyObjectWithKey:@"a" andObject:@"getusertopic"];
-    IWKeyObject *keyObject3 = [IWKeyObject keyObjectWithKey:@"token" andObject:@"token"];
+    IWKeyObject *keyObject3 = [IWKeyObject keyObjectWithKey:@"token" andObject:useInfo.token];
 
     
     [apiArray addObject:keyObject1];
@@ -630,16 +626,17 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(HttpEngine)
     [dic setValueReal:Systerm_Clinet forKey:@"client"];
     
     //api级参数
+    IWUserInfo *useInfo =  [IWUserInfo sharedIWUserInfo];
     [dic setValueReal:@"api" forKey:@"c"];
     [dic setValueReal:@"getdiarylist" forKey:@"a"];
-    [dic setValueReal:@"token" forKey:@"token"];
+    [dic setValueReal:useInfo.token forKey:@"token"];
     [dic setValueReal:p forKey:@"p"];
     [dic setValueReal:pagenum forKey:@"pagenum"];
     
     
     IWKeyObject *keyObject1 = [IWKeyObject keyObjectWithKey:@"c" andObject:@"api"];
     IWKeyObject *keyObject2 = [IWKeyObject keyObjectWithKey:@"a" andObject:@"getdiarylist"];
-    IWKeyObject *keyObject3 = [IWKeyObject keyObjectWithKey:@"token" andObject:@"token"];
+    IWKeyObject *keyObject3 = [IWKeyObject keyObjectWithKey:@"token" andObject:useInfo.token];
     IWKeyObject *keyObject4 = [IWKeyObject keyObjectWithKey:@"p" andObject:p];
     IWKeyObject *keyObject5 = [IWKeyObject keyObjectWithKey:@"pagenum" andObject:pagenum];
     
@@ -665,6 +662,49 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(HttpEngine)
     
 }
 
+
+//14验证手机验证码
+- (MKNetworkOperation *)judgeSendCodeIsRightWithCode:(NSString *)sendCode
+                                  onCompletionHandler:(MKNKResponseBlock) response
+                                         errorHandler:(MKNKResponseErrorBlock) error
+{
+    NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+    NSMutableArray *apiArray = [NSMutableArray array];
+    
+    //系统级参数
+    [dic setValueReal:Systerm_AppKey forKey:@"app_key"];
+    [dic setValueReal:Systerm_Version forKey:@"v"];
+    [dic setValueReal:Systerm_Clinet forKey:@"client"];
+    
+    
+    //api级参数
+    [dic setValueReal:@"api" forKey:@"c"];
+    [dic setValueReal:@"verfiycode" forKey:@"a"];
+    [dic setValueReal:sendCode forKey:@"code"];
+    
+    IWKeyObject *keyObject1 = [IWKeyObject keyObjectWithKey:@"c" andObject:@"api"];
+    IWKeyObject *keyObject2 = [IWKeyObject keyObjectWithKey:@"a" andObject:@"verfiycode"];
+    IWKeyObject *keyObject3 = [IWKeyObject keyObjectWithKey:@"code" andObject:sendCode];
+    
+    [apiArray addObject:keyObject1];
+    [apiArray addObject:keyObject2];
+    [apiArray addObject:keyObject3];
+    
+    //过去最后的加密sign值
+    NSString *paramsStr = [self signValue:apiArray forGET:@"GET"];
+    [dic setValueReal:paramsStr forKey:@"sign"];
+    
+    
+    MKNetworkOperation *op = [self operationWithPath:nil params:dic httpMethod:@"GET"];
+    [op addCompletionHandler:response errorHandler:error];
+    [self enqueueOperation:op];
+    
+    return op;
+    
+}
+
+
+
 #pragma mark  排序-拼接-加密-转码
 - (NSString *)signValue:(NSMutableArray *)appLevelArray forGET:(NSString *)getOrPost
 {
@@ -688,7 +728,14 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(HttpEngine)
     {
         IWKeyObject *keyObject = [arrayResultArray objectAtIndex:i];
         paramsStr = [paramsStr stringByAppendingString:keyObject.key];
-        paramsStr = [paramsStr stringByAppendingString:keyObject.object];
+        if (!keyObject.object) {
+            
+            NSLog(@"请求key值为空=======%@",keyObject.key);
+        }else
+        {
+            paramsStr = [paramsStr stringByAppendingString:keyObject.object];
+        }
+
         
     }
 

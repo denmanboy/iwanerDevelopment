@@ -25,9 +25,6 @@
     self.view.backgroundColor = COLOR_WITH_RGB(235, 235, 241);
     self.view.userInteractionEnabled = YES;
     
-
-    
-    NSLog(@"dadadddd=====%@",NSStringFromCGRect(    self.view.frame));
     
     UIView *locationNaViView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 60)];
     locationNaViView.backgroundColor = COLOR_WITH_RGB(248, 56, 52);
@@ -57,7 +54,8 @@
     
     _backScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 60, SCREEN_WIDTH, SCREEN_HEIGHT - 60)];
     _backScrollView.backgroundColor = COLOR_WITH_RGB(235, 235, 241);
-    _backScrollView.contentSize = CGSizeMake(SCREEN_WIDTH, 940);
+    _backScrollView.contentSize = CGSizeMake(SCREEN_WIDTH, 940 + 100);
+    _backScrollView.delegate = self;
     [self.view addSubview:_backScrollView];
     
     
@@ -82,19 +80,19 @@
     
     
     UIImage *upPhotoImage = [UIImage getPathImageWithName:@"按钮-添加图片"];
-    UIImage *upPhotoImageHigh = [UIImage getPathImageWithName:@"按钮-添加图片-按下"];
+//    UIImage *upPhotoImageHigh = [UIImage getPathImageWithName:@"按钮-添加图片-按下"];
     _upPhotoBt = [UIButton buttonWithType:UIButtonTypeCustom];
     _upPhotoBt.frame = CGRectMake(14, 45, upPhotoImage.size.width, upPhotoImage.size.height);
     [_upPhotoBt setImage:upPhotoImage forState:UIControlStateNormal];
-    [_upPhotoBt setImage:upPhotoImageHigh forState:UIControlStateHighlighted];
+//    [_upPhotoBt setImage:upPhotoImageHigh forState:UIControlStateHighlighted];
     [_upPhotoBt addTarget:self action:@selector(gotoUphotoes) forControlEvents:UIControlEventTouchUpInside];
     [_upPhotoesBack addSubview:_upPhotoBt];
-    
-    _showImageView = [UIButton buttonWithType:UIButtonTypeCustom];
-    _showImageView.frame = CGRectMake(14, 45, upPhotoImage.size.width, upPhotoImage.size.height);
-    _showImageView.backgroundColor = [UIColor redColor];
-    _showImageView.hidden = YES;
-    [_upPhotoesBack addSubview:_showImageView];
+    //去动物园喽
+//    _showImageView = [UIButton buttonWithType:UIButtonTypeCustom];
+//    _showImageView.frame = CGRectMake(14, 45, upPhotoImage.size.width, upPhotoImage.size.height);
+//    _showImageView.backgroundColor = [UIColor redColor];
+//    _showImageView.hidden = YES;
+//    [_upPhotoesBack addSubview:_showImageView];
     
     
     
@@ -207,7 +205,7 @@
     NSDate *maxDate = [calendar dateByAddingComponents:offsetComponents toDate:localeDate options:NSCalendarWrapComponents];
     
 //    NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
-    _datePicker = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, 216)];
+    _datePicker = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, 40, SCREEN_WIDTH, 216)];
     _datePicker.backgroundColor = [UIColor groupTableViewBackgroundColor];
 //    _datePicker.locale = locale;
     _datePicker.locale = [NSLocale systemLocale];
@@ -217,13 +215,15 @@
     [_dateBackView addSubview:_datePicker];
     
     
+    
+    
     UIButton *finishPickDateBt = [UIButton buttonWithType:UIButtonTypeCustom];
     [finishPickDateBt setTitle:@"完成" forState:UIControlStateNormal];
-    finishPickDateBt.frame = CGRectMake(SCREEN_WIDTH - 60, 0, 60, 20);
+    finishPickDateBt.frame = CGRectMake(SCREEN_WIDTH - 80, 0, 80, 40);
     finishPickDateBt.titleLabel.font = [UIFont systemFontOfSize:14];
     [finishPickDateBt setTitleColor:COLOR_WITH_RGB(248, 56, 52) forState:UIControlStateNormal];
     [finishPickDateBt addTarget:self action:@selector(gotoFinishPickerDate) forControlEvents:UIControlEventTouchUpInside];
-    [_datePicker addSubview:finishPickDateBt];
+    [_dateBackView addSubview:finishPickDateBt];
     
     _mapBack = [[UIView alloc] initWithFrame:CGRectMake(0, 282, SCREEN_WIDTH, 364)];
     _mapBack.backgroundColor = [UIColor whiteColor];
@@ -276,10 +276,12 @@
     _perMoneyTextField.backgroundColor = [UIColor clearColor];
     _perMoneyTextField.returnKeyType = UIReturnKeyDone;
     _perMoneyTextField.delegate = self;
+    _perMoneyTextField.font = [UIFont systemFontOfSize:18];
+    _perMoneyTextField.textAlignment = NSTextAlignmentCenter;
     _perMoneyTextField.borderStyle = UITextBorderStyleLine;
     _perMoneyTextField.keyboardType = UIKeyboardTypeNumberPad;
     [_perMoneyTextField addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
-    _perMoneyTextField.font = [UIFont systemFontOfSize:12];
+//    _perMoneyTextField.font = [UIFont systemFontOfSize:12];
     [_mapBack addSubview:_perMoneyTextField];
     
     
@@ -290,24 +292,22 @@
     PerPeopleTip.textColor = [UIColor grayColor];
     [_mapBack addSubview:PerPeopleTip];
     
-   
     
     UIView *line2 = [[UIView alloc] initWithFrame:CGRectMake(17, 315, SCREEN_WIDTH - 17, 1)];
     line2.backgroundColor = COLOR_WITH_RGB(235, 235, 241);
     [_mapBack addSubview:line2];
     
     
-    _detailBack = [[UIView alloc] initWithFrame:CGRectMake(0, 656, SCREEN_WIDTH, 160)];
-    _detailBack.backgroundColor = [UIColor whiteColor];
-    [self.backScrollView addSubview:_detailBack];
-    
-    
-    UILabel *buChong = [[UILabel alloc] initWithFrame:CGRectMake(10, 7, 280, 30)];
-    buChong.backgroundColor = [UIColor clearColor];
-    buChong.text = @"在这里补充说些什么...";
-    buChong.textColor = [UIColor grayColor];
-    buChong.font = [UIFont systemFontOfSize:15];
-    [_detailBack addSubview:buChong];
+    _detailBackTextView = [[UITextView alloc] initWithFrame:CGRectMake(0, 656, SCREEN_WIDTH, 160)];
+    _detailBackTextView.backgroundColor = [UIColor whiteColor];
+    _detailBackTextView.delegate = self;
+    _detailBackTextView.scrollEnabled = NO;
+    _detailBackTextView.returnKeyType = UIReturnKeyDone;
+    _detailBackTextView.layoutManager.allowsNonContiguousLayout = NO;
+    _detailBackTextView.attributedText = [[NSAttributedString alloc]initWithString: @"在这里补充说点什么..."];
+    _detailBackTextView.font = [UIFont systemFontOfSize:14];
+    [self.backScrollView addSubview:_detailBackTextView];
+
     
     
     _competenceBack = [[UIView alloc] initWithFrame:CGRectMake(0, 826, SCREEN_WIDTH, 43)];
@@ -331,24 +331,61 @@
     [_competenceBack addSubview:competenceTip2];
     
     
-    _publicBt = [UIButton buttonWithType:UIButtonTypeCustom];
+    _publicBt = [IWButton buttonWithType:UIButtonTypeCustom];
     _publicBt.backgroundColor = COLOR_WITH_RGB(248, 56, 52);
     [_publicBt setTitle:@"发布" forState:UIControlStateNormal];
     [_publicBt setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    _publicBt.frame = CGRectMake(20, 882, SCREEN_WIDTH - 40, 45);
+    [_publicBt setBackgroundColor:COLOR_WITH_RGB(248, 56, 52) andHiglightGroundColor:COLOR_WITH_RGB(248, 20, 22)];
+    [_publicBt addTarget:self action:@selector(gotoPublic) forControlEvents:UIControlEventTouchUpInside];
+    _publicBt.frame = CGRectMake(20, 882 + 40, SCREEN_WIDTH - 40, 45);
+    _publicBt.layer.masksToBounds = YES;
+    _publicBt.layer.cornerRadius = 5;
     [self.backScrollView  addSubview:_publicBt];
-    
+
     
     _textNumTip = [[UILabel alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - 100, 140, 90, 20)];
     _textNumTip.text = @"0/200";
     _textNumTip.textAlignment = NSTextAlignmentRight;
     _textNumTip.textColor = [UIColor grayColor];
     _textNumTip.font = [UIFont boldSystemFontOfSize:14];
-    [_detailBack addSubview:_textNumTip];
+    [_detailBackTextView addSubview:_textNumTip];
  
 
 }
 
+
+
+- (void)gotoPublic
+{
+    
+}
+
+
+- (void)textViewDidBeginEditing:(UITextView *)textView {
+    
+    if (self.detailBackTextView == textView)
+    {
+        if ([textView.text isEqualToString:@"想说的话"]) {
+            textView.text = @"";
+        }
+    }
+    
+ 
+   
+}
+//3.在结束编辑的代理方法中进行如下操作
+- (void)textViewDidEndEditing:(UITextView *)textView {
+    if (self.detailBackTextView == textView)
+    {
+        if ([textView.text isEqualToString:@"想说的话"]) {
+            textView.text = @"";
+        }
+    }
+    
+    [textView resignFirstResponder];
+    
+    
+}
 
 #pragma mark - mapDelegate
 -(void)mapView:(MAMapView *)mapView didUpdateUserLocation:(MAUserLocation *)userLocation
@@ -359,6 +396,7 @@ updatingLocation:(BOOL)updatingLocation
         NSLog(@"latitude : %f,longitude: %f",userLocation.coordinate.latitude,userLocation.coordinate.longitude);
     }
 }
+
 
 - (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation
 {
@@ -408,15 +446,19 @@ updatingLocation:(BOOL)updatingLocation
         _endTimeBt.label.text = dateStr;
     }
 
-    
 }
 
 
 - (void)selectStartTime
 {
+    [_itemTextField resignFirstResponder];
+    [_perMoneyTextField resignFirstResponder];
+    [_addreddTextView resignFirstResponder];
+    [_detailBackTextView resignFirstResponder];
+    
     _selectTimeInputStatus = SelectTimeInputStatusStartTime;
     [UIView animateWithDuration:0.2 animations:^{
-        _dateBackView.frame = CGRectMake(0, SCREEN_HEIGHT - 236, SCREEN_WIDTH, _dateBackView.frame.size.height);
+        _dateBackView.frame = CGRectMake(0, SCREEN_HEIGHT - 216, SCREEN_WIDTH, _dateBackView.frame.size.height);
     } completion:^(BOOL finished) {
         
     }];
@@ -426,11 +468,60 @@ updatingLocation:(BOOL)updatingLocation
 {
     _selectTimeInputStatus = SelectTimeInputStatusEndTime;
     [UIView animateWithDuration:0.2 animations:^{
-        _dateBackView.frame = CGRectMake(0, SCREEN_HEIGHT - 236, SCREEN_WIDTH, _dateBackView.frame.size.height);
+        _dateBackView.frame = CGRectMake(0, SCREEN_HEIGHT - 216, SCREEN_WIDTH, _dateBackView.frame.size.height);
     } completion:^(BOOL finished) {
         
     }];
 }
+
+
+
+#pragma mark textFieldDelegates
+
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField;
+{
+   
+    if (_itemTextField == textField) {
+        
+        NSLog(@"tefild======%@",NSStringFromCGRect(textField.frame));
+        
+        NSLog(@"tefild======%@",NSStringFromCGRect(self.backScrollView.frame));
+        
+        
+    }
+    
+
+    return YES;
+}
+
+- (BOOL)textViewShouldBeginEditing:(UITextView *)textView
+{
+// 
+//    
+//    [UIView animateWithDuration:0.2 animations:^{
+//        _dateBackView.frame = CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, _dateBackView.frame.size.height);
+//    } completion:^(BOOL finished) {
+//        
+//        
+//        [UIView animateWithDuration:0.2 animations:^{
+//            
+//            self.view.frame = CGRectMake(0, -400, SCREEN_WIDTH, SCREEN_HEIGHT);
+//            
+//        } completion:^(BOOL finished) {
+//            
+//        }];
+//        
+//        
+//    }];
+    
+
+    
+    return YES;
+}
+
+
+
 
 - (void)textFieldDidChange:(UITextField *)textField
 {
@@ -446,7 +537,11 @@ updatingLocation:(BOOL)updatingLocation
 -(void)fingerTapped:(UITapGestureRecognizer *)gestureRecognizer
 {
      [_itemTextField resignFirstResponder];
+    [_perMoneyTextField resignFirstResponder];
     [_addreddTextView resignFirstResponder];
+    [_detailBackTextView resignFirstResponder];
+    
+    
     [UIView animateWithDuration:0.2 animations:^{
         _dateBackView.frame = CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, _dateBackView.frame.size.height);
     } completion:^(BOOL finished) {
@@ -455,11 +550,19 @@ updatingLocation:(BOOL)updatingLocation
 }
 
 
+
+
+
+
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     
     [textField resignFirstResponder];
     return YES;
 }
+
+
+
 
 
 - (void)viewDidAppear:(BOOL)animated
@@ -475,6 +578,9 @@ updatingLocation:(BOOL)updatingLocation
     [_mapBack addSubview:_mapView];
     [self initGestureRecognizer];
 }
+
+
+
 #pragma mark - 设置手势
 - (void)initGestureRecognizer
 {
@@ -502,6 +608,7 @@ updatingLocation:(BOOL)updatingLocation
         [self searchReGeocodeWithCoordinate:coordinate];
     }
 }
+
 /**逆地理编码*/
 - (void)searchReGeocodeWithCoordinate:(CLLocationCoordinate2D)coordinate
 {
@@ -512,6 +619,7 @@ updatingLocation:(BOOL)updatingLocation
     
     [self.search AMapReGoecodeSearch:regeo];
 }
+
 
 #pragma mark - 逆地理编码的回调
 /* 逆地理编码回调. */
@@ -538,21 +646,19 @@ updatingLocation:(BOOL)updatingLocation
 
 }
 
-- (void)gotoUphotoes
-{
 
-    CTAssetsPickerController *assetsPickerController = [[CTAssetsPickerController alloc] initWithAssetsType:CTAssetsPickerControllerAssetsTypePhoto];
-    assetsPickerController.delegate = self;
-    assetsPickerController.enableMaximumCount = 1;
-    [self presentViewController:assetsPickerController animated:YES completion:NULL];
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    
+    [_perMoneyTextField resignFirstResponder];
+    [_itemTextField resignFirstResponder];
+    [_detailBackTextView resignFirstResponder];
+    [_addreddTextView resignFirstResponder];
     
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 
 - (void)gotoBack
@@ -564,6 +670,19 @@ updatingLocation:(BOOL)updatingLocation
 }
 
 
+
+
+#pragma mark ------- 选择发布图片
+
+- (void)gotoUphotoes
+{
+    
+    CTAssetsPickerController *assetsPickerController = [[CTAssetsPickerController alloc] initWithAssetsType:CTAssetsPickerControllerAssetsTypePhoto];
+    assetsPickerController.delegate = self;
+    assetsPickerController.enableMaximumCount = 1;
+    [self presentViewController:assetsPickerController animated:YES completion:NULL];
+    
+}
 
 - (void)assetsPickerController:(CTAssetsPickerController *)assetsPickerController
         didFinishPickingAssets:(NSArray *)assets assetsType:(CTAssetsPickerControllerAssetsType)assetsType
@@ -579,8 +698,8 @@ updatingLocation:(BOOL)updatingLocation
                 ALAsset *asset = [assets objectAtIndex:0];
                 
                 UIImage *showImage = [UIImage imageWithCGImage:asset.defaultRepresentation.fullScreenImage];
-                [_showImageView setImage:showImage forState:UIControlStateNormal];
-                _showImageView.hidden = NO;
+                [_upPhotoBt setImage:showImage forState:UIControlStateNormal];
+//                _showImageView.hidden = NO;
                 
 //                _upPhotoBt.frame = CGRectMake(84, _upPhotoBt.frame.origin.y, _upPhotoBt.frame.size.width, _upPhotoBt.frame.size.height);
                 
@@ -635,14 +754,12 @@ updatingLocation:(BOOL)updatingLocation
 
 
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
-*/
+
 
 @end

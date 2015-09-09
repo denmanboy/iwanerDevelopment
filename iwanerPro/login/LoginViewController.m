@@ -15,22 +15,32 @@
 @implementation LoginViewController
 
 - (void)viewDidLoad {
+    
+    
     [super viewDidLoad];
     
     [self.navigationController.navigationBar setHidden:YES];
+    
     
 //    if (_delegate && [_delegate respondsToSelector:@selector(loginauthenticationSuccess)]) {
 //        [_delegate loginauthenticationSuccess];
 //    }
     
     // Do any additional setup after loading the view from its nib.
+    
 }
+
+
+
 - (IBAction)clickLogin:(id)sender {
     _loginEnterVC = [[LoginEnterViewController alloc]init];
     
     [self.navigationController pushViewController:_loginEnterVC animated:YES];
 }
-- (IBAction)clickRegist:(id)sender {
+
+
+- (IBAction)clickRegist:(id)sender
+{
     
     
 //    [[HttpEngine sharedHttpEngine] sendIphoneNumberVerificationCode:@"18911158938"
@@ -47,9 +57,6 @@
 //        
 //    }];
     
-    
-
-    
     NSLog(@"ddd===3===");
     
     _registVC = [[RegistViewController alloc]init];
@@ -60,6 +67,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
 
 /*
 #pragma mark - Navigation

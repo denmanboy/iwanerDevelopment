@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface FindPwdDetailViewController : UIViewController
+
 @property (strong, nonatomic) IBOutlet UITextField *pwdTextfield;
 @property (strong, nonatomic) IBOutlet UITextField *affirmPwdTextfield;
 

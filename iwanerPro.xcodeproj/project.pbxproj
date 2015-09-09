@@ -588,8 +588,12 @@
 		4AA8AED61B653416005AABDA /* 按钮-滑块-玩友.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEBE1B653416005AABDA /* 按钮-滑块-玩友.png */; };
 		4AA8AED71B653416005AABDA /* 按钮-滑块-玩友@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEBF1B653416005AABDA /* 按钮-滑块-玩友@2x.png */; };
 		4AA8AED81B653416005AABDA /* 按钮-滑块-玩友@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8AEC01B653416005AABDA /* 按钮-滑块-玩友@3x.png */; };
+		4AB78C1C1B908F6D00D79358 /* IWUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB78C1B1B908F6D00D79358 /* IWUserInfo.m */; };
+		4AB78C1E1B90B3B400D79358 /* man.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4AB78C1D1B90B3B400D79358 /* man.jpg */; };
 		4AC1DE7D1B82157500C6CB14 /* LookSelectImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC1DE7C1B82157500C6CB14 /* LookSelectImageViewController.m */; };
 		4AE00B461B8B5E58003423D6 /* IWKeyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE00B451B8B5E58003423D6 /* IWKeyObject.m */; };
+		4AF741051B9F19AA0097A407 /* IWButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF741041B9F19AA0097A407 /* IWButton.m */; };
+		4AF741081B9F1AB90097A407 /* UIButton+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF741071B9F1AB90097A407 /* UIButton+Extend.m */; };
 		4AF971951B5E7BAB0090EACA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF971941B5E7BAB0090EACA /* main.m */; };
 		4AF971981B5E7BAB0090EACA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF971971B5E7BAB0090EACA /* AppDelegate.m */; };
 		4AF971A01B5E7BAB0090EACA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF9719F1B5E7BAB0090EACA /* Images.xcassets */; };
@@ -1367,10 +1371,17 @@
 		4AA8AEBE1B653416005AABDA /* 按钮-滑块-玩友.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-滑块-玩友.png"; sourceTree = "<group>"; };
 		4AA8AEBF1B653416005AABDA /* 按钮-滑块-玩友@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-滑块-玩友@2x.png"; sourceTree = "<group>"; };
 		4AA8AEC01B653416005AABDA /* 按钮-滑块-玩友@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-滑块-玩友@3x.png"; sourceTree = "<group>"; };
+		4AB78C1A1B908F6D00D79358 /* IWUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWUserInfo.h; sourceTree = "<group>"; };
+		4AB78C1B1B908F6D00D79358 /* IWUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWUserInfo.m; sourceTree = "<group>"; };
+		4AB78C1D1B90B3B400D79358 /* man.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = man.jpg; sourceTree = "<group>"; };
 		4AC1DE7B1B82157500C6CB14 /* LookSelectImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LookSelectImageViewController.h; sourceTree = "<group>"; };
 		4AC1DE7C1B82157500C6CB14 /* LookSelectImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LookSelectImageViewController.m; sourceTree = "<group>"; };
 		4AE00B441B8B5E58003423D6 /* IWKeyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWKeyObject.h; sourceTree = "<group>"; };
 		4AE00B451B8B5E58003423D6 /* IWKeyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWKeyObject.m; sourceTree = "<group>"; };
+		4AF741031B9F19AA0097A407 /* IWButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWButton.h; sourceTree = "<group>"; };
+		4AF741041B9F19AA0097A407 /* IWButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWButton.m; sourceTree = "<group>"; };
+		4AF741061B9F1AB90097A407 /* UIButton+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extend.h"; sourceTree = "<group>"; };
+		4AF741071B9F1AB90097A407 /* UIButton+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extend.m"; sourceTree = "<group>"; };
 		4AF9718F1B5E7BAB0090EACA /* iwanerPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iwanerPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AF971931B5E7BAB0090EACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AF971941B5E7BAB0090EACA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1850,6 +1861,8 @@
 				4A4E73141B63EB58002384A8 /* UIViewAdditions.m */,
 				4A0B0A7B1B685474005A184B /* UILabelButton.h */,
 				4A0B0A7C1B685474005A184B /* UILabelButton.m */,
+				4AF741061B9F1AB90097A407 /* UIButton+Extend.h */,
+				4AF741071B9F1AB90097A407 /* UIButton+Extend.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -2196,6 +2209,7 @@
 				4A7990F01B776039009EAF36 /* PersonalityViewController.m */,
 				4A7990F11B776039009EAF36 /* PersonalityViewController.xib */,
 				4A7990F21B776039009EAF36 /* PrefectInfoViewController.h */,
+				4AB78C1D1B90B3B400D79358 /* man.jpg */,
 				4A7990F31B776039009EAF36 /* PrefectInfoViewController.m */,
 				4A7990F41B776039009EAF36 /* PrefectInfoViewController.xib */,
 				4A7990F51B776039009EAF36 /* RegistViewController.h */,
@@ -2412,6 +2426,8 @@
 			children = (
 				4AF971961B5E7BAB0090EACA /* AppDelegate.h */,
 				4AF971971B5E7BAB0090EACA /* AppDelegate.m */,
+				4AB78C1A1B908F6D00D79358 /* IWUserInfo.h */,
+				4AB78C1B1B908F6D00D79358 /* IWUserInfo.m */,
 				4A4E724A1B61A79B002384A8 /* MainViewController.h */,
 				4A4E724B1B61A79B002384A8 /* MainViewController.m */,
 				4A4E72B61B6341F8002384A8 /* IwanViewController.h */,
@@ -2470,6 +2486,8 @@
 				4A4E74C41B63F12F002384A8 /* HttpEngine.m */,
 				4AE00B441B8B5E58003423D6 /* IWKeyObject.h */,
 				4AE00B451B8B5E58003423D6 /* IWKeyObject.m */,
+				4AF741031B9F19AA0097A407 /* IWButton.h */,
+				4AF741041B9F19AA0097A407 /* IWButton.m */,
 				4A7990DF1B776039009EAF36 /* login */,
 				4A4E74C61B64156A002384A8 /* BaseClass */,
 				4A4E72FA1B63E9DD002384A8 /* hongzi.png */,
@@ -2935,6 +2953,7 @@
 				2827D6051B8096BE009B7360 /* 按钮-滑块-玩友.pdf in Resources */,
 				4A4E72281B61A703002384A8 /* 导航-发布-黑@2x.png in Resources */,
 				4A7991691B7760B7009EAF36 /* 登录注册_定位图标-地图标点.png in Resources */,
+				4AB78C1E1B90B3B400D79358 /* man.jpg in Resources */,
 				4A79915D1B7760B7009EAF36 /* 登录注册_图标-标签.png in Resources */,
 				4A79916B1B7760B7009EAF36 /* 登录注册_定位图标-地图标点@3x.png in Resources */,
 				2827D63E1B8096BE009B7360 /* 邀请玩友-微信.png in Resources */,
@@ -3207,6 +3226,7 @@
 				4A7991001B776039009EAF36 /* LoginViewController.m in Sources */,
 				4A4E74D21B641FF6002384A8 /* MyItemViewController.m in Sources */,
 				4A4E74AD1B63EC97002384A8 /* SDWebImagePrefetcher.m in Sources */,
+				4AF741051B9F19AA0097A407 /* IWButton.m in Sources */,
 				4A4E74801B63EC97002384A8 /* MASViewAttribute.m in Sources */,
 				4A4E746E1B63EC97002384A8 /* SBJsonWriter.m in Sources */,
 				4A4E746C1B63EC97002384A8 /* SBJsonBase.m in Sources */,
@@ -3229,8 +3249,10 @@
 				4A4E74A61B63EC97002384A8 /* NSData+ImageContentType.m in Sources */,
 				4A4E747C1B63EC97002384A8 /* MASCompositeConstraint.m in Sources */,
 				4A4E74831B63EC97002384A8 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				4AF741081B9F1AB90097A407 /* UIButton+Extend.m in Sources */,
 				4A7C5C3D1B80746C00F30879 /* CTAssetsGroupViewController.m in Sources */,
 				4A4E747B1B63EC97002384A8 /* will_mosq.c in Sources */,
+				4AB78C1C1B908F6D00D79358 /* IWUserInfo.m in Sources */,
 				4A4E748C1B63EC97002384A8 /* MJRefreshHeader.m in Sources */,
 				4A7991041B776039009EAF36 /* PrefectInfoViewController.m in Sources */,
 				4A4E731E1B63EB58002384A8 /* UIViewAdditions.m in Sources */,

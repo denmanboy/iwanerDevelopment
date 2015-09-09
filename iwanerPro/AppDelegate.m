@@ -43,12 +43,13 @@
     _loginViewController.delegate = self;
     _loginNav = [[BSNavgationController alloc]initWithRootViewController:_loginViewController];
     self.window.rootViewController = _loginNav;
-    
+
+    [self chooseIphoneSizeType];
     [self.window makeKeyAndVisible];
     return YES;
 }
 
-- (void)loginauthenticationSuccess {
+- (void)loginAuthenticationSuccess {
     
     UITabBarController *tabBarController = [[UITabBarController alloc]init];
     
@@ -137,6 +138,27 @@
 }
 
 
+
+
+- (void)chooseIphoneSizeType
+{
+    IWUserInfo *info = [IWUserInfo sharedIWUserInfo];
+    if (SCREEN_HEIGHT < 500) {
+        info.iphoneSizeType = IPHONE_SIZE_TYPE_4s;
+    }else if (SCREEN_HEIGHT > 500 && SCREEN_HEIGHT < 600)
+    {
+        info.iphoneSizeType = IPHONE_SIZE_TYPE_5s;
+    }else if (SCREEN_HEIGHT > 600 && SCREEN_HEIGHT < 700)
+    {
+        info.iphoneSizeType = IPHONE_SIZE_TYPE_6;
+    }else if (SCREEN_HEIGHT >700)
+    {
+        info.iphoneSizeType = IPHONE_SIZE_TYPE_plus;
+    }
+}
+
+
+
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
 {
     
@@ -153,6 +175,10 @@
     
     
 }
+
+
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

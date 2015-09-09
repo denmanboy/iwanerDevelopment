@@ -53,7 +53,11 @@
 - (MKNetworkOperation *)complementUserInfoUsername:(NSString *)nickname
                                                dis:(NSString *)dis
                                                sex:(NSString *)sex
+                                          industry:(NSString *)industry
+                                             hobby:(NSString *)hobby
                                                img:(UIImage *)img
+                                             label:(NSString *)label
+                                           address:(NSString *)address
                                onCompletionHandler:(MKNKResponseBlock) response
                                       errorHandler:(MKNKResponseErrorBlock) error;
 
@@ -71,7 +75,6 @@
 //6_获取用户基本信息
 - (MKNetworkOperation *)userBaseInfoOnCompletionHandler:(MKNKResponseBlock) response
                                            errorHandler:(MKNKResponseErrorBlock) error;
-
 
 
 
@@ -136,6 +139,12 @@
                                       errorHandler:(MKNKResponseErrorBlock) error;
 
 
+
+
+//14验证手机验证码
+- (MKNetworkOperation *)judgeSendCodeIsRightWithCode:(NSString *)sendCode
+                                 onCompletionHandler:(MKNKResponseBlock) response
+                                        errorHandler:(MKNKResponseErrorBlock) error;
 
 
 //检测网络链接

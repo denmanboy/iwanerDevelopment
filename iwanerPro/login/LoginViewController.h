@@ -23,6 +23,6 @@
 
 @protocol LoginViewControllerDelegate <NSObject>
 
-- (void)loginauthenticationSuccess;
+- (void)loginAuthenticationSuccess;
 
 @end
